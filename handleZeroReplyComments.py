@@ -2,7 +2,7 @@ from xml.etree.ElementTree import XMLPullParser
 from MongodbClient import get_collection
 
 collection = get_collection('PostsWithNoAnswer')
-CommentFilePath = './sample/Comments.xml'
+CommentFilePath = './DataSample/Comments.xml'
 
 # grab a list of valid PostId from DB and store in set
 postIdset = set([d['Id'] for d in list(collection.find({},{'Id':1}))])

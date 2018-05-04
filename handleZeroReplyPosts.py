@@ -4,7 +4,7 @@ from MongodbClient import get_collection
 collection = get_collection('PostsWithNoAnswer')
 list_of_keys = ['Id','Score','ViewCount']
 
-PostsFilePath = './sample/Posts.xml'
+PostsFilePath = './DataSample/Posts.xml'
 
 parser = XMLPullParser(events=['end'])
 with open(file=PostsFilePath) as f:
