@@ -12,14 +12,12 @@ collection = client.get_collection(collectionName)
 CommentFilePath = './Data/Comments.xml'
 
 # grab a list of valid PostId from DB and store in set
-res = list(collection.find({},{'Id':1,'CommentCount':1}))
+res = list(collection.find({'$and':[{'CommentCount':{'$ne':'0'}},{'Comments':{'$exists':False}}]},{'Id':1,'CommentCount':1}))
 postIdset = set()
 commentCount = dict()
 for d in res:
-    cCount = int(d['CommentCount'])
-    if cCount > 0:
         postIdset.add(d['Id'])
-        commentCount[d['Id']] = cCount
+        commentCount[d['Id']] = int(d['CommentCount'])
 comments = {}
 parser = XMLPullParser(events=['end'])
 with open(file=CommentFilePath) as f:
