@@ -1,18 +1,29 @@
 from xml.etree.ElementTree import XMLPullParser
-from MongodbClient import get_collection
+from MongodbClient import MyMongoClient
+import sys
 
-collection = get_collection('PostsWithLowScore')
-list_of_keys = ['Id','Score','ViewCount', 'Body']
+# python3 handleLowScorePosts.py startId dbThreshold
 
-PostsFilePath = './DataSample/Posts.xml'
+client = MyMongoClient()
+collection = client.get_collection('PostsWithLowScore')
+list_of_keys = ['Id','Score','ViewCount', 'Body','CommentCount']
+
+PostsFilePath = './Data/Posts.xml'
+startId = int(sys.argv[1]) if len(sys.argv) > 1 else 0
+dbThreshold = int(sys.argv[2]) if len(sys.argv) > 2 else None
+nextSwitchId = startId + dbThreshold if dbThreshold is not None else None
 
 scoreThreshold = -2
 parser = XMLPullParser(events=['end'])
 with open(file=PostsFilePath) as f:
+    Id = 0
     for line in f:
         parser.feed(line)
         for event,elem in parser.read_events():
             if(elem.tag == 'row'):
+                Id = int(elem.get('Id'))
+                if Id < startId:
+                    continue
                 score = int(elem.get('Score'))
                 if score <= scoreThreshold:
                     postTypeId = int(elem.get('PostTypeId'))
@@ -20,4 +31,12 @@ with open(file=PostsFilePath) as f:
                     if postTypeId == 2:
                         data_to_save['ParentId'] = elem.get('ParentId')
                     collection.insert_one(data_to_save)
+        if nextSwitchId is not None and Id >= nextSwitchId:
+            nextSwitchId += dbThreshold
+            ret = client.switch_db()
+            if ret:
+                collection = client.get_collection('PostsWithLowScore')
+            else:
+                break
+
     f.close()
