@@ -23,17 +23,17 @@ for d in res:
 comments = {}
 parser = XMLPullParser(events=['end'])
 with open(file=CommentFilePath) as f:
-    # counter = 0 #Things to fix, something wrong with the parser, we need to put line contraints on it
+    counter = 0 #Things to fix, something wrong with the parser, we need to put line contraints on it
     for line in f:
         # if counter <= 1:
         #     parser.feed(line)
-        # counter += 1
-        # if counter % 1000000 == 0:
-        #     print('At line %d' % counter)
-        #     parser.feed('</comments>')
-        #     parser.close()
-        #     parser = XMLPullParser(events=['end'])
-        #     parser.feed('<comments>')
+        counter += 1
+        if counter % 1000000 == 0:
+            print('At line %d' % counter)
+            parser.feed('</comments>')
+            parser.close()
+            parser = XMLPullParser(events=['end'])
+            parser.feed('<comments>')
         # if counter <= 56000000:
         #     continue
         # if counter > 56200000:
