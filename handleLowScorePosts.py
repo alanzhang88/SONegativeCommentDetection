@@ -6,7 +6,8 @@ import sys
 
 client = MyMongoClient()
 collection = client.get_collection('PostsWithLowScore')
-list_of_keys = ['Id','Score','ViewCount', 'Body','CommentCount']
+# list_of_keys = ['Id','Score','ViewCount', 'Body','CommentCount']
+list_of_str_keys = ['Id','Body']
 
 PostsFilePath = './Data/Posts.xml'
 startId = int(sys.argv[1]) if len(sys.argv) > 1 else 0
@@ -27,9 +28,10 @@ with open(file=PostsFilePath) as f:
                 score = int(elem.get('Score'))
                 if score <= scoreThreshold:
                     postTypeId = int(elem.get('PostTypeId'))
-                    data_to_save = {key: elem.get(key) for key in list_of_keys}
+                    data_to_save = {key: elem.get(key) for key in list_of_str_keys}
                     data_to_save['CommentCount'] = int(data_to_save['CommentCount'])
                     data_to_save['Score'] = int(data_to_save['Score'])
+                    data_to_save['ViewCount'] = int(elem.get('ViewCount'))
                     if postTypeId == 2:
                         data_to_save['ParentId'] = elem.get('ParentId')
                     collection.insert_one(data_to_save)

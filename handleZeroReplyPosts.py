@@ -4,7 +4,7 @@ import sys
 
 client = MyMongoClient()
 collection = client.get_collection('PostsWithNoAnswer')
-list_of_keys = ['Id','Score','ViewCount','CommentCount']
+list_of_str_keys = ['Id','Body']
 
 PostsFilePath = './Data/Posts.xml'
 startId = int(sys.argv[1]) if len(sys.argv) > 1 else 0
@@ -26,9 +26,10 @@ with open(file=PostsFilePath) as f:
                     answerCount = int(elem.get('AnswerCount'))
                     commentCount = int(elem.get('CommentCount'))
                     if(answerCount == 0 and commentCount > 0):
-                        data_to_save = {key: elem.get(key) for key in list_of_keys}
+                        data_to_save = {key: elem.get(key) for key in list_of_str_keys}
                         data_to_save['CommentCount'] = int(data_to_save['CommentCount'])
                         data_to_save['Score'] = int(data_to_save['Score'])
+                        data_to_save['ViewCount'] = int(elem.get('ViewCount'))
                         collection.insert_one(data_to_save)
         if nextSwitchId is not None and Id >= nextSwitchId:
             nextSwitchId += dbThreshold

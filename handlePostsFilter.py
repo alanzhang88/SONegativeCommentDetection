@@ -4,7 +4,7 @@ import sys
 
 client = MyMongoClient()
 collection = client.get_collection('PostsPassFilters')
-list_of_keys = ['Id','Score','ViewCount','CommentCount']
+# list_of_keys = ['Id','Score','ViewCount','CommentCount']
 
 PostsFilePath = './Data/Posts.xml'
 startId = int(sys.argv[1]) if len(sys.argv) > 1 else 0
@@ -39,7 +39,9 @@ with open(file=PostsFilePath) as f:
                         data_to_save['Score'] = int(elem.get('Score'))
                         data_to_save['ViewCount'] = int(elem.get('ViewCount'))
                         data_to_save['CommentCount'] = int(elem.get('CommentCount'))
-                        data_to_save['ParentId'] = elem.get('ParentId')
+                        data_to_save['Body'] = elem.get('Body')
+                        if postTypeId == 2: 
+                            data_to_save['ParentId'] = elem.get('ParentId')
                         collection.insert_one(data_to_save)
         if nextSwitchId is not None and Id >= nextSwitchId:
             nextSwitchId += dbThreshold
