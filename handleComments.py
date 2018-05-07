@@ -12,17 +12,33 @@ collection = client.get_collection(collectionName)
 CommentFilePath = './Data/Comments.xml'
 
 # grab a list of valid PostId from DB and store in set
-res = list(collection.find({'$and':[{'CommentCount':{'$ne':'0'}},{'Comments':{'$exists':False}}]},{'Id':1,'CommentCount':1}))
+res = list(collection.find({'$and':[{'CommentCount':{'$ne':0}},{'Comments':{'$exists':False}}]},{'Id':1,'CommentCount':1}))
+print('Found %d entries from DB' % len(res))
+entriesNum = len(res)
 postIdset = set()
 commentCount = dict()
 for d in res:
         postIdset.add(d['Id'])
-        commentCount[d['Id']] = int(d['CommentCount'])
+        commentCount[d['Id']] = d['CommentCount']
 comments = {}
 parser = XMLPullParser(events=['end'])
 with open(file=CommentFilePath) as f:
+    # counter = 0 #Things to fix, something wrong with the parser, we need to put line contraints on it
     for line in f:
-        if len(commentCount.keys()) == 0:
+        # if counter <= 1:
+        #     parser.feed(line)
+        # counter += 1
+        # if counter % 1000000 == 0:
+        #     print('At line %d' % counter)
+        #     parser.feed('</comments>')
+        #     parser.close()
+        #     parser = XMLPullParser(events=['end'])
+        #     parser.feed('<comments>')
+        # if counter <= 56000000:
+        #     continue
+        # if counter > 56200000:
+        #     break
+        if entriesNum == 0:
             break
         parser.feed(line)
         for event,elem in parser.read_events():
@@ -36,14 +52,20 @@ with open(file=CommentFilePath) as f:
                     commentCount[postId] -= 1
                     if commentCount[postId] == 0:
                         print('PostId %s comments are all found' % postId)
-                        collection.find_one_and_update({"Id": postId},{'$set':{'Comments':comments[postId]}})
+                        collection.find_one_and_update({"Id": postId},{'$push':{'Comments':{'$each': comments[postId]}}})
                         del comments[postId]
                         del commentCount[postId]
+                        entriesNum -= 1
+                        continue
+                    # if len(comments[postId]) >= 3:
+                    #     print('PostId %s comments are partially found, %d comments left to found' % (postId,commentCount[postId]))
+                    #     collection.find_one_and_update({"Id": postId},{'$push':{'Comments':{'$each': comments[postId]}}})
+                    #     comments[postId] = []
     f.close()
 
-for id in comments.keys():
+# for id in comments.keys():
     # collection.find_one_and_update({"Id": id},{'$push':{'Comments':{'$each': comments[id]}}})
-    collection.find_one_and_update({"Id": postId},{'$set':{'Comments':comments[id]}})
+    # collection.find_one_and_update({"Id": postId},{'$set':{'Comments':comments[id]}})
 
 # if collectionName == 'PostsWithNoAnswer':
 #     dset = postIdset - set(comments.keys())
