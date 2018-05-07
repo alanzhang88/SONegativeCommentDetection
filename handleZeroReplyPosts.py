@@ -14,7 +14,14 @@ nextSwitchId = startId + dbThreshold if dbThreshold is not None else None
 parser = XMLPullParser(events=['end'])
 with open(file=PostsFilePath) as f:
     Id = 0
+    counter = 0
     for line in f:
+        counter += 1
+        if counter % 1000000 == 0:
+            parser.feed('</posts>')
+            parser.close()
+            parser = XMLPullParser(events=['end'])
+            parser.feed('<posts>')
         parser.feed(line)
         for event,elem in parser.read_events():
             if(elem.tag == 'row'):
