@@ -16,8 +16,10 @@ res = list(collection.find({},{'Id':1,'CommentCount':1}))
 postIdset = set()
 commentCount = dict()
 for d in res:
-    postIdset.add(d['Id'])
-    commentCount[d['Id']] = int(d['CommentCount'])
+    cCount = int(d['CommentCount'])
+    if cCount > 0:
+        postIdset.add(d['Id'])
+        commentCount[d['Id']] = cCount
 comments = {}
 parser = XMLPullParser(events=['end'])
 with open(file=CommentFilePath) as f:
