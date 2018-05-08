@@ -24,9 +24,13 @@ with open(file=PostsFilePath) as f:
                 if Id < startId:
                     continue
                 score = int(elem.get('Score'))
-                favoriteCount = int(elem.get('FavoriteCount'))
+                favoriteCount = 0
+                viewCount = 0
+                if elem.get('FavoriteCount') is not None:
+                    favoriteCount = int(elem.get('FavoriteCount'))
                 postTypeId = int(elem.get('PostTypeId'))
-                viewCount = int(elem.get('ViewCount'))
+                if elem.get('ViewCount') is not None:
+                    viewCount = int(elem.get('ViewCount'))
                 if favoriteCount <= 0 and viewCount >= viewThreshold:
                     if postTypeId == 1:                    
                         answerCount = int(elem.get('AnswerCount'))
@@ -36,9 +40,9 @@ with open(file=PostsFilePath) as f:
                     if answerCount <= 0 and commentCount >= 0:
                         data_to_save = {}
                         data_to_save['Id'] = elem.get('Id')
-                        data_to_save['Score'] = int(elem.get('Score'))
-                        data_to_save['ViewCount'] = int(elem.get('ViewCount'))
-                        data_to_save['CommentCount'] = int(elem.get('CommentCount'))
+                        data_to_save['Score'] = score
+                        data_to_save['ViewCount'] = viewCount
+                        data_to_save['CommentCount'] = commentCount
                         data_to_save['Body'] = elem.get('Body')
                         if postTypeId == 2: 
                             data_to_save['ParentId'] = elem.get('ParentId')
