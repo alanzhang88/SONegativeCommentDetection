@@ -32,7 +32,7 @@ with open(file=PostsFilePath) as f:
         parser.feed(line)
         for event,elem in parser.read_events():
             if(elem.tag == 'row'):
-                Id = elem.get('Id')
+                Id = int(elem.get('Id'))
                 if Id in postIdset:
                     print('Updating postId %s' % Id)
                     data_to_fill = {field:elem.get(field) for field in fieldsToFill}
