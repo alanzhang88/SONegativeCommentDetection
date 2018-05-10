@@ -13,6 +13,7 @@ PostsFilePath = './Data/Posts.xml'
 startId = int(sys.argv[1]) if len(sys.argv) > 1 else 0
 dbThreshold = int(sys.argv[2]) if len(sys.argv) > 2 else None
 nextSwitchId = startId + dbThreshold if dbThreshold is not None else None
+startLine = int(sys.argv[3]) if len(sys.argv) > 3 else None
 
 scoreThreshold = -1
 parser = XMLPullParser(events=['end'])
@@ -26,7 +27,13 @@ with open(file=PostsFilePath) as f:
             parser.close()
             parser = XMLPullParser(events=['end'])
             parser.feed('<posts>')
-        parser.feed(line)
+        if startLine is None:
+            parser.feed(line)
+        else:
+            if counter <= 2 or counter >= startLine:
+                parser.feed(line)
+            else:
+                continue
         for event,elem in parser.read_events():
             if(elem.tag == 'row'):
                 Id = int(elem.get('Id'))
@@ -44,7 +51,7 @@ with open(file=PostsFilePath) as f:
                         data_to_save['ViewCount'] = int(elem.get('ViewCount'))
                     if postTypeId == 2:
                         data_to_save['ParentId'] = elem.get('ParentId')
-                    print('Inserting postid %d' % Id)    
+                    print('Inserting postid %d' % Id)
                     collection.insert_one(data_to_save)
         if nextSwitchId is not None and Id >= nextSwitchId:
             nextSwitchId += dbThreshold
