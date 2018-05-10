@@ -43,7 +43,7 @@ with open(file=CommentFilePath) as f:
         parser.feed(line)
         for event,elem in parser.read_events():
             if(elem.tag == 'row'):
-                postId = elem.get('PostId')
+                postId = int(elem.get('PostId'))
                 if postId in postIdset:
                     if postId in comments.keys():
                         comments[postId].append(elem.get('Text'))

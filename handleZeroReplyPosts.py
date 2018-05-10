@@ -34,9 +34,11 @@ with open(file=PostsFilePath) as f:
                     commentCount = int(elem.get('CommentCount'))
                     if(answerCount == 0 and commentCount > 0):
                         data_to_save = {key: elem.get(key) for key in list_of_str_keys}
+                        data_to_save['Id'] = Id
                         data_to_save['CommentCount'] = int(elem.get('CommentCount'))
                         data_to_save['Score'] = int(elem.get('Score'))
                         data_to_save['ViewCount'] = int(elem.get('ViewCount'))
+                        print('Inserting postid %d' % Id)
                         collection.insert_one(data_to_save)
         if nextSwitchId is not None and Id >= nextSwitchId:
             nextSwitchId += dbThreshold
