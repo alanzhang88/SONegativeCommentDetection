@@ -4,9 +4,6 @@ import sys
 
 client = MyMongoClient()
 collection = client.get_collection('UsersLowRep')
-
-# list_of_keys = ['Id','Score','ViewCount','CommentCount']
-
 UsersFilePath = './Data/Users.xml'
 startId = int(sys.argv[1]) if len(sys.argv) > 1 else 0
 dbThreshold = int(sys.argv[2]) if len(sys.argv) > 2 else None
