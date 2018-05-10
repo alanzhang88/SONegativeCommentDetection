@@ -5,7 +5,7 @@ import sys
 # python3 handleLowScorePosts.py startId dbThreshold
 
 client = MyMongoClient()
-collection = client.get_collection('PostsWithLowScore')
+collection = client.get_collection('PostFirstIter')
 # list_of_keys = ['Id','Score','ViewCount', 'Body','CommentCount']
 list_of_str_keys = ['Id','Body']
 
@@ -14,7 +14,7 @@ startId = int(sys.argv[1]) if len(sys.argv) > 1 else 0
 dbThreshold = int(sys.argv[2]) if len(sys.argv) > 2 else None
 nextSwitchId = startId + dbThreshold if dbThreshold is not None else None
 
-scoreThreshold = -2
+scoreThreshold = -1
 parser = XMLPullParser(events=['end'])
 with open(file=PostsFilePath) as f:
     Id = 0
@@ -37,6 +37,7 @@ with open(file=PostsFilePath) as f:
                     postTypeId = int(elem.get('PostTypeId'))
                     data_to_save = {key: elem.get(key) for key in list_of_str_keys}
                     data_to_save['Id'] = Id
+                    data_to_save['OwnerId'] = int(elem.get('OwnerUserId'))
                     data_to_save['CommentCount'] = int(elem.get('CommentCount'))
                     data_to_save['Score'] = int(elem.get('Score'))
                     if elem.get('ViewCount') is not None:
@@ -49,7 +50,7 @@ with open(file=PostsFilePath) as f:
             nextSwitchId += dbThreshold
             ret = client.switch_db()
             if ret:
-                collection = client.get_collection('PostsWithLowScore')
+                collection = client.get_collection('PostFirstIter')
             else:
                 break
 

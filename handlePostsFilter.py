@@ -24,6 +24,7 @@ with open(file=PostsFilePath) as f:
                 if Id < startId:
                     continue
                 score = int(elem.get('Score'))
+                # print(score)
                 favoriteCount = 0
                 viewCount = 0
                 if elem.get('FavoriteCount') is not None:
@@ -31,22 +32,22 @@ with open(file=PostsFilePath) as f:
                 postTypeId = int(elem.get('PostTypeId'))
                 if elem.get('ViewCount') is not None:
                     viewCount = int(elem.get('ViewCount'))
-                if favoriteCount <= 0 and viewCount >= viewThreshold:
-                    if postTypeId == 1:                    
-                        answerCount = int(elem.get('AnswerCount'))
-                    else:
-                        answerCount = -1
+                if postTypeId == 1:                    
+                    answerCount = int(elem.get('AnswerCount'))
+                else:
+                    answerCount = -1
+                if favoriteCount <= 0 and viewCount >= viewThreshold and (score < scoreThreshold or answerCount <= 0):
                     commentCount = int(elem.get('CommentCount'))
-                    if answerCount <= 0 and commentCount >= 0:
-                        data_to_save = {}
-                        data_to_save['Id'] = elem.get('Id')
-                        data_to_save['Score'] = score
-                        data_to_save['ViewCount'] = viewCount
-                        data_to_save['CommentCount'] = commentCount
-                        data_to_save['Body'] = elem.get('Body')
-                        if postTypeId == 2: 
-                            data_to_save['ParentId'] = elem.get('ParentId')
-                        collection.insert_one(data_to_save)
+                    data_to_save = {}
+                    data_to_save['Id'] = elem.get('Id')
+                    data_to_save['Score'] = score
+                    data_to_save['ViewCount'] = viewCount
+                    data_to_save['CommentCount'] = commentCount
+                    data_to_save['Body'] = elem.get('Body')
+                    if postTypeId == 2: 
+                        data_to_save['ParentId'] = elem.get('ParentId')
+                    # print(data_to_save)
+                    collection.insert_one(data_to_save)
         if nextSwitchId is not None and Id >= nextSwitchId:
             nextSwitchId += dbThreshold
             ret = client.switch_db()
