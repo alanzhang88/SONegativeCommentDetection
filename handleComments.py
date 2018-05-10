@@ -4,6 +4,8 @@ import sys
 
 collectionName = sys.argv[1] if len(sys.argv) > 1 else 'PostsWithNoAnswer'
 dbIdx = int(sys.argv[2]) if len(sys.argv) > 2 else 0
+startId = int(sys.argv[3]) if len(sys.argv) > 3 else None
+endId = int(sys.argv[4]) if len(sys.argv) > 4 else None
 
 client = MyMongoClient()
 if not client.set_db(dbIdx):
@@ -12,7 +14,11 @@ collection = client.get_collection(collectionName)
 CommentFilePath = './Data/Comments.xml'
 
 # grab a list of valid PostId from DB and store in set
-res = list(collection.find({'$and':[{'CommentCount':{'$ne':0}},{'Comments':{'$exists':False}}]},{'Id':1,'CommentCount':1}))
+res = []
+if startId is None or endId is None:
+    res = list(collection.find({'$and':[{'CommentCount':{'$ne':0}},{'Comments':{'$exists':False}}]},{'Id':1,'CommentCount':1}))
+else:
+    res = list(collection.find({'$and':[{'CommentCount':{'$ne':0}},{'Comments':{'$exists':False}},{'Id':{'$gte':startId}},{'Id':{'$lt':endId}}]},{'Id':1,'CommentCount':1}))
 print('Found %d entries from DB' % len(res))
 entriesNum = len(res)
 postIdset = set()
@@ -52,7 +58,7 @@ with open(file=CommentFilePath) as f:
                     commentCount[postId] -= 1
                     if commentCount[postId] == 0:
                         print('PostId %s comments are all found' % postId)
-                        collection.find_one_and_update({"Id": postId},{'$push':{'Comments':{'$each': comments[postId]}}})
+                        collection.find_one_and_update({"Id": postId},{'$set':{'Comments':comments[id]}})
                         del comments[postId]
                         del commentCount[postId]
                         entriesNum -= 1
