@@ -58,7 +58,7 @@ with open(file=CommentFilePath) as f:
                     commentCount[postId] -= 1
                     if commentCount[postId] == 0:
                         print('PostId %s comments are all found' % postId)
-                        collection.find_one_and_update({"Id": postId},{'$set':{'Comments':comments[id]}})
+                        collection.find_one_and_update({"Id": postId},{'$set':{'Comments':comments[postId]}})
                         del comments[postId]
                         del commentCount[postId]
                         entriesNum -= 1
