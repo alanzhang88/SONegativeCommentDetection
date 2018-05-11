@@ -2,7 +2,7 @@ from xml.etree.ElementTree import XMLPullParser
 from MongodbClient import MyMongoClient
 import sys
 
-collectionName = sys.argv[1] if len(sys.argv) > 1 else 'PostsWithNoAnswer'
+collectionName = sys.argv[1] if len(sys.argv) > 1 else 'PostFirstIter'
 dbIdx = int(sys.argv[2]) if len(sys.argv) > 2 else 0
 startId = int(sys.argv[3]) if len(sys.argv) > 3 else None
 endId = int(sys.argv[4]) if len(sys.argv) > 4 else None
@@ -11,8 +11,8 @@ client = MyMongoClient()
 if not client.set_db(dbIdx):
     exit(0)
 collection = client.get_collection(collectionName)
-CommentFilePath = './Data/Comments.xml'
-
+# CommentFilePath = './Data/Comments.xml'
+CommentFilePath = '/Volumes/Untitled/230Data/Comments.xml'
 # grab a list of valid PostId from DB and store in set
 res = []
 if startId is None or endId is None:
