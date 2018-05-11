@@ -39,7 +39,9 @@ with open(file=PostsFilePath) as f:
                 if favoriteCount <= 0 and viewCount >= viewThreshold and (score < scoreThreshold or answerCount <= 0):
                     commentCount = int(elem.get('CommentCount'))
                     data_to_save = {}
-                    data_to_save['Id'] = elem.get('Id')
+                    data_to_save['Id'] = int(elem.get('Id'))
+                    if elem.get('OwnerUserId') is not None:
+                        data_to_save['OwnerId'] = int(elem.get('OwnerUserId'))
                     data_to_save['Score'] = score
                     data_to_save['ViewCount'] = viewCount
                     data_to_save['CommentCount'] = commentCount
