@@ -8,7 +8,7 @@ UsersFilePath = './Data/Users.xml'
 startId = int(sys.argv[1]) if len(sys.argv) > 1 else 0
 dbThreshold = int(sys.argv[2]) if len(sys.argv) > 2 else None
 nextSwitchId = startId + dbThreshold if dbThreshold is not None else None
-reputationThreshold = 100
+reputationThreshold = 111
 viewThreshold = 100
 
 parser = XMLPullParser(events=['end'])
