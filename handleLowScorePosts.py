@@ -15,7 +15,7 @@ dbThreshold = int(sys.argv[2]) if len(sys.argv) > 2 else None
 nextSwitchId = startId + dbThreshold if dbThreshold is not None else None
 startLine = int(sys.argv[3]) if len(sys.argv) > 3 else None
 
-scoreThreshold = -1
+scoreThreshold = -3
 parser = XMLPullParser(events=['end'])
 with open(file=PostsFilePath) as f:
     Id = 0
