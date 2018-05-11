@@ -7,7 +7,7 @@ import sys
 client = MyMongoClient()
 collection = client.get_collection('PostFirstIter')
 # list_of_keys = ['Id','Score','ViewCount', 'Body','CommentCount']
-list_of_str_keys = ['Id','Body']
+list_of_str_keys = ['Body']
 
 PostsFilePath = './Data/Posts.xml'
 startId = int(sys.argv[1]) if len(sys.argv) > 1 else 0
