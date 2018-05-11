@@ -44,7 +44,8 @@ with open(file=PostsFilePath) as f:
                     postTypeId = int(elem.get('PostTypeId'))
                     data_to_save = {key: elem.get(key) for key in list_of_str_keys}
                     data_to_save['Id'] = Id
-                    data_to_save['OwnerId'] = int(elem.get('OwnerUserId'))
+                    if elem.get('OwnerUserId') is not None:
+                        data_to_save['OwnerId'] = int(elem.get('OwnerUserId'))
                     data_to_save['CommentCount'] = int(elem.get('CommentCount'))
                     data_to_save['Score'] = int(elem.get('Score'))
                     if elem.get('ViewCount') is not None:
