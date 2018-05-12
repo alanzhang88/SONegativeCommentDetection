@@ -26,10 +26,14 @@ else:
     commentCount = 0
 
 collection.create_index('Id')
+
+labledNum = collection.find({'BodyLabel':{'$exists':True}}).count()
+print('Already labled %d documents' % labledNum)
 if args.sort:
-    it = collection.find({'$and':[{'Id':{'$gte':args.startId}},{'Score':{'$lte':args.score}},{'CommentCount':{'$gt':commentCount}},{'BodyLabel':{'$exists':False}}]}).sort('Id',pymongo.ASCENDING)
+    it = collection.find({'$and':[{'Id':{'$gte':args.startId}},{'Score':{'$lte':args.score}},{'CommentCount':{'$gt':commentCount}},{'BodyLabel':{'$exists':False}}]}).sort('Id',pymongo.ASCENDING).limit(1000)
 else:
-    it = collection.find({'$and':[{'Id':{'$gte':args.startId}},{'Score':{'$lte':args.score}},{'CommentCount':{'$gt':commentCount}},{'BodyLabel':{'$exists':False}}]})
+    # it = collection.find({'$and':[{'Id':{'$gte':args.startId}},{'Score':{'$lte':args.score}},{'CommentCount':{'$gt':commentCount}},{'BodyLabel':{'$exists':False}}]}).limit(1000)
+    it = collection.aggregate([{'$match':{'$and':[{'Id':{'$gte':args.startId}},{'Score':{'$lte':args.score}},{'CommentCount':{'$gt':commentCount}},{'BodyLabel':{'$exists':False}}]}},{'$sample':{'size':1000}}])
 for doc in it:
     print('Currently View Comments from PostId %d with score %d and commentCount %d' % (doc['Id'],doc['Score'],doc['CommentCount']))
     print('Post Body: ')
