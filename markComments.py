@@ -1,21 +1,37 @@
 from MongodbClient import MyMongoClient
 import sys
 import pymongo
+import argparse
 
-if len(sys.argv) <= 2:
-    print('Please input collection name and startId')
-    exit(1)
+# if len(sys.argv) <= 2:
+#     print('Please input collection name and startId')
+#     exit(1)
 
-collectionName = sys.argv[1]
-startId = int(sys.argv[2])
+# collectionName = sys.argv[1]
+# startId = int(sys.argv[2])
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-c','--collection',dest='collectionName',help='Collection Name',type=str,required=True)
+parser.add_argument('-i','--start',dest='startId',type=int,help='start id to label',required=True)
+parser.add_argument('-s','--score',dest='score',type=int,help='upper bound score of post',required=True)
+parser.add_argument('--sort',dest='sort',action='store_true',help='whether sort the output in Id Ascending order',default=False)
+parser.add_argument('--zerocomment',dest='comment',action='store_true',help='whether include posts with zero comment',default=False)
+args = parser.parse_args()
+
 client = MyMongoClient()
-collection = client.get_collection(collectionName)
-
-
+collection = client.get_collection(args.collectionName)
+if args.comment:
+    commentCount = -1
+else:
+    commentCount = 0
 
 collection.create_index('Id')
-for doc in collection.find({'Id':{'$gte':startId}}).sort('Id',pymongo.ASCENDING):
-    print('Currently View Comments from PostId %d' % doc['Id'])
+if args.sort:
+    it = collection.find({'$and':[{'Id':{'$gte':args.startId}},{'Score':{'$lte':args.score}},{'CommentCount':{'$gt':commentCount}},{'BodyLabel':{'$exists':False}}]}).sort('Id',pymongo.ASCENDING)
+else:
+    it = collection.find({'$and':[{'Id':{'$gte':args.startId}},{'Score':{'$lte':args.score}},{'CommentCount':{'$gt':commentCount}},{'BodyLabel':{'$exists':False}}]})
+for doc in it:
+    print('Currently View Comments from PostId %d with score %d and commentCount %d' % (doc['Id'],doc['Score'],doc['CommentCount']))
     print('Post Body: ')
     print(doc['Body'])
     label = None
