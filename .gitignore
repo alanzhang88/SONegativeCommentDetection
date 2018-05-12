@@ -4,3 +4,7 @@ __pycache__/
 .DS_Store
 DataSample/
 Data/
+handleLowScorePosts.py
+MongodbClient.py
+handleLowScorePosts.py
+MongodbClient.py
