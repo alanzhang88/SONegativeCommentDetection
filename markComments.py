@@ -15,6 +15,7 @@ parser.add_argument('-c','--collection',dest='collectionName',help='Collection N
 parser.add_argument('-i','--start',dest='startId',type=int,help='start id to label',required=True)
 parser.add_argument('-s','--score',dest='score',type=int,help='upper bound score of post',required=True)
 parser.add_argument('--sort',dest='sort',action='store_true',help='whether sort the output in Id Ascending order',default=False)
+parser.add_argument('--sortscore',dest='sortscore',action='store_true',help='whether sort the output in Score Ascending order',default=False)
 parser.add_argument('--zerocomment',dest='comment',action='store_true',help='whether include posts with zero comment',default=False)
 args = parser.parse_args()
 
@@ -33,6 +34,10 @@ if args.sort:
     it = collection.find({'$and':[{'Id':{'$gte':args.startId}},{'Score':{'$lte':args.score}},{'CommentCount':{'$gt':commentCount}},{'BodyLabel':{'$exists':False}}]}).sort('Id',pymongo.ASCENDING).limit(1000)
 else:
     # it = collection.find({'$and':[{'Id':{'$gte':args.startId}},{'Score':{'$lte':args.score}},{'CommentCount':{'$gt':commentCount}},{'BodyLabel':{'$exists':False}}]}).limit(1000)
+    it = collection.aggregate([{'$match':{'$and':[{'Id':{'$gte':args.startId}},{'Score':{'$lte':args.score}},{'CommentCount':{'$gt':commentCount}},{'BodyLabel':{'$exists':False}}]}},{'$sample':{'size':1000}}])
+if args.sortscore:
+    it = collection.find({'$and':[{'Id':{'$gte':args.startId}},{'Score':{'$lte':args.score}},{'CommentCount':{'$gt':commentCount}},{'BodyLabel':{'$exists':False}}]}).sort('Score',pymongo.ASCENDING).limit(1000)
+else:
     it = collection.aggregate([{'$match':{'$and':[{'Id':{'$gte':args.startId}},{'Score':{'$lte':args.score}},{'CommentCount':{'$gt':commentCount}},{'BodyLabel':{'$exists':False}}]}},{'$sample':{'size':1000}}])
 for doc in it:
     print('Currently View Comments from PostId %d with score %d and commentCount %d' % (doc['Id'],doc['Score'],doc['CommentCount']))
