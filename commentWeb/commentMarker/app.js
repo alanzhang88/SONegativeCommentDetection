@@ -42,6 +42,9 @@ app.use(function(req, res, next){
       console.log("Connected successful to mongodb");
       app.locals.db = db;
       app.locals.collection = db.collection(req.query.collectionName);
+      res.cookie('dbURI',req.query.dbURI,{'expires': new Date(Date.now()+172800000)});
+      res.cookie('dbName',req.query.dbName,{'expires': new Date(Date.now()+172800000)});
+      res.cookie('collectionName',req.query.collectionName,{'expires': new Date(Date.now()+172800000)});
       next();
     });
   }

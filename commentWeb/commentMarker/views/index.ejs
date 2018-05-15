@@ -14,13 +14,13 @@
             <form action="/display" class="form-group">
                 <div>
                     <label for="DBURI"><b>DB URI</b></label>
-                    <input type="text" placeholder="Enter DB URI" name="dbURI" class="form-control" required value="mongodb://cs230:1234@ds014648.mlab.com:14648/cs230db3"><br />
+                    <input type="text" placeholder="Enter DB URI" name="dbURI" class="form-control" required value="<%= dbURI %>"><br />
                     <label for="DB Name"><b>DB Name</b></label>
-                    <input type="text" placeholder="Enter DB Name" name="dbName" class="form-control" required value="cs230db3"><br />
+                    <input type="text" placeholder="Enter DB Name" name="dbName" class="form-control" required value="<%= dbName %>"><br />
                 </div>
                 <div>
                         <label for="CollectionName"><b>Collection Name</b></label>
-                        <input type="text" placeholder="Enter DB Collection Name" name="collectionName" class="form-control" value="PostFirstIter" required><br />
+                        <input type="text" placeholder="Enter DB Collection Name" name="collectionName" class="form-control" value="<%= collectionName %>" required><br />
                         <label for="startID"><b>Start ID</b></label>
                         <input type="text" placeholder="Enter Post Start ID" name="postStartID" class="form-control" required><br />
                         <label for="UpperboundScore"><b>Upperbound Score for Post</b></label>
