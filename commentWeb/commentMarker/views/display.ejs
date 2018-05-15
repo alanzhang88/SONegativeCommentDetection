@@ -4,35 +4,38 @@
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-		<div>
-			<p>Currently Viewing Post with Post ID <%- post[0].Id %>, comment count <%- post[0].CommentCount %> with score <%- post[0].Score %> </p>
-			<div> <%- post[0].Body %> </div>
-		</div>
-		<br />
-        <div>
-			<table>
-					<tr>
-							<th>Comment ID</th>
-							<th>Comment Body</th> 
-							<th>Postive</th>
-							<th>Negative</th>
-					</tr>
-
-						
-					<%	var comments = post[0].Comments;
-						for(let j = 0; j < comments.length; j++){%>
-					<tr>
-							<td><%- j + 1 %></td>
-							<td><%- comments[j] %></td>
-							<td><input type="radio" value="1" name="Radio"></td>
-							<td><input type="radio" value="0" name="Radio"></td>
-							<br />
-					</tr>
-						<%  } %>
-					<span><% if(nextPost > 0) {%>
-						<a id="next" href="/display">NEXT </a>
-					<% } %></span>
-			</table>
-        </div>
+		<form action="/update" method="post">
+			<div>
+				<input type="hidden" value="<%- post[0].Id %>" name="Id" />
+				<p>Currently Viewing Post with Post ID <%- post[0].Id %>, comment count <%- post[0].CommentCount %> with score <%- post[0].Score %> </p>
+				<div> <%- post[0].Body %> </div>
+				<div>
+					<span>Positive 	<input type="Radio" value="1" name="bodylabel">  </span>
+					<span>Negative 	<input type="Radio" value="0" name="bodylabel">  </span>					
+				</div>
+			</div>
+			<br />
+			<div>
+					<table>
+							<tr>
+									<th>Comment ID</th>
+									<th>Comment Body</th> 
+									<th>Postive</th>
+									<th>Negative</th>
+							</tr>
+							<%	var comments = post[0].Comments;
+								for(let j = 0; j < comments.length; j++){%>
+							<tr>
+									<td><%- j + 1 %></td>
+									<td><%- comments[j] %></td>
+									<td><input type="radio" value="1" name="comment<%- j + 1 %>"></td>
+									<td><input type="radio" value="0" name="comment<%- j + 1 %>"></td>
+									<br />
+							</tr>
+								<%  } %>
+					</table>
+					<input type="submit" name="Label" value="Label Complete" />
+			</div>
+		</form>
     </body>
 </html>
