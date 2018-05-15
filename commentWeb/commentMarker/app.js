@@ -33,7 +33,7 @@ app.use(function(req, res, next) {
 
 //establish connection to mongodb
 app.use(function(req, res, next){
-  if(req.query.dbURI&&req.query.dbName){
+  if(req.query.dbURI&&req.query.dbName&&req.query.collectionName){
     const mongoDB = require('mongodb');
     const dbClient = mongoDB.MongoClient;
     dbClient.connect(req.query.dbURI, (err, conn)=>{
@@ -41,12 +41,13 @@ app.use(function(req, res, next){
       let db = conn.db(req.query.dbName);
       console.log("Connected successful to mongodb");
       app.locals.db = db;
+      app.locals.collection = db.collection(req.query.collectionName);
       next();
     });
   }
   else{
     next();
-  });
+  }
 });
 
 app.use('/', index);
