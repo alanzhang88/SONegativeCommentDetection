@@ -10,8 +10,8 @@ var update = require('./routes/update');
 var app = express();
 
 //db configs
-const dbName = "CS230DB";
-const url ='mongodb://cs230:1234@ds014648.mlab.com:14648/cs230db3';
+//const dbName = "CS230DB";
+//const url ='mongodb://cs230:1234@ds014648.mlab.com:14648/cs230db3';
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

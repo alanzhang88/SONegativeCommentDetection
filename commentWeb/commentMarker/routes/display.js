@@ -8,7 +8,7 @@ var postNum = 1;
 
 router.get('/', function(req, res, next) {
   const db = req.app.locals.db;
-  let posts = db.collection('PostFirstIter');
+  let posts = req.app.locals.collection;
 
   var startId = req.query.postStartID;
   var scoreThreshold = req.query.score;
@@ -24,7 +24,8 @@ router.get('/', function(req, res, next) {
 
   //if sort post id is chosen 
 
-  if (sortID) {
+  if (sortID === "True") {
+    console.log("HERE");
     posts.find({Id:{'$gte':startId}, Score:{'$lte':scoreThreshold}}).sort({Id : 1}).limit(1000).toArray((err, result) => {
       if (err) throw err;
       let len = result.length;
@@ -35,6 +36,7 @@ router.get('/', function(req, res, next) {
       var partial = morePost ? result.slice(0, postNum) : result;
   
       for(let i = 0; i < partial.length; i++){
+        console.log("Retrieved");
         var singlePost = {};
         singlePost.Id = result[i].Id;
         singlePost.Score = result[i].Score;
@@ -45,10 +47,10 @@ router.get('/', function(req, res, next) {
         postCollection.push(singlePost);
       }
   
-      res.render('post', {posts:postCollection, nextId: nextPostId});
+      res.render('display', {post: postCollection, nextId: nextPostId});
     })
 
-  }else if(sortScore){
+  }else if(sortScore === "True"){
     posts.find({Id:{'$gte':startId}, Score:{'$lte':scoreThreshold}}).sort({score : -1}).limit(1000).toArray((err, result) => {
       if (err) throw err;
       let len = result.length;
@@ -69,11 +71,9 @@ router.get('/', function(req, res, next) {
         postCollection.push(singlePost);
       }
   
-      res.render('post', {posts:postCollection, nextId: nextPostId});
+      res.render('display', {post :postCollection, nextId: nextPostId});
     })
-
   }
-
   
 });
 
