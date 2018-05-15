@@ -19,20 +19,19 @@
 					</tr>
 
 						
-							<%	var comments = post[0].Comments;
-								for(let j = 0; j < comments.length; j++){%>
-							<tr>
-									<td><%- j + 1 %></td>
-									<td><%- comments[j] %></td>
-									<td><input type="radio" value="1" name="Radio"></td>
-									<td><input type="radio" value="0" name="Radio"></td>
-									<br />
-							</tr>
-								<%  } %>
-								
-				    
-					
-					
+					<%	var comments = post[0].Comments;
+						for(let j = 0; j < comments.length; j++){%>
+					<tr>
+							<td><%- j + 1 %></td>
+							<td><%- comments[j] %></td>
+							<td><input type="radio" value="1" name="Radio"></td>
+							<td><input type="radio" value="0" name="Radio"></td>
+							<br />
+					</tr>
+						<%  } %>
+					<span><% if(nextPost > 0) {%>
+						<a id="next" href="/display">NEXT </a>
+					<% } %></span>
 			</table>
         </div>
     </body>

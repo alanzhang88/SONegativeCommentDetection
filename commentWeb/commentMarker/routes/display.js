@@ -21,38 +21,50 @@ router.get('/', function(req, res, next) {
 
   if(sortID === "True"){
     cursor = posts.find({"Id":{$gte:startId}, "Score": {$lte:scoreThreshold}}).sort({Id : 1}).limit(1000);
-    cursor.next(function(err, result){
-      if (err) throw err;
-      if(result == null){
-        console.log("NULL");
-      }
-      var postCollection = [];
-      var singlePost = {};
-      singlePost.Id = result['Id'];
-      singlePost.Score = result['Score'];
-      singlePost.commentCount = result['commentCount'];
-      singlePost.Body = result['Body'];
-      singlePost.Comments = result['Comments'];
-      postCollection.push(singlePost);
-      res.render('display', {post: postCollection});
-    });
     
+    cursor.hasNext((err, arr) => {
+     if(err) throw err;
+     var hasNext = 1;
+      cursor.next(function(err, result){
+        //var hasNext = cursor.hasNext() ? 1 : -1;
+        if (err) throw err;
+        if(result == null){
+          console.log("NULL");
+        }
+        var postCollection = [];
+        var singlePost = {};
+        singlePost.Id = result['Id'];
+        singlePost.Score = result['Score'];
+        singlePost.commentCount = result['commentCount'];
+        singlePost.Body = result['Body'];
+        singlePost.Comments = result['Comments'];
+        postCollection.push(singlePost);
+        res.render('display', {post: postCollection, nextPost: hasNext});
+      });
+   });
   }else if(sortScore === "True"){
     cursor = posts.find({Id:{'$gte':startId}, Score: {'$lte':scoreThreshold}}).sort({Score: -1}).limit(1000);
-    cursor.next(function(err, result){
-      if (err) throw err;
-      if(result == null){
-        console.log("NULL");
-      }
-      var postCollection = [];
-      var singlePost = {};
-      singlePost.Id = result['Id'];
-      singlePost.Score = result['Score'];
-      singlePost.commentCount = result['commentCount'];
-      singlePost.Body = result['Body'];
-      singlePost.Comments = result['Comments'];
-      postCollection.push(singlePost);
-      res.render('display', {post: postCollection});
+
+    cursor.hasNext((err, arr) => {
+      if(err) throw err;
+      var hasNext = 1;
+       cursor.next(function(err, result){
+         //var hasNext = cursor.hasNext() ? 1 : -1;
+         if (err) throw err;
+         if(result == null){
+           console.log("NULL");
+         }
+         var postCollection = [];
+         var singlePost = {};
+         singlePost.Id = result['Id'];
+         singlePost.Score = result['Score'];
+         singlePost.commentCount = result['commentCount'];
+         singlePost.Body = result['Body'];
+         singlePost.Comments = result['Comments'];
+         postCollection.push(singlePost);
+         res.render('display', {post: postCollection, nextPost: hasNext});
+       });
+ 
     });
   }
 });
