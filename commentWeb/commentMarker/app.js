@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var assert = require('assert');
 var index = require('./routes/index');
 var display = require('./routes/display');
 
@@ -32,16 +32,21 @@ app.use(function(req, res, next) {
 
 //establish connection to mongodb
 app.use(function(req, res, next){
-  const mongoDB = require('mongodb');
-  const dbClient = mongoDB.MongoClient;
-  dbClient.connect(url, (err, conn)=>{
-    assert.equal(err, null);
-    let db = conn.db(dbName);
-    console.log("Connected successful to mongodb");
-    req.locals = {};
-    req.locals.db = db;
+  if(req.query.dbURI&&req.query.dbName){
+    const mongoDB = require('mongodb');
+    const dbClient = mongoDB.MongoClient;
+    dbClient.connect(req.query.dbURI, (err, conn)=>{
+      assert.equal(err, null);
+      let db = conn.db(req.query.dbName);
+      console.log("Connected successful to mongodb");
+      req.locals = {};
+      req.locals.db = db;
+      next();
+    });
+  }
+  else{
     next();
-  });
+  }
 });
 
 app.use('/', index);
