@@ -19,7 +19,13 @@ router.post('/',(req,res)=>{
   }
   // console.log(comments);
 
-  collection.findOneAndUpdate({'Id':Id},{'$set':{'CommentsLabel':comments,'BodyLabel':bodylabel}});
+  collection.findOneAndUpdate({'Id':Id},{'$set':{'CommentsLabel':comments,'BodyLabel':bodylabel}}).then(
+    () => {
+      console.log(`Success update on postId ${Id}`);
+    }
+  ).catch((err)=>{
+    console.log(err);
+  });
 
   res.redirect('/display');
 });
