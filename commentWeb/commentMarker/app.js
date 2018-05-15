@@ -5,6 +5,7 @@ var logger = require('morgan');
 var assert = require('assert');
 var index = require('./routes/index');
 var display = require('./routes/display');
+var update = require('./routes/update');
 
 var app = express();
 
@@ -32,18 +33,25 @@ app.use(function(req, res, next) {
 
 //establish connection to mongodb
 app.use(function(req, res, next){
-  const mongoDB = require('mongodb');
-  const dbClient = mongoDB.MongoClient;
-  dbClient.connect(url, (err, conn)=>{
-  assert.equal(err, null);
-    let db = conn.db(dbName);
-    console.log("Connected successful to mongodb");
-    app.locals.db = db;
+  if(req.query.dbURI&&req.query.dbName&&req.query.collectionName){
+    const mongoDB = require('mongodb');
+    const dbClient = mongoDB.MongoClient;
+    dbClient.connect(req.query.dbURI, (err, conn)=>{
+      assert.equal(err, null);
+      let db = conn.db(req.query.dbName);
+      console.log("Connected successful to mongodb");
+      app.locals.db = db;
+      app.locals.collection = db.collection(req.query.collectionName);
+      next();
+    });
+  }
+  else{
     next();
-  });
+  }
 });
 
 app.use('/', index);
 app.use('/display', display);
+app.use('/update',update);
 
 module.exports = app;
