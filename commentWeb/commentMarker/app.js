@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var assert = require('assert');
 var index = require('./routes/index');
 var display = require('./routes/display');
 
@@ -40,7 +40,7 @@ app.use(function(req, res, next){
     console.log("Connected successful to mongodb");
     app.locals.db = db;
     next();
-  });
+  }
 });
 
 app.use('/', index);
