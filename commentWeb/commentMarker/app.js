@@ -35,12 +35,12 @@ app.use(function(req, res, next){
   const mongoDB = require('mongodb');
   const dbClient = mongoDB.MongoClient;
   dbClient.connect(url, (err, conn)=>{
-    assert.equal(err, null);
+  assert.equal(err, null);
     let db = conn.db(dbName);
     console.log("Connected successful to mongodb");
     app.locals.db = db;
     next();
-  }
+  });
 });
 
 app.use('/', index);
