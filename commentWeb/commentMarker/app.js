@@ -38,8 +38,7 @@ app.use(function(req, res, next){
     assert.equal(err, null);
     let db = conn.db(dbName);
     console.log("Connected successful to mongodb");
-    req.locals = {};
-    req.locals.db = db;
+    app.locals.db = db;
     next();
   });
 });

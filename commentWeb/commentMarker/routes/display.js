@@ -3,9 +3,11 @@ var router = express.Router();
 var postNum = 1;
 
 
-router.post('/display:startID', function(req, res, next) {
+router.post('/display', function(req, res, next) {
   const db = req.locals.db;
   let posts = db.collection('PostFirstIter');
+
+  
 
   //create index
   posts.createIndex('Id', function(err){
@@ -14,12 +16,15 @@ router.post('/display:startID', function(req, res, next) {
 
   //if sort post id is chosen 
 
-  posts.find({'Id':{'$gte':args.startId}},{'Score':{'$lte':args.score}},{'CommentCount':{'$gt':commentCount}},{'BodyLabel':{'$exists':False}}).sort('Id',pymongo.ASCENDING).limit(1000).toArray((err, result) => {
+  posts.find({Id:{'$gte':startId}, Score:{'$lte':score},CommentCount:{'$gt':commentCount}}).sort({Id : 1}).limit(1000).toArray((err, result) => {
     if (err) throw err;
     let len = result.length;
-
-
     var postCollection = [];
+
+    var morePost = (len === (postNum + 1));
+    var nextPostId = morePost ? result[postNum].postid : -1;
+    var partial = morePost ? result.slice(0, postNum) : result;
+
     for(let i = 0; i < partial.length; i++){
       var singlePost = {};
       singlePost.Id = result[i].Id;
@@ -31,7 +36,7 @@ router.post('/display:startID', function(req, res, next) {
       postCollection.push(singlePost);
     }
 
-    res.render('post', {posts:postCollection});
+    res.render('post', {posts:postCollection, nextId: nextPostId});
   })
 });
 
