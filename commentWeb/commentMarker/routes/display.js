@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
 
   if(sortID === "True"){
     cursor = posts.find({"Id":{$gte:startId}, "Score": {$lte:scoreThreshold}}).sort({Id : 1}).limit(1000);
-    cursor.each(function(err, result){
+    cursor.next(function(err, result){
       if (err) throw err;
       if(result == null){
         console.log("NULL");
@@ -39,8 +39,8 @@ router.get('/', function(req, res, next) {
     
   }else if(sortScore === "True"){
     cursor = posts.find({Id:{'$gte':startId}, Score: {'$lte':scoreThreshold}}).sort({Score: -1}).limit(1000);
-    cursor.each(function(err, result){
-      if(err) throw err;
+    cursor.next(function(err, result){
+      if (err) throw err;
       if(result == null){
         console.log("NULL");
       }
@@ -52,9 +52,7 @@ router.get('/', function(req, res, next) {
       singlePost.Body = result['Body'];
       singlePost.Comments = result['Comments'];
       postCollection.push(singlePost);
-
       res.render('display', {post: postCollection});
-      
     });
   }
 });

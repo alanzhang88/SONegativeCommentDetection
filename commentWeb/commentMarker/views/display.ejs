@@ -18,16 +18,19 @@
 							<th>Negative</th>
 					</tr>
 
-					<tr>
-					<% for (let i = 1; i < post.length; i++) { %>
-					
-						<%	var comments = post[i].Comments;
-							for(let j = 0; j < comments.length; j++){%>
-								<td><%- comments[j] %></td>
-							<%  } %>
-					
-					<%  } %>
-				    </tr>
+						
+							<%	var comments = post[0].Comments;
+								for(let j = 0; j < comments.length; j++){%>
+							<tr>
+									<td><%- j + 1 %></td>
+									<td><%- comments[j] %></td>
+									<td><input type="radio" value="1" name="Radio"></td>
+									<td><input type="radio" value="0" name="Radio"></td>
+									<br />
+							</tr>
+								<%  } %>
+								
+				    
 					
 					
 			</table>
