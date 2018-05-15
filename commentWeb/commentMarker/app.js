@@ -5,6 +5,7 @@ var logger = require('morgan');
 var assert = require('assert');
 var index = require('./routes/index');
 var display = require('./routes/display');
+var update = require('./routes/update');
 
 var app = express();
 
@@ -39,8 +40,7 @@ app.use(function(req, res, next){
       assert.equal(err, null);
       let db = conn.db(req.query.dbName);
       console.log("Connected successful to mongodb");
-      req.locals = {};
-      req.locals.db = db;
+      app.locals.db = db;
       next();
     });
   }
@@ -51,5 +51,6 @@ app.use(function(req, res, next){
 
 app.use('/', index);
 app.use('/display', display);
+app.use('/update',update);
 
 module.exports = app;
