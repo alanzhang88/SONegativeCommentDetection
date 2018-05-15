@@ -4,35 +4,33 @@
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+		<div>
+			<p>Currently Viewing Post with Post ID <%- posts[0].Id %>, comment count <%- posts[0].CommentCount %> with score <%- posts[0].Score %> </p>
+			<br />
+			<textarea> <%- posts[0].Body %> </textarea>
+		</div>
+		<br /> 
         <div>
-            <ul>
-			    <% for (let i = 0; i < posts.length; i++) { %>
-			        <li>
-			            <span><%- posts[i].title %></span>
-			            <br>
-			            <span><%- posts[i].body %></span>
-			        </li>
-			    <% } %>
-			</ul>
-
 			<table>
 					<tr>
-							<th>Firstname</th>
-							<th>Lastname</th> 
-							<th>Age</th>
+							<th>Comment ID</th>
+							<th>Comment Body</th> 
+							<th>Postive</th>
+							<th>Negative</th>
 					</tr>
 				<tr>
-					<% for (let i = 0; i < posts.length; i++) { %>
-						<td><%- posts[i].Id %></td>
-						<
-				
+					<% for (let i = 1; i < posts.length; i++) { %>
+						<% for (let j = 0; j < posts[i].Comments.length; j++) { 
+							var singleComment = posts[i].Comments[j]; %>
+							<td><%- j + 1 %></td>
+							<td><%- singleComment %></td>
+							<td><input type="radio" name="comment<%- j + 1 %>" value="1"></td>
+							<td><input type="radio" name="comment<%- j + 1 %>" value="0"></td>
 				</tr>
-						
-
 			</table>
 
 			<span><% if(nextId > 0) {%>
-			<a id="next" href="/blog/<%= username%>?start=<%=nextId%>">NEXT </a>
+			<a id="next" href="/display/startID=<%=nextId%>">NEXT </a>
 			<% } %></span>
         </div>
     </body>
