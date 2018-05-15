@@ -6,10 +6,9 @@
     <body>
 		<div>
 			<p>Currently Viewing Post with Post ID <%- post[0].Id %>, comment count <%- post[0].CommentCount %> with score <%- post[0].Score %> </p>
-			<textarea> <%- post[0].Body %> </textarea>
+			<div> <%- post[0].Body %> </div>
 		</div>
-
-		<br /> 
+		<br />
         <div>
 			<table>
 					<tr>
@@ -18,20 +17,20 @@
 							<th>Postive</th>
 							<th>Negative</th>
 					</tr>
-				<tr>
-					<% for (let i = 1; i < posts.length; i++) { %>
-						<% for (let j = 0; j < posts[i].Comments.length; j++) { 
-							var singleComment = posts[i].Comments[j]; %>
-							<td><%- j + 1 %></td>
-							<td><%- singleComment %></td>
-							<td><input type="radio" name="comment<%- j + 1 %>" value="1"></td>
-							<td><input type="radio" name="comment<%- j + 1 %>" value="0"></td>
-				</tr>
-			</table>
 
-			<span><% if(nextId > 0) {%>
-			<a id="next" href="/display/startID=<%=nextId%>">NEXT </a>
-			<% } %></span>
+					<tr>
+					<% for (let i = 1; i < post.length; i++) { %>
+					
+						<%	var comments = post[i].Comments;
+							for(let j = 0; j < comments.length; j++){%>
+								<td><%- comments[j] %></td>
+							<%  } %>
+					
+					<%  } %>
+				    </tr>
+					
+					
+			</table>
         </div>
     </body>
 </html>
