@@ -17,9 +17,9 @@ router.post('/',(req,res)=>{
   for(let i = 0; i < commentCount; i++){
     comments.push(parseInt(req.body[`comment${i+1}`]));
   }
-  console.log(comments);
+  // console.log(comments);
 
-  // collection.find
+  collection.findOneAndUpdate({'Id':Id},{'$set':{'CommentsLabel':comments,'BodyLabel':bodylabel}});
 
   res.redirect('/display');
 });
