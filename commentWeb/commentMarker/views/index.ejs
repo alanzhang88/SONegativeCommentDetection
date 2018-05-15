@@ -3,38 +3,43 @@
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>Comment Marker Options</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" />
     </head>
     <body>
-        <h1><%= title %></h1>
-        <form action="/display">
-            <div>
-                <label for="DBURI"><b>DB URI</b></label>
-                <input type="text" placeholder="Enter DB URI" name="dbURI" required><br />
-                <label for="DB Name"><b>DB Name</b></label>
-                <input type="text" placeholder="Enter DB Name" name="dbName" required><br />
-            </div>
 
-            <div>
-                    <label for="CollectionName"><b>Collection Name</b></label>
-                    <input type="text" placeholder="Enter DB Collection Name" name="collectionName" required><br />
-                    <label for="startID"><b>Start ID</b></label>
-                    <input type="text" placeholder="Enter Post Start ID" name="postStartID" required><br />
-                    <label for="startID"><b>Start ID</b></label>
-                    <label for="UpperboundScore"><b>Upperbound Score for Post</b></label>
-                    <input type="text" placeholder="Enter upperbound score" name="score" required><br />
-                    <label for="SortID"><b>Sort Post ID in Ascending Order</b></label>
-                    <input type="radio" name="sortID" value ="True" checked>
-                    <input type="radio" name="sortID" value ="False"><br />
-                    <label for="SortScore"><b>Sort Post Score in Ascending Order</b></label>
-                    <input type="radio" name="sortScore" value ="True">
-                    <input type="radio" name="sortScore" value ="False" checked><br />
-                    <label for="ZeroComments"><b>Include Posts with Zero Comments</b></label>
-                    <input type="radio" name="zeroComments" value ="True">
-                    <input type="radio" name="zeroComments" value ="False" checked><br />
-                    <button type="submit">Submit</button>
-            </div>
-
-
-        </form>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1><%= title %></h1>
+            <form action="/display" class="form-group">
+                <div>
+                    <label for="DBURI"><b>DB URI</b></label>
+                    <input type="text" placeholder="Enter DB URI" name="dbURI" class="form-control" required value="mongodb://cs230:1234@ds014648.mlab.com:14648/cs230db3"><br />
+                    <label for="DB Name"><b>DB Name</b></label>
+                    <input type="text" placeholder="Enter DB Name" name="dbName" class="form-control" required value="cs230db3"><br />
+                </div>
+                <div>
+                        <label for="CollectionName"><b>Collection Name</b></label>
+                        <input type="text" placeholder="Enter DB Collection Name" name="collectionName" class="form-control" value="PostFirstIter" required><br />
+                        <label for="startID"><b>Start ID</b></label>
+                        <input type="text" placeholder="Enter Post Start ID" name="postStartID" class="form-control" required><br />
+                        <label for="startID"><b>Start ID</b></label>
+                        <label for="UpperboundScore"><b>Upperbound Score for Post</b></label>
+                        <input type="text" placeholder="Enter upperbound score" name="score" class="form-control" required><br />
+                        <label for="SortID"><b>Sort Post ID in Ascending Order</b></label>
+                        <input type="radio" name="sortID" value ="True" checked>
+                        <input type="radio" name="sortID" value ="False"><br />
+                        <label for="SortScore"><b>Sort Post Score in Ascending Order</b></label>
+                        <input type="radio" name="sortScore" value ="True">
+                        <input type="radio" name="sortScore" value ="False" checked><br />
+                        <label for="ZeroComments"><b>Include Posts with Zero Comments</b></label>
+                        <input type="radio" name="zeroComments" value ="True">
+                        <input type="radio" name="zeroComments" value ="False" checked><br />
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </body>
 </html>
