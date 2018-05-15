@@ -5,6 +5,10 @@ var router = express.Router();
 router.post('/',(req,res)=>{
   let db = req.app.locals.db;
   let collection = req.app.locals.collection;
+  if(!collection){
+    return res.send('Something Wrong with DB connection');
+  }
+  // console.log(req.app.locals);
   // console.log(db);
   // console.log(req.body);
   let bodylabel = null

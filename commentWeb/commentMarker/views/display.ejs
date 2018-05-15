@@ -2,40 +2,49 @@
 <html>
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Comment Marker Options</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" />
     </head>
     <body>
-		<form action="/update" method="post">
-			<div>
-				<input type="hidden" value="<%- post[0].Id %>" name="Id" />
-				<p>Currently Viewing Post with Post ID <%- post[0].Id %>, comment count <%- post[0].CommentCount %> with score <%- post[0].Score %> </p>
-				<div> <%- post[0].Body %> </div>
-				<div>
-					<span>Positive 	<input type="Radio" value="1" name="bodylabel">  </span>
-					<span>Negative 	<input type="Radio" value="0" name="bodylabel">  </span>					
-				</div>
-			</div>
-			<br />
-			<div>
-					<table>
-							<tr>
-									<th>Comment ID</th>
-									<th>Comment Body</th> 
-									<th>Postive</th>
-									<th>Negative</th>
-							</tr>
-							<%	var comments = post[0].Comments;
-								for(let j = 0; j < comments.length; j++){%>
-							<tr>
-									<td><%- j + 1 %></td>
-									<td><%- comments[j] %></td>
-									<td><input type="radio" value="1" name="comment<%- j + 1 %>"></td>
-									<td><input type="radio" value="0" name="comment<%- j + 1 %>"></td>
-									<br />
-							</tr>
-								<%  } %>
-					</table>
-					<input type="submit" name="Label" value="Label Complete" />
-			</div>
-		</form>
+      <div class="container" style="padding: 1em 0px;">
+        <div class="row">
+          <div class="col-xs-12">
+            <form action="/update" method="post">
+        			<div>
+        				<input type="hidden" value="<%- post.Id %>" name="Id" />
+                <input type="hidden" value="<%- post.commentCount %>" name="commentCount" />
+        				<p>Currently Viewing Post with Post ID <%- post.Id %>, comment count <%- post.commentCount %> with score <%- post.Score %> </p>
+        				<div> <%- post.Body %> </div>
+        				<div>
+        					<span>Positive 	<input type="Radio" value="1" name="bodylabel" checked>  </span>
+        					<span>Negative 	<input type="Radio" value="0" name="bodylabel">  </span>
+        				</div>
+        			</div>
+        			<br />
+        			<div>
+        					<table class="table">
+        							<tr>
+        									<th scope="col">Comment ID</th>
+        									<th scope="col">Comment Body</th>
+        									<th scope="col">Postive</th>
+        									<th scope="col">Negative</th>
+        							</tr>
+        							<%	var comments = post.Comments;
+        								for(let j = 0; j < comments.length; j++){%>
+        							<tr>
+        									<th scope="row"><%- j + 1 %></th>
+        									<td><%- comments[j] %></td>
+        									<td><input type="radio" value="1" name="comment<%- j + 1 %>" checked></td>
+        									<td><input type="radio" value="0" name="comment<%- j + 1 %>"></td>
+        									<br />
+        							</tr>
+        								<%  } %>
+        					</table>
+        					<input type="submit" name="Label" value="Label Complete" class="btn btn-primary"/>
+        			</div>
+        		</form>
+          </div>
+        </div>
+      </div>
     </body>
 </html>

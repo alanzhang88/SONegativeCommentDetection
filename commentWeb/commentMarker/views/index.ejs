@@ -7,7 +7,7 @@
     </head>
     <body>
 
-      <div class="container">
+      <div class="container" style="padding: 1em 0px;">
         <div class="row">
           <div class="col-xs-12">
             <h1><%= title %></h1>
@@ -26,14 +26,14 @@
                         <label for="UpperboundScore"><b>Upperbound Score for Post</b></label>
                         <input type="text" placeholder="Enter upperbound score" name="score" class="form-control" required><br />
                         <label for="SortID"><b>Sort Post ID in Ascending Order</b></label>
-                        <input type="radio" name="sortID" value ="True" checked>
-                        <input type="radio" name="sortID" value ="False"><br />
+                        <span>True <input type="radio" name="sortID" value ="True" checked> </span>
+                        <span>False <input type="radio" name="sortID" value ="False"></span><br />
                         <label for="SortScore"><b>Sort Post Score in Ascending Order</b></label>
-                        <input type="radio" name="sortScore" value ="True">
-                        <input type="radio" name="sortScore" value ="False" checked><br />
+                        <span>True <input type="radio" name="sortScore" value ="True"> </span>
+                        <span>False <input type="radio" name="sortScore" value ="False" checked></span><br />
                         <label for="ZeroComments"><b>Include Posts with Zero Comments</b></label>
-                        <input type="radio" name="zeroComments" value ="True">
-                        <input type="radio" name="zeroComments" value ="False" checked><br />
+                        <span>True <input type="radio" name="zeroComments" value ="True"> </span>
+                        <span>False <input type="radio" name="zeroComments" value ="False" checked></span><br />
                         <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
