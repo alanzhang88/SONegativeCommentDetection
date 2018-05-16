@@ -3,8 +3,8 @@ var router = express.Router();
 
 
 router.post('/',(req,res)=>{
-  let db = req.app.locals.db;
-  let collection = req.app.locals.collection;
+  const db = req.app.locals.userData[req.cookies.clientId].db;
+  let collection = req.app.locals.userData[req.cookies.clientId].collection;
   if(!collection){
     return res.send('Something Wrong with DB connection');
   }
