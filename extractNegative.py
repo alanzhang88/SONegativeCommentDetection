@@ -8,7 +8,7 @@ collection = client.get_collection('PostFirstIter')
 it = collection.find({'CommentsLabel':{'$exists':True}},{'CommentsLabel':1,'Comments':1})
 arr = None
 for doc in it:
-    for i in range(len(doc['Comments'])):
+    for i in range(len(doc['CommentsLabel'])):
         if doc['CommentsLabel'][i] == 0:
             if arr is None:
                 arr = np.array([[doc['Comments'][i],doc['CommentsLabel'][i]]])
