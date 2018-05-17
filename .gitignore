@@ -13,3 +13,4 @@ MongodbClient.py
 handleLowScorePosts.py
 MongodbClient.py
 **/node_modules/
+*.csv
