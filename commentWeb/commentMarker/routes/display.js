@@ -1,13 +1,16 @@
 var express = require('express');
 var router = express.Router();
-var postNum = 1;
-var cursor = null;
+// var postNum = 1;
+// var cursor = null;
 
 
 router.use(function(req,res,next){
   if(req.query.postStartID&&req.query.score&&req.query.sortScore&&req.query.sortID&&req.query.zeroComments){
-    const db = req.app.locals.db;
-    let posts = req.app.locals.collection;
+    // const db = req.app.locals.db;
+    // let posts = req.app.locals.collection;
+    const db = req.app.locals.userData[req.cookies.clientId].db;
+    let posts = req.app.locals.userData[req.cookies.clientId].collection;
+    let cursor = null;
 
     const startId = +req.query.postStartID;
     const scoreThreshold = +req.query.score;
@@ -20,21 +23,25 @@ router.use(function(req,res,next){
     posts.createIndex('Id', function(err){
       if (err) throw err;
     });
+    posts.createIndex('Score', function(err){
+      if (err) throw err;
+    });
 
     if(sortID === "True"){
       cursor = posts.find({"Id":{$gte:startId}, "Score": {$lte:scoreThreshold},'CommentCount':{'$gte':minComment},'BodyLabel':{'$exists':false}}).sort({Id : 1}).limit(1000);
     }else if(sortScore === "True"){
-      cursor = posts.find({Id:{'$gte':startId}, Score: {'$lte':scoreThreshold},'CommentCount':{'$gte':minComment},'BodyLabel':{'$exists':false}}).sort({Score: -1}).limit(1000);
+      cursor = posts.find({Id:{'$gte':startId}, Score: {'$lte':scoreThreshold},'CommentCount':{'$gte':minComment},'BodyLabel':{'$exists':false}}).sort({Score: 1}).limit(1000);
     }
     else{
       cursor = posts.aggregate([{'$match':{'Id':{'$gte':startId},'Score':{'$lte':scoreThreshold},'CommentCount':{'$gte':minComment},'BodyLabel':{'$exists':false}}},{'$sample':{'size':1000}}]);
     }
-
+    req.app.locals.userData[req.cookies.clientId].cursor = cursor;
   }
   next();
 });
 
 router.get('/', function(req, res, next) {
+  let cursor = req.app.locals.userData[req.cookies.clientId].cursor;
   cursor.hasNext().then(
     (result) =>{
       if(result){

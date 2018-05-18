@@ -3,6 +3,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var assert = require('assert');
+var uniqid = require('uniqid');
 var index = require('./routes/index');
 var display = require('./routes/display');
 var update = require('./routes/update');
@@ -40,17 +41,45 @@ app.use(function(req, res, next){
       assert.equal(err, null);
       let db = conn.db(req.query.dbName);
       console.log("Connected successful to mongodb");
-      app.locals.db = db;
-      app.locals.collection = db.collection(req.query.collectionName);
+      let clientId = req.cookies.clientId ? req.cookies.clientId : uniqid();
+      req.cookies.clientId = clientId;
+      console.log(req.cookies.clientId);
+      if(!app.locals.userData){
+        app.locals.userData = {};
+      }
+      // app.locals.db = db;
+      // app.locals.collection = db.collection(req.query.collectionName);
+      app.locals.userData[clientId] = {db,collection:db.collection(req.query.collectionName)};
       res.cookie('dbURI',req.query.dbURI,{'expires': new Date(Date.now()+172800000)});
       res.cookie('dbName',req.query.dbName,{'expires': new Date(Date.now()+172800000)});
       res.cookie('collectionName',req.query.collectionName,{'expires': new Date(Date.now()+172800000)});
+      res.cookie('clientId',clientId,{'expires': new Date(Date.now()+172800000)});
       next();
     });
   }
   else{
     next();
   }
+});
+
+app.use(function(req,res,next){
+  if(app.locals.userData&&req.cookies.clientId){
+    let clientId = req.cookies.clientId;
+    if(app.locals.userData[clientId]){
+      let timeNow = Date.now();
+
+      Object.keys(app.locals.userData).forEach(function(key,index) {
+      // key: the name of the object key
+      // index: the ordinal position of the key within the object
+        if(app.locals.userData[key].lastVisited && timeNow - app.locals.userData[key].lastVisited >= 172800000){
+          console.log(`delete key ${key}`);
+          delete app.locals.userData[key];
+        }
+      });
+      app.locals.userData[clientId].lastVisited = timeNow;
+    }    
+  }
+  next();
 });
 
 app.use('/', index);
