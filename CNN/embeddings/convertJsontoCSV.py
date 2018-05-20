@@ -1,50 +1,50 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[2]:
 
 
 import numpy as np
 
 
-# In[2]:
+# In[3]:
 
 
 import pandas as pd
 
 
-# In[3]:
+# In[4]:
 
 
 import json
 
 
-# In[28]:
+# In[5]:
 
 
 filePath = '../../labeled_document2.json'
 
 
-# In[29]:
+# In[6]:
 
 
 with open(filePath) as f:
     data = json.load(f)
 
 
-# In[38]:
+# In[10]:
 
 
 negativeComment = None
 positiveComment = None
 for i in range(len(data['Comment'])):
     if data['CommentLabel'][i] == 0:
-        negativeComment = np.array([[data['Comment'][i],0]]) if negativeComment is None else np.insert(negativeComment,negativeComment.shape[0],[data['Comment'][i],0],0)
+        negativeComment = np.array([[data['Comment'][i],0]]) if negativeComment is None else np.append(negativeComment,[[data['Comment'][i],0]],0)
     else:
-        positiveComment = np.array([[data['Comment'][i],1]]) if positiveComment is None else np.insert(positiveComment,positiveComment.shape[0],[data['Comment'][i],1],0)
+        positiveComment = np.array([[data['Comment'][i],1]]) if positiveComment is None else np.append(positiveComment,[[data['Comment'][i],1]],0)
 
 
-# In[45]:
+# In[11]:
 
 
 indexes = np.random.choice(positiveComment.shape[0],negativeComment.shape[0],replace=False)
