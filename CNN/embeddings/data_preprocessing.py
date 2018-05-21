@@ -1,6 +1,7 @@
-import nltk 
+import nltk
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
+from nltk.tokenize.casual import remove_handles
 import re
 import string
 import csv
@@ -15,7 +16,7 @@ import csv
 #         writer = csv.writer(f, delimiter=' ')
 #         for item in tokens:
 #             writer.writerow(item)
-    
+
 
 
 # def load_file(filename):
@@ -33,10 +34,10 @@ def preprocess(commentList):
         fieldnames = ['comments', 'labels']
         csvwriter = csv.DictWriter(csvfile, fieldnames=fieldnames)
         for item in commentList:
-            comment = item["comment"].translate(translator)
+            comment = remove_handles(item["comment"]).translate(translator)
             csvwriter.writerow({'comments': comment, 'labels': item["label"]})
-        
-        
+
+
 
 
 
@@ -52,9 +53,3 @@ def load_file(filename):
     preprocess(commentsList)
 
 load_file("./labeled_comments.csv")
-
-
-
-
-   
-
