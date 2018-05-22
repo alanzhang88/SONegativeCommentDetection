@@ -1,5 +1,5 @@
 from keras.models import Model
-from keras.layers import Embedding, Input, Conv2D, MaxPooling2D, Concatenate, Dropout, Flatten, Dense, Reshape
+from keras.layers import Embedding, Input, Conv2D, MaxPooling2D, Concatenate, Dropout, Flatten, Dense, Reshape,SpatialDropout1D
 from keras.optimizers import Adam
 from keras.losses import categorical_crossentropy
 from data_generator import DataHandler
@@ -7,9 +7,12 @@ import warnings
 warnings.filterwarnings('ignore')
 
 EmbeddingFile = './embeddings/word2vec_vec'
+
+#EmbeddingFile = './embeddings/glove.twitter.27B/glove.twitter.27B.100d.txt'
 TrainingFile = './embeddings/processed.csv'
 
 maxlength = 50
+#maxlength = 200
 embed_size = 100
 num_classes = 2
 data = DataHandler(embeddingFile=EmbeddingFile,
@@ -21,12 +24,18 @@ data = DataHandler(embeddingFile=EmbeddingFile,
 embedding_matrix = data.get_embedding_matrix()
 
 filter_sizes = [4,5,6,7]
+
 num_filters = 32
+#num_filters = 512 
 drop_prob = 0.2
+#drop_prob = 0.1
 lr = 0.001
 
 inp = Input(shape=(maxlength,))
 x = Embedding(input_dim=embedding_matrix.shape[0],output_dim=embed_size,input_length=maxlength,weights=[embedding_matrix])(inp)
+
+x = SpatialDropout1D(0.4)(x)
+
 x = Reshape((maxlength,embed_size,1))(x)
 pooled_output = []
 for filter_size in filter_sizes:
