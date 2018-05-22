@@ -7,6 +7,56 @@ from keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
 sys.path.append(os.path.join(os.path.dirname(__file__), 'embeddings'))
 from word2vec_gensim import get_embedding
+import re
+
+
+def clean_data(data_arr):
+
+    for data in data_arr:
+        cleaned = []
+        data = data.lower()
+        data = expand_data(data)
+        # data=re.sub("\\n","",data)
+        #remove elements like ip, user
+        # data=re.sub("\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}","",data)
+        # data=re.sub(r'([\'\"\.\(\)\!\?\-\\\/\,])', r' \1 ', data)
+    return data_arr
+
+def expand_data(data):
+    short_seq = {
+        "you're": ['you', 'are'],
+        "i'm": ['i', 'am'],
+        "he's": ['he', 'is'],
+        "she's": ['she', 'is'],
+        "it's": ['it', 'is'],
+        "they're": ['they', 'are'],
+        "can't": ['can', 'not'],
+        "couldn't": ['could', 'not'],
+        "don't": ['do', 'not'],
+        "don;t": ['do', 'not'],
+        "didn't": ['did', 'not'],
+        "doesn't": ['does', 'not'],
+        "isn't": ['is', 'not'],
+        "wasn't": ['was', 'not'],
+        "aren't": ['are', 'not'],
+        "weren't": ['were', 'not'],
+        "won't": ['will', 'not'],
+        "wouldn't": ['would', 'not'],
+        "hasn't": ['has', 'not'],
+        "haven't": ['have', 'not'],
+        "what's": ['what', 'is'],
+        "that's": ['that', 'is'],
+    }
+    seq_set = set(short_seq.keys())
+    cleaned = []
+    for word in data.split():
+        if word in short_seq:
+            cleaned.append(short_seq[word][0])
+            cleaned.append(short_seq[word][1])
+        else:
+            cleaned.append(word)
+    cleaned = ' '.join("cleaned")
+    return cleaned
 
 class DataHandler:
     def __init__(self,
@@ -25,6 +75,10 @@ class DataHandler:
         data = data.sample(frac=1)
         X = data['Comment'].values
         y = data['Label'].values
+
+        #Preprocess data
+        X = clean_data(X)
+
         self.tokenizer.fit_on_texts(X)
         X = self.tokenizer.texts_to_sequences(X)
         X = pad_sequences(X,maxlen=self.maxlen,padding='post',truncating='post')
@@ -52,3 +106,6 @@ class DataHandler:
 
     def get_test_data(self):
         return (self.X_test,self.y_test)
+
+    
+

@@ -12,7 +12,6 @@ EMBEDDING_CONFIGS = config.embedding_configs
 
 
 #EmbeddingFile = './embeddings/word2vec_vec'
-
 #EmbeddingFile = './embeddings/glove.twitter.27B/glove.twitter.27B.100d.txt'
 TrainingFile = './embeddings/processed.csv'
 
