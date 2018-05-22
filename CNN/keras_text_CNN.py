@@ -1,52 +1,30 @@
-import sys, os
-import numpy as np
-import pandas as pd
 from keras.models import Model
-from keras.preprocessing.text import Tokenizer
-from keras.preprocessing.sequence import pad_sequences
-from keras.utils import to_categorical
 from keras.layers import Embedding, Input, Conv2D, MaxPooling2D, Concatenate, Dropout, Flatten, Dense, Reshape
 from keras.optimizers import Adam
 from keras.losses import categorical_crossentropy
-from sklearn.model_selection import train_test_split
-
-sys.path.append(os.path.join(os.path.dirname(__file__), 'embeddings'))
-from word2vec_gensim import get_embedding
+from data_generator import DataHandler
 
 EmbeddingFile = './embeddings/word2vec_vec'
 TrainingFile = './embeddings/processed.csv'
 
-data = pd.read_csv(TrainingFile,names=['Comment','Label'])
-X = data['Comment'].values
-y = data['Label'].values
-
 maxlength = 50
 embed_size = 100
 num_classes = 2
+data = DataHandler(embeddingFile=EmbeddingFile,
+                   trainingFile=TrainingFile,
+                   maxlength=maxlength,
+                   embed_size=embed_size,
+                   num_classes=num_classes)
 
-tokenizer = Tokenizer()
-tokenizer.fit_on_texts(X)
-X = tokenizer.texts_to_sequences(X)
-X = pad_sequences(X,maxlen=maxlength,padding='post',truncating='post')
-y = to_categorical(y,num_classes=num_classes)
+embedding_matrix = data.get_embedding_matrix()
 
-word_index = tokenizer.word_index
-nb_words = len(word_index)
-embedding_matrix = np.random.normal(size=(nb_words+1,embed_size))
-embedding_index = get_embedding(EmbeddingFile)
-
-for word,i in word_index.items():
-    embedding_vector = embedding_index.get(word)
-    if embedding_vector is not None:
-        embedding_matrix[i] = embedding_vector
-
-filter_sizes = [2,3,4,5,6,7,8]
-num_filters = 20
-drop_prob = 0.1
-lr = 0.0001
+filter_sizes = [4,5,6,7]
+num_filters = 32
+drop_prob = 0.2
+lr = 0.001
 
 inp = Input(shape=(maxlength,))
-x = Embedding(input_dim=nb_words+1,output_dim=embed_size,input_length=maxlength,weights=[embedding_matrix],trainable=False)(inp)
+x = Embedding(input_dim=embedding_matrix.shape[0],output_dim=embed_size,input_length=maxlength,weights=[embedding_matrix],trainable=False)(inp)
 x = Reshape((maxlength,embed_size,1))(x)
 pooled_output = []
 for filter_size in filter_sizes:
@@ -61,8 +39,18 @@ outp = Dense(num_classes,activation='sigmoid')(z)
 model = Model(inputs=inp,outputs=outp)
 model.compile(optimizer=Adam(lr=lr),loss=categorical_crossentropy,metrics=['accuracy'])
 
-batch_size = 64
-epochs = 3
+batch_size = 128
+steps = 1000
+X_test, y_test = data.get_text_data()
 
-X_train, X_test, y_train, y_test = train_test_split(X,y,train_size=0.9)
-hist = model.fit(X_train,y_train,batch_size=batch_size,epochs=epochs,validation_data=(X_test,y_test),verbose=2)
+for i in range(steps):
+    X_train, y_train = data.next_batch(batch_size)
+    model.train_on_batch(X_train,y_train)
+    if i % 100 == 0:
+        res = model.test_on_batch(X_test,y_test)
+        print('On step %d' % i)
+        print('Accuracy: %f \n' % res[1])
+
+res = model.test_on_batch(X_test,y_test)
+print('On step %d' % 1000)
+print('Accuracy: %f \n' % res[1])
