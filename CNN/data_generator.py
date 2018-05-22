@@ -7,6 +7,19 @@ from keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
 sys.path.append(os.path.join(os.path.dirname(__file__), 'embeddings'))
 from word2vec_gensim import get_embedding
+import re
+
+
+def clean_data(data_arr):
+    for data in data_arr:
+        data = data.lower()
+        data=re.sub("\\n","",data)
+        #remove elements like ip, user
+        data=re.sub("\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}","",data)
+        #remove usernames
+        data=re.sub("\[\[.*\]","",data)
+        data=re.sub(r'([\'\"\.\(\)\!\?\-\\\/\,])', r' \1 ', data)
+    return data_arr
 
 class DataHandler:
     def __init__(self,
@@ -25,6 +38,10 @@ class DataHandler:
         data = data.sample(frac=1)
         X = data['Comment'].values
         y = data['Label'].values
+
+        #Preprocess data
+        X = clean_data(X)
+
         self.tokenizer.fit_on_texts(X)
         X = self.tokenizer.texts_to_sequences(X)
         X = pad_sequences(X,maxlen=self.maxlen,padding='post',truncating='post')
@@ -52,3 +69,6 @@ class DataHandler:
 
     def get_test_data(self):
         return (self.X_test,self.y_test)
+
+    
+
