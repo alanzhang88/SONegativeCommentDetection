@@ -5,8 +5,12 @@ from keras.losses import categorical_crossentropy
 from data_generator import DataHandler
 import warnings
 warnings.filterwarnings('ignore')
+from embedding_config import config
 
-EmbeddingFile = './embeddings/word2vec_vec'
+EMBEDDING_CONFIGS = config.embedding_configs
+
+
+#EmbeddingFile = './embeddings/word2vec_vec'
 
 #EmbeddingFile = './embeddings/glove.twitter.27B/glove.twitter.27B.100d.txt'
 TrainingFile = './embeddings/processed.csv'
@@ -15,11 +19,17 @@ maxlength = 50
 #maxlength = 200
 embed_size = 100
 num_classes = 2
-data = DataHandler(embeddingFile=EmbeddingFile,
+
+data = DataHandler(embeddingFile=EMBEDDING_CONFIGS[0].embedding_file,
                    trainingFile=TrainingFile,
                    maxlength=maxlength,
                    embed_size=embed_size,
                    num_classes=num_classes)
+# data = DataHandler(embeddingFile=EmbeddingFile,
+#                    trainingFile=TrainingFile,
+#                    maxlength=maxlength,
+#                    embed_size=embed_size,
+#                    num_classes=num_classes)
 
 embedding_matrix = data.get_embedding_matrix()
 
