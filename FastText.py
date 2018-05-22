@@ -92,34 +92,42 @@ def extractText(phrases):
         testSentences.append(sentence)
 
 # preprocess data
-(trainSenti, testSenti) = preprocessData()
+(trainLabels, testLabels) = preprocessData()
 
 # create training and testing file
-# outputFile("training", postProcessedTrainPhrases, trainSenti)
-# outputFile("testing", postProcessedTestPhrases, testSenti)
+# outputFile("training", postProcessedTrainPhrases, trainLabels)
+# outputFile("testing", postProcessedTestPhrases, testLabels)
 
 # train the fasttext model
 print('Buidling the model...\n')
 classifier = fasttext.supervised('training.txt', 'model')
 result = classifier.test('testing.txt')
 
-# show the result
-print('Evaluating the model...')
+# classify testing data
+extractText(postProcessedTestPhrases)
+labels = classifier.predict(testSentences)
+print('Negative comments found:')
+for i in range(len(labels)):
+    if int(labels[i][0]) == 0:
+        print(testSentences[i])
+
+# evaluate the model
+print('\nEvaluating the model...')
+count = 0
+for i in range(len(testLabels)):
+    # print(testLabels[i])
+    if testLabels[i] == int(labels[i][0]):
+        count += 1
+print('Accuracy at 1: ', count/len(testLabels))
 print('Precision at 1:', result.precision)
 print('Recall at 1:', result.recall)
-print('Number of examples:', result.nexamples, '\n')
+print('Total number of examples:', result.nexamples)
+print('Number of correctly predicted examples:', count, '\n')
 
 # classify sample texts
 print('Classifying sample texts...')
 texts = ['homework google', 'try it yourself', 'you didnt show any effort']
 labels = classifier.predict(texts)
 print(texts)
-print(labels, '\n')
+print(labels)
 
-# classify testing data
-print('Negative comments found:')
-extractText(postProcessedTestPhrases)
-labels = classifier.predict(testSentences)
-for i in range(len(labels)):
-    if labels[i] == ['0']:
-        print(testSentences[i])
