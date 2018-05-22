@@ -102,25 +102,23 @@ def extractText(phrases):
         sentences.append(sentence)
     return sentences
 
+
 def downsampling(phrases, labels, minority):
     sentences = extractText(phrases)
+    majority = []
     sentencesDS = []  # downsampleing (sentences with label 1 : 0 = 1 : 1)
     labelsDS = []
-    print(sentences[2921])
-    print(sentences[2922])
     for i in range(len(labels) - 1 ):
         if labels[i] == minority:
-            print(i)
-            data = sentences[i]
-            print(data)
-            sentencesDS.append(data)
-    #         labelsDS.append(0)
-    #         sentences.remove(data)
-    # minorityLen = len(entencesDS)
-    # majority = random.sample(sentences, minorityLen)
-    # for m in majority:
-    #     sentencesDS.append(m)
-    #     labelsDS.append(1)
+            sentencesDS.append(sentences[i])
+            labelsDS.append(0)
+        else:
+            majority.append(sentences[i])
+    minorityLen = len(sentencesDS)
+    majority = random.sample(majority, minorityLen)
+    for m in majority:
+        sentencesDS.append(m)
+        labelsDS.append(1)
     return sentencesDS, labelsDS
 
 # preprocess data
@@ -134,32 +132,38 @@ def downsampling(phrases, labels, minority):
 print('Buidling the model...\n')
 trainSentencesDS, trainLabelsDS = downsampling(postProcessedTrainPhrases, trainLabels, 0)
 outputSentencesToFile("trainingDS", trainSentencesDS, trainLabelsDS)
+testSentencesDS, testLabelsDS = downsampling(postProcessedTestPhrases, testLabels, 0)
+outputSentencesToFile("testingDS", testSentencesDS, testLabelsDS)
 # sm = SMOTE(random_state=12, ratio = 1.0)
 # trainingData, trainLabels = sm.fit_sample(np.array(trainSentences).reshape(len(trainSentences), 1), trainLabels)
 
-# without downsampling inbalanced data
+#   without downsampling inbalanced data
 # classifier = fasttext.supervised('training.txt', 'model')
 # result = classifier.test('testing.txt')
-# downsampling inbalanced data
+#   downsampling inbalanced data
 classifier = fasttext.supervised('trainingDS.txt', 'modelDS')
-result = classifier.test('testing.txt')
+result = classifier.test('testingDS.txt')
 
 # classify testing data
-testSentences = extractText(postProcessedTestPhrases)
-labels = classifier.predict(testSentences)
+#   without downsampling inbalanced data
+# testSentences = extractText(postProcessedTestPhrases)
+# labels = classifier.predict(testSentences)
+#   downsampling inbalanced data
+labels = classifier.predict(testSentencesDS)
 print('Negative comments found:')
 for i in range(len(labels)):
     if int(labels[i][0]) == 0:
-        print(testSentences[i])
+        print(testSentencesDS[i])
+        # print(testSentences[i])
 
 # evaluate the model
 print('\nEvaluating the model...')
 count = 0
-for i in range(len(testLabels)):
+for i in range(len(testSentencesDS) - 1):
     # print(testLabels[i])
-    if testLabels[i] == int(labels[i][0]):
+    if testLabelsDS[i] == int(labels[i][0]):
         count += 1
-print('Accuracy at 1: ', count/len(testLabels))
+print('Accuracy at 1: ', count/len(testSentencesDS))
 print('Precision at 1:', result.precision)
 print('Recall at 1:', result.recall)
 print('Total number of examples:', result.nexamples)
