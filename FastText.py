@@ -81,7 +81,7 @@ def outputFile(filename, phrases, labels):
         sentence = ""
         for j in range(len(phrases[i])):
             sentence += " " + phrases[i][j];
-        f.write("__label__" + str(labels[i]) + sentence)
+        f.write("__label__" + str(labels[i]) + sentence + "\r\n")
     f.close()
 
 (trainSenti, testSenti) = preprocessData()
