@@ -50,5 +50,5 @@ class DataHandler:
         self.i = (self.i + batch_size) % len(self.X_train)
         return (X,y)
 
-    def get_text_data(self):
+    def get_test_data(self):
         return (self.X_test,self.y_test)

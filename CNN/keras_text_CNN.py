@@ -3,6 +3,8 @@ from keras.layers import Embedding, Input, Conv2D, MaxPooling2D, Concatenate, Dr
 from keras.optimizers import Adam
 from keras.losses import categorical_crossentropy
 from data_generator import DataHandler
+import warnings
+warnings.filterwarnings('ignore')
 
 EmbeddingFile = './embeddings/word2vec_vec'
 TrainingFile = './embeddings/processed.csv'
@@ -24,7 +26,7 @@ drop_prob = 0.2
 lr = 0.001
 
 inp = Input(shape=(maxlength,))
-x = Embedding(input_dim=embedding_matrix.shape[0],output_dim=embed_size,input_length=maxlength,weights=[embedding_matrix],trainable=False)(inp)
+x = Embedding(input_dim=embedding_matrix.shape[0],output_dim=embed_size,input_length=maxlength,weights=[embedding_matrix])(inp)
 x = Reshape((maxlength,embed_size,1))(x)
 pooled_output = []
 for filter_size in filter_sizes:
@@ -35,13 +37,13 @@ for filter_size in filter_sizes:
 z = Concatenate(axis=1)(pooled_output)
 z = Flatten()(z)
 z = Dropout(rate=drop_prob)(z)
-outp = Dense(num_classes,activation='sigmoid')(z)
+outp = Dense(num_classes,kernel_initializer='random_normal',activation='sigmoid')(z)
 model = Model(inputs=inp,outputs=outp)
 model.compile(optimizer=Adam(lr=lr),loss=categorical_crossentropy,metrics=['accuracy'])
 
 batch_size = 128
 steps = 1000
-X_test, y_test = data.get_text_data()
+X_test, y_test = data.get_test_data()
 
 for i in range(steps):
     X_train, y_train = data.next_batch(batch_size)
