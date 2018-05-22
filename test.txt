@@ -1,0 +1,4 @@
+__label__0 If you have questions like this then start reading a quickstarter C/C++ tutorial before trying to solve any kind of problems.
+__label__0 hope the 2 upvotes are for the sake of the joke
+__label__0 Please read a better `C++` tutorial. You seem to be missing the absolute basics of this language.
+__label__0 I love his thinking :). Made my day.

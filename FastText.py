@@ -75,6 +75,19 @@ def preprocessData():
         postProcessedTestPhrases.append(parsedWords)
     return (trainLabel, testLabel)
 
+def outputFile(filename, phrases, labels):
+    f = open(filename+".txt", "w+")
+    for i in range(len(phrases)):
+        sentence = ""
+        for j in range(len(phrases[i])):
+            sentence += " " + phrases[i][j];
+        f.write("__label__" + str(labels[i]) + sentence)
+    f.close()
+
+(trainSenti, testSenti) = preprocessData()
+outputFile("training", postProcessedTrainPhrases, trainSenti)
+print(postProcessedTrainPhrases)
+
 classifier = fasttext.supervised('train.txt', 'model')
 result = classifier.test('test.txt')
 print('P@1:', result.precision)
