@@ -1,4 +1,11 @@
 import fasttext
+import numpy as np
+import string
+import json
+from sklearn.model_selection import train_test_split
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.stem import SnowballStemmer
 
 # # Skipgram model
 # model = fasttext.skipgram('data.txt', 'model')
@@ -7,6 +14,66 @@ import fasttext
 # # CBOW model
 # model = fasttext.cbow('data.txt', 'model')
 # print(model.words) # list of words in dictionary
+
+postProcessedTrainPhrases = []
+postProcessedTestPhrases = []
+
+
+def preprocessData():
+    print("Loading and preprocessing data...")
+    # load training and testing data
+    with open('labeled_document2.json') as json_data:
+        allTrainData = json.load(json_data)
+
+    trainPhrases, testPhrases, trainLabel, testLabel = train_test_split(allTrainData['Comment'],
+                                                                        allTrainData['CommentLabel'], test_size=0.2,
+                                                                        random_state=42)
+
+    #     print(testPhrases[0:100])
+    punctuation = list(string.punctuation)
+    stopWords = stopwords.words('english') + punctuation
+
+    engStemmer = SnowballStemmer('english')
+    # postProcessedTrainPhrases = []
+    #     for phrase in trainPhrases:
+    #         uni_doc = unicode(phrase, errors='replace')
+    #         tokens = word_tokenize(uni_doc)
+    #         filtered = [word for word in tokens if word not in stop_words]
+    #         try:
+    #             stemmed = [stemmer.stem(word) for word in filtered]
+    #         except UnicodeDecodeError:
+    #             print(word)
+    #         postProcessedTrainPhrases.append(parsedWords)
+
+    #     for phrase in testPhrases:
+    #         uni_doc = unicode(phrase, errors='replace')
+    #         tokens = word_tokenize(uni_doc)
+    #         filtered = [word for word in tokens if word not in stop_words]
+    #         try:
+    #             stemmed = [stemmer.stem(word) for word in filtered]
+    #         except UnicodeDecodeError:
+    #             print(word)
+    #         postProcessedTestPhrases.append(parsedWords)
+    for phrase in trainPhrases:
+        if not isinstance(phrase, str):
+            continue
+        tokens = word_tokenize(phrase)
+        parsedWords = []
+        for t in tokens:
+            if t not in stopWords:
+                parsedWords.append(engStemmer.stem(t))
+        postProcessedTrainPhrases.append(parsedWords)
+
+    for phrase in testPhrases:
+        if not isinstance(phrase, str):
+            continue
+        tokens = word_tokenize(phrase)
+        parsedWords = []
+        for t in tokens:
+            if t not in stopWords:
+                parsedWords.append(engStemmer.stem(t))
+        postProcessedTestPhrases.append(parsedWords)
+    return (trainLabel, testLabel)
 
 classifier = fasttext.supervised('train.txt', 'model')
 result = classifier.test('test.txt')
