@@ -1,1 +1,849 @@
-__label__1 what tri far__label__0 learn c++ video seem error prone well i never tri educ old school way book practis but track seem weak one__label__1 i would guess downvot vote close re clear sort arraylist integ would 10,50,100 's concept `` sort index '' it 's either sort n't sort__label__1 this sound like excel opportun learn__label__1 what data structur c++ class__label__1 whi earth random ridicul space__label__1 take good look how i ask good question http //stackoverflow.com/help/how-to-ask__label__1 thank repli i got work code.not sure abt perform code elem.bind `` keydown '' function event event.which == 37 var target event.target.parentnode.previouselements var x target .children x.focus event.which == 39 console.log `` right key press '' var target event.target.parentnode.nextelements var x target .children x.focus__label__1 `system behav ident `popen except n't abl open pipe distinct share disadvantag critic propens shell inject vulner for op ask 's safe call actual *need* pipe direct file handl `curl` 's output `system n't provid__label__1 o fast user type__label__1 vbx n't use signals/slot connect i miss someth__label__1 detail would high appreci would help solv problem__label__0 probabl `this` refer differ context one think refer **wtf alex **__label__1 tri `data.pop mydeletenumb__label__1 ravirupareliya attach imag code remov check https //i.stack.imgur.com/fv1ia.png__label__1 i ve use nativescript 2yr pleas share `` i ve heard bad review far ''__label__1 what tri achiev__label__1 do mean function differ amount paramet__label__1 that 's bad solut a string also length__label__1 jbnizet true referenc string pool make two object one heap one string pool initi first__label__1 includ iostream includ math.h use namespac std int main long doubl n cin n cout log n /log 2 return 0__label__1 can give exampl two snippet whose compar perform re interest__label__0 **you** remov substr **you** also tri show tri ask other job__label__0 is assign fun i ask may simpler way array__label__1 your `` updat 4 '' prove `gethour reflect local time zone chang if one repeat evalu `a+b` get differ sum chang `b` n't mean `a` also chang__label__1 what desir outcom `x -123456` pleas__label__1 you mean expect ìnstanc object `element`__label__1 two question look serious__label__0 user1781384 then next time n't tag `java`__label__1 bad i n't mention solut solut tri elem.bind `` keydown '' function event event.which == 37 var target event.target.parentnode.previouselements target .trigger focus event.which == 39 console.log `` right key press '' var target event.target.parentnode.nextelements target .trigger focus__label__1 your miss `+` '' fullnam `` `` fullnamelength '' note close typograph error__label__1 jamiec i edit sinc one question per question__label__1 al i see question qt specif i thought notion signal slot would good give away also would note i n't ask use tri catch block__label__1 i upload print screen__label__1 zerkm yes exact__label__1 this homework i forgot add code sorri guy i learn program c. i know find biggest number i dont know add name__label__1 afaik reliabl free sms gateway servic avail you use gsm modem__label__1 rafe might want double-check `s.strip produc precis result regex__label__1 what tri far__label__0 this code valid__label__1 your main problem n't compil program enough warn enabl__label__1 https //docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html__label__1 what problem__label__1 look nest structur pleas add tri__label__1 i tri put div within contain tabl footer get screw i tri use contain give black border i tri div side side footer div underneath footer would n't cooper i put float left side side div box__label__1 basilestarynkevitch n't store step stack unwind collect object leak solut utter useless the goal get back start and proper collect object along call stack this requir lot jump buffer result massiv cpu memori overhead__label__1 asu look exact__label__1 peter great idea i go post answer make use json brilliant__label__1 you want instant return back origin posit want rotat back origin posit__label__1 okay mayb realli best way ... chang decis__label__1 but i abl compil execut__label__1 more context provid includ possibl option ... i.e rectifi flow setup disabl need__label__1 sorri confus method need return ask string integ__label__0 this i love stackoverflow wife sometim look awkward i laugh look code__label__1 what exact wrong one tabl 50 million record__label__1 i n't think follow we correct tag tag **wrong** do n't insist ll get question close__label__1 put problem last time everyon want full program ill__label__1 question if dont edit soon good guy close question so describ__label__1 simonenigro no ca n't pleas check '' _post no_hp ``__label__1 yes word 1 anagram second srting__label__1 vladfrommoscow i refer comment `` at least i see substanti answer ''__label__1 stefanpochmann it there one reason remov line__label__1 simpli use onchang event__label__1 are talk result everi move or everi full sequenc move__label__1 πάνταῥεῖ up late edit__label__1 there 's standard see languag use describ `sizeof` of cours 's call two differ question__label__0 googl file i/o use c__label__0 rip name convent__label__1 the part question sort array seem part complet differ problem__label__1 so uppercas e lowercas e `x x.replac 'e 'e__label__1 pleas read one book introductori section http //stackoverflow.com/q/388242/2069064 they help lot time so__label__1 there 's nari `char` code show i one idea talk whi surpris function return type `int` return valu type `int`__label__1 javabeginn whi think re abl test you post code you **can** copi code `main` method compil run__label__0 next time post real method instead make memori__label__1 see matlab 's document interpol http //www.mathworks.com/help/matlab/interpolation-1.html__label__1 archer cool thank__label__1 what tri far__label__1 abl focus li element coad abl insid li element suggest solut help__label__0 jonathanleffler-sorri desir output correct wrong run command chang the null replac zero let know help__label__1 v 5 e 3 noth happen v 1 e 3 v set 3__label__1 it allow singl dot__label__1 i got respons php i want creat json object android use json aishwaryatiwari__label__1 work need drag imag compon tree design screen thank help__label__1 `for int 0 yourstring.s i++ acharvector.push_back yourstr__label__1 pleas see document https //msdn.microsoft.com/library/ms178592.aspx__label__1 tri swiftifi http //objectivec2swift.com__label__1 ricki n't differ mean type oper__label__0 this valid c++ 's__label__1 are get error what 's c code execut queri doe sub queri return exact result__label__1 olev.v absolut want throw field n't mention yet dim this simpli show time **very** complex field jon skeet expert trust__label__1 i want get 123__label__0 homework/assign trash__label__0 pleas post link origin doxygen exampl__label__1 i guess truli understand box model realli__label__0 frustat see peopl n't care invest minimum effort research__label__1 tri configur `display_startup_errors` runtim might make sens though manual list php_ini_al changeabl i think past “ startup sequenc ” point__label__1 jcubic want know possibl iam use code angularj__label__1 retriv data mongodb use php display data use json_encod function__label__1 well 's `` network '' what 's `` file system '' 30 year ago ask 'd probabl `` let 's support fat12 banyan vine '' someth like utter obsolete/dead/gon everyth tcp/ip everyth ext4/ntf__label__1 what mean `it seem slow` the fastest possibl vanilla everyth els wraparound vanilla you could chang class element let css handl height i n't know make faster better requier xd__label__1 i never tri compil i reformat make ledgabl lol__label__1 question unclear__label__1 pleas get familiar concept sscce http //sscce.org/__label__1 despit tag c++ code__label__1 ahmd0 's import rude peopl re ask free help ask inform clarif n't `` want answer '' pleas tri polit and absolut differ shutdown reboot reboot shutdown restart os the differ meaning bio hardwar__label__1 sure thank lot__label__1 actual meant coordin csv file exact origin point tweet so want check weather countri includ longitud latitud for exampl 121.0523297,14.62194033 need check weather countri includ coordin__label__1 do look http //stackoverflow.com/help/how-to-ask improv question__label__0 edmorton i n't follow is complaint chase point i updat origin question improv english i still ca n't post solut that n't seem so want work there also command-lin solut well win round__label__1 rajdeepsingh if user phone call tri use app status bar actual 40pts high throw calcul so answer wrong situat your answer valid situat__label__1 did realli write iostream also `main need `int` return type__label__1 marktomlin well unfortun i way much experi php answer question leav place doubt ...__label__1 this perfect valid c code never compil c++ compil `typedef int *class class new new malloc sizeof *new /* ... */`__label__1 are abl ping public ip machin run client yes need check port server listen forward router set__label__1 i would say `std :string` string__label__1 incorrect clear would oper string return stream stream__label__1 if `x == 0` might well `-y` instead `x-y`__label__1 should mention search 100 time__label__1 it 's basic whole bunch no-op array defin empti assign therefor thrown away__label__1 msalter yes ... point gain someth first ... malloc gain realloc malloc use first__label__0 so blog what mean `` learn jqueri befor javascript '' that make sens__label__0 research post quest__label__1 look like c++ except point ...__label__0 whose code where find__label__1 `int main return `` hello world ``__label__1 ali use java way pars json http //stackoverflow.com/a/18998203/576767__label__1 mike seymour got problem code event__label__1 what `accountnrname1` `accountnrname2` suppos__label__1 thank much__label__1 akshayk07 i wonder question origin mark java tag ... edit__label__1 input mask constraint__label__1 great respons guy thank i appreci kind word construct feedback `` hate '' offend perhap differ word swing support sleep allow pars int event listen refer come array__label__1 elliottfrisch general i would agre user level ad use arraylist `tool-belt` would benefit__label__1 pleas provid detail post design see tri accomplish also tell us alreadi tri also pleas accept answer question__label__0 what els would expect happen if someth twice get done twice__label__1 you want return `null` case someth went wrong pointer un`fre `abl string liter like `return char* '' malloc ``__label__1 there `` point 4 '' question__label__1 jarlh as turn http //stackoverflow.com/documentation/review/changes/103112 homework question … ☹__label__1 vote reopen question close reason `` contain mcve '' fact contain mcve__label__1 a fundament type function it need declar it 's fundament nor basic keyword need declar how would declar thing without use ... basic keyword__label__0 user6222166 see function wrote none ever execut re call anywher__label__1 tri disabl resiz browser window page presum html document singl wrapper element__label__1 `this` mean instanc class__label__0 marcin by strict liter yes correct answer question but detail relev 's pretti clear op want understand behav differ way modifi behaviour one it 's like answer `` i perceiv red differ blue '' `` re differ colour '' correct useless__label__1 i would strong recommend read book c__label__0 jigarpatel word warn if intend becom profession programm go learn look document and run program want know happen run your mother alway go hand spoon-fe breakfast__label__1 jerryjeremiah apolog typo librari when i learn c english wors i rememb stdio.h word studi acronym sinc phonet equal studi spanish__label__1 you ca n't specifi variabl name run-tim variabl name exist compil time perhap could describ want give run-tim name could suggest altern solut__label__1 pawelgradecki i understand instant point time dimens i n't deni `date` contain instant i deni is instant we may say impur instant wish the fact `date` much depreat method mani altern implement alon prove `java.util.date` impur bad design__label__1 thomask well realli want argu turn so user n't leav reason explan downvot for exampl i get bunch downvot old question i assum come obvious reason vartec whenev see handl remind i point error one answer so n't realli convey much inform__label__1 public int getcancount return cancount public int gettokencount return tokencount__label__1 what 's question__label__1 i ask someth similar gvs13 mention answer i believ correct n't work__label__0 http //meta.softwareengineering.stackexchange.com/questions/6166/open-letter-to-students-with-homework-problem__label__1 rerito string content '' hello\0 '' first line function return 0 stop recurs encount `'h'` first charact `h` `u`__label__1 what want _achieve_ clear but i doubt tri set `display_startup_errors` point make sens ... probabl bit beyond php “ startup sequenc ” manual call point__label__1 on odd chanc someth weird i ve never seen heck 10000` `scanf `` llu 10000 '' i n't see anyth like mention valid format token ca n't make sampl compil without warn__label__1 yes take look http //alvinalexander.com/java/java-mysql-insert-example-preparedstat__label__1 as i said question i am on window i extract android sourc use class file__label__1 the templat slideshow ... figur removeth slideshow want__label__0 ok ve told us queri need help neither thing question **what 's question ** what part troubl__label__1 jqueri never use situat research css sprite even svg__label__1 use recyclerview__label__1 nathanoliv '' which reinforc comment '' of cours meant as far i see librari made work server platform__label__1 vaibhavkatw multipl comma__label__0 `` ... within select '' select a rang worksheet worksheet name select worksheet what mean also tri so code write servic let us know ve tri fail error messag etc help we n't tend write scratch__label__1 java use cur brace indent mark block also *all* code if lot miss order compil plus `for` loop total broken__label__0 welcom stackoverflow have tri anyth far stackoverflow n't free code-writ servic expect tri solv problem first http //meta.stackoverflow.com/questions/261592 pleas updat question show alreadi tri show specif problem face minim complet verifi exampl http //stackoverflow.com/help/mcv for inform pleas see ask good question http //stackoverflow.com/help/how-to-ask take tour site http //stackoverflow.com/tour__label__1 tri ul li .attr href www.stackoverflow.com note wont work multipl ul li order page__label__1 question unclear__label__1 pleas post relev code compil run test__label__1 you need show us code__label__1 what mean _**compar charact use char **___label__1 ok right ... use mysqli_error con check error__label__1 do realli want both `if` ask second n't work__label__1 http //stackoverflow.com/q/21925428/971127__label__1 pleas post code exampl__label__1 possibl duplic is possibl decrypt md5 hash http //stackoverflow.com/questions/1240852/is-it-possible-to-decrypt-md5-hash__label__0 panagiotiskanavo mani duplic i even decid one mark__label__1 off topic edit code i notic mani function claim return valu eg `int input_ag int patron_ag int index contain `return` statement this lead small amount grief it syntact valid logic undefin compil absolut noth generat whatev code wish includ seem correct code someth your compil warn__label__1 the op tri go way your question answer revers case json string want get object__label__0 welcom so what tri pleas show nonwork code specifi current output desir output__label__1 *20-posit array random* someth like `int array new int 20 far ve done think iter sever time generat random integ modulo 20 int result empti put otherwis rerol dice..__label__0 did read php refer manual there 's well document method deal comma separ string type convers__label__0 it expect least attempt code stack overflow code write servic i would suggest **addit research** http //meta.stackoverflow.com/questions/261592/how-much-research-effort-is-expected-of-stack-overflow-us either via googl search so make attempt still troubl come back **your code** explain tri__label__1 with d` use variabl pointer.. in way re print `sum` 's address__label__0 whi start read css tutori https //developer.mozilla.org/en/css/getting_start ...__label__1 is least lib help__label__1 ton tutori http //www.regular-expressions.info/quickstart.html__label__1 also mayb come `c++` background initi variabl stack `mi :player tom in `java` object store `heap` requir explicit initi prior method call `player tom new player__label__1 ficuscr well go https //gist.github.com/madarauchiha/3881905__label__0 hope 2 upvot sake joke__label__1 languag n't support aw idea consid exampl int evalu true fals__label__1 for array m==v ,none .ani 1__label__1 tom doodler want pass sno function may sno global variabl he declar global variabl assign sno variabl__label__1 'd find easier maintain struct__label__1 unfortun though compil good assembl machin code well-form sourc code remark bad assembl error-messag all bad linker wors one syntax error generat page utter rubbish compil dig ever-bigg hole often thing look first line flag erron care examin mess find realli caus problem eg use enum declar__label__1 i wonder learn use feature..__label__1 whi i see i ve look page__label__1 whi write code make easier everybodi read instead pic__label__1 if need call super there noth wrong__label__1 you look `cut` function__label__1 it clear n't work jlabel work textcompon jxlabel__label__1 epodax thought easi answer question overexplain guess wrong ...__label__1 charact turn object__label__0 that 's ridicul__label__1 regist global remov global__label__1 array object__label__1 use nsarray app crash__label__1 i want logic explan comput scienc explan__label__1 vladfrommoscow if unhappi answer pleas provid one__label__1 what document `scanf` clear__label__1 gettickcount roll n't use long-run event and rude peopl tri help guarante one answer question__label__1 wow negat reaction it may actual violat googl 's term a i think op refer googl websit translat https //translate.google.com/manager/website/ ***not*** googl translat api b one display set googl provid see exampl https //www.drupal.org/files/project-images/google_translate_1.png actual contain `` power '' statement c when user actual select languag translat display *additional* toolbar clear attribut result googl meet requir__label__0 good luck get one i would expect total ident__label__1 round peg squar hole int employe total differ thing what actual want__label__1 what tri far post attempt__label__1 on question say `` i x c '' someon respond `` use java '' would consid `` answer '' by token question `` i fix issu version 1.7 '' i 'd argu `` use version 1.6.7 '' also answer the answer say `` if want go back older version '' the question `` i move newer version '' i think 's pretti self-evid__label__1 ergonaut u refer two comment line i sure use if honest i know i ca n't realli think i would structur code i want__label__0 so mani magic number__label__1 give code ve tri far__label__1 marcin in context instal packag pip setup.pi clear connect__label__1 note `input i -x 26` `input i x 26 did want input i -x 26`__label__0 you ve post dozen line code consist `something.hid dozen comment line code ton unrel code pleas edit post remov nois junk reduc minimum need demonstr problem ask actual question__label__1 jrok `+` `-` left-associ 1 3 caus ub depend requir__label__0 dougsmith you take basic tutori text book tag c++ ask ...__label__1 how expect judg real person 's name__label__1 ben for pre-exist code user allow abl compil sourc common practic allow user specifi compil compil flag use this give user abil add option disabl specif optimis without chang makefil code__label__1 if function work correct i recommend come codereview.s it would nice includ test `main post__label__1 prefer tri avoid struct without christurn__label__1 methodman yes familiar how/when let choos return base differ valu for exampl differ date 120 mintu want return 120 mintu want return 2 hour make switch__label__1 what 's name f3221c__label__1 write setonclick lister imag oncreateview close check brace open close__label__1 what think `printf `` ``__label__0 is homework if remark bad method oper__label__0 even though blatant homework/assign question a loop start digit index index 0 good start i.e `for int i=digit =0 --__label__1 thing ca n't cast class b class a get error__label__1 get valu__label__1 load allow charact key unordered_map then queri candid charact if char unordered_map un-allow charact present process accord__label__1 doe work either__label__0 go downvot reach -10__label__1 pleas n't downvot if suggest question answer give otherwis n't without comment..__label__1 you forgot assign variabl `link link.replac `` 2f '' `` '' `link link.replac `` 3a '' `` ''__label__1 don'tr spam tag c++ differ languag__label__1 .. tag python-2.7 tag python-3.x sidenot n't name variabl built-in list set dict tupl ...__label__1 datetim todaydatetim new datetim__label__1 diego.martinez right answer question without accepting/vot answer__label__1 if read ask good question http //stackoverflow.com/help/how-to-ask may see ask creat mcve you show csv data read list expect output what `test 5 20` mean__label__0 and day ll see question anoth develop compani '' how i pars json duplic key i need valu librari return last one `` oh well ...__label__1 this answer mislead there `function.prototype.curri es5 es6__label__0 mikevin i 'm amaz nobodi step tell felix calm what douch nine year i wonder ...__label__1 code written achiev__label__1 mayb hr want check creativ appli java language..__label__1 is jqueri use also function _add_ insid _addproduct___label__1 nuha alshmlani make sure check edit 's probabl re__label__1 pleas use public front `` static void main string atg '' n't use public make default.and call jvm__label__1 but *don't* know deleg alway remov item invoc list this make resharp messag go away turn correct work code incorrect broken code certain circumst coincident work break unusu hard diagnos way mani case__label__1 pleas post `opts.parse`__label__1 are `d1` `d2` width enough store c-string null termin string char__label__1 that extra `0.001s` time take start c++ applic go killer got ta start write assembl languag__label__1 juharr i specif meant way tri__label__1 have tri search `` object recognit '' http //pypi.python.org__label__1 rajdeepsingh also never know appl decid chang next version io even 1px differ would break__label__1 what valu x`__label__1 welcom stack overflow `` question seek debug help `` n't code work '' must includ desir behavior specif problem error shortest code necessari reproduc question question without clear problem statement use reader see how creat minim complet verifi exampl http //stackoverflow.com/help/mcv ''__label__1 aesthet in c++ user-defin type introduc keyword `class` `struct` `union` it 's unclear n't like re actual tri achiev if explain better `` n't look good '' mean might way answer__label__1 edit procedur pleas see procedur gain__label__0 -1 question you find look http //msdn.microsoft.com/en-us/library/fatf1t6a 28v=vs.100 29.aspx lc=1033__label__0 whenev learn new languag first thing read oper read refer post__label__0 python_start what make think charact return it seem read c++ tutori book__label__1 christophgrimmer-dietrich you n't lose rep downvot question although i agre -8 excess__label__1 what .* non-greedi__label__0 it nonsens index ever belong order__label__1 what `` time complex '' mean your program take 2 input measur scale given input make sens__label__1 add proper question done research fail find solut do n't put incomplet question__label__1 i 'm tri figur correct i make order let token count 0__label__0 consid take look http //stackoverflow.com/tour learn so work__label__1 lukaswöhrl depend relat if relat time zone jon skeet ’ suggest better if relat two point time entir correct__label__0 's one fundament principl java if n't know pass instanc go learn java__label__1 http //dotnet.dzone.com/articles/notepad-c-compiler-you-can-do__label__0 do question__label__1 are ask mani written final size__label__1 that good question__label__1 in two case re return pointer n't come `malloc`__label__1 http //stackoverflow.com/questions/2418473/difference-between-require-include-and-require-onc it answer previous pleas check http //stackoverflow.com/questions/2418473/difference-between-require-include-and-require-onc__label__1 contain imag thing read question__label__1 are sure code enter loop__label__1 jonskeet say impli utc__label__1 patricknijhui string primit type https //developer.mozilla.org/en-us/docs/glossary/str javascript wherea array object in common languag re correct string array charact javascript assert wrong it 's import distinct reason bad answer__label__1 remov hhmmss dateformat__label__1 you re ad white border margin__label__0 '' ve stuck '' – tri far what problem face__label__1 `if empti unam empti pass `if empti unam || empti pass otherwis statement give true leav one empti__label__1 did run find did run debugg what confus__label__0 i hope n't write `is less than`__label__1 mattjohnson express `a+b` name contain `b` you may say `` depend '' ca n't say `` contain '' wrong i never said instant chang i said `date` contain instant true date `a+b` excel exampl `a` instant `b` timezon in term java bean convent `gethours` properti getter properti `` hour '' i may rewrit access properti bean librari the fact getter java addit brace level chang noth of cours may say `gethours` `` impur ''__label__0 omg homework ... i 'd recommend start read python cs tutorial/book ...__label__1 jonskeet see simpl exampl code show `date` instant__label__0 do n't feel question broad ask generic c++ a simpl googl like `` angl bracket c++ '' could lead yumyumyum yummi answer like link https //msdn.microsoft.com/en-us/library/sbh15dya.aspx__label__1 youmarki edit question explain want delet__label__1 newgrad function alway return fals__label__1 what 's wrong `style= '' height xpx width ypx ''__label__1 curiousm 's unnecessari valid approach__label__1 after jest i inform `printf `` array length d\n '' sizeof sizeof 0 job least c. it 's exact `b` note i chang narrat `` size '' `` length '' have said puzzlement comment *`size array may chang adding/delet elements`* turn wonder even mirth sinc fix size array how possibl keep track usag without anoth variabl hold inform__label__1 alexchamberlain op right that answer typo i comment__label__1 what answer mean of cours possibl check text python code duplic like languag__label__0 q `can store android design layouts` a **yes** q `how a it 's homework **search**__label__1 could even serious d__label__1 mean solut provid user2720864 irrelev__label__1 johnroepaulocañamaqu what i get respons without xhr__label__1 i know shocker kocko i apologis clutch straw__label__0 you n't ask question__label__1 obvious object system restrict one need look bruno oliveira 's work know non-essenti aspect see scala 's implicit my point `unsafecoerce` extens unsaf featur actual get hand object bare wit type-class membership use implicit paramet construct arbitrari instanc runtim although reli compil obey document__label__0 this question appear off-top insan__label__1 css/browser/html__label__1 you assign variabl `var variable=sno` pass `variable` function__label__1 look http //stackoverflow.com/questions/21872141/failed-to-convert-parameter-value-from-a-sqlparameter-to-a-str__label__1 hey one error syntax error token find solut__label__1 wait wut n't loop 10000000 10000000 i n't get__label__1 psychicoak there reason could n't creat tool python they exist languag__label__1 `np.asarray np.random.rand 1000 0.4 dtype=int__label__0 i smell xy problem http //xyproblem.info what 's actual issu__label__0 thomask in neither case mechan answer `` '' question amount restat fact programme/ey work particular way you essenti complain i n't make question like choos answer__label__1 i n't tri anyth sinc i n't know__label__1 what mean '' getelementbyid mention html '' `getelementbyid` javascript__label__1 post code show tri 's problem re face__label__1 the condit `` == 100 `` fals `` 100 ``__label__1 print `` hello world '' consol https //webmasters.stackexchange.com/questions/8525/how-do-i-open-the-javascript-console-in-different-brows document https //developer.mozilla.org/en-us/docs/web/api/docu finish load use jqueri https //learn.jquery.com/using-jquery-core/document-ready/__label__1 oh yes bad didnt read care enough still string full `u` null termin risk remain although much unlik__label__0 did thought code algorithm__label__1 what hell `volatile` like eric lippert said use `volatile` probabl use wrong__label__0 share code help guidelin nobodi homework__label__1 dim if `date` construct say year month day month hrs min guess time zone use construct way fulfil requir print part `date`__label__1 use `for int 3 /*empty*/ -- infinit loop__label__1 never mind post ll see ...__label__1 do also question__label__1 marcin i know check howev op ask librari check atleast that think hes tri ask__label__0 this ask iso so__label__1 mean `` portabl '' i know gcc featur goto across function wo n't work compil__label__1 are get brand server you first need debug code see item return server__label__1 versiontew 's forum technic__label__1 see file present ... tri versbos option `-wl -- verbose` addit inform like linker search linker script ... file see permiss `ls -al` might help__label__1 the writelin meth tri output valu myfunct n't return valu return valu void__label__1 alexisdm explain littl general paramet function fulli evalu function call how slot macro make asynchron__label__1 ehh complet diffrent question__label__1 i n't tri anyth i thought buil-in method__label__1 also answer probabl `` undefin behaviour '' sinc `man` like someth like defin man b b b`__label__1 that much special case actual ...__label__1 hherbol when profil origin code much time determin spent access data compar math etc. simul where actual bottleneck what new code also may worth note 's zero differ `` c array '' `` c++ array ''__label__1 i also think `` coupl data method '' realli independ oo consid go exampl languag method separ struct yet oop__label__1 .text .text neither exist__label__1 tri googl `` how i get averag two number '' hint it n't involv take minimum__label__1 drakeguan if want behaviour `pip` use `pip`__label__1 '' ca n't charact python '' yes `a` perfect valid python express__label__1 slak i timezon i `hh mm ss` third parti sourc it 's timezon unknown may mean differ instant one i get pars string__label__1 you accept answer explain exact differ went wrong one it look like n't understand moho 's type wrong__label__1 johnhal your answer readabl__label__0 these basic r-skill you benefit lot basic tutori also take question account also difficulti basic r oper__label__1 seem need basic sql tutorials..__label__1 possibl duplic sizeof java object http //stackoverflow.com/questions/4115239/sizeof-java-object__label__1 it print `` '' 1 disguis__label__1 carcigen yes__label__1 boot4lif tight loop 30 40 faster assum integ overflow might loop copi exploit return address stack__label__1 what behavior expect__label__1 do `short_open_tag` http //www.php.net/manual/en/ini.core.php ini.short-open-tag set 1 tri replac php`__label__1 you never check card alreadi dealt ... you could theoret get exact card everi draw onli thing i care notic scroll much code dump__label__0 well go _your_ work so code write homework provid servic you `for` `rang ... list slice use itertool takewhil `enumer want split hair could also split split hair use `iter__label__1 stultusk reali good exampl__label__0 marcin *bzzzt* 's ad hominem thank play__label__1 code would compil abitrari good compil -wall return-stat miss__label__1 i could find someth the code project http //www.codeproject.com/articles/15934/how-to-convert-a-numeric-value-or-currency-to-engl__label__1 i ve tri select record show pass group exam type that count either part pass__label__1 if use oracl statement termin usual need use end creat tabl statement__label__1 `int c 4 3 0__label__1 pleas read mcve ... **edit question ** https //stackoverflow.com/posts/48864931/edit__label__1 `printf` _defined_ header _declared___label__1 what tri__label__1 `fixtireifflat__label__1 also c properti `public balanc get return balanc instead get set function__label__1 i done i think i ve mess each method option return 0 they complil though main thing i guess__label__1 one error 120 error syntax error token__label__1 if want store local comput need databas do think user edit his/her login detail if still think consid encrypt algorithm store data `.txt` file extens make data unsaf you edit everi file what file contain matter not extens__label__1 read care link https //developer.apple.com/library/ios/documentation/cocoa/conceptual/programmingwithobjectivec/introduction/introduction.html //apple_ref/doc/uid/tp40011210 get start object c__label__1 it good style answer question__label__0 martijn pieter remov comment my point `` googl post '' it take great deal effort research i post question i 'd hope other least tri extent__label__1 what `doe n't work` mean blank screen an error messag let everyon let one let time__label__1 know differ interfac class__label__1 realli want ignor first item 0-base index__label__1 rerito string n't contain 'u return 0. function simpli count number 'u row begin string think make segfault ca n't understand__label__1 what mean `how inject new object insid array array length ex 20__label__0 doe swift document__label__1 it alreadi scrapi code earth `item locat =beautifulsoup response.css div.clg-stat .extract_first '' lxml '' .text` ... whi use `beautifulsoup` you option use css selector xpath scrapi whatev comfort__label__1 pleas post code tri far done mysql_num_row ...__label__1 can share code tri__label__1 this worked.. great.. thank__label__0 omar nevertheless post answer first tri delet question take advantang diego 's time make in4001 bad actor__label__0 i look `++ oper c` `c++ ++ operator` lead page first result this question low effort well i guess op bing wizard mayb ca n't googl either__label__1 it 's function return pointer i ve monitor memori remain static extern input remov it 's electron environ i ve abl predict increas bit usag stimul appropri channel also i follow entir program around assembl issu i encount whi peopl downvot vote close question is valid question if someon misunderstand languag use make mistak mean question worth remov so hostil__label__1 i n't post code i would mind necessari it 's begin assign__label__1 are u use swift objective-c__label__1 the loop run `defaultvaluenumber` 100 how help your question bit unclear__label__1 3 class file__label__1 i tri accholdattr.contain `` kyc_cnic_ind '' i confus i get valu string__label__1 pleas read `longjmp` it unwind dozen thousand call frame constant time call stack n't much a typic call stack exceed megabyt laptop__label__1 you correct bring bigger question one studi learn learn trial error to honest i amaz n't lock ...__label__1 dbc.php file contain connect code ... thank i solv problem__label__1 want know correct whi tri__label__1 this ai n't multi-nod sql deploy__label__1 ofcours i tri figur n't work__label__0 what tri this easiest question site ... googl *css text underline* https //www.google.com/search q=css+text+underlin safe=act googl *css text align center* https //www.google.com/search q=css+text+align+cent safe=act__label__1 ildjarn what clear question you reboot comput simpli reload os -- power turn when someon shut power switch comput power i want know reboot comput reset tick counter how els want word skip bs__label__1 hint 's use jqueri__label__1 pleas show input look like expect output__label__1 not sure print name number list exampl first name test first number 1 5 first number2 20 i want one line one list__label__0 not much differ show ve tri ve look much detail possibl right sound like want someon work__label__1 well op specif ask without sdk__label__1 thank much ... .e.g word `` cat '' shuffl like `` cta '' '' atc '' ... second input string suppos `` tac '' case match random shuffl string return boolean__label__1 scottatkinson ask anoth question requir use input control mask text given pattern like password-field__label__1 what either c++ c__label__0 nick put much much afford `` make homework '' -question__label__1 justa tri couldnt find anyth__label__1 sure n't want way around `0°c` `20°c` correspond `f°`__label__1 this noth react__label__1 i believ answer mean 'd roll duplic code checker solut someon els probabl n't done yet__label__1 an exampl except filter would `catch httpexcept e e.gethttpcod == 400 writelin `` bad request ''__label__0 flag broad mani factor also type question belong so__label__1 store trivial use string the much better question ask type oper data type data type requir support oper deal `` veri larg '' number requir special librari area number avail__label__1 it almost good anim imageview return back origin posit i n't understand i tri overrid onanimationend method set imag end posit imag blink mayb n't best way make simpl card game i n't understand work android first day chang develop flash android__label__1 sinc matia solut recommend turn research found easi understand solut http //net-informations.com/q/faq/passvalues.html i find link post solut hard understand current c level__label__1 http //php.net/manual/en/security.globals.php__label__0 azurefrog what solut__label__0 you read beginn program book first it seem like understand basic object orient program program matter__label__1 this incorrect -- executequeryasync like javascript function manipul variabl mani scope includ global scrope__label__1 yes n't show list view__label__1 here onchanag spell wrong miss thing document.bgcolor= '' this.opt this.selectedindex '' check post answer want__label__1 'm still beginner.. i ve tried..pleas send relat document link xale94__label__0 it 's 2014 we better__label__1 carsten semant close metal perform *removed* metal sign overflow allow conclud `for int 0 n i++ `i 0` wrap even `n 0` appar use certain optim this i read__label__1 simpli a-z 3__label__1 brad so syntat i look someth along line loop goe ** int 0 size i++ sport_typ index == insert char print messag ** size counter variabl i set main increment time new reserv thus indic array set__label__1 how show us re stuck__label__1 when attach debugg step line line fail__label__1 http //stackoverflow.com/q/1083701/1548523__label__1 opposit .get__label__1 i would also like point operand near imposs googl unless know 's name i found referenc post link anoth stackoverflow post ask specif operand refer c post specif answer i link troubl locat googl sinc googl n't correct pars way i 'm awar includ '' '' fail also know mayb one `using` need i would like hear author get blast bit__label__1 evert this exact consider \s mean whitespac use \s__label__1 string path environment.getexternalstoragedirectori `` /images/test.jpg '' file imgfil new file path__label__1 yes..work browser includ latest safari 5.1.5__label__1 holger 1 i get mean 1 class 2 // annotationtype/example` 2 i clear understand `class` member come exist__label__1 you want get two word someth els__label__1 the error messag say n't _understand it_ fix issu learn someth__label__1 `if playercheck == true better `if playercheck__label__0 should question reword `` how mani week year ''__label__1 lưuvĩnhphúc what mean `a` _can used_ variabl but default `a` defin__label__1 mastarhian inde except content insid 's generat empti tag wo n't actual appear screen__label__0 have select random collect tag what java angular__label__0 i ve chang titl someth appropri sinc no-on realli _cares_ urgent think urgenc reserv _paying_ client__label__1 thomask whi differ behaviour need explan `pip` advertis provid ident behaviour vice versa in far suppos similar similar instal python packag to expect differ explan like ask i n't use write style neither us indic would__label__1 sorri i realli tri use window.open i find it open new tab.i see i care thank help ... english languag it hard read mani english articles.so i ask sorri__label__1 work like charm ... thank much ...__label__0 i alreadi state i tri creat project scratch hope proper read question__label__1 that work last .thank guy correct__label__1 your exampl work http //ideone.com/wveg5i__label__0 konradrudolph i wonder judg comic n't seen if n't know answer question `` how prevent optim class field c '' pleas feel free wast time__label__1 you tri use `clip-path` css__label__1 i complet agre steveiv but i want point although 10 peopl downvot singl one `` time '' realli comment question bad..__label__1 so mani down-vot i delet question__label__1 i would set `pseudo element` contain element `overflow hidden` set style `pseudo element` `border-radius` properti set `posit absolute` take flow document circumv `pseudo element` effect proport contain parent element this mean parent element need explicit width height valu set otherwis ll collaps though `pseudo element` never exist__label__1 this help local server thank d__label__1 user2985498 do n't take person everyth so content question answer person the comment result *vote close* particular question__label__0 `` wow '' genious program correct misspel `` exeris '' correct `` exercis ''__label__1 http //idownvotedbecau.se/noattempt/ pleas tri post code specif problem n't succeed__label__1 the printf incorrect there behaviour undefin there paramet given printft__label__1 tri compil see happen__label__1 copi text indent 4 space press code button ll width remain format__label__1 user4581301 n't write khow put duelforyoungsamurai pickweapon part comment problem__label__1 you answer__label__1 https //www.google.com/search q=javascript+hello+nam__label__1 pleas edit question__label__1 afaik .getscript url get script execut access variabl script sourc__label__1 the except pretti clear you tri read data posit n't exist most like tri read data 6 row instead one row__label__1 *what length array contain n number ... well ... `n`__label__1 but sort mean chang index__label__0 mean__label__0 i strong suspect ve misdiagnos issu pleas show short *complete* program demonstr problem__label__1 also peopl vote question lol__label__0 learn document https //laravel.com/docs/5.4/blad__label__1 how work expect instead btw this becam audit featur meta http //meta.stackoverflow.com/questions/291502/is-this-another-good-review-audit-quest__label__1 you usual post code i assum error messag line 28 39 compar float* either pointer float case mention array float probabl regular variabl spot array make sure 's array use line 28 39 alway use squar bracket 's line 29 63 problem probabl assign float variabl valu pointer probabl array make sure use squar bracket mention where array__label__1 cheersandhth.-alf cool thank__label__1 marcin of cours expect similar behaviour serv instal python packag it 's differ behaviour need explan as anoth answer vartec 's answer good start provid singl option `setup.py` make behav like `pip` that 's relev like use__label__1 you n't you re tri execut `adder` tri run `sol`__label__1 also make habit insult peopl tri help how work general__label__1 you could ask question general term exsampl `` how compar string java ``__label__1 `.value` mean get string assign `value` attribut element numb`__label__1 joeframbach i believ script file view site i 'm sure i otherwis post__label__1 user611710 `` everyth would fine '' ... wait claim n't work even `bool` one your sampl `bool` one ... fail `bool` `double`__label__1 idea unsign octal n't placehold n't care 's char int whatev like c__label__0 did read code *at all*__label__1 you `return 0 statement end `main` how main go return anyth without return statement__label__0 hahah i problem answer__label__1 if seem `int p*/` *not* mean someon multipli divid someth mean end comment p__label__0 explain arbritari exclud enumer index homework__label__1 share code pars json__label__1 i n't work i know compareto method i also confus work i true newbi sorri__label__1 dude question belong ios..pleas see tag atleast ... ..__label__0 let guess you copi code site n't exact need want someon fix__label__1 pleas provid question__label__1 when i run problem like i ask -- java swing 's broken understand java and/or swing defici 99.9999999 time problem understand i 'm will bet thing go pleas provid inform request pleas let us chanc abl help__label__1 relat http //stackoverflow.com/questions/16388078/is-a-concave-border-radius-poss__label__1 are alreadi use mysqli pdo insert databas__label__1 possibl duplic indentationerror unind match outer indent level http //stackoverflow.com/questions/492387/indentationerror-unindent-does-not-match-any-outer-indentation-level__label__1 you overload `intset :oper want call `oper__label__1 this guid repeat suggest use `git-gui` work index whi index/stag area use http //gitolite.com/uses-of-index.html__label__1 prune dr.anni liu main author method mention also paper http //www3.cs.stonybrook.edu/~liu/papers/inceff-hosc00.pdf would also help understand method in case if got suggest improv qualiti question order get answer pleas it 's shame interest topic wo n't reach so expert particular field__label__1 this incred ineffici compar accept answer circumv optimis mongo put behind scene straight find accept__label__1 sorri peopl seem rude i agre seem tutori cover load librari write code__label__0 peopl think didnt googl hard enough__label__1 globally-access n't impli global scope `public` member visibl outsid world consid global access howev still within contain class scope n't global scope it 's way member namespac `std :vector` global access assum header include`d 's `std` scope instead global one__label__1 instead `getactivity` pass `getcontext job__label__1 what question do special problem error and method code come look like__label__1 sorri guy tri store data post via instant notif__label__1 first pleas go read ask relev code belong direct question // your submenus made visibl via css rule `.menu ul li hover .submenu` happen immedi want introduc delay use javascript first remov rule whole thing js__label__1 it 's print sign join whatev input user enter `console.read wait user input valu return__label__1 just clarifi comment in answer i suggest two tool support capabl you would need use one as rule i fan use gui tool https //git-scm.com/download/gui/linux git whi would want manag dag https //en.wikipedia.org/wiki/directed_acyclic_graph creat git without aid visual tool by way `gitk` https //git-scm.com/docs/gitk `git-gui` https //git-scm.com/docs/git-gui more-or-less standard equip git__label__1 threev whi need run root note even apache/nginx run root i n't see reason develop server self-descript run root and never need proper develop environ that 's answer say__label__0 stack overflow code write servic you write test thank **you**__label__1 's sql server command__label__0 where get code seem strang code__label__1 i downvot question n't includ code show problem among reason__label__1 pleas n't reask quesiton differ format http //stackoverflow.com/questions/37201760/how-to-maintain-textbox-and-labelcontrol__label__1 `` someth wrong '' guess ve assum argument `point` latitud follow longitud rather longitud follow latitud__label__1 ok i would ask question__label__0 loisklos edit question suppos read__label__1 mayb `==`__label__1 federicoklezculloca you ca n't wizard anyth without skill find basic inform doc__label__1 it compil it 's fail runtim__label__1 you two `print` function one line__label__1 sorri even fix still doesnt work__label__1 check https //regex101.com/ python throw regex tell thing__label__1 pleas refer http //stackoverflow.com/questions/2418473/difference-between-require-include-and-require-onc it answer previous http //stackoverflow.com/questions/2418473/difference-between-require-include-and-require-onc__label__1 overrid imag 's css .goog-logo-link display none__label__1 what ask post code give advis general python recurs slower normal loop cpython implement frame object__label__1 possibl duplic what usag 1 https //stackoverflow.com/questions/37056975/what-is-the-usage-of-while1__label__1 i work someth similar go store valu per dom element whole page total a simpl implement color chang found prodev.site/admin click logo open menu set quick chang page color perhap creat json set file per user valu color font etc store databas would good idea you could pass json javascript function make appropri chang complet `magic`__label__0 we wo n't homework we ll _help_ get done sure need show effort first make attempt solv assign ll help fix code__label__0 whi code even work you never call regist function `sometim work` bet ***never*** work complet code__label__1 timothygroot i updat question code show pleas look__label__1 edit post get bump anyon watch '' activ '' tab tag see top list like http //stackoverflow.com/questions/tagged/php-intern sort=act pagesize=50__label__1 get thing chickfila like like chickfila__label__1 you *highly* consid renam store procedur call procedur name `sp_` prefix regardless databas current target alway check `master` databas first procedur *then* look databas re target__label__1 i remov +91 0 present begin string contain multipl data__label__1 humor asid i give +1 ... er person guilt make fun if realli want get essenc comput may pay work simpl thing bit mayb play bit core war https //en.wikipedia.org/wiki/core_war thing help see world `` comput 's eye view '' then might understand much use way simplifi abstract interfac do n't discourag sit basic enjoy wonder ...__label__1 pleas edit question instead ad comment everyth one place format__label__1 `n` element `a.length` element__label__0 mattdmo that 's reason close question downvot__label__1 has_access_card__label__1 'm sorri first time use site let tri fix__label__1 alway indent space tab this tab consist width the actual width depend set individu word processor editor__label__0 python_start `a` *variable* declar hold valu type `int` you *really* need find sourc learn c++ would cover first chapter first *paragraph*__label__1 trojanfo i unhappi downvot question reread first comment you redirect comment whose downvot question they noth say except off-top comment__label__1 312000 12 4 6500` ... and convert hour divid week number hour work week typic 37.5 40 *see answer note 4 week per month divid year 52 rather 48__label__1 thelostmind string s1 new string `` abc '' s1.concat `` def '' chang object sop s1 `` abcdef '' `` abc '' pleas check first repli__label__1 write test jspref http //jsperf.com/ profil__label__1 `int p*` valid__label__1 mani tabl anoth field tablenam input paramet__label__1 i new share point i dont know__label__1 thank edit code user4581301 chris sound like want _search_ array sport _indices_ contain particular valu in word loop `sport_type` captur everi index lead certain charact__label__0 everyth comput form inde `` real '' store somewher this hard-war question want detail program i would n't ask stackoverflow__label__0 not abl think type check error exampl impli somewhat limit knowledg type check work__label__0 i will sacrific 300 point downvot even__label__1 this fair explain noth ... moho solut seem way better ...__label__1 vincentsavard in way `std :string` support unicod__label__1 actual i confus `stage` `es6` rgraham point `the babel preset contain es6 featur preset-es2015` thank__label__0 delet line arbitrarili make code shorter way creat mcve ask question proper take reason amount effort quick fix__label__1 well start `for int j 1 j size j++ printf `` `` print four `space`__label__1 -1 type infer n't magic still need idea return type__label__1 you need provid two argument one__label__0 too much code break__label__1 you need `std :string :substr`__label__1 thomaswel thank repli tri make clear meta discuss mistak mine apolog still downvot__label__1 sorri sasi even close correct nice answer ... ...__label__1 *sigh* `1,5,8,4,3` string array are want convert string `'1 '5 '8 '4 3'` array contain `1` `5` `8` `4` `3`__label__1 if re realli ask tag c++ tag use `std :ostringstream` if want tag c question sound use `sprintf__label__0 if want generic solut 's `languag agnostic` tag use__label__1 '' ... i want prank ... `` do n't it danger certain it polici violat possibl illeg__label__1 i know averag ... i 'm ask i write code get i use appstudio i 'm tri learn i n't know aka i came websit__label__1 just saw edit post thank much you extrem help__label__1 step number one write robust correct code know tool someon wholli unacquaint languag mess produc secur code matter much help get compil the secur vulner introduc incompet programm write code compil upgrad__label__1 i believ got `` sintact '' possibl the option i would add `` emb '' `if` method call singl method `ensuretiresareok similar__label__1 akshayk07 it 's even c. it 's arduino 's version c++__label__1 also relev gcc ***warns*** http //coliru.stacked-crooked.com/a/dd3a1326e3e26097 realli recompil newer compil n't even warn enabl n't test fall n't deserv sympathi fix code fix build system fix workflow__label__1 if crash debug ide debugg except notif window appear click break least default call stack window appear that tell problem origin__label__1 brute-forc method tend slow__label__1 amir with `get` input index output object with `indexof` input object output index__label__1 you declar 9 variabl rather kind array structur forc code lot duplic when code start look like 's piec copied/past 's indic ve done someth wrong__label__0 also weird code n't understand ...__label__1 great good luck post answer ve solv benefit__label__1 they re real support floating-point__label__1 constant pool entri noth special they constant pool entri 1 could 39123 would work fine it 's refer field *this_class* class file format indic name class and `class` member express come exist__label__1 possibl duplic use ellips origin center wpf http //stackoverflow.com/questions/19665022/use-ellipse-with-origin-in-the-center-wpf__label__0 there must dozen post tell even tri search__label__1 char achar opponentcard.charat 1 system.out.println achar achar=='a element.charat 1__label__1 dmitrybychenko case imposs__label__1 you could start review spec nsstring__label__1 post new code detail explan pleas tell differ two thank you everyon i hope code help guy understand actual ask__label__1 whi matter i ad code question actual return null code never actual reach address i use 5248 bit ram 128kb__label__1 user2357112 the question within context c c++ per tag__label__1 exampl user drag item cart user delet choos cart__label__0 use uppercas consid scream thus rude impolit you disrespect communiti you see place drop requir peopl think__label__1 note i ca n't use regex.. moment class n't see that..__label__1 check an may help https //stackoverflow.com/questions/45168556/in-android-how-do-i-save-response-coming-from-php-login-script-as-shared-prefer/45168962 45168962__label__0 dylangattey this wrong pleas read question first refer phone call__label__1 what mean `` return 3221225477 '' the program print that 's exit code i notic 3221225477 0xc0000005 might mean someth__label__1 cbroe sens is make applic display error i check develop checkbox login form if i n't check session var null error display 0__label__1 creat layout folder present start i would recommend creat anoth new project__label__0 theoret it could fast file bug report c/c++ compil vendor pleas n't i 'm sarcast__label__1 there odd languag set code involv i doubl click form solut explor click textbox..i got alert__label__1 piepi n't alreadi got 3 good answer__label__1 tri solut got error `` at least one argument implement icompar interfac ''__label__1 `document.getelementbyid bodi – element id bodi and perform getelementbyid take index there one element one id__label__1 can write specif if use builtin sort algorithm use or write sort algorithm but need know constraint solv problem__label__1 possibl duplic find extract number string https //stackoverflow.com/questions/4734116/find-and-extract-a-number-from-a-str__label__1 this extrem basic thing ask usual solv creat public getter method pleas note down-vot lack demonstr research effort subject ask site suppos use substitut studi basic rudiment languag__label__1 like text input field__label__1 i 'm go guess `main` method creat `vendingmachine` 20 can 10 can `add 10 can `inserttoken `x2 there 's output__label__1 salsabear python *not* handl right that python n't distinguish declare+init vs. simpl assign major design error python__label__1 mungaihpk edit invalid answer not good form__label__1 what string unknown second charact string must lowercas__label__1 scope didnt code comment attach__label__1 it mean someth person wrote it.ther univers definit__label__0 blahfunk this q a site q|a site besid http //blog.stackoverflow.com/2011/07/its-ok-to-ask-and-answer-your-own-questions/__label__1 moreov `s/sring/string/`__label__0 have tri anyth__label__0 this plain wrong__label__1 the compil give line error descript quit suffici understand__label__1 what dbconnect.php can provid code__label__1 welcom stackoverflow pleas read topic help center ask https //stackoverflow.com/help/ask your question danger close n't improv__label__0 your program seem split person disord it ca n't decid whether 's c c++__label__1 at least bit specif expect code get__label__1 thank refer paper i 'm still pick enough background help__label__1 whi print `i` sum`__label__1 cregox i n't know platform typic linux distro trivial instal bonus gui tool -- may come handi purpos in case anoth option peopl prefer visual approach__label__0 your question miss inform ll allow us help stack overflow https //stackoverflow.com/ free code write servic you expect tri **write code yourself** after research https //meta.stackoverflow.com/questions/261592 problem **post ve tried** **clear explan n't working** provid **minim complet verifi example** https //stackoverflow.com/help/mcv__label__1 sclv i 'm sure either paper claim the class per class encod clumsi i agre my point subtl typeclass haskel class type we constructivist us suppos type member typeclass requir sort `` evid object '' further languag provid automat theorem prove system form infer global instanc my claim proof languag logic oo help reason haskel awar fact__label__1 thank help lot__label__1 my question i assembl code tell processor write data store ram sd card__label__1 user1781384 so re look c solut java solut__label__1 is anyway copi folder host contain__label__1 plenti answer here mine base regex negat lookahead var reg new system.text.regularexpressions.regex '' \d '' var maskednumb reg.replac numberfielddescriptor `` ''__label__1 neb i guess `d a-z 2 requir confus__label__1 ejoshua joe_dm edit question hope clear__label__1 turn list integ singl string pars side__label__1 hello your question unclear ideal would edit add detail explan issu context actual code etc thank__label__1 whi includ `xcode` tag your issu code ide platform__label__1 i ve alreadi done file open `` full_megalog.txt '' `` r '' line file__label__0 help question__label__1 it acccess `` webpag '' it access page current domain__label__1 j.f.sebastian i think solut would also includ ac option could wrong__label__1 `int` `employee`__label__1 simpli `var book new book titl `` one world '' librari need__label__1 πάνταῥεῖ which reinforc comment best use librari__label__1 insan like i said though friend suggest use i never use__label__1 check anoth element collect tri `in.nextint usual would use `while in.hasnextint iter instead `for loop` `java.util.nosuchelementexception` thrown runtim 's code compil__label__1 ok. code solv problem__label__1 when read string program read word temporari array char use malloc alloc enough storag hold word store address array char pointers.how handl step__label__1 my compil threw error no code found pleas post code error__label__0 still know definit man__label__1 are sure still work latest version safari we ve p3p header year ie safari 's still broken__label__1 leppi volatil instruct compil make assumpt content variabl might chang anoth thread anytim thus disabl optim__label__1 's incred easi make swap function i 'd suggest edit c++ question__label__1 for compatibl c `0` implicit convert `false` non-zero implicit convert `true`__label__0 what “ work ”__label__1 supernovah you also code path `returnstr char* '' empti '' i suggest use debugg find bug__label__1 this bit anti-pattern use `observable.tolist instead make sure `observable` infinit problem__label__1 you probabl accept dan 's answer he answer correct gave explan regard problem answer__label__1 but hv explicit specifi digit place__label__1 first forgot `setcontentview first add fetch view__label__0 tri research post this realli basic question__label__1 it 's type alia http //en.cppreference.com/w/cpp/language/type_alia__label__1 pleas edit question add code longer strectch code n't readabl comment markup__label__1 cris https //www.google.com/search q=winforms+c 23+pass+variable+between+form__label__1 not sort syntax__label__1 yii way use correct way__label__1 jin kim your program would look even better add one minor detail includ word print statement for exampl printf `` enter maximum number money want ``__label__1 also doe matter tag content and tabl miss close /tr tag__label__1 good point i find think typeclass object plus prolog like theorem prover everi rule begin cute make easier reason someth rather complic give access bodi literatur design principl appli problem think c++ templat function languag sort like haskel make easier reason also i general tri understand weird edg mathemat system describ term axiom i alreadi know you dont need ring theori explain integ__label__1 input number 12345678 account number__label__0 so n't code-writ servic 's implement 's problem__label__1 method return error use bridg header framework target unsupport__label__0 sure dato constructor call tri copy/past code screenshot code read document__label__1 what 's goal__label__1 rsatom epic moment d__label__0 want serious tri show effort__label__1 i assum know program android base java build algorithm i help primit algorithm solut need implement ui java code android app i also full project idea let know i process__label__1 this might help what pointer size 64 bit comput c++ http //stackoverflow.com/questions/6841405/what-the-pointer-size-in-64-bits-computer-in-c__label__1 `was tri separ admin fronted` what mean__label__0 this answer n't absolut reflect point question ... asker want view control__label__1 you could save time use pow function http //en.cppreference.com/w/cpp/numeric/math/pow__label__1 what tri the drag drop interfac make layout n't work__label__1 if want add duplic simpli check arraylist see valu part `lottery.contain x__label__1 snuggles08 's good start did tri modifi move one see could get one stationari__label__1 pleas post code__label__1 mikew__label__0 nay ala solv homework we go__label__1 can check answer post attempt__label__0 '' i think jqueri far javascript librari ... '' no 's librari__label__1 you lost `break loop until` you n't break loop *until* sinc break *once*__label__1 what 's variabl custom__label__1 i 'm sure 's way certain applic onlin bank exampl ca n't display visual interfac onlin bank account even 's valu inform__label__0 hint *tell* peopl downvot question lot exact `` plz downvot '' cue question probabl need downvot either way nois belong question i edit otherwis improv clariti question pleas add back there noth peopl decid vote if question use clear general get upvot downvot make end complain comment also discourag__label__0 you specif how want send do establish connect server what protocol can socet webservic__label__1 question translat__label__0 i smell homework ... ..__label__1 as state kroltan div id must uniqu use common class 2 element use jqueri class selector `` .your-class ''__label__1 i alreadi done plugin outlook veri big differ outlook object model do expos item_send event allow cancel send oper i tri general solut mail client ran and i control smtp server__label__0 so site crowdsourc homework `` i would like help '' program question__label__1 matthewd ask tri want post origin post exampl code tri__label__1 yes one person give correct inform go jmatthei__label__1 **moder note** i ve clean comment should feel need continu discuss merit question take chat in meantim find off-top vote close stop argu comment john n't remov content post__label__1 for window form check graphics.rotatetransform https //msdn.microsoft.com/en-us/library/a0z3f662 v=vs.110 .aspx note expect degre radian__label__0 *facepalm* it help code im ask ... i written code yet omg__label__0 andrewbarb see discuss http //meta.stackexchange.com/questions/189591/is-sos-programmers-site-a-better-place-for-advanced-questions/189595 189595__label__0 and `` load jqueri '' googl n't help__label__1 might want mention languag re use__label__1 i think ajb right problem windows-explor__label__1 i ve tri search googl i ve tri mani differ method seem work i 'm use array variabl i ve also use _post row myfield _post `` row myfield '' _post `` row myfield ''__label__1 no.. reopen app i want see button creat last time..__label__1 `printf `` the sum number '' sum -- `printf `` the sum number '' sum__label__1 true issu downvot comment address meta it seem logic perhap comment requir other think__label__1 creat list control one one valu loop totallist check contain current valuelist__label__1 pleas explain issu detail exampl__label__1 definit work 5.1.7 7534.57.2 p3p header__label__0 googl think need good android book__label__1 `std :string :npos` scope resolut say `nops` `string` scope `string` `std` scope and `size_t count 0 n't syntax error__label__1 abiessu i could n't find one n't move__label__1 youda008 yes suitabl mail list__label__0 what effort made research question__label__1 like bugfind suggest code doesnt run command get error becuas doesnt actual anyth return error__label__0 https //stackoverflow.com/help/how-to-ask__label__1 c++11 equival `typedef data_typ var_nam__label__0 juanchopanza realli i n't quit understand mean neither formula work__label__0 it look like want us write code while mani user will produc code coder distress usual help poster alreadi tri solv problem a good way demonstr effort includ code ve written far exampl input expect output output actual get consol output traceback etc. the detail provid answer like receiv check faq ask__label__1 no compulsori defin main method class extend abstract class there might issu__label__0 pleas read ask you suppos show compil code syntact question show problemat line compil error messag but one error per line realli much ...__label__0 what want know you method signatur exampl call there noth said code post__label__0 sorri `-1` zero effort__label__1 you re clear convert result `math.sqrt `int32` integ i.e decim__label__1 ad refer dll anoth project 's bin directori typic veri bad thing especi project solut build server set it caus headach__label__1 i think read basic lectur java an variabl complex data type like player must initi could use__label__0 hardyz009 you serious revis way re ask question reflect so work what tri far did tri anyth googl instanc__label__1 pleas n't post code imag__label__1 if n't everi answer page point time wrong__label__1 sorri forgot add js fiddl link pleas check link vote simpl mistak__label__1 _uniquearray _.countbi `` welluid '' -- i use lodash function get occur welluid object mention lodash function return array__label__1 oh.. -1 explain__label__1 share code sampl ... would help resolv wrong__label__0 `` doe work '' technic term if want develop explain problem detail__label__1 i look someth like `document.innerhtml` caus `document.documentelement.outerhtml`do return expect result__label__1 sampl code http //sscce.org/ complet concise–enough recreat issu the post sampl much extran code__label__0 what mean stuck do understand code take tour https //stackoverflow.com/help inform ask question__label__1 pleas edit question post code instead screenshot__label__1 also 's languag `` c/c++ '' c c++ two *very* differ languag even part syntax similar__label__0 it goe c++ group-think *only* correct answer question they *just n't care* whether break exist widely-us previously-work code c++ communiti broken recogn__label__1 ouch i spent time answer__label__1 down vote follow reason this question easili answer creat file syntact error includ requir file determin result behavior therefor answer question ask someon els stack overflow second answer alreadi clear document exist php document__label__1 expect code add button div element valu element equal focus__label__1 as i expect error function the function name `timerequiredrun` see function even though see lot code so problem give us misinform get use answer__label__1 possibl duplic differ == === javascript https //stackoverflow.com/questions/523643/difference-between-and-in-javascript__label__1 do tabl in each db__label__0 did tri read error messag it clear inform__label__1 possibl duplic how i get date without time java https //stackoverflow.com/questions/5050170/how-do-i-get-a-date-without-time-in-java__label__1 that 's singl statement anyth separ must execut multipl statement often matter the answer alreadi demonstr op ask imposs howev__label__1 dont use fix path sd-card directori instead use **`environment.getexternalstoragedirectori .getpath `**__label__1 maskacovnik sorri didnt tri anyth major good awk/ sed just start learn this command read file replac null zero but abl proceed sort work cat fllename.txt awk -f `` \t '' print 1 2 sort -t k2__label__1 pujan final size could 5 20 byte long depend set os it like a could c__label__0 your question vagu open end 'd attract close vote question bounti ca n't close get downvot instead__label__0 have look document__label__1 can provid code it 's help better understand question__label__1 your code n't compil `formatstring` call incorrect what output expect -1 inform provid so n't expect get code compil way__label__1 i use cocoapod i got error say nativ modul must null__label__1 mean__label__0 this relat basic question reason i 'm downvot provid enough inform anyon give answer to make question appropri least describ provid structur tabl want queri in addit may want specifi queri use sql linq accessor__label__1 use regex http //en.wikipedia.org/wiki/regular_express__label__1 is limit number row__label__1 there 's still enough inform question answer for exampl `index` `image` defin swift code__label__1 hi omair welcom stackoverflow as sven said question broad like close pleas check guidelin ask question stackoverflow https //stackoverflow.com/help/on-top__label__1 muntoo again regard soft reboot differ os 's queri__label__1 do specif exampl 'd like work__label__1 except urgent explan question comment__label__1 how `x^y` multipi number would n't `x^2`__label__1 i ask whi__label__0 what fiddl where exact problem__label__1 thevalyreangroup the op 's exampl use tag name `button` ask `button` element__label__1 what tri far__label__1 thank long.max_valu print 9223372036854775807 it mean maximum__label__1 http //developer.android.com/guide/developing/index.html__label__1 which compil use gcc clang emit warn `format ‘ ’ expect argument type ‘ int ’ argument 2 type ‘ int ’__label__1 you read http //stackoverflow.com/help/how-to-ask tell us want achiev__label__1 what mean i use 'a i use 'i go insert how i use vim without mous__label__1 you n't power os you power physic piec hardwar anyway pretti trivial test whether `gettickcount` return valu indic window start hardwar power__label__1 paulpro lol fair archer short-circuit unclear imo__label__1 this code n't even compil number argument definit `distributecards` n't match number argument declar prototyp__label__1 *the output 3 alway peopl space 1 2 3 no current exampl result 3 first time sequenc execut becom 2 second time sequenc execut after stay constant 2__label__1 read `zip` `for` loop__label__1 serious question `scanf` call suppos achiev did check return valu 10000` valid format ... indent bit better still far readabl__label__1 what dialect sql use add tag well__label__1 what code suppos pleas write text english but guess program run type valu store thus never chang szam tart__label__1 understand__label__1 `setarray` member variabl__label__0 `` syntax error '' first i see `while kvp.key kvp.key +10 || kvp.key 20 `while kvp.key == kvp.key +10 || kvp.key == kvp.key 20 this would syntact correct semant non-sens valu can´t equal valu +10__label__1 oh interest i pretti fundament misunderstand cast char* what minim way `` empti '' line i seri `returnstr queuelength++ 'e ... `returnstr queuelength++ \0 seem pretti cumbersom term number line code ...__label__1 i 'm tri generat pdf server side and tri say would n't use internet explor__label__1 work long session_start declar correspond attribute/valu session__label__1 pedant `` over concern minut detail formal '' what re describ break core rule react ... minut detail__label__1 googl https //www.google.com/search q=list+of+java+keyword turn authorit list java keyword https //docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html second hit__label__1 is someth els think have tri simpli go sequenc step program would perform__label__1 `` help look code '' clear problem descript pleas take time describ *specifically* problem__label__1 if `the_file` `'y'` file name exist get error__label__1 you pass instanc list__label__1 i n't see question offtop understand much negat op obvious newbi question well-form show code except problem i see say tri ...__label__1 public class vendingmachin public int cancount public int tokencount vendingmachin cancount 10 tokencount 0 vendingmachin int can cancount can tokencount 0 public void add int can cancount cancount can public boolean inserttoken cancount 0 return fals els cancount cancount 1 tokencount tokencount 1 return true__label__1 guy i made javascript free solut anchor p. and way rememb re help fight now let 's find real question__label__1 in addit comment the argument function give number row if 's 5 re go get pyramid 5 layer__label__1 you mention `` mergesort vs bubblesort vs insert sort '' later say mergesort beyond scope question could pleas clarifi__label__0 yes possibl what tri googl friend__label__1 `` yes number u mention valid '' i also mention `1,2345.00` four digit so assum number digit like `1,2,3,4,5,6.00` would number valid *rule* invalid if rule__label__0 i 'm vote close question off-top stackoverflow survey site__label__1 if javascript 's execut browser anyon use page view see if want keep thing secret n't send client__label__1 delet exact__label__1 an offici tutori http //docs.oracle.com/javase/tutorial/java/javaoo/__label__1 possibl duplic https //stackoverflow.com/questions/5139724/whats-the-difference-between-hashset-and-set__label__1 console.writelin doesnt return valu__label__1 you could creat infinit loop packag ssis packag resourc intens left run forev i would consid creat agent job run everi x seconds/min check chang file chang execut packag__label__1 imho that strang operator+ return list semant like operator+= modifi lhs it 's better chang name list operator+ construct new object__label__1 akshanshthakur becaus standard well-docu swift syntax__label__1 well know generat random number two number generat integ two given integ__label__1 defin pinout1 provid line error least__label__1 that n't infin you re see integ overflow__label__1 the concept ok syntax need correct__label__1 respectmyauthoritah `1` minimum field width in format ca n't get less 5 charact generat expon print `e` sign 2 digit plus least one digit expon width function ignor the 4 _does_ mean 4 decim place if chang convers specif '' 10.4e \n '' 'd get 3.1416e+01 use '' 13.4e \n '' 'd get 3.1416e+01 note e` format alway print one digit decim point__label__1 cant open ...__label__0 same home work problem answer https //stackoverflow.com/questions/45406235/select-date-and-time-in-sql-10pm-up-to-6am-everyday noredirect=1 comment77774538_45406235__label__1 it might i find concern `` web programm '' ask question ...__label__1 i tri fix main problem thank feedback everyon__label__1 how tri someth first come back ask specif question get stuck someth__label__1 dtabuenc test re right__label__0 -1 new sharepoint tri use box featur first you `` want '' use javascript actual need__label__1 vaibhavkatw one digit one comma
+__label__1 what tri far
+__label__0 learn c++ video seem error prone well i never tri educ old school way book practis but track seem weak one
+__label__1 i would guess downvot vote close re clear sort arraylist integ would 10,50,100 's concept `` sort index '' it 's either sort n't sort
+__label__1 this sound like excel opportun learn
+__label__1 what data structur c++ class
+__label__1 whi earth random ridicul space
+__label__1 take good look how i ask good question http //stackoverflow.com/help/how-to-ask
+__label__1 thank repli i got work code.not sure abt perform code elem.bind `` keydown '' function event event.which == 37 var target event.target.parentnode.previouselements var x target .children x.focus event.which == 39 console.log `` right key press '' var target event.target.parentnode.nextelements var x target .children x.focus
+__label__1 `system behav ident `popen except n't abl open pipe distinct share disadvantag critic propens shell inject vulner for op ask 's safe call actual *need* pipe direct file handl `curl` 's output `system n't provid
+__label__1 o fast user type
+__label__1 vbx n't use signals/slot connect i miss someth
+__label__1 detail would high appreci would help solv problem
+__label__0 probabl `this` refer differ context one think refer **wtf alex **
+__label__1 tri `data.pop mydeletenumb
+__label__1 ravirupareliya attach imag code remov check https //i.stack.imgur.com/fv1ia.png
+__label__1 i ve use nativescript 2yr pleas share `` i ve heard bad review far ''
+__label__1 what tri achiev
+__label__1 do mean function differ amount paramet
+__label__1 that 's bad solut a string also length
+__label__1 jbnizet true referenc string pool make two object one heap one string pool initi first
+__label__1 includ iostream includ math.h use namespac std int main long doubl n cin n cout log n /log 2 return 0
+__label__1 can give exampl two snippet whose compar perform re interest
+__label__0 **you** remov substr **you** also tri show tri ask other job
+__label__0 is assign fun i ask may simpler way array
+__label__1 your `` updat 4 '' prove `gethour reflect local time zone chang if one repeat evalu `a+b` get differ sum chang `b` n't mean `a` also chang
+__label__1 what desir outcom `x -123456` pleas
+__label__1 you mean expect ìnstanc object `element`
+__label__1 two question look serious
+__label__0 user1781384 then next time n't tag `java`
+__label__1 bad i n't mention solut solut tri elem.bind `` keydown '' function event event.which == 37 var target event.target.parentnode.previouselements target .trigger focus event.which == 39 console.log `` right key press '' var target event.target.parentnode.nextelements target .trigger focus
+__label__1 your miss `+` '' fullnam `` `` fullnamelength '' note close typograph error
+__label__1 jamiec i edit sinc one question per question
+__label__1 al i see question qt specif i thought notion signal slot would good give away also would note i n't ask use tri catch block
+__label__1 i upload print screen
+__label__1 zerkm yes exact
+__label__1 this homework i forgot add code sorri guy i learn program c. i know find biggest number i dont know add name
+__label__1 afaik reliabl free sms gateway servic avail you use gsm modem
+__label__1 rafe might want double-check `s.strip produc precis result regex
+__label__1 what tri far
+__label__0 this code valid
+__label__1 your main problem n't compil program enough warn enabl
+__label__1 https //docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html
+__label__1 what problem
+__label__1 look nest structur pleas add tri
+__label__1 i tri put div within contain tabl footer get screw i tri use contain give black border i tri div side side footer div underneath footer would n't cooper i put float left side side div box
+__label__1 basilestarynkevitch n't store step stack unwind collect object leak solut utter useless the goal get back start and proper collect object along call stack this requir lot jump buffer result massiv cpu memori overhead
+__label__1 asu look exact
+__label__1 peter great idea i go post answer make use json brilliant
+__label__1 you want instant return back origin posit want rotat back origin posit
+__label__1 okay mayb realli best way ... chang decis
+__label__1 but i abl compil execut
+__label__1 more context provid includ possibl option ... i.e rectifi flow setup disabl need
+__label__1 sorri confus method need return ask string integ
+__label__0 this i love stackoverflow wife sometim look awkward i laugh look code
+__label__1 what exact wrong one tabl 50 million record
+__label__1 i n't think follow we correct tag tag **wrong** do n't insist ll get question close
+__label__1 put problem last time everyon want full program ill
+__label__1 question if dont edit soon good guy close question so describ
+__label__1 simonenigro no ca n't pleas check '' _post no_hp ``
+__label__1 yes word 1 anagram second srting
+__label__1 vladfrommoscow i refer comment `` at least i see substanti answer ''
+__label__1 stefanpochmann it there one reason remov line
+__label__1 simpli use onchang event
+__label__1 are talk result everi move or everi full sequenc move
+__label__1 πάνταῥεῖ up late edit
+__label__1 there 's standard see languag use describ `sizeof` of cours 's call two differ question
+__label__0 googl file i/o use c
+__label__0 rip name convent
+__label__1 the part question sort array seem part complet differ problem
+__label__1 so uppercas e lowercas e `x x.replac 'e 'e
+__label__1 pleas read one book introductori section http //stackoverflow.com/q/388242/2069064 they help lot time so
+__label__1 there 's nari `char` code show i one idea talk whi surpris function return type `int` return valu type `int`
+__label__1 javabeginn whi think re abl test you post code you **can** copi code `main` method compil run
+__label__0 next time post real method instead make memori
+__label__1 see matlab 's document interpol http //www.mathworks.com/help/matlab/interpolation-1.html
+__label__1 archer cool thank
+__label__1 what tri far
+__label__1 abl focus li element coad abl insid li element suggest solut help
+__label__0 jonathanleffler-sorri desir output correct wrong run command chang the null replac zero let know help
+__label__1 v 5 e 3 noth happen v 1 e 3 v set 3
+__label__1 it allow singl dot
+__label__1 i got respons php i want creat json object android use json aishwaryatiwari
+__label__1 work need drag imag compon tree design screen thank help
+__label__1 `for int 0 yourstring.s i++ acharvector.push_back yourstr
+__label__1 pleas see document https //msdn.microsoft.com/library/ms178592.aspx
+__label__1 tri swiftifi http //objectivec2swift.com
+__label__1 ricki n't differ mean type oper
+__label__0 this valid c++ 's
+__label__1 are get error what 's c code execut queri doe sub queri return exact result
+__label__1 olev.v absolut want throw field n't mention yet dim this simpli show time **very** complex field jon skeet expert trust
+__label__1 i want get 123
+__label__0 homework/assign trash
+__label__0 pleas post link origin doxygen exampl
+__label__1 i guess truli understand box model realli
+__label__0 frustat see peopl n't care invest minimum effort research
+__label__1 tri configur `display_startup_errors` runtim might make sens though manual list php_ini_al changeabl i think past “ startup sequenc ” point
+__label__1 jcubic want know possibl iam use code angularj
+__label__1 retriv data mongodb use php display data use json_encod function
+__label__1 well 's `` network '' what 's `` file system '' 30 year ago ask 'd probabl `` let 's support fat12 banyan vine '' someth like utter obsolete/dead/gon everyth tcp/ip everyth ext4/ntf
+__label__1 what mean `it seem slow` the fastest possibl vanilla everyth els wraparound vanilla you could chang class element let css handl height i n't know make faster better requier xd
+__label__1 i never tri compil i reformat make ledgabl lol
+__label__1 question unclear
+__label__1 pleas get familiar concept sscce http //sscce.org/
+__label__1 despit tag c++ code
+__label__1 ahmd0 's import rude peopl re ask free help ask inform clarif n't `` want answer '' pleas tri polit and absolut differ shutdown reboot reboot shutdown restart os the differ meaning bio hardwar
+__label__1 sure thank lot
+__label__1 actual meant coordin csv file exact origin point tweet so want check weather countri includ longitud latitud for exampl 121.0523297,14.62194033 need check weather countri includ coordin
+__label__1 do look http //stackoverflow.com/help/how-to-ask improv question
+__label__0 edmorton i n't follow is complaint chase point i updat origin question improv english i still ca n't post solut that n't seem so want work there also command-lin solut well win round
+__label__1 rajdeepsingh if user phone call tri use app status bar actual 40pts high throw calcul so answer wrong situat your answer valid situat
+__label__1 did realli write iostream also `main need `int` return type
+__label__1 marktomlin well unfortun i way much experi php answer question leav place doubt ...
+__label__1 this perfect valid c code never compil c++ compil `typedef int *class class new new malloc sizeof *new /* ... */`
+__label__1 are abl ping public ip machin run client yes need check port server listen forward router set
+__label__1 i would say `std :string` string
+__label__1 incorrect clear would oper string return stream stream
+__label__1 if `x == 0` might well `-y` instead `x-y`
+__label__1 should mention search 100 time
+__label__1 it 's basic whole bunch no-op array defin empti assign therefor thrown away
+__label__1 msalter yes ... point gain someth first ... malloc gain realloc malloc use first
+__label__0 so blog what mean `` learn jqueri befor javascript '' that make sens
+__label__0 research post quest
+__label__1 look like c++ except point ...
+__label__0 whose code where find
+__label__1 `int main return `` hello world ``
+__label__1 ali use java way pars json http //stackoverflow.com/a/18998203/576767
+__label__1 mike seymour got problem code event
+__label__1 what `accountnrname1` `accountnrname2` suppos
+__label__1 thank much
+__label__1 akshayk07 i wonder question origin mark java tag ... edit
+__label__1 input mask constraint
+__label__1 great respons guy thank i appreci kind word construct feedback `` hate '' offend perhap differ word swing support sleep allow pars int event listen refer come array
+__label__1 elliottfrisch general i would agre user level ad use arraylist `tool-belt` would benefit
+__label__1 pleas provid detail post design see tri accomplish also tell us alreadi tri also pleas accept answer question
+__label__0 what els would expect happen if someth twice get done twice
+__label__1 you want return `null` case someth went wrong pointer un`fre `abl string liter like `return char* '' malloc ``
+__label__1 there `` point 4 '' question
+__label__1 jarlh as turn http //stackoverflow.com/documentation/review/changes/103112 homework question … ☹
+__label__1 vote reopen question close reason `` contain mcve '' fact contain mcve
+__label__1 a fundament type function it need declar it 's fundament nor basic keyword need declar how would declar thing without use ... basic keyword
+__label__0 user6222166 see function wrote none ever execut re call anywher
+__label__1 tri disabl resiz browser window page presum html document singl wrapper element
+__label__1 `this` mean instanc class
+__label__0 marcin by strict liter yes correct answer question but detail relev 's pretti clear op want understand behav differ way modifi behaviour one it 's like answer `` i perceiv red differ blue '' `` re differ colour '' correct useless
+__label__1 i would strong recommend read book c
+__label__0 jigarpatel word warn if intend becom profession programm go learn look document and run program want know happen run your mother alway go hand spoon-fe breakfast
+__label__1 jerryjeremiah apolog typo librari when i learn c english wors i rememb stdio.h word studi acronym sinc phonet equal studi spanish
+__label__1 you ca n't specifi variabl name run-tim variabl name exist compil time perhap could describ want give run-tim name could suggest altern solut
+__label__1 pawelgradecki i understand instant point time dimens i n't deni `date` contain instant i deni is instant we may say impur instant wish the fact `date` much depreat method mani altern implement alon prove `java.util.date` impur bad design
+__label__1 thomask well realli want argu turn so user n't leav reason explan downvot for exampl i get bunch downvot old question i assum come obvious reason vartec whenev see handl remind i point error one answer so n't realli convey much inform
+__label__1 public int getcancount return cancount public int gettokencount return tokencount
+__label__1 what 's question
+__label__1 i ask someth similar gvs13 mention answer i believ correct n't work
+__label__0 http //meta.softwareengineering.stackexchange.com/questions/6166/open-letter-to-students-with-homework-problem
+__label__1 rerito string content '' hello\0 '' first line function return 0 stop recurs encount `'h'` first charact `h` `u`
+__label__1 what want _achieve_ clear but i doubt tri set `display_startup_errors` point make sens ... probabl bit beyond php “ startup sequenc ” manual call point
+__label__1 on odd chanc someth weird i ve never seen heck 10000` `scanf `` llu 10000 '' i n't see anyth like mention valid format token ca n't make sampl compil without warn
+__label__1 yes take look http //alvinalexander.com/java/java-mysql-insert-example-preparedstat
+__label__1 as i said question i am on window i extract android sourc use class file
+__label__1 the templat slideshow ... figur removeth slideshow want
+__label__0 ok ve told us queri need help neither thing question **what 's question ** what part troubl
+__label__1 jqueri never use situat research css sprite even svg
+__label__1 use recyclerview
+__label__1 nathanoliv '' which reinforc comment '' of cours meant as far i see librari made work server platform
+__label__1 vaibhavkatw multipl comma
+__label__0 `` ... within select '' select a rang worksheet worksheet name select worksheet what mean also tri so code write servic let us know ve tri fail error messag etc help we n't tend write scratch
+__label__1 java use cur brace indent mark block also *all* code if lot miss order compil plus `for` loop total broken
+__label__0 welcom stackoverflow have tri anyth far stackoverflow n't free code-writ servic expect tri solv problem first http //meta.stackoverflow.com/questions/261592 pleas updat question show alreadi tri show specif problem face minim complet verifi exampl http //stackoverflow.com/help/mcv for inform pleas see ask good question http //stackoverflow.com/help/how-to-ask take tour site http //stackoverflow.com/tour
+__label__1 tri ul li .attr href www.stackoverflow.com note wont work multipl ul li order page
+__label__1 question unclear
+__label__1 pleas post relev code compil run test
+__label__1 you need show us code
+__label__1 what mean _**compar charact use char **_
+__label__1 ok right ... use mysqli_error con check error
+__label__1 do realli want both `if` ask second n't work
+__label__1 http //stackoverflow.com/q/21925428/971127
+__label__1 pleas post code exampl
+__label__1 possibl duplic is possibl decrypt md5 hash http //stackoverflow.com/questions/1240852/is-it-possible-to-decrypt-md5-hash
+__label__0 panagiotiskanavo mani duplic i even decid one mark
+__label__1 off topic edit code i notic mani function claim return valu eg `int input_ag int patron_ag int index contain `return` statement this lead small amount grief it syntact valid logic undefin compil absolut noth generat whatev code wish includ seem correct code someth your compil warn
+__label__1 the op tri go way your question answer revers case json string want get object
+__label__0 welcom so what tri pleas show nonwork code specifi current output desir output
+__label__1 *20-posit array random* someth like `int array new int 20 far ve done think iter sever time generat random integ modulo 20 int result empti put otherwis rerol dice..
+__label__0 did read php refer manual there 's well document method deal comma separ string type convers
+__label__0 it expect least attempt code stack overflow code write servic i would suggest **addit research** http //meta.stackoverflow.com/questions/261592/how-much-research-effort-is-expected-of-stack-overflow-us either via googl search so make attempt still troubl come back **your code** explain tri
+__label__1 with d` use variabl pointer.. in way re print `sum` 's address
+__label__0 whi start read css tutori https //developer.mozilla.org/en/css/getting_start ...
+__label__1 is least lib help
+__label__1 ton tutori http //www.regular-expressions.info/quickstart.html
+__label__1 also mayb come `c++` background initi variabl stack `mi :player tom in `java` object store `heap` requir explicit initi prior method call `player tom new player
+__label__1 ficuscr well go https //gist.github.com/madarauchiha/3881905
+__label__0 hope 2 upvot sake joke
+__label__1 languag n't support aw idea consid exampl int evalu true fals
+__label__1 for array m==v ,none .ani 1
+__label__1 tom doodler want pass sno function may sno global variabl he declar global variabl assign sno variabl
+__label__1 'd find easier maintain struct
+__label__1 unfortun though compil good assembl machin code well-form sourc code remark bad assembl error-messag all bad linker wors one syntax error generat page utter rubbish compil dig ever-bigg hole often thing look first line flag erron care examin mess find realli caus problem eg use enum declar
+__label__1 i wonder learn use feature..
+__label__1 whi i see i ve look page
+__label__1 whi write code make easier everybodi read instead pic
+__label__1 if need call super there noth wrong
+__label__1 you look `cut` function
+__label__1 it clear n't work jlabel work textcompon jxlabel
+__label__1 epodax thought easi answer question overexplain guess wrong ...
+__label__1 charact turn object
+__label__0 that 's ridicul
+__label__1 regist global remov global
+__label__1 array object
+__label__1 use nsarray app crash
+__label__1 i want logic explan comput scienc explan
+__label__1 vladfrommoscow if unhappi answer pleas provid one
+__label__1 what document `scanf` clear
+__label__1 gettickcount roll n't use long-run event and rude peopl tri help guarante one answer question
+__label__1 wow negat reaction it may actual violat googl 's term a i think op refer googl websit translat https //translate.google.com/manager/website/ ***not*** googl translat api b one display set googl provid see exampl https //www.drupal.org/files/project-images/google_translate_1.png actual contain `` power '' statement c when user actual select languag translat display *additional* toolbar clear attribut result googl meet requir
+__label__0 good luck get one i would expect total ident
+__label__1 round peg squar hole int employe total differ thing what actual want
+__label__1 what tri far post attempt
+__label__1 on question say `` i x c '' someon respond `` use java '' would consid `` answer '' by token question `` i fix issu version 1.7 '' i 'd argu `` use version 1.6.7 '' also answer the answer say `` if want go back older version '' the question `` i move newer version '' i think 's pretti self-evid
+__label__1 ergonaut u refer two comment line i sure use if honest i know i ca n't realli think i would structur code i want
+__label__0 so mani magic number
+__label__1 give code ve tri far
+__label__1 marcin in context instal packag pip setup.pi clear connect
+__label__1 note `input i -x 26` `input i x 26 did want input i -x 26`
+__label__0 you ve post dozen line code consist `something.hid dozen comment line code ton unrel code pleas edit post remov nois junk reduc minimum need demonstr problem ask actual question
+__label__1 jrok `+` `-` left-associ 1 3 caus ub depend requir
+__label__0 dougsmith you take basic tutori text book tag c++ ask ...
+__label__1 how expect judg real person 's name
+__label__1 ben for pre-exist code user allow abl compil sourc common practic allow user specifi compil compil flag use this give user abil add option disabl specif optimis without chang makefil code
+__label__1 if function work correct i recommend come codereview.s it would nice includ test `main post
+__label__1 prefer tri avoid struct without christurn
+__label__1 methodman yes familiar how/when let choos return base differ valu for exampl differ date 120 mintu want return 120 mintu want return 2 hour make switch
+__label__1 what 's name f3221c
+__label__1 write setonclick lister imag oncreateview close check brace open close
+__label__1 what think `printf `` ``
+__label__0 is homework if remark bad method oper
+__label__0 even though blatant homework/assign question a loop start digit index index 0 good start i.e `for int i=digit =0 --
+__label__1 thing ca n't cast class b class a get error
+__label__1 get valu
+__label__1 load allow charact key unordered_map then queri candid charact if char unordered_map un-allow charact present process accord
+__label__1 doe work either
+__label__0 go downvot reach -10
+__label__1 pleas n't downvot if suggest question answer give otherwis n't without comment..
+__label__1 you forgot assign variabl `link link.replac `` 2f '' `` '' `link link.replac `` 3a '' `` ''
+__label__1 don'tr spam tag c++ differ languag
+__label__1 .. tag python-2.7 tag python-3.x sidenot n't name variabl built-in list set dict tupl ...
+__label__1 datetim todaydatetim new datetim
+__label__1 diego.martinez right answer question without accepting/vot answer
+__label__1 if read ask good question http //stackoverflow.com/help/how-to-ask may see ask creat mcve you show csv data read list expect output what `test 5 20` mean
+__label__0 and day ll see question anoth develop compani '' how i pars json duplic key i need valu librari return last one `` oh well ...
+__label__1 this answer mislead there `function.prototype.curri es5 es6
+__label__0 mikevin i 'm amaz nobodi step tell felix calm what douch nine year i wonder ...
+__label__1 code written achiev
+__label__1 mayb hr want check creativ appli java language..
+__label__1 is jqueri use also function _add_ insid _addproduct_
+__label__1 nuha alshmlani make sure check edit 's probabl re
+__label__1 pleas use public front `` static void main string atg '' n't use public make default.and call jvm
+__label__1 but *don't* know deleg alway remov item invoc list this make resharp messag go away turn correct work code incorrect broken code certain circumst coincident work break unusu hard diagnos way mani case
+__label__1 pleas post `opts.parse`
+__label__1 are `d1` `d2` width enough store c-string null termin string char
+__label__1 that extra `0.001s` time take start c++ applic go killer got ta start write assembl languag
+__label__1 juharr i specif meant way tri
+__label__1 have tri search `` object recognit '' http //pypi.python.org
+__label__1 rajdeepsingh also never know appl decid chang next version io even 1px differ would break
+__label__1 what valu x`
+__label__1 welcom stack overflow `` question seek debug help `` n't code work '' must includ desir behavior specif problem error shortest code necessari reproduc question question without clear problem statement use reader see how creat minim complet verifi exampl http //stackoverflow.com/help/mcv ''
+__label__1 aesthet in c++ user-defin type introduc keyword `class` `struct` `union` it 's unclear n't like re actual tri achiev if explain better `` n't look good '' mean might way answer
+__label__1 edit procedur pleas see procedur gain
+__label__0 -1 question you find look http //msdn.microsoft.com/en-us/library/fatf1t6a 28v=vs.100 29.aspx lc=1033
+__label__0 whenev learn new languag first thing read oper read refer post
+__label__0 python_start what make think charact return it seem read c++ tutori book
+__label__1 christophgrimmer-dietrich you n't lose rep downvot question although i agre -8 excess
+__label__1 what .* non-greedi
+__label__0 it nonsens index ever belong order
+__label__1 what `` time complex '' mean your program take 2 input measur scale given input make sens
+__label__1 add proper question done research fail find solut do n't put incomplet question
+__label__1 i 'm tri figur correct i make order let token count 0
+__label__0 consid take look http //stackoverflow.com/tour learn so work
+__label__1 lukaswöhrl depend relat if relat time zone jon skeet ’ suggest better if relat two point time entir correct
+__label__0 's one fundament principl java if n't know pass instanc go learn java
+__label__1 http //dotnet.dzone.com/articles/notepad-c-compiler-you-can-do
+__label__0 do question
+__label__1 are ask mani written final size
+__label__1 that good question
+__label__1 in two case re return pointer n't come `malloc`
+__label__1 http //stackoverflow.com/questions/2418473/difference-between-require-include-and-require-onc it answer previous pleas check http //stackoverflow.com/questions/2418473/difference-between-require-include-and-require-onc
+__label__1 contain imag thing read question
+__label__1 are sure code enter loop
+__label__1 jonskeet say impli utc
+__label__1 patricknijhui string primit type https //developer.mozilla.org/en-us/docs/glossary/str javascript wherea array object in common languag re correct string array charact javascript assert wrong it 's import distinct reason bad answer
+__label__1 remov hhmmss dateformat
+__label__1 you re ad white border margin
+__label__0 '' ve stuck '' – tri far what problem face
+__label__1 `if empti unam empti pass `if empti unam || empti pass otherwis statement give true leav one empti
+__label__1 did run find did run debugg what confus
+__label__0 i hope n't write `is less than`
+__label__1 mattjohnson express `a+b` name contain `b` you may say `` depend '' ca n't say `` contain '' wrong i never said instant chang i said `date` contain instant true date `a+b` excel exampl `a` instant `b` timezon in term java bean convent `gethours` properti getter properti `` hour '' i may rewrit access properti bean librari the fact getter java addit brace level chang noth of cours may say `gethours` `` impur ''
+__label__0 omg homework ... i 'd recommend start read python cs tutorial/book ...
+__label__1 jonskeet see simpl exampl code show `date` instant
+__label__0 do n't feel question broad ask generic c++ a simpl googl like `` angl bracket c++ '' could lead yumyumyum yummi answer like link https //msdn.microsoft.com/en-us/library/sbh15dya.aspx
+__label__1 youmarki edit question explain want delet
+__label__1 newgrad function alway return fals
+__label__1 what 's wrong `style= '' height xpx width ypx ''
+__label__1 curiousm 's unnecessari valid approach
+__label__1 after jest i inform `printf `` array length d\n '' sizeof sizeof 0 job least c. it 's exact `b` note i chang narrat `` size '' `` length '' have said puzzlement comment *`size array may chang adding/delet elements`* turn wonder even mirth sinc fix size array how possibl keep track usag without anoth variabl hold inform
+__label__1 alexchamberlain op right that answer typo i comment
+__label__1 what answer mean of cours possibl check text python code duplic like languag
+__label__0 q `can store android design layouts` a **yes** q `how a it 's homework **search**
+__label__1 could even serious d
+__label__1 mean solut provid user2720864 irrelev
+__label__1 johnroepaulocañamaqu what i get respons without xhr
+__label__1 i know shocker kocko i apologis clutch straw
+__label__0 you n't ask question
+__label__1 obvious object system restrict one need look bruno oliveira 's work know non-essenti aspect see scala 's implicit my point `unsafecoerce` extens unsaf featur actual get hand object bare wit type-class membership use implicit paramet construct arbitrari instanc runtim although reli compil obey document
+__label__0 this question appear off-top insan
+__label__1 css/browser/html
+__label__1 you assign variabl `var variable=sno` pass `variable` function
+__label__1 look http //stackoverflow.com/questions/21872141/failed-to-convert-parameter-value-from-a-sqlparameter-to-a-str
+__label__1 hey one error syntax error token find solut
+__label__1 wait wut n't loop 10000000 10000000 i n't get
+__label__1 psychicoak there reason could n't creat tool python they exist languag
+__label__1 `np.asarray np.random.rand 1000 0.4 dtype=int
+__label__0 i smell xy problem http //xyproblem.info what 's actual issu
+__label__0 thomask in neither case mechan answer `` '' question amount restat fact programme/ey work particular way you essenti complain i n't make question like choos answer
+__label__1 i n't tri anyth sinc i n't know
+__label__1 what mean '' getelementbyid mention html '' `getelementbyid` javascript
+__label__1 post code show tri 's problem re face
+__label__1 the condit `` == 100 `` fals `` 100 ``
+__label__1 print `` hello world '' consol https //webmasters.stackexchange.com/questions/8525/how-do-i-open-the-javascript-console-in-different-brows document https //developer.mozilla.org/en-us/docs/web/api/docu finish load use jqueri https //learn.jquery.com/using-jquery-core/document-ready/
+__label__1 oh yes bad didnt read care enough still string full `u` null termin risk remain although much unlik
+__label__0 did thought code algorithm
+__label__1 what hell `volatile` like eric lippert said use `volatile` probabl use wrong
+__label__0 share code help guidelin nobodi homework
+__label__1 dim if `date` construct say year month day month hrs min guess time zone use construct way fulfil requir print part `date`
+__label__1 use `for int 3 /*empty*/ -- infinit loop
+__label__1 never mind post ll see ...
+__label__1 do also question
+__label__1 marcin i know check howev op ask librari check atleast that think hes tri ask
+__label__0 this ask iso so
+__label__1 mean `` portabl '' i know gcc featur goto across function wo n't work compil
+__label__1 are get brand server you first need debug code see item return server
+__label__1 versiontew 's forum technic
+__label__1 see file present ... tri versbos option `-wl -- verbose` addit inform like linker search linker script ... file see permiss `ls -al` might help
+__label__1 the writelin meth tri output valu myfunct n't return valu return valu void
+__label__1 alexisdm explain littl general paramet function fulli evalu function call how slot macro make asynchron
+__label__1 ehh complet diffrent question
+__label__1 i n't tri anyth i thought buil-in method
+__label__1 also answer probabl `` undefin behaviour '' sinc `man` like someth like defin man b b b`
+__label__1 that much special case actual ...
+__label__1 hherbol when profil origin code much time determin spent access data compar math etc. simul where actual bottleneck what new code also may worth note 's zero differ `` c array '' `` c++ array ''
+__label__1 i also think `` coupl data method '' realli independ oo consid go exampl languag method separ struct yet oop
+__label__1 .text .text neither exist
+__label__1 tri googl `` how i get averag two number '' hint it n't involv take minimum
+__label__1 drakeguan if want behaviour `pip` use `pip`
+__label__1 '' ca n't charact python '' yes `a` perfect valid python express
+__label__1 slak i timezon i `hh mm ss` third parti sourc it 's timezon unknown may mean differ instant one i get pars string
+__label__1 you accept answer explain exact differ went wrong one it look like n't understand moho 's type wrong
+__label__1 johnhal your answer readabl
+__label__0 these basic r-skill you benefit lot basic tutori also take question account also difficulti basic r oper
+__label__1 seem need basic sql tutorials..
+__label__1 possibl duplic sizeof java object http //stackoverflow.com/questions/4115239/sizeof-java-object
+__label__1 it print `` '' 1 disguis
+__label__1 carcigen yes
+__label__1 boot4lif tight loop 30 40 faster assum integ overflow might loop copi exploit return address stack
+__label__1 what behavior expect
+__label__1 do `short_open_tag` http //www.php.net/manual/en/ini.core.php ini.short-open-tag set 1 tri replac php`
+__label__1 you never check card alreadi dealt ... you could theoret get exact card everi draw onli thing i care notic scroll much code dump
+__label__0 well go _your_ work so code write homework provid servic you `for` `rang ... list slice use itertool takewhil `enumer want split hair could also split split hair use `iter
+__label__1 stultusk reali good exampl
+__label__0 marcin *bzzzt* 's ad hominem thank play
+__label__1 code would compil abitrari good compil -wall return-stat miss
+__label__1 i could find someth the code project http //www.codeproject.com/articles/15934/how-to-convert-a-numeric-value-or-currency-to-engl
+__label__1 i ve tri select record show pass group exam type that count either part pass
+__label__1 if use oracl statement termin usual need use end creat tabl statement
+__label__1 `int c 4 3 0
+__label__1 pleas read mcve ... **edit question ** https //stackoverflow.com/posts/48864931/edit
+__label__1 `printf` _defined_ header _declared_
+__label__1 what tri
+__label__1 `fixtireifflat
+__label__1 also c properti `public balanc get return balanc instead get set function
+__label__1 i done i think i ve mess each method option return 0 they complil though main thing i guess
+__label__1 one error 120 error syntax error token
+__label__1 if want store local comput need databas do think user edit his/her login detail if still think consid encrypt algorithm store data `.txt` file extens make data unsaf you edit everi file what file contain matter not extens
+__label__1 read care link https //developer.apple.com/library/ios/documentation/cocoa/conceptual/programmingwithobjectivec/introduction/introduction.html //apple_ref/doc/uid/tp40011210 get start object c
+__label__1 it good style answer question
+__label__0 martijn pieter remov comment my point `` googl post '' it take great deal effort research i post question i 'd hope other least tri extent
+__label__1 what `doe n't work` mean blank screen an error messag let everyon let one let time
+__label__1 know differ interfac class
+__label__1 realli want ignor first item 0-base index
+__label__1 rerito string n't contain 'u return 0. function simpli count number 'u row begin string think make segfault ca n't understand
+__label__1 what mean `how inject new object insid array array length ex 20
+__label__0 doe swift document
+__label__1 it alreadi scrapi code earth `item locat =beautifulsoup response.css div.clg-stat .extract_first '' lxml '' .text` ... whi use `beautifulsoup` you option use css selector xpath scrapi whatev comfort
+__label__1 pleas post code tri far done mysql_num_row ...
+__label__1 can share code tri
+__label__1 this worked.. great.. thank
+__label__0 omar nevertheless post answer first tri delet question take advantang diego 's time make in4001 bad actor
+__label__0 i look `++ oper c` `c++ ++ operator` lead page first result this question low effort well i guess op bing wizard mayb ca n't googl either
+__label__1 it 's function return pointer i ve monitor memori remain static extern input remov it 's electron environ i ve abl predict increas bit usag stimul appropri channel also i follow entir program around assembl issu i encount whi peopl downvot vote close question is valid question if someon misunderstand languag use make mistak mean question worth remov so hostil
+__label__1 i n't post code i would mind necessari it 's begin assign
+__label__1 are u use swift objective-c
+__label__1 the loop run `defaultvaluenumber` 100 how help your question bit unclear
+__label__1 3 class file
+__label__1 i tri accholdattr.contain `` kyc_cnic_ind '' i confus i get valu string
+__label__1 pleas read `longjmp` it unwind dozen thousand call frame constant time call stack n't much a typic call stack exceed megabyt laptop
+__label__1 you correct bring bigger question one studi learn learn trial error to honest i amaz n't lock ...
+__label__1 dbc.php file contain connect code ... thank i solv problem
+__label__1 want know correct whi tri
+__label__1 this ai n't multi-nod sql deploy
+__label__1 ofcours i tri figur n't work
+__label__0 what tri this easiest question site ... googl *css text underline* https //www.google.com/search q=css+text+underlin safe=act googl *css text align center* https //www.google.com/search q=css+text+align+cent safe=act
+__label__1 ildjarn what clear question you reboot comput simpli reload os -- power turn when someon shut power switch comput power i want know reboot comput reset tick counter how els want word skip bs
+__label__1 hint 's use jqueri
+__label__1 pleas show input look like expect output
+__label__1 not sure print name number list exampl first name test first number 1 5 first number2 20 i want one line one list
+__label__0 not much differ show ve tri ve look much detail possibl right sound like want someon work
+__label__1 well op specif ask without sdk
+__label__1 thank much ... .e.g word `` cat '' shuffl like `` cta '' '' atc '' ... second input string suppos `` tac '' case match random shuffl string return boolean
+__label__1 scottatkinson ask anoth question requir use input control mask text given pattern like password-field
+__label__1 what either c++ c
+__label__0 nick put much much afford `` make homework '' -question
+__label__1 justa tri couldnt find anyth
+__label__1 sure n't want way around `0°c` `20°c` correspond `f°`
+__label__1 this noth react
+__label__1 i believ answer mean 'd roll duplic code checker solut someon els probabl n't done yet
+__label__1 an exampl except filter would `catch httpexcept e e.gethttpcod == 400 writelin `` bad request ''
+__label__0 flag broad mani factor also type question belong so
+__label__1 store trivial use string the much better question ask type oper data type data type requir support oper deal `` veri larg '' number requir special librari area number avail
+__label__1 it almost good anim imageview return back origin posit i n't understand i tri overrid onanimationend method set imag end posit imag blink mayb n't best way make simpl card game i n't understand work android first day chang develop flash android
+__label__1 sinc matia solut recommend turn research found easi understand solut http //net-informations.com/q/faq/passvalues.html i find link post solut hard understand current c level
+__label__1 http //php.net/manual/en/security.globals.php
+__label__0 azurefrog what solut
+__label__0 you read beginn program book first it seem like understand basic object orient program program matter
+__label__1 this incorrect -- executequeryasync like javascript function manipul variabl mani scope includ global scrope
+__label__1 yes n't show list view
+__label__1 here onchanag spell wrong miss thing document.bgcolor= '' this.opt this.selectedindex '' check post answer want
+__label__1 'm still beginner.. i ve tried..pleas send relat document link xale94
+__label__0 it 's 2014 we better
+__label__1 carsten semant close metal perform *removed* metal sign overflow allow conclud `for int 0 n i++ `i 0` wrap even `n 0` appar use certain optim this i read
+__label__1 simpli a-z 3
+__label__1 brad so syntat i look someth along line loop goe ** int 0 size i++ sport_typ index == insert char print messag ** size counter variabl i set main increment time new reserv thus indic array set
+__label__1 how show us re stuck
+__label__1 when attach debugg step line line fail
+__label__1 http //stackoverflow.com/q/1083701/1548523
+__label__1 opposit .get
+__label__1 i would also like point operand near imposs googl unless know 's name i found referenc post link anoth stackoverflow post ask specif operand refer c post specif answer i link troubl locat googl sinc googl n't correct pars way i 'm awar includ '' '' fail also know mayb one `using` need i would like hear author get blast bit
+__label__1 evert this exact consider \s mean whitespac use \s
+__label__1 string path environment.getexternalstoragedirectori `` /images/test.jpg '' file imgfil new file path
+__label__1 yes..work browser includ latest safari 5.1.5
+__label__1 holger 1 i get mean 1 class 2 // annotationtype/example` 2 i clear understand `class` member come exist
+__label__1 you want get two word someth els
+__label__1 the error messag say n't _understand it_ fix issu learn someth
+__label__1 `if playercheck == true better `if playercheck
+__label__0 should question reword `` how mani week year ''
+__label__1 lưuvĩnhphúc what mean `a` _can used_ variabl but default `a` defin
+__label__1 mastarhian inde except content insid 's generat empti tag wo n't actual appear screen
+__label__0 have select random collect tag what java angular
+__label__0 i ve chang titl someth appropri sinc no-on realli _cares_ urgent think urgenc reserv _paying_ client
+__label__1 thomask whi differ behaviour need explan `pip` advertis provid ident behaviour vice versa in far suppos similar similar instal python packag to expect differ explan like ask i n't use write style neither us indic would
+__label__1 sorri i realli tri use window.open i find it open new tab.i see i care thank help ... english languag it hard read mani english articles.so i ask sorri
+__label__1 work like charm ... thank much ...
+__label__0 i alreadi state i tri creat project scratch hope proper read question
+__label__1 that work last .thank guy correct
+__label__1 your exampl work http //ideone.com/wveg5i
+__label__0 konradrudolph i wonder judg comic n't seen if n't know answer question `` how prevent optim class field c '' pleas feel free wast time
+__label__1 you tri use `clip-path` css
+__label__1 i complet agre steveiv but i want point although 10 peopl downvot singl one `` time '' realli comment question bad..
+__label__1 so mani down-vot i delet question
+__label__1 i would set `pseudo element` contain element `overflow hidden` set style `pseudo element` `border-radius` properti set `posit absolute` take flow document circumv `pseudo element` effect proport contain parent element this mean parent element need explicit width height valu set otherwis ll collaps though `pseudo element` never exist
+__label__1 this help local server thank d
+__label__1 user2985498 do n't take person everyth so content question answer person the comment result *vote close* particular question
+__label__0 `` wow '' genious program correct misspel `` exeris '' correct `` exercis ''
+__label__1 http //idownvotedbecau.se/noattempt/ pleas tri post code specif problem n't succeed
+__label__1 the printf incorrect there behaviour undefin there paramet given printft
+__label__1 tri compil see happen
+__label__1 copi text indent 4 space press code button ll width remain format
+__label__1 user4581301 n't write khow put duelforyoungsamurai pickweapon part comment problem
+__label__1 you answer
+__label__1 https //www.google.com/search q=javascript+hello+nam
+__label__1 pleas edit question
+__label__1 afaik .getscript url get script execut access variabl script sourc
+__label__1 the except pretti clear you tri read data posit n't exist most like tri read data 6 row instead one row
+__label__1 *what length array contain n number ... well ... `n`
+__label__1 but sort mean chang index
+__label__0 mean
+__label__0 i strong suspect ve misdiagnos issu pleas show short *complete* program demonstr problem
+__label__1 also peopl vote question lol
+__label__0 learn document https //laravel.com/docs/5.4/blad
+__label__1 how work expect instead btw this becam audit featur meta http //meta.stackoverflow.com/questions/291502/is-this-another-good-review-audit-quest
+__label__1 you usual post code i assum error messag line 28 39 compar float* either pointer float case mention array float probabl regular variabl spot array make sure 's array use line 28 39 alway use squar bracket 's line 29 63 problem probabl assign float variabl valu pointer probabl array make sure use squar bracket mention where array
+__label__1 cheersandhth.-alf cool thank
+__label__1 marcin of cours expect similar behaviour serv instal python packag it 's differ behaviour need explan as anoth answer vartec 's answer good start provid singl option `setup.py` make behav like `pip` that 's relev like use
+__label__1 you n't you re tri execut `adder` tri run `sol`
+__label__1 also make habit insult peopl tri help how work general
+__label__1 you could ask question general term exsampl `` how compar string java ``
+__label__1 `.value` mean get string assign `value` attribut element numb`
+__label__1 joeframbach i believ script file view site i 'm sure i otherwis post
+__label__1 user611710 `` everyth would fine '' ... wait claim n't work even `bool` one your sampl `bool` one ... fail `bool` `double`
+__label__1 idea unsign octal n't placehold n't care 's char int whatev like c
+__label__0 did read code *at all*
+__label__1 you `return 0 statement end `main` how main go return anyth without return statement
+__label__0 hahah i problem answer
+__label__1 if seem `int p*/` *not* mean someon multipli divid someth mean end comment p
+__label__0 explain arbritari exclud enumer index homework
+__label__1 share code pars json
+__label__1 i n't work i know compareto method i also confus work i true newbi sorri
+__label__1 dude question belong ios..pleas see tag atleast ... ..
+__label__0 let guess you copi code site n't exact need want someon fix
+__label__1 pleas provid question
+__label__1 when i run problem like i ask -- java swing 's broken understand java and/or swing defici 99.9999999 time problem understand i 'm will bet thing go pleas provid inform request pleas let us chanc abl help
+__label__1 relat http //stackoverflow.com/questions/16388078/is-a-concave-border-radius-poss
+__label__1 are alreadi use mysqli pdo insert databas
+__label__1 possibl duplic indentationerror unind match outer indent level http //stackoverflow.com/questions/492387/indentationerror-unindent-does-not-match-any-outer-indentation-level
+__label__1 you overload `intset :oper want call `oper
+__label__1 this guid repeat suggest use `git-gui` work index whi index/stag area use http //gitolite.com/uses-of-index.html
+__label__1 prune dr.anni liu main author method mention also paper http //www3.cs.stonybrook.edu/~liu/papers/inceff-hosc00.pdf would also help understand method in case if got suggest improv qualiti question order get answer pleas it 's shame interest topic wo n't reach so expert particular field
+__label__1 this incred ineffici compar accept answer circumv optimis mongo put behind scene straight find accept
+__label__1 sorri peopl seem rude i agre seem tutori cover load librari write code
+__label__0 peopl think didnt googl hard enough
+__label__1 globally-access n't impli global scope `public` member visibl outsid world consid global access howev still within contain class scope n't global scope it 's way member namespac `std :vector` global access assum header include`d 's `std` scope instead global one
+__label__1 instead `getactivity` pass `getcontext job
+__label__1 what question do special problem error and method code come look like
+__label__1 sorri guy tri store data post via instant notif
+__label__1 first pleas go read ask relev code belong direct question // your submenus made visibl via css rule `.menu ul li hover .submenu` happen immedi want introduc delay use javascript first remov rule whole thing js
+__label__1 it 's print sign join whatev input user enter `console.read wait user input valu return
+__label__1 just clarifi comment in answer i suggest two tool support capabl you would need use one as rule i fan use gui tool https //git-scm.com/download/gui/linux git whi would want manag dag https //en.wikipedia.org/wiki/directed_acyclic_graph creat git without aid visual tool by way `gitk` https //git-scm.com/docs/gitk `git-gui` https //git-scm.com/docs/git-gui more-or-less standard equip git
+__label__1 threev whi need run root note even apache/nginx run root i n't see reason develop server self-descript run root and never need proper develop environ that 's answer say
+__label__0 stack overflow code write servic you write test thank **you**
+__label__1 's sql server command
+__label__0 where get code seem strang code
+__label__1 i downvot question n't includ code show problem among reason
+__label__1 pleas n't reask quesiton differ format http //stackoverflow.com/questions/37201760/how-to-maintain-textbox-and-labelcontrol
+__label__1 `` someth wrong '' guess ve assum argument `point` latitud follow longitud rather longitud follow latitud
+__label__1 ok i would ask question
+__label__0 loisklos edit question suppos read
+__label__1 mayb `==`
+__label__1 federicoklezculloca you ca n't wizard anyth without skill find basic inform doc
+__label__1 it compil it 's fail runtim
+__label__1 you two `print` function one line
+__label__1 sorri even fix still doesnt work
+__label__1 check https //regex101.com/ python throw regex tell thing
+__label__1 pleas refer http //stackoverflow.com/questions/2418473/difference-between-require-include-and-require-onc it answer previous http //stackoverflow.com/questions/2418473/difference-between-require-include-and-require-onc
+__label__1 overrid imag 's css .goog-logo-link display none
+__label__1 what ask post code give advis general python recurs slower normal loop cpython implement frame object
+__label__1 possibl duplic what usag 1 https //stackoverflow.com/questions/37056975/what-is-the-usage-of-while1
+__label__1 i work someth similar go store valu per dom element whole page total a simpl implement color chang found prodev.site/admin click logo open menu set quick chang page color perhap creat json set file per user valu color font etc store databas would good idea you could pass json javascript function make appropri chang complet `magic`
+__label__0 we wo n't homework we ll _help_ get done sure need show effort first make attempt solv assign ll help fix code
+__label__0 whi code even work you never call regist function `sometim work` bet ***never*** work complet code
+__label__1 timothygroot i updat question code show pleas look
+__label__1 edit post get bump anyon watch '' activ '' tab tag see top list like http //stackoverflow.com/questions/tagged/php-intern sort=act pagesize=50
+__label__1 get thing chickfila like like chickfila
+__label__1 you *highly* consid renam store procedur call procedur name `sp_` prefix regardless databas current target alway check `master` databas first procedur *then* look databas re target
+__label__1 i remov +91 0 present begin string contain multipl data
+__label__1 humor asid i give +1 ... er person guilt make fun if realli want get essenc comput may pay work simpl thing bit mayb play bit core war https //en.wikipedia.org/wiki/core_war thing help see world `` comput 's eye view '' then might understand much use way simplifi abstract interfac do n't discourag sit basic enjoy wonder ...
+__label__1 pleas edit question instead ad comment everyth one place format
+__label__1 `n` element `a.length` element
+__label__0 mattdmo that 's reason close question downvot
+__label__1 has_access_card
+__label__1 'm sorri first time use site let tri fix
+__label__1 alway indent space tab this tab consist width the actual width depend set individu word processor editor
+__label__0 python_start `a` *variable* declar hold valu type `int` you *really* need find sourc learn c++ would cover first chapter first *paragraph*
+__label__1 trojanfo i unhappi downvot question reread first comment you redirect comment whose downvot question they noth say except off-top comment
+__label__1 312000 12 4 6500` ... and convert hour divid week number hour work week typic 37.5 40 *see answer note 4 week per month divid year 52 rather 48
+__label__1 thelostmind string s1 new string `` abc '' s1.concat `` def '' chang object sop s1 `` abcdef '' `` abc '' pleas check first repli
+__label__1 write test jspref http //jsperf.com/ profil
+__label__1 `int p*` valid
+__label__1 mani tabl anoth field tablenam input paramet
+__label__1 i new share point i dont know
+__label__1 thank edit code user4581301 chris sound like want _search_ array sport _indices_ contain particular valu in word loop `sport_type` captur everi index lead certain charact
+__label__0 everyth comput form inde `` real '' store somewher this hard-war question want detail program i would n't ask stackoverflow
+__label__0 not abl think type check error exampl impli somewhat limit knowledg type check work
+__label__0 i will sacrific 300 point downvot even
+__label__1 this fair explain noth ... moho solut seem way better ...
+__label__1 vincentsavard in way `std :string` support unicod
+__label__1 actual i confus `stage` `es6` rgraham point `the babel preset contain es6 featur preset-es2015` thank
+__label__0 delet line arbitrarili make code shorter way creat mcve ask question proper take reason amount effort quick fix
+__label__1 well start `for int j 1 j size j++ printf `` `` print four `space`
+__label__1 -1 type infer n't magic still need idea return type
+__label__1 you need provid two argument one
+__label__0 too much code break
+__label__1 you need `std :string :substr`
+__label__1 thomaswel thank repli tri make clear meta discuss mistak mine apolog still downvot
+__label__1 sorri sasi even close correct nice answer ... ...
+__label__1 *sigh* `1,5,8,4,3` string array are want convert string `'1 '5 '8 '4 3'` array contain `1` `5` `8` `4` `3`
+__label__1 if re realli ask tag c++ tag use `std :ostringstream` if want tag c question sound use `sprintf
+__label__0 if want generic solut 's `languag agnostic` tag use
+__label__1 '' ... i want prank ... `` do n't it danger certain it polici violat possibl illeg
+__label__1 i know averag ... i 'm ask i write code get i use appstudio i 'm tri learn i n't know aka i came websit
+__label__1 just saw edit post thank much you extrem help
+__label__1 step number one write robust correct code know tool someon wholli unacquaint languag mess produc secur code matter much help get compil the secur vulner introduc incompet programm write code compil upgrad
+__label__1 i believ got `` sintact '' possibl the option i would add `` emb '' `if` method call singl method `ensuretiresareok similar
+__label__1 akshayk07 it 's even c. it 's arduino 's version c++
+__label__1 also relev gcc ***warns*** http //coliru.stacked-crooked.com/a/dd3a1326e3e26097 realli recompil newer compil n't even warn enabl n't test fall n't deserv sympathi fix code fix build system fix workflow
+__label__1 if crash debug ide debugg except notif window appear click break least default call stack window appear that tell problem origin
+__label__1 brute-forc method tend slow
+__label__1 amir with `get` input index output object with `indexof` input object output index
+__label__1 you declar 9 variabl rather kind array structur forc code lot duplic when code start look like 's piec copied/past 's indic ve done someth wrong
+__label__0 also weird code n't understand ...
+__label__1 great good luck post answer ve solv benefit
+__label__1 they re real support floating-point
+__label__1 constant pool entri noth special they constant pool entri 1 could 39123 would work fine it 's refer field *this_class* class file format indic name class and `class` member express come exist
+__label__1 possibl duplic use ellips origin center wpf http //stackoverflow.com/questions/19665022/use-ellipse-with-origin-in-the-center-wpf
+__label__0 there must dozen post tell even tri search
+__label__1 char achar opponentcard.charat 1 system.out.println achar achar=='a element.charat 1
+__label__1 dmitrybychenko case imposs
+__label__1 you could start review spec nsstring
+__label__1 post new code detail explan pleas tell differ two thank you everyon i hope code help guy understand actual ask
+__label__1 whi matter i ad code question actual return null code never actual reach address i use 5248 bit ram 128kb
+__label__1 user2357112 the question within context c c++ per tag
+__label__1 exampl user drag item cart user delet choos cart
+__label__0 use uppercas consid scream thus rude impolit you disrespect communiti you see place drop requir peopl think
+__label__1 note i ca n't use regex.. moment class n't see that..
+__label__1 check an may help https //stackoverflow.com/questions/45168556/in-android-how-do-i-save-response-coming-from-php-login-script-as-shared-prefer/45168962 45168962
+__label__0 dylangattey this wrong pleas read question first refer phone call
+__label__1 what mean `` return 3221225477 '' the program print that 's exit code i notic 3221225477 0xc0000005 might mean someth
+__label__1 cbroe sens is make applic display error i check develop checkbox login form if i n't check session var null error display 0
+__label__1 creat layout folder present start i would recommend creat anoth new project
+__label__0 theoret it could fast file bug report c/c++ compil vendor pleas n't i 'm sarcast
+__label__1 there odd languag set code involv i doubl click form solut explor click textbox..i got alert
+__label__1 piepi n't alreadi got 3 good answer
+__label__1 tri solut got error `` at least one argument implement icompar interfac ''
+__label__1 `document.getelementbyid bodi – element id bodi and perform getelementbyid take index there one element one id
+__label__1 can write specif if use builtin sort algorithm use or write sort algorithm but need know constraint solv problem
+__label__1 possibl duplic find extract number string https //stackoverflow.com/questions/4734116/find-and-extract-a-number-from-a-str
+__label__1 this extrem basic thing ask usual solv creat public getter method pleas note down-vot lack demonstr research effort subject ask site suppos use substitut studi basic rudiment languag
+__label__1 like text input field
+__label__1 i 'm go guess `main` method creat `vendingmachine` 20 can 10 can `add 10 can `inserttoken `x2 there 's output
+__label__1 salsabear python *not* handl right that python n't distinguish declare+init vs. simpl assign major design error python
+__label__1 mungaihpk edit invalid answer not good form
+__label__1 what string unknown second charact string must lowercas
+__label__1 scope didnt code comment attach
+__label__1 it mean someth person wrote it.ther univers definit
+__label__0 blahfunk this q a site q|a site besid http //blog.stackoverflow.com/2011/07/its-ok-to-ask-and-answer-your-own-questions/
+__label__1 moreov `s/sring/string/`
+__label__0 have tri anyth
+__label__0 this plain wrong
+__label__1 the compil give line error descript quit suffici understand
+__label__1 what dbconnect.php can provid code
+__label__1 welcom stackoverflow pleas read topic help center ask https //stackoverflow.com/help/ask your question danger close n't improv
+__label__0 your program seem split person disord it ca n't decid whether 's c c++
+__label__1 at least bit specif expect code get
+__label__1 thank refer paper i 'm still pick enough background help
+__label__1 whi print `i` sum`
+__label__1 cregox i n't know platform typic linux distro trivial instal bonus gui tool -- may come handi purpos in case anoth option peopl prefer visual approach
+__label__0 your question miss inform ll allow us help stack overflow https //stackoverflow.com/ free code write servic you expect tri **write code yourself** after research https //meta.stackoverflow.com/questions/261592 problem **post ve tried** **clear explan n't working** provid **minim complet verifi example** https //stackoverflow.com/help/mcv
+__label__1 sclv i 'm sure either paper claim the class per class encod clumsi i agre my point subtl typeclass haskel class type we constructivist us suppos type member typeclass requir sort `` evid object '' further languag provid automat theorem prove system form infer global instanc my claim proof languag logic oo help reason haskel awar fact
+__label__1 thank help lot
+__label__1 my question i assembl code tell processor write data store ram sd card
+__label__1 user1781384 so re look c solut java solut
+__label__1 is anyway copi folder host contain
+__label__1 plenti answer here mine base regex negat lookahead var reg new system.text.regularexpressions.regex '' \d '' var maskednumb reg.replac numberfielddescriptor `` ''
+__label__1 neb i guess `d a-z 2 requir confus
+__label__1 ejoshua joe_dm edit question hope clear
+__label__1 turn list integ singl string pars side
+__label__1 hello your question unclear ideal would edit add detail explan issu context actual code etc thank
+__label__1 whi includ `xcode` tag your issu code ide platform
+__label__1 i ve alreadi done file open `` full_megalog.txt '' `` r '' line file
+__label__0 help question
+__label__1 it acccess `` webpag '' it access page current domain
+__label__1 j.f.sebastian i think solut would also includ ac option could wrong
+__label__1 `int` `employee`
+__label__1 simpli `var book new book titl `` one world '' librari need
+__label__1 πάνταῥεῖ which reinforc comment best use librari
+__label__1 insan like i said though friend suggest use i never use
+__label__1 check anoth element collect tri `in.nextint usual would use `while in.hasnextint iter instead `for loop` `java.util.nosuchelementexception` thrown runtim 's code compil
+__label__1 ok. code solv problem
+__label__1 when read string program read word temporari array char use malloc alloc enough storag hold word store address array char pointers.how handl step
+__label__1 my compil threw error no code found pleas post code error
+__label__0 still know definit man
+__label__1 are sure still work latest version safari we ve p3p header year ie safari 's still broken
+__label__1 leppi volatil instruct compil make assumpt content variabl might chang anoth thread anytim thus disabl optim
+__label__1 's incred easi make swap function i 'd suggest edit c++ question
+__label__1 for compatibl c `0` implicit convert `false` non-zero implicit convert `true`
+__label__0 what “ work ”
+__label__1 supernovah you also code path `returnstr char* '' empti '' i suggest use debugg find bug
+__label__1 this bit anti-pattern use `observable.tolist instead make sure `observable` infinit problem
+__label__1 you probabl accept dan 's answer he answer correct gave explan regard problem answer
+__label__1 but hv explicit specifi digit place
+__label__1 first forgot `setcontentview first add fetch view
+__label__0 tri research post this realli basic question
+__label__1 it 's type alia http //en.cppreference.com/w/cpp/language/type_alia
+__label__1 pleas edit question add code longer strectch code n't readabl comment markup
+__label__1 cris https //www.google.com/search q=winforms+c 23+pass+variable+between+form
+__label__1 not sort syntax
+__label__1 yii way use correct way
+__label__1 jin kim your program would look even better add one minor detail includ word print statement for exampl printf `` enter maximum number money want ``
+__label__1 also doe matter tag content and tabl miss close /tr tag
+__label__1 good point i find think typeclass object plus prolog like theorem prover everi rule begin cute make easier reason someth rather complic give access bodi literatur design principl appli problem think c++ templat function languag sort like haskel make easier reason also i general tri understand weird edg mathemat system describ term axiom i alreadi know you dont need ring theori explain integ
+__label__1 input number 12345678 account number
+__label__0 so n't code-writ servic 's implement 's problem
+__label__1 method return error use bridg header framework target unsupport
+__label__0 sure dato constructor call tri copy/past code screenshot code read document
+__label__1 what 's goal
+__label__1 rsatom epic moment d
+__label__0 want serious tri show effort
+__label__1 i assum know program android base java build algorithm i help primit algorithm solut need implement ui java code android app i also full project idea let know i process
+__label__1 this might help what pointer size 64 bit comput c++ http //stackoverflow.com/questions/6841405/what-the-pointer-size-in-64-bits-computer-in-c
+__label__1 `was tri separ admin fronted` what mean
+__label__0 this answer n't absolut reflect point question ... asker want view control
+__label__1 you could save time use pow function http //en.cppreference.com/w/cpp/numeric/math/pow
+__label__1 what tri the drag drop interfac make layout n't work
+__label__1 if want add duplic simpli check arraylist see valu part `lottery.contain x
+__label__1 snuggles08 's good start did tri modifi move one see could get one stationari
+__label__1 pleas post code
+__label__1 mikew
+__label__0 nay ala solv homework we go
+__label__1 can check answer post attempt
+__label__0 '' i think jqueri far javascript librari ... '' no 's librari
+__label__1 you lost `break loop until` you n't break loop *until* sinc break *once*
+__label__1 what 's variabl custom
+__label__1 i 'm sure 's way certain applic onlin bank exampl ca n't display visual interfac onlin bank account even 's valu inform
+__label__0 hint *tell* peopl downvot question lot exact `` plz downvot '' cue question probabl need downvot either way nois belong question i edit otherwis improv clariti question pleas add back there noth peopl decid vote if question use clear general get upvot downvot make end complain comment also discourag
+__label__0 you specif how want send do establish connect server what protocol can socet webservic
+__label__1 question translat
+__label__0 i smell homework ... ..
+__label__1 as state kroltan div id must uniqu use common class 2 element use jqueri class selector `` .your-class ''
+__label__1 i alreadi done plugin outlook veri big differ outlook object model do expos item_send event allow cancel send oper i tri general solut mail client ran and i control smtp server
+__label__0 so site crowdsourc homework `` i would like help '' program question
+__label__1 matthewd ask tri want post origin post exampl code tri
+__label__1 yes one person give correct inform go jmatthei
+__label__1 **moder note** i ve clean comment should feel need continu discuss merit question take chat in meantim find off-top vote close stop argu comment john n't remov content post
+__label__1 for window form check graphics.rotatetransform https //msdn.microsoft.com/en-us/library/a0z3f662 v=vs.110 .aspx note expect degre radian
+__label__0 *facepalm* it help code im ask ... i written code yet omg
+__label__0 andrewbarb see discuss http //meta.stackexchange.com/questions/189591/is-sos-programmers-site-a-better-place-for-advanced-questions/189595 189595
+__label__0 and `` load jqueri '' googl n't help
+__label__1 might want mention languag re use
+__label__1 i think ajb right problem windows-explor
+__label__1 i ve tri search googl i ve tri mani differ method seem work i 'm use array variabl i ve also use _post row myfield _post `` row myfield '' _post `` row myfield ''
+__label__1 no.. reopen app i want see button creat last time..
+__label__1 `printf `` the sum number '' sum -- `printf `` the sum number '' sum
+__label__1 true issu downvot comment address meta it seem logic perhap comment requir other think
+__label__1 creat list control one one valu loop totallist check contain current valuelist
+__label__1 pleas explain issu detail exampl
+__label__1 definit work 5.1.7 7534.57.2 p3p header
+__label__0 googl think need good android book
+__label__1 `std :string :npos` scope resolut say `nops` `string` scope `string` `std` scope and `size_t count 0 n't syntax error
+__label__1 abiessu i could n't find one n't move
+__label__1 youda008 yes suitabl mail list
+__label__0 what effort made research question
+__label__1 like bugfind suggest code doesnt run command get error becuas doesnt actual anyth return error
+__label__0 https //stackoverflow.com/help/how-to-ask
+__label__1 c++11 equival `typedef data_typ var_nam
+__label__0 juanchopanza realli i n't quit understand mean neither formula work
+__label__0 it look like want us write code while mani user will produc code coder distress usual help poster alreadi tri solv problem a good way demonstr effort includ code ve written far exampl input expect output output actual get consol output traceback etc. the detail provid answer like receiv check faq ask
+__label__1 no compulsori defin main method class extend abstract class there might issu
+__label__0 pleas read ask you suppos show compil code syntact question show problemat line compil error messag but one error per line realli much ...
+__label__0 what want know you method signatur exampl call there noth said code post
+__label__0 sorri `-1` zero effort
+__label__1 you re clear convert result `math.sqrt `int32` integ i.e decim
+__label__1 ad refer dll anoth project 's bin directori typic veri bad thing especi project solut build server set it caus headach
+__label__1 i think read basic lectur java an variabl complex data type like player must initi could use
+__label__0 hardyz009 you serious revis way re ask question reflect so work what tri far did tri anyth googl instanc
+__label__1 pleas n't post code imag
+__label__1 if n't everi answer page point time wrong
+__label__1 sorri forgot add js fiddl link pleas check link vote simpl mistak
+__label__1 _uniquearray _.countbi `` welluid '' -- i use lodash function get occur welluid object mention lodash function return array
+__label__1 oh.. -1 explain
+__label__1 share code sampl ... would help resolv wrong
+__label__0 `` doe work '' technic term if want develop explain problem detail
+__label__1 i look someth like `document.innerhtml` caus `document.documentelement.outerhtml`do return expect result
+__label__1 sampl code http //sscce.org/ complet concise–enough recreat issu the post sampl much extran code
+__label__0 what mean stuck do understand code take tour https //stackoverflow.com/help inform ask question
+__label__1 pleas edit question post code instead screenshot
+__label__1 also 's languag `` c/c++ '' c c++ two *very* differ languag even part syntax similar
+__label__0 it goe c++ group-think *only* correct answer question they *just n't care* whether break exist widely-us previously-work code c++ communiti broken recogn
+__label__1 ouch i spent time answer
+__label__1 down vote follow reason this question easili answer creat file syntact error includ requir file determin result behavior therefor answer question ask someon els stack overflow second answer alreadi clear document exist php document
+__label__1 expect code add button div element valu element equal focus
+__label__1 as i expect error function the function name `timerequiredrun` see function even though see lot code so problem give us misinform get use answer
+__label__1 possibl duplic differ == === javascript https //stackoverflow.com/questions/523643/difference-between-and-in-javascript
+__label__1 do tabl in each db
+__label__0 did tri read error messag it clear inform
+__label__1 possibl duplic how i get date without time java https //stackoverflow.com/questions/5050170/how-do-i-get-a-date-without-time-in-java
+__label__1 that 's singl statement anyth separ must execut multipl statement often matter the answer alreadi demonstr op ask imposs howev
+__label__1 dont use fix path sd-card directori instead use **`environment.getexternalstoragedirectori .getpath `**
+__label__1 maskacovnik sorri didnt tri anyth major good awk/ sed just start learn this command read file replac null zero but abl proceed sort work cat fllename.txt awk -f `` \t '' print 1 2 sort -t k2
+__label__1 pujan final size could 5 20 byte long depend set os it like a could c
+__label__0 your question vagu open end 'd attract close vote question bounti ca n't close get downvot instead
+__label__0 have look document
+__label__1 can provid code it 's help better understand question
+__label__1 your code n't compil `formatstring` call incorrect what output expect -1 inform provid so n't expect get code compil way
+__label__1 i use cocoapod i got error say nativ modul must null
+__label__1 mean
+__label__0 this relat basic question reason i 'm downvot provid enough inform anyon give answer to make question appropri least describ provid structur tabl want queri in addit may want specifi queri use sql linq accessor
+__label__1 use regex http //en.wikipedia.org/wiki/regular_express
+__label__1 is limit number row
+__label__1 there 's still enough inform question answer for exampl `index` `image` defin swift code
+__label__1 hi omair welcom stackoverflow as sven said question broad like close pleas check guidelin ask question stackoverflow https //stackoverflow.com/help/on-top
+__label__1 muntoo again regard soft reboot differ os 's queri
+__label__1 do specif exampl 'd like work
+__label__1 except urgent explan question comment
+__label__1 how `x^y` multipi number would n't `x^2`
+__label__1 i ask whi
+__label__0 what fiddl where exact problem
+__label__1 thevalyreangroup the op 's exampl use tag name `button` ask `button` element
+__label__1 what tri far
+__label__1 thank long.max_valu print 9223372036854775807 it mean maximum
+__label__1 http //developer.android.com/guide/developing/index.html
+__label__1 which compil use gcc clang emit warn `format ‘ ’ expect argument type ‘ int ’ argument 2 type ‘ int ’
+__label__1 you read http //stackoverflow.com/help/how-to-ask tell us want achiev
+__label__1 what mean i use 'a i use 'i go insert how i use vim without mous
+__label__1 you n't power os you power physic piec hardwar anyway pretti trivial test whether `gettickcount` return valu indic window start hardwar power
+__label__1 paulpro lol fair archer short-circuit unclear imo
+__label__1 this code n't even compil number argument definit `distributecards` n't match number argument declar prototyp
+__label__1 *the output 3 alway peopl space 1 2 3 no current exampl result 3 first time sequenc execut becom 2 second time sequenc execut after stay constant 2
+__label__1 read `zip` `for` loop
+__label__1 serious question `scanf` call suppos achiev did check return valu 10000` valid format ... indent bit better still far readabl
+__label__1 what dialect sql use add tag well
+__label__1 what code suppos pleas write text english but guess program run type valu store thus never chang szam tart
+__label__1 understand
+__label__1 `setarray` member variabl
+__label__0 `` syntax error '' first i see `while kvp.key kvp.key +10 || kvp.key 20 `while kvp.key == kvp.key +10 || kvp.key == kvp.key 20 this would syntact correct semant non-sens valu can´t equal valu +10
+__label__1 oh interest i pretti fundament misunderstand cast char* what minim way `` empti '' line i seri `returnstr queuelength++ 'e ... `returnstr queuelength++ \0 seem pretti cumbersom term number line code ...
+__label__1 i 'm tri generat pdf server side and tri say would n't use internet explor
+__label__1 work long session_start declar correspond attribute/valu session
+__label__1 pedant `` over concern minut detail formal '' what re describ break core rule react ... minut detail
+__label__1 googl https //www.google.com/search q=list+of+java+keyword turn authorit list java keyword https //docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html second hit
+__label__1 is someth els think have tri simpli go sequenc step program would perform
+__label__1 `` help look code '' clear problem descript pleas take time describ *specifically* problem
+__label__1 if `the_file` `'y'` file name exist get error
+__label__1 you pass instanc list
+__label__1 i n't see question offtop understand much negat op obvious newbi question well-form show code except problem i see say tri ...
+__label__1 public class vendingmachin public int cancount public int tokencount vendingmachin cancount 10 tokencount 0 vendingmachin int can cancount can tokencount 0 public void add int can cancount cancount can public boolean inserttoken cancount 0 return fals els cancount cancount 1 tokencount tokencount 1 return true
+__label__1 guy i made javascript free solut anchor p. and way rememb re help fight now let 's find real question
+__label__1 in addit comment the argument function give number row if 's 5 re go get pyramid 5 layer
+__label__1 you mention `` mergesort vs bubblesort vs insert sort '' later say mergesort beyond scope question could pleas clarifi
+__label__0 yes possibl what tri googl friend
+__label__1 `` yes number u mention valid '' i also mention `1,2345.00` four digit so assum number digit like `1,2,3,4,5,6.00` would number valid *rule* invalid if rule
+__label__0 i 'm vote close question off-top stackoverflow survey site
+__label__1 if javascript 's execut browser anyon use page view see if want keep thing secret n't send client
+__label__1 delet exact
+__label__1 an offici tutori http //docs.oracle.com/javase/tutorial/java/javaoo/
+__label__1 possibl duplic https //stackoverflow.com/questions/5139724/whats-the-difference-between-hashset-and-set
+__label__1 console.writelin doesnt return valu
+__label__1 you could creat infinit loop packag ssis packag resourc intens left run forev i would consid creat agent job run everi x seconds/min check chang file chang execut packag
+__label__1 imho that strang operator+ return list semant like operator+= modifi lhs it 's better chang name list operator+ construct new object
+__label__1 akshanshthakur becaus standard well-docu swift syntax
+__label__1 well know generat random number two number generat integ two given integ
+__label__1 defin pinout1 provid line error least
+__label__1 that n't infin you re see integ overflow
+__label__1 the concept ok syntax need correct
+__label__1 respectmyauthoritah `1` minimum field width in format ca n't get less 5 charact generat expon print `e` sign 2 digit plus least one digit expon width function ignor the 4 _does_ mean 4 decim place if chang convers specif '' 10.4e \n '' 'd get 3.1416e+01 use '' 13.4e \n '' 'd get 3.1416e+01 note e` format alway print one digit decim point
+__label__1 cant open ...
+__label__0 same home work problem answer https //stackoverflow.com/questions/45406235/select-date-and-time-in-sql-10pm-up-to-6am-everyday noredirect=1 comment77774538_45406235
+__label__1 it might i find concern `` web programm '' ask question ...
+__label__1 i tri fix main problem thank feedback everyon
+__label__1 how tri someth first come back ask specif question get stuck someth
+__label__1 dtabuenc test re right
+__label__0 -1 new sharepoint tri use box featur first you `` want '' use javascript actual need
+__label__1 vaibhavkatw one digit one comma
