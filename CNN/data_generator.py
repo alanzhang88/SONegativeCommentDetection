@@ -11,15 +11,52 @@ import re
 
 
 def clean_data(data_arr):
+
     for data in data_arr:
+        cleaned = []
         data = data.lower()
-        data=re.sub("\\n","",data)
+        data = expand_data(data)
+        # data=re.sub("\\n","",data)
         #remove elements like ip, user
-        data=re.sub("\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}","",data)
-        #remove usernames
-        data=re.sub("\[\[.*\]","",data)
-        data=re.sub(r'([\'\"\.\(\)\!\?\-\\\/\,])', r' \1 ', data)
+        # data=re.sub("\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}","",data)
+        # data=re.sub(r'([\'\"\.\(\)\!\?\-\\\/\,])', r' \1 ', data)
     return data_arr
+
+def expand_data(data):
+    short_seq = {
+        "you're": ['you', 'are'],
+        "i'm": ['i', 'am'],
+        "he's": ['he', 'is'],
+        "she's": ['she', 'is'],
+        "it's": ['it', 'is'],
+        "they're": ['they', 'are'],
+        "can't": ['can', 'not'],
+        "couldn't": ['could', 'not'],
+        "don't": ['do', 'not'],
+        "don;t": ['do', 'not'],
+        "didn't": ['did', 'not'],
+        "doesn't": ['does', 'not'],
+        "isn't": ['is', 'not'],
+        "wasn't": ['was', 'not'],
+        "aren't": ['are', 'not'],
+        "weren't": ['were', 'not'],
+        "won't": ['will', 'not'],
+        "wouldn't": ['would', 'not'],
+        "hasn't": ['has', 'not'],
+        "haven't": ['have', 'not'],
+        "what's": ['what', 'is'],
+        "that's": ['that', 'is'],
+    }
+    seq_set = set(short_seq.keys())
+    cleaned = []
+    for word in data.split():
+        if word in short_seq:
+            cleaned.append(short_seq[word][0])
+            cleaned.append(short_seq[word][1])
+        else:
+            cleaned.append(word)
+    cleaned = ' '.join("cleaned")
+    return cleaned
 
 class DataHandler:
     def __init__(self,
