@@ -86,10 +86,10 @@ def outputFile(filename, phrases, labels):
 
 (trainSenti, testSenti) = preprocessData()
 outputFile("training", postProcessedTrainPhrases, trainSenti)
-print(postProcessedTrainPhrases)
+outputFile("testing", postProcessedTestPhrases, testSenti)
 
-classifier = fasttext.supervised('train.txt', 'model')
-result = classifier.test('test.txt')
+classifier = fasttext.supervised('training.txt', 'model')
+result = classifier.test('testing.txt')
 print('P@1:', result.precision)
 print('R@1:', result.recall)
 print('Number of examples:', result.nexamples)
