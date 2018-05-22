@@ -2,10 +2,12 @@ import fasttext
 import numpy as np
 import string
 import json
+import random
 from sklearn.model_selection import train_test_split
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import SnowballStemmer
+# from imblearn.over_sampling import SMOTE
 
 # # Skipgram model
 # model = fasttext.skipgram('data.txt', 'model')
@@ -17,7 +19,7 @@ from nltk.stem import SnowballStemmer
 
 postProcessedTrainPhrases = []
 postProcessedTestPhrases = []
-testSentences = []
+trainSentences = []
 
 def preprocessData():
     print("Loading and preprocessing data...\n")
@@ -67,6 +69,7 @@ def preprocessData():
     for phrase in testPhrases:
         if not isinstance(phrase, str):
             continue
+        trainSentences.append(phrase)
         tokens = word_tokenize(phrase)
         parsedWords = []
         for t in tokens:
@@ -75,7 +78,7 @@ def preprocessData():
         postProcessedTestPhrases.append(parsedWords)
     return (trainLabel, testLabel)
 
-def outputFile(filename, phrases, labels):
+def outputPhrasesToFile(filename, phrases, labels):
     f = open(filename+".txt", "w+")
     for i in range(len(phrases)):
         sentence = ""
@@ -84,27 +87,65 @@ def outputFile(filename, phrases, labels):
         f.write("__label__" + str(labels[i]) + sentence + "\r\n")
     f.close()
 
+def outputSentencesToFile(filename, sentences, labels):
+    f = open(filename+".txt", "w+")
+    for i in range(len(sentences)):
+        f.write("__label__" + str(labels[i]) + " " + sentences[i] + "\r\n")
+    f.close()
+
 def extractText(phrases):
+    sentences = []
     for i in range(len(phrases)):
         sentence = ""
         for j in range(len(phrases[i])):
             sentence += " " + phrases[i][j]
-        testSentences.append(sentence)
+        sentences.append(sentence)
+    return sentences
+
+def downsampling(phrases, labels, minority):
+    sentences = extractText(phrases)
+    sentencesDS = []  # downsampleing (sentences with label 1 : 0 = 1 : 1)
+    labelsDS = []
+    print(sentences[2921])
+    print(sentences[2922])
+    for i in range(len(labels) - 1 ):
+        if labels[i] == minority:
+            print(i)
+            data = sentences[i]
+            print(data)
+            sentencesDS.append(data)
+    #         labelsDS.append(0)
+    #         sentences.remove(data)
+    # minorityLen = len(entencesDS)
+    # majority = random.sample(sentences, minorityLen)
+    # for m in majority:
+    #     sentencesDS.append(m)
+    #     labelsDS.append(1)
+    return sentencesDS, labelsDS
 
 # preprocess data
 (trainLabels, testLabels) = preprocessData()
 
 # create training and testing file
-# outputFile("training", postProcessedTrainPhrases, trainLabels)
-# outputFile("testing", postProcessedTestPhrases, testLabels)
+# outputPhrasesToFile("training", postProcessedTrainPhrases, trainLabels)
+# outputPhrasesToFile("testing", postProcessedTestPhrases, testLabels)
 
 # train the fasttext model
 print('Buidling the model...\n')
-classifier = fasttext.supervised('training.txt', 'model')
+trainSentencesDS, trainLabelsDS = downsampling(postProcessedTrainPhrases, trainLabels, 0)
+outputSentencesToFile("trainingDS", trainSentencesDS, trainLabelsDS)
+# sm = SMOTE(random_state=12, ratio = 1.0)
+# trainingData, trainLabels = sm.fit_sample(np.array(trainSentences).reshape(len(trainSentences), 1), trainLabels)
+
+# without downsampling inbalanced data
+# classifier = fasttext.supervised('training.txt', 'model')
+# result = classifier.test('testing.txt')
+# downsampling inbalanced data
+classifier = fasttext.supervised('trainingDS.txt', 'modelDS')
 result = classifier.test('testing.txt')
 
 # classify testing data
-extractText(postProcessedTestPhrases)
+testSentences = extractText(postProcessedTestPhrases)
 labels = classifier.predict(testSentences)
 print('Negative comments found:')
 for i in range(len(labels)):
