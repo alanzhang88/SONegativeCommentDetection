@@ -1,4 +1,3 @@
-
 import numpy as np
 import string
 import json
@@ -17,15 +16,15 @@ from keras.layers.convolutional import MaxPooling1D
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import SnowballStemmer
-
+from keras.models import model_from_json
 from gensim import corpora
 from imblearn.over_sampling import SMOTE
 
 class LSTM():
     def __init__(self, postProcessedTrainPhrases = None, postProcessedTestPhrases = None):
-
         self.postProcessedTrainPhrases = []
         self.postProcessedTestPhrases = []
+
 
     def preprocessData(self):
         print("Loading and preprocessing data...")
@@ -60,7 +59,7 @@ class LSTM():
         return (trainLabel,testLabel)
 
 
-    def convertPhrasesToIDs(self, phrases):
+    def convertPhrasesToIDs(self, phrases, toIDMap):
         print ("converting the phrases to id to be processed")
         wordIDs = []
         wordIDLens = []
@@ -86,8 +85,8 @@ class LSTM():
         toIDMap = corpora.Dictionary(np.concatenate((self.postProcessedTrainPhrases, self.postProcessedTestPhrases), axis=0))
         allPhraseSize = len(toIDMap.keys())
 
-        (trainWordIDs, trainWordIDLens) = convertPhrasesToIDs(self.postProcessedTrainPhrases)
-        (testWordIDs, testWordIDLens) = convertPhrasesToIDs(self.postProcessedTestPhrases)
+        (trainWordIDs, trainWordIDLens) = convertPhrasesToIDs(self.postProcessedTrainPhrases, toIDMap)
+        (testWordIDs, testWordIDLens) = convertPhrasesToIDs(self.postProcessedTestPhrases, toIDMap)
 
         sequenceLen = findSequenceLen(trainWordIDLens + testWordIDLens)
 
@@ -137,6 +136,9 @@ class LSTM():
         loaded_model.load_weights("LSTM.h5")
         print("Loaded model from disk")
 
+        punctuation = list(string.punctuation)
+        stopWords = stopwords.words('english') + punctuation 
+        engStemmer = SnowballStemmer('english')
         for phrase in comments:
             if not isinstance(phrase, str):
                 continue
@@ -150,9 +152,9 @@ class LSTM():
         toIDMap = corpora.Dictionary(self.postProcessedTestPhrases)
         allPhraseSize = len(toIDMap.keys())
 
-        (testWordIDs, testWordIDLens) = convertPhrasesToIDs(self.postProcessedTestPhrases)
+        (testWordIDs, testWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTestPhrases, toIDMap)
 
-        sequenceLen = findSequenceLen(testWordIDLens)
+        sequenceLen = self.findSequenceLen(testWordIDLens)
 
         print( "pad sequence")
         testingData = sequence.pad_sequences(np.array(testWordIDs), maxlen=sequenceLen)
@@ -161,3 +163,9 @@ class LSTM():
 
         predict_res = loaded_model.predict_proba(testingData)
         return predict_res
+
+def return_new_lstm():
+    lstm_new = LSTM()
+    lstm_new.postProcessedTrainPhrases = []
+    lstm_new.postProcessedTestPhrases = []
+    return lstm_new
