@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 sys.path.append(os.path.join(os.path.dirname(__file__), 'embeddings'))
 from word2vec_gensim import get_embedding
 import re
+from nltk.tokenize.casual import remove_handles
 
 
 def clean_data(data_arr):
@@ -110,6 +111,7 @@ class DataHandler:
         return (self.X_train,self.y_train)
 
     def process_new_data(self, commentList):
+        commentList = [remove_handles(s) for s in commentList]
         commentList = clean_data(commentList)
         commentList = self.tokenizer.texts_to_sequences(commentList)
         commentList = pad_sequences(commentList,maxlen=self.maxlen,padding='post',truncating='post')

@@ -11,6 +11,7 @@ warnings.filterwarnings('ignore')
 from embedding_config import config
 from keras.models import load_model
 from saveModel import SaveModel
+import numpy as np
 
 
 #For predict purposes
@@ -38,11 +39,11 @@ class CNNModel:
                    maxlength=self.max_length,
                    embed_size=self.embed_size,
                    num_classes=self.num_classes)
-       
+
 
 
     def build_model(self):
-      
+
         embedding_matrix = self.data.get_embedding_matrix()
         inp = Input(shape=(self.max_length,))
         x = Embedding(input_dim=embedding_matrix.shape[0],output_dim=self.embed_size,input_length=self.max_length,weights=[embedding_matrix])(inp)
@@ -63,7 +64,7 @@ class CNNModel:
         X_train, y_train = self.data.get_train_data()
         savemodel = SaveModel(validation_data=(X_test,y_test),target_name='acc',target_val=0.65)
         self.model.fit(x=X_train,y=y_train,batch_size=self.batch_size,epochs=self.epochs,verbose=2,validation_data=(X_test,y_test),callbacks=[savemodel])
-    
+
 
     def fpp(self,y_true,y_pred):
         mat = tf.confusion_matrix(labels=tf.argmax(y_true,1),predictions=tf.argmax(y_pred,1),num_classes=self.num_classes)
@@ -78,8 +79,8 @@ class CNNModel:
 
         #preprocess data
         comments = self.data.process_new_data(commentList)
-        return self.model.predict(comments)
-
+        res = self.model.predict(comments)
+        return [(np.array(l)/sum(l)).tolist() for l in res]
 
 
 if __name__ == "__main__":
@@ -87,11 +88,3 @@ if __name__ == "__main__":
     CNN_model.load_model("./CNNmodel.h5")
     # CNN_model.build_model()
     print (CNN_model.predict(["You're clearly converting the result of the `Math.Sqrt()` to an `Int32` - an integer, i.e. no decimals."]))
-
-
-       
-
-
-
-
-
