@@ -65,19 +65,23 @@ model = Model(inputs=inp,outputs=outp)
 model.compile(optimizer=Adam(lr=lr),loss=categorical_crossentropy,metrics=['accuracy',fpp])
 
 batch_size = 128
+epochs = 20
 steps = 1000
 X_test, y_test = data.get_test_data()
+X_train, y_train = data.get_train_data()
 
-for i in range(steps):
-    X_train, y_train = data.next_batch(batch_size)
-    model.train_on_batch(X_train,y_train)
-    if i % 100 == 0:
-        res = model.test_on_batch(X_test,y_test)
-        print('On step %d' % i)
-        print('Accuracy: %f' % res[1])
-        print('FPP: %f \n' % res[2])
+model.fit(x=X_train,y=y_train,batch_size=batch_size,epochs=epochs,verbose=2,validation_data=(X_test,y_test))
 
-res = model.test_on_batch(X_test,y_test)
-print('On step %d' % 1000)
-print('Accuracy: %f' % res[1])
-print('FPP: %f \n' % res[2])
+# for i in range(steps):
+#     X_train, y_train = data.next_batch(batch_size)
+#     model.train_on_batch(X_train,y_train)
+#     if i % 100 == 0:
+#         res = model.test_on_batch(X_test,y_test)
+#         print('On step %d' % i)
+#         print('Accuracy: %f' % res[1])
+#         print('FPP: %f \n' % res[2])
+#
+# res = model.test_on_batch(X_test,y_test)
+# print('On step %d' % 1000)
+# print('Accuracy: %f' % res[1])
+# print('FPP: %f \n' % res[2])

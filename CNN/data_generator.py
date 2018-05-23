@@ -107,5 +107,5 @@ class DataHandler:
     def get_test_data(self):
         return (self.X_test,self.y_test)
 
-    
-
+    def get_train_data(self):
+        return (self.X_train,self.y_train)
