@@ -6,13 +6,10 @@ DataSample/
 Data/
 handleLowScorePosts.py
 MongodbClient.py
-handleLowScorePosts.py
-MongodbClient.py
 markComments.py
-MongodbClient.py
-handleLowScorePosts.py
-MongodbClient.py
 **/node_modules/
 *.csv
 word2vec_model
 word2vec_vec
+
+tfidf_termfrequency.ipynb
