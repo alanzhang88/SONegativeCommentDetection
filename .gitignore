@@ -11,3 +11,5 @@ markComments.py
 *.csv
 word2vec_model
 word2vec_vec
+
+tfidf_termfrequency.ipynb
