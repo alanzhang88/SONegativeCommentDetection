@@ -14,6 +14,8 @@ class Embedding_Config:
     
     embedding_configs = []
     embedding_file = ""
+    training_file = './embeddings/processed.csv'
+
 
 
 config = Embedding_Config(EMBEDDING_MODELS[0:1])
