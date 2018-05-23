@@ -2,8 +2,8 @@ from pymongo import MongoClient
 
 # MONGODB_URI = ['mongodb://alanzhang88:1234@ds014658.mlab.com:14658/cs230']
 # DB_NAME = ['cs230']
-MONGODB_URI = ['mongodb://cs230:1234@ds014648.mlab.com:14648/cs230db1']
-DB_NAME = ['cs230db1']
+MONGODB_URI = ['mongodb://cs230:1234@ds014658.mlab.com:14658/cs230']
+DB_NAME = ['cs230']
 # MONGODB_URI = ['mongodb://alanzhang88:1234@ds014658.mlab.com:14658/cs230','mongodb://alanzhang88:1234@ds014648.mlab.com:14648/cs230db1']
 # DB_NAME = ['cs230','cs230db1']
 # index = 0
