@@ -9,6 +9,7 @@ import warnings
 warnings.filterwarnings('ignore')
 from embedding_config import config
 
+
 EMBEDDING_CONFIGS = config.embedding_configs
 
 
