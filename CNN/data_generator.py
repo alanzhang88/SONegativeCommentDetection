@@ -108,14 +108,10 @@ class DataHandler:
 
     def get_train_data(self):
         return (self.X_train,self.y_train)
-    
+
     def process_new_data(self, commentList):
         commentList = clean_data(commentList)
-        self.tokenizer.fit_on_texts(commentList)
         commentList = self.tokenizer.texts_to_sequences(commentList)
         commentList = pad_sequences(commentList,maxlen=self.maxlen,padding='post',truncating='post')
 
         return commentList
-
-
-
