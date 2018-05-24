@@ -34,4 +34,5 @@ LSTM_process = LSTMUtil.return_new_lstm()
 # LSTM_process = LSTM(postProcessedTrainPhrases, postProcessedTestPhrases)
 
 
-LSTM_process.predict(testPhrases)
+res = LSTM_process.predict(testPhrases)
+print(res)

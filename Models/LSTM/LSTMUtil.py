@@ -161,9 +161,9 @@ class LSTM():
 
         # loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-        predict_res = loaded_model.predict_proba(testingData)
-        res = [(np.array(l)/sum(l)).tolist() for l in predict_res]
-        return res
+        res = loaded_model.predict(testingData)
+        # res = [(np.array(l)/sum(l)).tolist() for l in predict_res]
+        return [(np.array(l)/sum(l)).tolist() for l in res]
 
 def return_new_lstm():
     lstm_new = LSTM()
