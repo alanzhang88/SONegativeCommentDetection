@@ -43,8 +43,6 @@ for doc in it:
     cnn_label = cnn_model.predict(doc['Comments'])
     fasttext_label = fasttext_model.predict(doc['Comments'])
 
-    print (type(fasttext_label[0]))
-
     for i in range(len(cnn_label)):
         l1 = np.multiply(lstm_label[i],normalized_weights[0])
         l2 = np.multiply(cnn_label[i],normalized_weights[1])
