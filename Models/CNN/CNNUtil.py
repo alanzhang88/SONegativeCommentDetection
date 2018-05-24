@@ -3,14 +3,13 @@ from keras.layers import Embedding, Input, Conv2D, MaxPooling2D, Concatenate, Dr
 from keras.optimizers import Adam
 from keras.losses import categorical_crossentropy
 from keras.callbacks import Callback
-# from data_generator import DataHandler, clean_data
-import data_generator
+import Models.CNN.data_generator as data_generator
 import tensorflow as tf
 import warnings
 warnings.filterwarnings('ignore')
-from embedding_config import config
+from Models.CNN.embedding_config import config as config
 from keras.models import load_model
-from saveModel import SaveModel
+from Models.CNN.saveModel import SaveModel as SaveModel
 import numpy as np
 
 
@@ -81,10 +80,12 @@ class CNNModel:
         comments = self.data.process_new_data(commentList)
         res = self.model.predict(comments)
         return [(np.array(l)/sum(l)).tolist() for l in res]
+        
 
 
 if __name__ == "__main__":
     CNN_model = CNNModel()
     CNN_model.load_model("./CNNmodel.h5")
     # CNN_model.build_model()
-    print (CNN_model.predict(["You're clearly converting the result of the `Math.Sqrt()` to an `Int32` - an integer, i.e. no decimals."]))
+    print (CNN_model.predict(["You're clearly converting the result of the `Math.Sqrt()` to an `Int32` - an integer, i.e. no decimals.", "Stupid"]))
+

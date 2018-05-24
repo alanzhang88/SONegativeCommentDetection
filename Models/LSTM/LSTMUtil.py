@@ -113,10 +113,12 @@ class LSTM():
         # evaluate the model
         # serialize weights to HDF5
         model_json = model.to_json()
-        with open("LSTM.json", "w") as json_file:
+
+        #changed to absolute path
+        with open("Model/LSTM/LSTM.json", "w") as json_file:
             json_file.write(model_json)
-        # serialize weights to HDF5
-        model.save_weights("LSTM.h5")
+        # serialize weights to HDF5, absolute path 
+        model.save_weights("Model/LSTM/LSTM.h5")
         print("Saved model to disk")
 
         testingData, testSenti = sm.fit_sample(testingData, testSenti)
@@ -128,12 +130,12 @@ class LSTM():
 
     def predict(self, comments):
 
-        json_file = open('LSTM.json', 'r')
+        json_file = open('Models/LSTM/LSTM.json', 'r')
         loaded_model_json = json_file.read()
         json_file.close()
         loaded_model = model_from_json(loaded_model_json)
         # load weights into new model
-        loaded_model.load_weights("LSTM.h5")
+        loaded_model.load_weights("Models/LSTM/LSTM.h5")
         print("Loaded model from disk")
 
         punctuation = list(string.punctuation)
@@ -162,7 +164,8 @@ class LSTM():
         # loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
         predict_res = loaded_model.predict_proba(testingData)
-        return predict_res
+        res = [(np.array(l)/sum(l)).tolist() for l in predict_res]
+        return res
 
 def return_new_lstm():
     lstm_new = LSTM()
