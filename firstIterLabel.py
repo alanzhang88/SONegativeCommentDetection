@@ -3,9 +3,8 @@ import sys, os
 import numpy as np
 
 # #import all models
-# sys.path.append(os.path.join(os.path.dirname(__file__), 'Models/LSTM'))
-# sys.path.append(os.path.join(os.path.dirname(__file__), 'Models/FastText'))
-# sys.path.append(os.path.join(os.path.dirname(__file__), 'Models/CNN'))
+# sys.path.append(os.path.join(os.path.dirname(__file__), 'Models'))
+
 
 # from LSTMUtil import LSTM
 # from CNNUtil import CNNModel
@@ -28,6 +27,12 @@ collection = client.get_collection(collectionName)
 it = collection.aggregate([{'$match':{'CommentsLabel':{'$exists':False},'FirstIterCommentsLabel':{'$exists':False},'Score':{'$lte':-5},'CommentCount':{'$gt':0}}},{'$sample':{'size':1000}}])
 
 
+model_labels = {}
+cnn_lables = []
+lstm_labels = []
+fasttext_labels = []
+
+
 #load models
 lstm_model = LSTM()
 cnn_model = CNNModel()
@@ -38,10 +43,24 @@ fasttext_model = FastText()
 #build three diff models
 for doc in it:
     print('Predicting PostId %d with %d comments' % (doc['Id'],doc['CommentCount']))
-    commentsLabel = []
+    commentsLabel = {}
+    all_labels = []
+
+    lstm_set = []
+    cnn_set = []
+    fasttext_set = []
+
     lstm_label = lstm_model.predict(doc['Comments'])
     cnn_label = cnn_model.predict(doc['Comments'])
     fasttext_label = fasttext_model.predict(doc['Comments'])
+
+    for i in range(len(cnn_label)):
+
+        lstm_set.append(np.argmax(lstm_label[i]))
+        cnn_set.append(np.argmax(cnn_label[i]))
+        fasttext_set.append(np.argmax(np.asarray(fasttext_label[i])))
+    
+  
 
     for i in range(len(cnn_label)):
         l1 = np.multiply(lstm_label[i],normalized_weights[0])
@@ -49,14 +68,14 @@ for doc in it:
         inter_1= np.add(l1, l2)
         l3 = np.multiply(np.asarray(fasttext_label[i]),normalized_weights[2])
         inter_2 = np.add(inter_1, l3)
-        max_label = np.amax(inter_2)
-        label = inter_2.tolist().index(max_label)
+        max_label = np.argmax(inter_2)
         # negative comments
-        if label  == 0:
-            commentsLabel.append(0)
+        if max_label  == 0:
+            all_labels.append(0)
         else:
-            commentsLabel.append(1)
+            all_labels.append(1)
+    
+    commentsLabel = {"LSTM": lstm_set, "CNN" : cnn_set, "FastText" : fasttext_set, "All" : all_labels}
 
     doc['FirstIterCommentsLabel'] = commentsLabel
-    print (commentsLabel)
     collection.save(doc)
