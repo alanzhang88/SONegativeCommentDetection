@@ -8,7 +8,7 @@ handleLowScorePosts.py
 MongodbClient.py
 markComments.py
 **/node_modules/
-CNN/*.csv
+CNN/**/*.csv
 CNN/**/word2vec_model
 CNN/**/word2vec_vec
 

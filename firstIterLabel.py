@@ -15,7 +15,7 @@ from Models.LSTM.LSTMUtil import LSTM
 from Models.CNN.CNNUtil import CNNModel
 from Models.FastText.FastTextUtil import FastText
 
-#weight: 0.85, 0.65, 0.65 
+#weight: 0.85, 0.65, 0.65
 
 model_weights = np.array([0.85, 0.65, 0.65])
 normalized_weights = np.array([np.array(item)/np.sum(model_weights) for item in model_weights])
@@ -58,6 +58,6 @@ for doc in it:
         else:
             commentsLabel.append(0)
 
-    #doc['FirstIterCommentsLabel'] = commentsLabel
+    doc['FirstIterCommentsLabel'] = commentsLabel
     print (commentsLabel)
-    #collection.save(doc)
+    collection.save(doc)
