@@ -1,4 +1,5 @@
 import fasttext
+import os
 import numpy as np
 import string
 import json
@@ -133,7 +134,7 @@ class FastText:
         return model
 
     def predict(self, texts):
-        model = fasttext.load_model('model.bin')
+        model = fasttext.load_model(os.path.dirname(__file__)+'/model.bin')
         labels = model.predict_proba(texts)
         # model = fasttext.load_model('modelDS.bin')
         # labels = model.predict_proba(texts)
@@ -204,4 +205,3 @@ class FastText:
         labels = classifier.predict(texts)
         print(texts)
         print(labels)
-

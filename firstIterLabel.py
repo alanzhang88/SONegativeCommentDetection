@@ -3,16 +3,17 @@ import sys, os
 import numpy as np
 
 # #import all models
-# sys.path.append(os.path.join(os.path.dirname(__file__), 'Models'))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'Models','LSTM'))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'Models','CNN'))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'Models','FastText'))
 
+from LSTMUtil import LSTM
+from CNNUtil import CNNModel
+from FastTextUtil import FastText
 
-# from LSTMUtil import LSTM
-# from CNNUtil import CNNModel
-# from FastTextUtil import FastText
-
-from Models.LSTM.LSTMUtil import LSTM
-from Models.CNN.CNNUtil import CNNModel
-from Models.FastText.FastTextUtil import FastText
+# from Models.LSTM.LSTMUtil import LSTM
+# from Models.CNN.CNNUtil import CNNModel
+# from Models.FastText.FastTextUtil import FastText
 
 #weight: 0.85, 0.65, 0.65
 
@@ -40,6 +41,7 @@ cnn_model = CNNModel()
 cnn_model.load_model("Models/CNN/CNNmodel.h5")
 fasttext_model = FastText()
 
+count = 0
 #build three diff models
 for doc in it:
     print('Predicting PostId %d with %d comments' % (doc['Id'],doc['CommentCount']))
@@ -56,12 +58,12 @@ for doc in it:
 
     for i in range(len(cnn_label)):
 
-       
+
         lstm_set.append(np.asscalar(np.argmax(lstm_label[i])))
         cnn_set.append(np.asscalar(np.argmax(cnn_label[i])))
         fasttext_set.append(np.asscalar(np.argmax(np.asarray(fasttext_label[i]))))
-    
-  
+
+
 
     for i in range(len(cnn_label)):
         l1 = np.multiply(lstm_label[i],normalized_weights[0])
@@ -75,9 +77,10 @@ for doc in it:
             all_labels.append(0)
         else:
             all_labels.append(1)
-    
+
     commentsLabel = {"LSTM": lstm_set, "CNN" : cnn_set, "FastText" : fasttext_set, "All" : all_labels}
 
     doc['FirstIterCommentsLabel'] = commentsLabel
     collection.save(doc)
-    print ("Labeled")
+    count += 1
+    print ("Labeled %d out of 1000" % count)

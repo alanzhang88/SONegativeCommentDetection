@@ -1,4 +1,5 @@
 import numpy as np
+import os
 import string
 import json
 from sklearn.model_selection import train_test_split
@@ -32,10 +33,10 @@ class LSTM():
         with open('labeled_document2.json') as json_data:
             allTrainData = json.load(json_data)
         trainPhrases, testPhrases, trainLabel,testLabel = train_test_split(allTrainData['Comment'], allTrainData['CommentLabel'], test_size=0.2, random_state=42)
-        
+
     #     print(testPhrases[0:100])
         punctuation = list(string.punctuation)
-        stopWords = stopwords.words('english') + punctuation 
+        stopWords = stopwords.words('english') + punctuation
         engStemmer = SnowballStemmer('english')
         for phrase in trainPhrases:
             if not isinstance(phrase, str):
@@ -117,7 +118,7 @@ class LSTM():
         #changed to absolute path
         with open("Model/LSTM/LSTM.json", "w") as json_file:
             json_file.write(model_json)
-        # serialize weights to HDF5, absolute path 
+        # serialize weights to HDF5, absolute path
         model.save_weights("Model/LSTM/LSTM.h5")
         print("Saved model to disk")
 
@@ -130,16 +131,16 @@ class LSTM():
 
     def predict(self, comments):
 
-        json_file = open('LSTM.json', 'r')
+        json_file = open(os.path.dirname(__file__)+'/LSTM.json', 'r')
         loaded_model_json = json_file.read()
         json_file.close()
         loaded_model = model_from_json(loaded_model_json)
         # load weights into new model
-        loaded_model.load_weights("LSTM.h5")
+        loaded_model.load_weights(os.path.dirname(__file__)+"/LSTM.h5")
         print("Loaded model from disk")
 
         punctuation = list(string.punctuation)
-        stopWords = stopwords.words('english') + punctuation 
+        stopWords = stopwords.words('english') + punctuation
         engStemmer = SnowballStemmer('english')
         for phrase in comments:
             if not isinstance(phrase, str):
