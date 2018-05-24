@@ -51,8 +51,9 @@ for doc in it:
         inter_2 = np.add(inter_1, l3)
         max_label = np.amax(inter_2)
         label = inter_2.tolist().index(max_label)
+        # negative comments
         if label  == 0:
-            commentsLabel.append(1)
+            commentsLabel.append(0)
         else:
             commentsLabel.append(0)
 
