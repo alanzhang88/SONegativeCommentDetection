@@ -8,8 +8,8 @@ handleLowScorePosts.py
 MongodbClient.py
 markComments.py
 **/node_modules/
-*.csv
-word2vec_model
-word2vec_vec
+CNN/**/*.csv
+CNN/**/word2vec_model
+CNN/**/word2vec_vec
 
 tfidf_termfrequency.ipynb

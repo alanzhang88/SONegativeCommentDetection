@@ -14,7 +14,7 @@ class Embedding_Config:
     
     embedding_configs = []
     embedding_file = ""
-    training_file = './embeddings/processed.csv'
+    training_file = 'Models/CNN/embeddings/processed.csv'
 
 
 

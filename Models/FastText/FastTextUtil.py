@@ -133,9 +133,10 @@ class FastText:
         return model
 
     def predict(self, texts):
-        # model = fasttext.load_model('model.bin')
-        model = fasttext.load_model('modelDS.bin')
+        model = fasttext.load_model('model.bin')
         labels = model.predict_proba(texts)
+        # model = fasttext.load_model('modelDS.bin')
+        # labels = model.predict_proba(texts)
         results = []
         for label in labels:
             tmp = []
