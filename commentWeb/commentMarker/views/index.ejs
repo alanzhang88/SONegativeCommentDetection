@@ -4,6 +4,7 @@
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.5">
         <title>Comment Marker Options</title>
         <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/stylesheets/titatoggle-dist-min.css" />
     </head>
     <body>
 
@@ -25,20 +26,25 @@
                         <input type="text" placeholder="Enter Post Start ID" name="postStartID" class="form-control" required><br />
                         <label for="UpperboundScore"><b>Upperbound Score for Post</b></label>
                         <input type="text" placeholder="Enter upperbound score" name="score" class="form-control" required><br />
-                        <label for="SortID"><b>Sort Post ID in Ascending Order</b></label>
-                        <span>True <input type="radio" name="sortID" value ="True" checked> </span>
-                        <span>False <input type="radio" name="sortID" value ="False"></span><br />
-                        <label for="SortScore"><b>Sort Post Score in Ascending Order</b></label>
-                        <span>True <input type="radio" name="sortScore" value ="True"> </span>
-                        <span>False <input type="radio" name="sortScore" value ="False" checked></span><br />
-                        <label for="ZeroComments"><b>Include Posts with Zero Comments</b></label>
-                        <span>True <input type="radio" name="zeroComments" value ="True"> </span>
-                        <span>False <input type="radio" name="zeroComments" value ="False" checked></span><br />
+                        <div class="form-check checkbox-slider--b"><label><input type="checkbox" name="sortID" value ="True" checked onclick="tog(this)"><span><b>Sort Post ID in Ascending Order</b></span></label></div>
+                        <div class="form-check checkbox-slider--b"><label><input type="checkbox" name="sortScore" value ="False" onclick="tog(this)"><span><b>Sort Post Score in Ascending Order</b></span></label></div>
+                        <div class="form-check checkbox-slider--b"><label><input type="checkbox" name="zeroComments" value ="False" onclick="tog(this)"><span><b>Include Posts with Zero Comments</b></span></label></div>
+                        <div class="form-check checkbox-slider--b"><label><input type="checkbox" name="model" value ="False" onclick="tog(this)"><span><b>Label Posts that are labelled by model</b></span></label></div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
           </div>
         </div>
       </div>
+      <script>
+        function tog(cb){
+          if(cb.checked){
+            cb.value = "True";
+          }
+          else{
+            cb.value = "False";
+          }
+        }
+      </script>
     </body>
 </html>

@@ -12,6 +12,7 @@
     "ejs": "~2.5.7",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
+    "jquery": "^3.3.1",
     "mongodb": "^3.1.0-beta4",
     "morgan": "~1.9.0",
     "uniqid": "^4.1.1"
@@ -19,5 +20,8 @@
   "engines": {
     "node": "9.11.1",
     "npm": "5.8.0"
+  },
+  "devDependencies": {
+    "titatoggle": "^2.1.2"
   }
 }
