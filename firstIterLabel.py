@@ -56,9 +56,10 @@ for doc in it:
 
     for i in range(len(cnn_label)):
 
-        lstm_set.append(np.argmax(lstm_label[i]))
-        cnn_set.append(np.argmax(cnn_label[i]))
-        fasttext_set.append(np.argmax(np.asarray(fasttext_label[i])))
+       
+        lstm_set.append(np.asscalar(np.argmax(lstm_label[i])))
+        cnn_set.append(np.asscalar(np.argmax(cnn_label[i])))
+        fasttext_set.append(np.asscalar(np.argmax(np.asarray(fasttext_label[i]))))
     
   
 
@@ -79,3 +80,4 @@ for doc in it:
 
     doc['FirstIterCommentsLabel'] = commentsLabel
     collection.save(doc)
+    print ("Labeled")
