@@ -121,7 +121,7 @@ class LSTM():
         model.save_weights("Model/LSTM/LSTM.h5")
         print("Saved model to disk")
 
-        testingData, testSenti = sm.fit_sample(testingData, testSenti)
+        # testingData, testSenti = sm.fit_sample(testingData, testSenti)
         testingDataLabel = np_utils.to_categorical(testSenti, len(np.unique(testSenti)))
         scores = model.evaluate(testingData, testingDataLabel, verbose=0)
         print("%s: %.2f%%" % (model.metrics_names[1], scores[1] * 100))
@@ -130,12 +130,12 @@ class LSTM():
 
     def predict(self, comments):
 
-        json_file = open('Models/LSTM/LSTM.json', 'r')
+        json_file = open('LSTM.json', 'r')
         loaded_model_json = json_file.read()
         json_file.close()
         loaded_model = model_from_json(loaded_model_json)
         # load weights into new model
-        loaded_model.load_weights("Models/LSTM/LSTM.h5")
+        loaded_model.load_weights("LSTM.h5")
         print("Loaded model from disk")
 
         punctuation = list(string.punctuation)
@@ -163,7 +163,9 @@ class LSTM():
 
         # loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
+        loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
         res = loaded_model.predict(testingData)
+
         # res = [(np.array(l)/sum(l)).tolist() for l in predict_res]
         return [(np.array(l)/sum(l)).tolist() for l in res]
 
