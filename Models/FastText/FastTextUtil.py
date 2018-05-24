@@ -23,13 +23,13 @@ class FastText:
     trainSentences = []
 
     def __init__(self):
-        print("init")
+        print("")
 
     def preprocessData(self):
         postProcessedTrainPhrases = []
         postProcessedTestPhrases = []
         trainSentences = []
-        print("Loading and preprocessing data...\n")
+        # print("Loading and preprocessing data...\n")
         # load training and testing data
         with open('../../labeled_document2.json') as json_data:
             allTrainData = json.load(json_data)
@@ -146,7 +146,7 @@ class FastText:
                 tmp.append(1.0 - label[0][1])
                 tmp.append(label[0][1])
             results.append(tmp)
-        print(results)
+        return results
 
     def classify(self):
         # preprocess data
