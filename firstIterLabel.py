@@ -55,7 +55,7 @@ for doc in it:
         if label  == 0:
             commentsLabel.append(0)
         else:
-            commentsLabel.append(0)
+            commentsLabel.append(1)
 
     doc['FirstIterCommentsLabel'] = commentsLabel
     print (commentsLabel)
