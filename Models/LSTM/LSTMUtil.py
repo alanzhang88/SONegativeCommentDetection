@@ -25,7 +25,7 @@ class LSTM():
     def __init__(self, postProcessedTrainPhrases = None, postProcessedTestPhrases = None):
         self.postProcessedTrainPhrases = []
         self.postProcessedTestPhrases = []
-
+        self.loaded_model = None
 
     def preprocessData(self):
         print("Loading and preprocessing data...")
@@ -129,15 +129,19 @@ class LSTM():
 
     # predictedRes = model.predict_proba(testingData)
 
-    def predict(self, comments):
-
+    def load(self):
         json_file = open(os.path.dirname(__file__)+'/LSTM.json', 'r')
         loaded_model_json = json_file.read()
         json_file.close()
-        loaded_model = model_from_json(loaded_model_json)
+        self.loaded_model = model_from_json(loaded_model_json)
         # load weights into new model
-        loaded_model.load_weights(os.path.dirname(__file__)+"/LSTM.h5")
+        self.loaded_model.load_weights(os.path.dirname(__file__)+"/LSTM.h5")
         print("Loaded model from disk")
+
+    def predict(self, comments):
+
+        if self.loaded_model is None:
+            self.load()
 
         punctuation = list(string.punctuation)
         stopWords = stopwords.words('english') + punctuation
@@ -164,8 +168,8 @@ class LSTM():
 
         # loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-        loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-        res = loaded_model.predict(testingData)
+        self.loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+        res = self.loaded_model.predict(testingData)
 
         # res = [(np.array(l)/sum(l)).tolist() for l in predict_res]
         return [(np.array(l)/sum(l)).tolist() for l in res]
