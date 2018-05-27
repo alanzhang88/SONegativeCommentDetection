@@ -1,0 +1,8 @@
+#! /bin/bash
+
+fields=$(grep -E 'Begin Test Condition (.*)' output_log.txt | awk '{print $NF}')
+for f in $fields;
+do
+  maxacc=$(sed -n '/'$f'/,/'$f'/p' output_log.txt | grep 'val_acc' | tr '-' ' ' | awk '{print $11}' | sort -r | head -1)
+  echo 'With Condition '$f' , the maximum accuaracy is '$maxacc
+done
