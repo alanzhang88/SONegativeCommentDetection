@@ -64,13 +64,15 @@ class DataHandler:
                  trainingFile='./embeddings/processed.csv',
                  maxlength=50,
                  embed_size=100,
-                 num_classes=2):
+                 num_classes=2,
+                 random_state=None):
         self.EmbeddingFile = embeddingFile
         self.TrainingFile = trainingFile
         self.maxlen = maxlength
         self.embed_size = embed_size
         self.num_classes = num_classes
         self.tokenizer = Tokenizer()
+        self.random_state = random_state
         data = pd.read_csv(self.TrainingFile,names=['Comment','Label'])
         data = data.sample(frac=1)
         X = data['Comment'].values
@@ -83,7 +85,7 @@ class DataHandler:
         X = self.tokenizer.texts_to_sequences(X)
         X = pad_sequences(X,maxlen=self.maxlen,padding='post',truncating='post')
         y = to_categorical(y,num_classes=self.num_classes)
-        self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(X,y,train_size=0.9)
+        self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(X,y,train_size=0.9,random_state=self.random_state)
         self.i = 0
 
     def get_embedding_matrix(self):

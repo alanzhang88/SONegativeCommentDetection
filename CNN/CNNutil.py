@@ -23,7 +23,7 @@ EMBEDDING_CONFIGS = config.embedding_configs
 
 class CNNModel:
 
-    def __init__(self, num_filters=32, filter_sizes=[4,5,6,7], drop_prob=0.2, lr=0.001, batch_size=128, epochs=20, max_length=50, num_classes=2, embed_size=100,save_model=True):
+    def __init__(self, num_filters=32, filter_sizes=[4,5,6,7], drop_prob=0.2, lr=0.001, batch_size=128, epochs=20, max_length=50, num_classes=2, embed_size=100,save_model=True,random_state=None):
         self.num_filters = num_filters
         self.filter_sizes = filter_sizes
         self.drop_prob = drop_prob
@@ -39,7 +39,8 @@ class CNNModel:
                    trainingFile= config.training_file,
                    maxlength=self.max_length,
                    embed_size=self.embed_size,
-                   num_classes=self.num_classes)
+                   num_classes=self.num_classes,
+                   random_state=random_state)
 
 
 
@@ -86,7 +87,7 @@ class CNNModel:
 
 
 if __name__ == "__main__":
-    CNN_model = CNNModel(filter_sizes=[4],save_model=False)
+    CNN_model = CNNModel(filter_sizes=[4,4,4],drop_prob=0.2,save_model=False,random_state=101)
     # CNN_model.load_model("./CNNmodel.h5")
     CNN_model.build_model()
     # print (CNN_model.predict(["You're clearly converting the result of the `Math.Sqrt()` to an `Int32` - an integer, i.e. no decimals."]))
