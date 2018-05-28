@@ -186,7 +186,7 @@ class LSTMModel():
         return [(np.array(l)/sum(l)).tolist() for l in res]
 
 def return_new_lstm():
-    lstm_new = LSTM()
+    lstm_new = LSTMModel()
     lstm_new.postProcessedTrainPhrases = []
     lstm_new.postProcessedTestPhrases = []
     return lstm_new
