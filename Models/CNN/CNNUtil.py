@@ -22,7 +22,18 @@ EMBEDDING_CONFIGS = config.embedding_configs
 
 class CNNModel:
 
-    def __init__(self, num_filters=32, filter_sizes=[4,5,6,7], drop_prob=0.2, lr=0.001, batch_size=128, epochs=20, max_length=50, num_classes=2, embed_size=100):
+    def __init__(self,
+                 num_filters=32,
+                 filter_sizes=[4,5,6,7],
+                 drop_prob=0.2,
+                 lr=0.001,
+                 batch_size=128,
+                 epochs=20,
+                 max_length=50,
+                 num_classes=2,
+                 embed_size=100,
+                 save_model=True,
+                 random_state=None):
         self.num_filters = num_filters
         self.filter_sizes = filter_sizes
         self.drop_prob = drop_prob
@@ -33,15 +44,17 @@ class CNNModel:
         self.epochs = epochs
         self.embed_size = embed_size
         self.model = None
+        self.save_model = save_model
         self.data = data_generator.DataHandler(embeddingFile=EMBEDDING_CONFIGS[0].embedding_file,
                    trainingFile= config.training_file,
                    maxlength=self.max_length,
                    embed_size=self.embed_size,
-                   num_classes=self.num_classes)
+                   num_classes=self.num_classes,
+                   random_state=random_state)
 
 
 
-    def build_model(self):
+    def build_model(self,sample_weight = None):
 
         embedding_matrix = self.data.get_embedding_matrix()
         inp = Input(shape=(self.max_length,))
@@ -53,7 +66,7 @@ class CNNModel:
             max_pooled = MaxPooling2D(pool_size=(self.max_length - filter_size + 1, 1))(conv)
             pooled_output.append(max_pooled)
 
-        z = Concatenate(axis=1)(pooled_output)
+        z = Concatenate(axis=1)(pooled_output) if len(pooled_output) > 1 else pooled_output[0]
         z = Flatten()(z)
         z = Dropout(rate=self.drop_prob)(z)
         outp = Dense(self.num_classes,kernel_initializer='random_normal',activation='sigmoid')(z)
@@ -62,7 +75,8 @@ class CNNModel:
         X_test, y_test = self.data.get_test_data()
         X_train, y_train = self.data.get_train_data()
         savemodel = SaveModel(validation_data=(X_test,y_test),target_name='acc',target_val=0.65)
-        self.model.fit(x=X_train,y=y_train,batch_size=self.batch_size,epochs=self.epochs,verbose=2,validation_data=(X_test,y_test),callbacks=[savemodel])
+        callbacks = [savemodel] if self.save_model else None
+        self.model.fit(x=X_train,y=y_train,batch_size=self.batch_size,epochs=self.epochs,verbose=2,validation_data=(X_test,y_test),callbacks=callbacks,sample_weight=sample_weight)
 
 
     def fpp(self,y_true,y_pred):
@@ -72,6 +86,9 @@ class CNNModel:
 
     def load_model(self, filePath):
         self.model = load_model(filePath, custom_objects={"fpp":self.fpp})
+
+    def save(self, filePath):
+        self.model.save(filepath)
 
     #input: list of string
     def predict(self, commentList):
@@ -84,7 +101,7 @@ class CNNModel:
 
 
 if __name__ == "__main__":
-    CNN_model = CNNModel()
-    CNN_model.load_model("./CNNmodel.h5")
-    # CNN_model.build_model()
-    print (CNN_model.predict(["You're clearly converting the result of the `Math.Sqrt()` to an `Int32` - an integer, i.e. no decimals.", "Stupid"]))
+    CNN_model = CNNModel(save_model=False)
+    # CNN_model.load_model("./CNNmodel.h5")
+    CNN_model.build_model()
+    # print (CNN_model.predict(["You're clearly converting the result of the `Math.Sqrt()` to an `Int32` - an integer, i.e. no decimals.", "Stupid"]))

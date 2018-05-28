@@ -52,4 +52,5 @@ def load_file(filename):
             commentsList.append(items)
     preprocess(commentsList)
 
-load_file("./labeled_comments.csv")
+if __name__ == '__main__':
+    load_file("./labeled_comments.csv")

@@ -7,7 +7,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'Models','LSTM'))
 sys.path.append(os.path.join(os.path.dirname(__file__), 'Models','CNN'))
 sys.path.append(os.path.join(os.path.dirname(__file__), 'Models','FastText'))
 
-from LSTMUtil import LSTM
+from LSTMUtil import LSTMModel
 from CNNUtil import CNNModel
 from FastTextUtil import FastText
 
@@ -35,7 +35,7 @@ fasttext_labels = []
 
 
 #load models
-lstm_model = LSTM()
+lstm_model = LSTMModel()
 cnn_model = CNNModel()
 #load CNN model
 cnn_model.load_model("Models/CNN/CNNmodel.h5")

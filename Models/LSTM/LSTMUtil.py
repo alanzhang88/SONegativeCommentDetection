@@ -19,20 +19,27 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import SnowballStemmer
 from keras.models import model_from_json
 from gensim import corpora
-from imblearn.over_sampling import SMOTE
+# from imblearn.over_sampling import SMOTE
 
-class LSTM():
-    def __init__(self, postProcessedTrainPhrases = None, postProcessedTestPhrases = None):
+class LSTMModel():
+    def __init__(self, postProcessedTrainPhrases = None, postProcessedTestPhrases = None, save_model = True):
         self.postProcessedTrainPhrases = []
         self.postProcessedTestPhrases = []
-        self.loaded_model = None
+        self.model = None
+        self.save_model = save_model
 
-    def preprocessData(self):
+    def preprocessData(self,hijackData):
         print("Loading and preprocessing data...")
         # load training and testing data
-        with open('labeled_document2.json') as json_data:
+        with open(os.path.dirname(__file__)+'/labeled_document2.json') as json_data:
             allTrainData = json.load(json_data)
         trainPhrases, testPhrases, trainLabel,testLabel = train_test_split(allTrainData['Comment'], allTrainData['CommentLabel'], test_size=0.2, random_state=42)
+
+        if hijackData is not None:
+            trainPhrases = hijackData['X_train']
+            testPhrases = hijackData['X_test']
+            trainLabel = hijackData['y_train']
+            testLabel = hijackData['y_test']
 
     #     print(testPhrases[0:100])
         punctuation = list(string.punctuation)
@@ -79,69 +86,73 @@ class LSTM():
         return np.round(wordLenMean + 3 * wordLenStd).astype(int)
 
 
-    def trainAndTest(self):
-        (trainSenti, testSenti) = preprocessData()
+    def trainAndTest(self,sample_weight = None,hijackData = None):
+        (trainSenti, testSenti) = self.preprocessData(hijackData)
         # process training data and testing data
 
         toIDMap = corpora.Dictionary(np.concatenate((self.postProcessedTrainPhrases, self.postProcessedTestPhrases), axis=0))
         allPhraseSize = len(toIDMap.keys())
 
-        (trainWordIDs, trainWordIDLens) = convertPhrasesToIDs(self.postProcessedTrainPhrases, toIDMap)
-        (testWordIDs, testWordIDLens) = convertPhrasesToIDs(self.postProcessedTestPhrases, toIDMap)
+        (trainWordIDs, trainWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTrainPhrases, toIDMap)
+        (testWordIDs, testWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTestPhrases, toIDMap)
 
-        sequenceLen = findSequenceLen(trainWordIDLens + testWordIDLens)
+        sequenceLen = self.findSequenceLen(trainWordIDLens + testWordIDLens)
 
         print( "pad sequence")
         trainingData = sequence.pad_sequences(np.array(trainWordIDs), maxlen=sequenceLen)
         testingData = sequence.pad_sequences(np.array(testWordIDs), maxlen=sequenceLen)
 
-        sm = SMOTE(random_state=12, ratio = 1.0)
-        trainingData, trainSenti = sm.fit_sample(trainingData, trainSenti)
+        # sm = SMOTE(random_state=12, ratio = 1.0)
+        # trainingData, trainSenti = sm.fit_sample(trainingData, trainSenti)
 
         print ("categorize the labels")
         #print len(np.unique(trainSenti))
         trainingDataLabel = np_utils.to_categorical(trainSenti, len(np.unique(trainSenti)))
 
-        model = Sequential()
-        model.add(Embedding(allPhraseSize, 128))
-        model.add(SpatialDropout1D(0.1))
-        model.add(Bidirectional(LSTM(128)))
-        model.add(Dense(len(np.unique(trainSenti))))
-        model.add(Activation('softmax'))
+        self.model = Sequential()
+        self.model.add(Embedding(allPhraseSize, 128))
+        self.model.add(SpatialDropout1D(0.1))
+        self.model.add(Bidirectional(LSTM(128)))
+        self.model.add(Dense(len(np.unique(trainSenti))))
+        self.model.add(Activation('softmax'))
 
-        model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-        model.fit(trainingData,trainingDataLabel , epochs=3, batch_size=256, verbose=1)
+        self.model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+        self.model.fit(trainingData,trainingDataLabel , epochs=10, batch_size=256, verbose=2,sample_weight=sample_weight)
         # evaluate the model
         # serialize weights to HDF5
-        model_json = model.to_json()
-
-        #changed to absolute path
-        with open("Model/LSTM/LSTM.json", "w") as json_file:
-            json_file.write(model_json)
-        # serialize weights to HDF5, absolute path
-        model.save_weights("Model/LSTM/LSTM.h5")
-        print("Saved model to disk")
+        if self.save_model:
+            self.save(os.path.dirname(__file__)+"/LSTM.json",os.path.dirname(__file__)+"/LSTM.h5")
 
         # testingData, testSenti = sm.fit_sample(testingData, testSenti)
         testingDataLabel = np_utils.to_categorical(testSenti, len(np.unique(testSenti)))
-        scores = model.evaluate(testingData, testingDataLabel, verbose=0)
-        print("%s: %.2f%%" % (model.metrics_names[1], scores[1] * 100))
+        scores = self.model.evaluate(testingData, testingDataLabel, verbose=0)
+        print("%s: %.2f%%" % (self.model.metrics_names[1], scores[1] * 100))
 
     # predictedRes = model.predict_proba(testingData)
 
-    def load(self):
-        json_file = open(os.path.dirname(__file__)+'/LSTM.json', 'r')
+    def save(self,JSONPath,ModelPath):
+        model_json = self.model.to_json()
+
+        #changed to absolute path
+        with open(JSONPath, "w") as json_file:
+            json_file.write(model_json)
+        # serialize weights to HDF5, absolute path
+        self.model.save_weights(ModelPath)
+        print("Saved model to disk")
+
+    def load(self,JSONPath,ModelPath):
+        json_file = open(JSONPath, 'r')
         loaded_model_json = json_file.read()
         json_file.close()
-        self.loaded_model = model_from_json(loaded_model_json)
+        self.model = model_from_json(loaded_model_json)
         # load weights into new model
-        self.loaded_model.load_weights(os.path.dirname(__file__)+"/LSTM.h5")
+        self.model.load_weights(ModelPath)
         print("Loaded model from disk")
 
     def predict(self, comments):
 
-        if self.loaded_model is None:
-            self.load()
+        if self.model is None:
+            self.load(os.path.dirname(__file__)+'/LSTM.json',os.path.dirname(__file__)+"/LSTM.h5")
 
         punctuation = list(string.punctuation)
         stopWords = stopwords.words('english') + punctuation
@@ -168,8 +179,8 @@ class LSTM():
 
         # loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-        self.loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-        res = self.loaded_model.predict(testingData)
+        self.model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+        res = self.model.predict(testingData)
 
         # res = [(np.array(l)/sum(l)).tolist() for l in predict_res]
         return [(np.array(l)/sum(l)).tolist() for l in res]
