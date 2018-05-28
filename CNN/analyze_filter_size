@@ -1,8 +1,18 @@
 #! /bin/bash
 
 fields=$(grep -E 'Begin Test Condition (.*)' output_log.txt | awk '{print $NF}')
+accum='['
+maxaccstr='['
 for f in $fields;
 do
-  maxacc=$(sed -n '/'$f'/,/'$f'/p' output_log.txt | grep 'val_acc' | tr '-' ' ' | awk '{print $11}' | sort -r | head -1)
+  regf=$(echo $f | sed 's!\[\(.*\)\]!\\\[\1\\\]!')
+  maxacc=$(sed -n '/'$regf'/,/'$regf'/p' output_log.txt | grep 'val_acc' | tr '-' ' ' | awk '{print $11}' | sort -r | head -1)
   echo 'With Condition '$f' , the maximum accuaracy is '$maxacc
+  maxaccstr=$maxaccstr$maxacc','
+  val=$(echo $f | tr '=' ' ' | awk '{print $NF}')
+  fieldName=$(echo $f | tr '=' ' ' | awk '{print $1}')
+  accum=$accum$val','
 done
+accum=$(echo $accum | sed "s/\(.*\).$/\1]/")
+maxaccstr=$(echo $maxaccstr | sed "s/\(.*\).$/\1]/")
+python3 plot.py $fieldName $accum $maxaccstr

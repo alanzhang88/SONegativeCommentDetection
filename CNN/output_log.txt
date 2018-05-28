@@ -1,4 +1,4 @@
-Begin Test Condition filter_size=2
+Begin Test Condition filter_sizes=[2]
 Train on 1260 samples, validate on 140 samples
 Epoch 1/20
  - 1s - loss: 0.6926 - acc: 0.5127 - fpp: 0.4857 - val_loss: 0.6949 - val_acc: 0.4643 - val_fpp: nan
@@ -40,8 +40,8 @@ Epoch 19/20
  - 0s - loss: 0.1487 - acc: 0.9683 - fpp: 0.0263 - val_loss: 0.7424 - val_acc: 0.6000 - val_fpp: 0.3382
 Epoch 20/20
  - 0s - loss: 0.1184 - acc: 0.9857 - fpp: 0.0158 - val_loss: 0.7786 - val_acc: 0.5857 - val_fpp: 0.3325
-End Test Condition filter_size=2
-Begin Test Condition filter_size=3
+End Test Condition filter_sizes=[2]
+Begin Test Condition filter_sizes=[3]
 Train on 1260 samples, validate on 140 samples
 Epoch 1/20
  - 1s - loss: 0.6929 - acc: 0.5087 - fpp: 0.4953 - val_loss: 0.6950 - val_acc: 0.4571 - val_fpp: 0.4492
@@ -83,8 +83,8 @@ Epoch 19/20
  - 0s - loss: 0.1521 - acc: 0.9722 - fpp: 0.0167 - val_loss: 0.6888 - val_acc: 0.6500 - val_fpp: 0.3257
 Epoch 20/20
  - 0s - loss: 0.1279 - acc: 0.9778 - fpp: 0.0210 - val_loss: 0.7029 - val_acc: 0.5929 - val_fpp: 0.3562
-End Test Condition filter_size=3
-Begin Test Condition filter_size=4
+End Test Condition filter_sizes=[3]
+Begin Test Condition filter_sizes=[4]
 Train on 1260 samples, validate on 140 samples
 Epoch 1/20
  - 1s - loss: 0.6930 - acc: 0.5151 - fpp: 0.4833 - val_loss: 0.6958 - val_acc: 0.4714 - val_fpp: nan
@@ -130,8 +130,8 @@ Epoch 19/20
 Saveing model with acc reaching 0.700000
 Epoch 20/20
  - 1s - loss: 0.1195 - acc: 0.9833 - fpp: 0.0140 - val_loss: 0.6160 - val_acc: 0.6857 - val_fpp: 0.2861
-End Test Condition filter_size=4
-Begin Test Condition filter_size=5
+End Test Condition filter_sizes=[4]
+Begin Test Condition filter_sizes=[5]
 Train on 1260 samples, validate on 140 samples
 Epoch 1/20
  - 1s - loss: 0.6921 - acc: 0.5325 - fpp: 0.4481 - val_loss: 0.6957 - val_acc: 0.4786 - val_fpp: 0.3657
@@ -175,8 +175,8 @@ Epoch 19/20
 Saveing model with acc reaching 0.664286
 Epoch 20/20
  - 1s - loss: 0.1301 - acc: 0.9754 - fpp: 0.0266 - val_loss: 0.6401 - val_acc: 0.6500 - val_fpp: 0.2762
-End Test Condition filter_size=5
-Begin Test Condition filter_size=6
+End Test Condition filter_sizes=[5]
+Begin Test Condition filter_sizes=[6]
 Train on 1260 samples, validate on 140 samples
 Epoch 1/20
  - 1s - loss: 0.6996 - acc: 0.4984 - fpp: nan - val_loss: 0.6907 - val_acc: 0.5714 - val_fpp: 0.4155
@@ -220,8 +220,8 @@ Epoch 19/20
 Saveing model with acc reaching 0.671429
 Epoch 20/20
  - 1s - loss: 0.1349 - acc: 0.9754 - fpp: 0.0260 - val_loss: 0.5810 - val_acc: 0.6429 - val_fpp: 0.3232
-End Test Condition filter_size=6
-Begin Test Condition filter_size=7
+End Test Condition filter_sizes=[6]
+Begin Test Condition filter_sizes=[7]
 Train on 1260 samples, validate on 140 samples
 Epoch 1/20
  - 2s - loss: 0.6974 - acc: 0.4968 - fpp: 0.4515 - val_loss: 0.6905 - val_acc: 0.5214 - val_fpp: 0.4126
@@ -266,8 +266,8 @@ Epoch 19/20
  - 1s - loss: 0.1565 - acc: 0.9746 - fpp: 0.0178 - val_loss: 0.5900 - val_acc: 0.6786 - val_fpp: 0.2963
 Epoch 20/20
  - 1s - loss: 0.1330 - acc: 0.9770 - fpp: 0.0272 - val_loss: 0.5822 - val_acc: 0.6857 - val_fpp: 0.2976
-End Test Condition filter_size=7
-Begin Test Condition filter_size=8
+End Test Condition filter_sizes=[7]
+Begin Test Condition filter_sizes=[8]
 Train on 1260 samples, validate on 140 samples
 Epoch 1/20
  - 2s - loss: 0.6941 - acc: 0.5183 - fpp: nan - val_loss: 0.6898 - val_acc: 0.5571 - val_fpp: 0.3739
@@ -310,8 +310,8 @@ Epoch 19/20
 Epoch 20/20
  - 1s - loss: 0.1464 - acc: 0.9746 - fpp: 0.0250 - val_loss: 0.6361 - val_acc: 0.6786 - val_fpp: 0.2938
 Saveing model with acc reaching 0.678571
-End Test Condition filter_size=8
-Begin Test Condition filter_size=9
+End Test Condition filter_sizes=[8]
+Begin Test Condition filter_sizes=[9]
 Train on 1260 samples, validate on 140 samples
 Epoch 1/20
  - 2s - loss: 0.6948 - acc: 0.5317 - fpp: 0.4697 - val_loss: 0.6800 - val_acc: 0.5429 - val_fpp: 0.4448
@@ -354,8 +354,8 @@ Epoch 19/20
  - 1s - loss: 0.1737 - acc: 0.9690 - fpp: 0.0224 - val_loss: 0.6329 - val_acc: 0.6143 - val_fpp: 0.3116
 Epoch 20/20
  - 1s - loss: 0.1493 - acc: 0.9730 - fpp: 0.0216 - val_loss: 0.6227 - val_acc: 0.6714 - val_fpp: 0.3297
-End Test Condition filter_size=9
-Begin Test Condition filter_size=10
+End Test Condition filter_sizes=[9]
+Begin Test Condition filter_sizes=[10]
 Train on 1260 samples, validate on 140 samples
 Epoch 1/20
  - 2s - loss: 0.6925 - acc: 0.5302 - fpp: 0.4651 - val_loss: 0.6931 - val_acc: 0.5143 - val_fpp: 0.3048
@@ -399,4 +399,4 @@ Epoch 19/20
 Epoch 20/20
  - 1s - loss: 0.1472 - acc: 0.9643 - fpp: 0.0308 - val_loss: 0.6251 - val_acc: 0.6786 - val_fpp: 0.2916
 Saveing model with acc reaching 0.678571
-End Test Condition filter_size=10
+End Test Condition filter_sizes=[10]
