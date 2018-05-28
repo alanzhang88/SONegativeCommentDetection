@@ -95,8 +95,8 @@ class LSTM():
         trainingData = sequence.pad_sequences(np.array(trainWordIDs), maxlen=sequenceLen)
         testingData = sequence.pad_sequences(np.array(testWordIDs), maxlen=sequenceLen)
 
-        sm = SMOTE(random_state=12, ratio = 1.0)
-        trainingData, trainSenti = sm.fit_sample(trainingData, trainSenti)
+        # sm = SMOTE(random_state=12, ratio = 1.0)
+        # trainingData, trainSenti = sm.fit_sample(trainingData, trainSenti)
 
         print ("categorize the labels")
         #print len(np.unique(trainSenti))
