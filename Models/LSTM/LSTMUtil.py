@@ -76,7 +76,8 @@ class LSTMModel():
         for phrase in phrases:
             ids = []
             for word in phrase:
-                ids.append(toIDMap.token2id[word])
+                if toIDMap.token2id.get(word) is not None:
+                    ids.append(toIDMap.token2id[word])
             wordIDs.append(ids)
             wordIDLens.append(len(ids))
         return ( wordIDs, wordIDLens )
@@ -158,6 +159,15 @@ class LSTMModel():
             self.load(os.path.dirname(__file__)+'/LSTM.json',os.path.dirname(__file__)+"/LSTM.h5")
             self.model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
             self.preprocessData(hijackData)
+            toIDMap = corpora.Dictionary(np.concatenate((self.postProcessedTrainPhrases, self.postProcessedTestPhrases), axis=0))
+            self.toIDMap = toIDMap
+            allPhraseSize = len(toIDMap.keys())
+
+            (trainWordIDs, trainWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTrainPhrases, toIDMap)
+            (testWordIDs, testWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTestPhrases, toIDMap)
+
+            sequenceLen = self.findSequenceLen(trainWordIDLens + testWordIDLens)
+            self.sequenceLen = sequenceLen
 
         self.postProcessedTestPhrases = []
         punctuation = list(string.punctuation)
@@ -177,7 +187,6 @@ class LSTMModel():
         allPhraseSize = len(self.toIDMap.keys())
 
         (testWordIDs, testWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTestPhrases, self.toIDMap)
-        (trainWordIDs, trainWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTrainPhrases, self.toIDMap)
 
         # sequenceLen = self.findSequenceLen(testWordIDLens+trainWordIDLens)
 
