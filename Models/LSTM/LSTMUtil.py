@@ -28,7 +28,7 @@ class LSTMModel():
         self.model = None
         self.save_model = save_model
 
-    def preprocessData(self,hijackData):
+    def preprocessData(self,hijackData=None):
         print("Loading and preprocessing data...")
         # load training and testing data
         with open(os.path.dirname(__file__)+'/labeled_document2.json') as json_data:
@@ -149,11 +149,14 @@ class LSTMModel():
         self.model.load_weights(ModelPath)
         print("Loaded model from disk")
 
-    def predict(self, comments):
+    def predict(self, comments, hijackData=None):
 
         if self.model is None:
             self.load(os.path.dirname(__file__)+'/LSTM.json',os.path.dirname(__file__)+"/LSTM.h5")
+            self.model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+            self.preprocessData(hijackData)
 
+        self.postProcessedTestPhrases = []
         punctuation = list(string.punctuation)
         stopWords = stopwords.words('english') + punctuation
         engStemmer = SnowballStemmer('english')
@@ -167,19 +170,20 @@ class LSTMModel():
                     parsedWords.append(engStemmer.stem(t))
             self.postProcessedTestPhrases.append(parsedWords)
 
-        toIDMap = corpora.Dictionary(self.postProcessedTestPhrases)
+        toIDMap = corpora.Dictionary(np.concatenate((self.postProcessedTrainPhrases, self.postProcessedTestPhrases), axis=0))
         allPhraseSize = len(toIDMap.keys())
 
         (testWordIDs, testWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTestPhrases, toIDMap)
+        (trainWordIDs, trainWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTrainPhrases, toIDMap)
 
-        sequenceLen = self.findSequenceLen(testWordIDLens)
+        sequenceLen = self.findSequenceLen(testWordIDLens+trainWordIDLens)
 
         print( "pad sequence")
         testingData = sequence.pad_sequences(np.array(testWordIDs), maxlen=sequenceLen)
 
         # loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-        self.model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+        
         res = self.model.predict(testingData)
 
         # res = [(np.array(l)/sum(l)).tolist() for l in predict_res]

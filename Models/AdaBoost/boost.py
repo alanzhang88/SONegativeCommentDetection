@@ -93,6 +93,6 @@ class AdaBoost:
 
 
 if __name__ == '__main__':
-    model = AdaBoost(DataPath='labeled_comments.csv',FileType='csv',classifierName='lstm',iterations=2)
+    model = AdaBoost(DataPath='labeled_comments.csv',FileType='csv',classifierName='cnn')
     model.train()
     model.eval()
