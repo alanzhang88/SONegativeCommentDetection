@@ -30,7 +30,9 @@ trainPhrases, testPhrases, trainLabel,testLabel = train_test_split(allTrainData[
 
 postProcessedTrainPhrases = []
 postProcessedTestPhrases = []
+
 LSTM_process = LSTMUtil.return_new_lstm()
+LSTM_process.trainAndTest()
 # LSTM_process = LSTM(postProcessedTrainPhrases, postProcessedTestPhrases)
 
 negcount = 0

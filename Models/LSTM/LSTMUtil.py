@@ -22,11 +22,13 @@ from gensim import corpora
 # from imblearn.over_sampling import SMOTE
 
 class LSTMModel():
-    def __init__(self, postProcessedTrainPhrases = None, postProcessedTestPhrases = None, save_model = True):
+    def __init__(self, postProcessedTrainPhrases = None, postProcessedTestPhrases = None, save_model = True, toIDMap = None, sequenceLen = None):
         self.postProcessedTrainPhrases = []
         self.postProcessedTestPhrases = []
         self.model = None
         self.save_model = save_model
+        self.sequenceLen = None
+        self.toIDMap = None
 
     def preprocessData(self,hijackData=None):
         print("Loading and preprocessing data...")
@@ -91,13 +93,14 @@ class LSTMModel():
         # process training data and testing data
 
         toIDMap = corpora.Dictionary(np.concatenate((self.postProcessedTrainPhrases, self.postProcessedTestPhrases), axis=0))
+        self.toIDMap = toIDMap
         allPhraseSize = len(toIDMap.keys())
 
         (trainWordIDs, trainWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTrainPhrases, toIDMap)
         (testWordIDs, testWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTestPhrases, toIDMap)
 
         sequenceLen = self.findSequenceLen(trainWordIDLens + testWordIDLens)
-
+        self.sequenceLen = sequenceLen
         print( "pad sequence")
         trainingData = sequence.pad_sequences(np.array(trainWordIDs), maxlen=sequenceLen)
         testingData = sequence.pad_sequences(np.array(testWordIDs), maxlen=sequenceLen)
@@ -170,16 +173,16 @@ class LSTMModel():
                     parsedWords.append(engStemmer.stem(t))
             self.postProcessedTestPhrases.append(parsedWords)
 
-        toIDMap = corpora.Dictionary(np.concatenate((self.postProcessedTrainPhrases, self.postProcessedTestPhrases), axis=0))
-        allPhraseSize = len(toIDMap.keys())
+        # toIDMap = corpora.Dictionary(np.concatenate((self.postProcessedTrainPhrases, self.postProcessedTestPhrases), axis=0))
+        allPhraseSize = len(self.toIDMap.keys())
 
-        (testWordIDs, testWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTestPhrases, toIDMap)
-        (trainWordIDs, trainWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTrainPhrases, toIDMap)
+        (testWordIDs, testWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTestPhrases, self.toIDMap)
+        (trainWordIDs, trainWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTrainPhrases, self.toIDMap)
 
-        sequenceLen = self.findSequenceLen(testWordIDLens+trainWordIDLens)
+        # sequenceLen = self.findSequenceLen(testWordIDLens+trainWordIDLens)
 
         print( "pad sequence")
-        testingData = sequence.pad_sequences(np.array(testWordIDs), maxlen=sequenceLen)
+        testingData = sequence.pad_sequences(np.array(testWordIDs), maxlen=self.sequenceLen)
 
         # loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
