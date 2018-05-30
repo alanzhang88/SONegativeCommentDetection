@@ -102,6 +102,6 @@ class CNNModel:
 
 if __name__ == "__main__":
     CNN_model = CNNModel(save_model=False)
-    # CNN_model.load_model("./CNNmodel.h5")
-    CNN_model.build_model()
-    # print (CNN_model.predict(["You're clearly converting the result of the `Math.Sqrt()` to an `Int32` - an integer, i.e. no decimals.", "Stupid"]))
+    CNN_model.load_model("./CNNmodel.h5")
+    # CNN_model.build_model()
+    print (CNN_model.predict(["You're clearly converting the result of the `Math.Sqrt()` to an `Int32` - an integer, i.e. no decimals.", "Stupid"]))

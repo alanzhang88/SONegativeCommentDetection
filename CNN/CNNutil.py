@@ -87,7 +87,7 @@ class CNNModel:
 
 
 if __name__ == "__main__":
-    CNN_model = CNNModel(filter_sizes=[4,4,4],drop_prob=0.2,save_model=False,random_state=101)
+    CNN_model = CNNModel()
     # CNN_model.load_model("./CNNmodel.h5")
     CNN_model.build_model()
     # print (CNN_model.predict(["You're clearly converting the result of the `Math.Sqrt()` to an `Int32` - an integer, i.e. no decimals."]))
