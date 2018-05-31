@@ -6,23 +6,31 @@ parser = argparse.ArgumentParser()
 # parser.add_argument('-v',dest='fieldValue',help='the value of the hyperparameter, input as list eg [32,64,128] for num_filters and [[2,3,4],[3,4,5]] for filter_sizes',type=str,required=True)
 # parser.add_argument('-r',dest='random_state',help='set the random state of data data_generator', type=int)
 # args = parser.parse_args()
-parser.add_argument('-nf',dest='num_filters',type=int,required=True)
-parser.add_argument('-fs',dest='filter_sizes',type=str,required=True)
-parser.add_argument('-e',dest='epochs',type=int,required=True)
+parser.add_argument('-nf',dest='num_filters',type=int,required=False)
+parser.add_argument('-fs',dest='filter_sizes',type=str,required=False)
+parser.add_argument('-e',dest='epochs',type=int,required=False)
 parser.add_argument('-dp', dest="drop_prob", type=float, required=False)
 parser.add_argument('-lr', dest="lr", type=float, required=False)
 
-# parser.add_argument('-v',dest='fieldValue',help='the value of the hyperparameter, input as list eg [32,64,128] for num_filters and [[2,3,4],[3,4,5]] for filter_sizes',type=str,required=True)
-# parser.add_argument('-r',dest='random_state',help='set the random state of data data_generator', type=int)
-args = parser.parse_args()
-num_filters = args.num_filters 
-filter_sizes =[int(x) for x in args.filter_sizes.split(",")]
-epochs = args.epochs 
+args = parser.parse_args() 
+# num_filters = args.num_filters if args.num_filters is not None
+# filter_sizes =[int(x) for x in args.filter_sizes.split(",")] if filter_sizes is not None
+# epochs = args.epochs if epochs is not None
 # drop_prob = args.drop_prob if args.drop_prob is not None
 # lr = args.lr if args.lr is not None
 
-params = {"num_filters": num_filters, "filter_sizes": filter_sizes, "epochs": epochs}
+params = {}
+if args.num_filters is not None:
+    num_filters = args.num_filters
+    params["num_filters"] = num_filters
+if args.filter_sizes is not None:
+    filter_sizes = [int(x) for x in args.filter_sizes.split(",")]
+    params["filter_sizes"] = filter_sizes
+if args.epochs is not None:
+    epochs = args.epochs 
+    params["epochs"] = epochs
 
+# params = {"num_filters": num_filters, "filter_sizes": filter_sizes, "epochs": epochs}
 
 # fieldName = args.fieldName
 # fieldValue = eval(args.fieldValue)
@@ -36,9 +44,9 @@ model = CNNModel(save_model=False)
 #     model.build_model()
 #     print('End Test Condition %s=%s' % (fieldName,str(i)))
 
-
 for key, value in params.items():
     model.model = None
+    print('Test Condition %s=%s' % (key,str(value)))
     setattr(model, key, value)
 
 model.build_model()
