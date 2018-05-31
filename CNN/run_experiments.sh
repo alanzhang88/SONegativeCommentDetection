@@ -3,7 +3,7 @@ declare -a filter_sizes
 
 filter_sizes[0]="1,2,3"
 filter_sizes[1]="1,2,3,4"
-# filter_sizes[2]="1 2 3 4 5"
+#filter_sizes[2]="1 2 3 4 5"
 # filter_sizes[3]="1 2 3 4 5 6"
 # filter_sizes[4]="1 2 3 4 5 6 7"
 
