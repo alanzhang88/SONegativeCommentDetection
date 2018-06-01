@@ -11,8 +11,9 @@ parser.add_argument('-fs',dest='filter_sizes',type=str,required=False)
 parser.add_argument('-e',dest='epochs',type=int,required=False)
 parser.add_argument('-dp', dest="drop_prob", type=float, required=False)
 parser.add_argument('-lr', dest="lr", type=float, required=False)
+parser.add_argument('--graph-var',dest='graph',type=str,help='the hyperparameter name that will be used as the variables to graph against accuracy',required=True)
 
-args = parser.parse_args() 
+args = parser.parse_args()
 # num_filters = args.num_filters if args.num_filters is not None
 # filter_sizes =[int(x) for x in args.filter_sizes.split(",")] if filter_sizes is not None
 # epochs = args.epochs if epochs is not None
@@ -27,7 +28,7 @@ if args.filter_sizes is not None:
     filter_sizes = [int(x) for x in args.filter_sizes.split(",")]
     params["filter_sizes"] = filter_sizes
 if args.epochs is not None:
-    epochs = args.epochs 
+    epochs = args.epochs
     params["epochs"] = epochs
 
 # params = {"num_filters": num_filters, "filter_sizes": filter_sizes, "epochs": epochs}
@@ -46,8 +47,8 @@ model = CNNModel(save_model=False)
 
 for key, value in params.items():
     model.model = None
-    print('Test Condition %s=%s' % (key,str(value)))
     setattr(model, key, value)
 
+print('Begin Test Condition %s=%s' % (args.graph,str(params.get(args.graph)))
 model.build_model()
-
+print('End Test Condition %s=%s' % (args.graph,str(params.get(args.graph)))
