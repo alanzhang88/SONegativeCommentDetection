@@ -1,5 +1,4 @@
 import argparse
-from CNNutil import CNNModel
 
 parser = argparse.ArgumentParser()
 # parser.add_argument('-f',dest='fieldName',help='the name of the hyperparameter used to test, need to exactly match the field name of the object',type=str,required=True)
@@ -19,7 +18,7 @@ args = parser.parse_args()
 # epochs = args.epochs if epochs is not None
 # drop_prob = args.drop_prob if args.drop_prob is not None
 # lr = args.lr if args.lr is not None
-
+from CNNutil import CNNModel
 params = {}
 if args.num_filters is not None:
     num_filters = args.num_filters
@@ -49,6 +48,6 @@ for key, value in params.items():
     model.model = None
     setattr(model, key, value)
 
-print('Begin Test Condition %s=%s' % (args.graph,str(params.get(args.graph)))
+print('Begin Test Condition %s=%s' % (args.graph,str(params.get(args.graph))))
 model.build_model()
-print('End Test Condition %s=%s' % (args.graph,str(params.get(args.graph)))
+print('End Test Condition %s=%s' % (args.graph,str(params.get(args.graph))))
