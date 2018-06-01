@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from keras.preprocessing import sequence
 from keras.utils import np_utils
 from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation, Embedding, Bidirectional
+from keras.layers import Dense, Dropout, Activation, Embedding, Bidirectional, GlobalMaxPool1D
 from keras.layers.core import SpatialDropout1D
 from sklearn.model_selection import StratifiedKFold
 from keras.datasets import imdb

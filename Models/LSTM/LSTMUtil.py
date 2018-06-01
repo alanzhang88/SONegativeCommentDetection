@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from keras.preprocessing import sequence
 from keras.utils import np_utils
 from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation, Embedding, Bidirectional
+from keras.layers import Dense, Dropout, Activation, Embedding, Bidirectional, GlobalMaxPool1D
 from keras.layers.core import SpatialDropout1D
 from sklearn.model_selection import StratifiedKFold
 from keras.datasets import imdb
@@ -119,15 +119,15 @@ class LSTMModel():
         # self.model.add(Bidirectional(LSTM(128)))
         # self.model.add(Dense(len(np.unique(trainSenti))))
         # self.model.add(Activation('softmax'))
-        model = Sequential()
-        model.add(Embedding(allPhraseSize, 128))
-        model.add(Bidirectional(LSTM(128, return_sequences=True)))
-        model.add(GlobalMaxPool1D())
-        model.add(Dropout(0.1))
-        model.add(Dense(64, activation="relu"))
-        model.add(Dropout(0.1))
-        model.add(Dense(len(np.unique(trainSenti))))
-        model.add(Activation('softmax'))
+        self.model = Sequential()
+        self. model.add(Embedding(allPhraseSize, 128))
+        self.model.add(Bidirectional(LSTM(128, return_sequences=True)))
+        self.model.add(GlobalMaxPool1D())
+        self.model.add(Dropout(0.1))
+        self.model.add(Dense(64, activation="relu"))
+        self.model.add(Dropout(0.1))
+        self.model.add(Dense(len(np.unique(trainSenti))))
+        self.model.add(Activation('softmax'))
 
         self.model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
         self.model.fit(trainingData,trainingDataLabel , epochs=10, batch_size=256, verbose=2,sample_weight=sample_weight)
