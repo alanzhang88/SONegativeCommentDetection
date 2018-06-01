@@ -95,7 +95,8 @@ class LSTMModel():
 
         toIDMap = corpora.Dictionary(np.concatenate((self.postProcessedTrainPhrases, self.postProcessedTestPhrases), axis=0))
         self.toIDMap = toIDMap
-        allPhraseSize = len(toIDMap.keys())
+        # allPhraseSize = len(toIDMap.keys())
+        allPhraseSize = max(15000, len(toIDMap.keys()))
 
         (trainWordIDs, trainWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTrainPhrases, toIDMap)
         (testWordIDs, testWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTestPhrases, toIDMap)
@@ -113,21 +114,21 @@ class LSTMModel():
         #print len(np.unique(trainSenti))
         trainingDataLabel = np_utils.to_categorical(trainSenti, len(np.unique(trainSenti)))
 
-        # self.model = Sequential()
-        # self.model.add(Embedding(allPhraseSize, 128))
-        # self.model.add(SpatialDropout1D(0.1))
-        # self.model.add(Bidirectional(LSTM(128)))
-        # self.model.add(Dense(len(np.unique(trainSenti))))
-        # self.model.add(Activation('softmax'))
         self.model = Sequential()
-        self. model.add(Embedding(allPhraseSize, 128))
-        self.model.add(Bidirectional(LSTM(128, return_sequences=True)))
-        self.model.add(GlobalMaxPool1D())
-        self.model.add(Dropout(0.1))
-        self.model.add(Dense(64, activation="relu"))
-        self.model.add(Dropout(0.1))
+        self.model.add(Embedding(allPhraseSize, 128))
+        self.model.add(SpatialDropout1D(0.1))
+        self.model.add(Bidirectional(LSTM(128)))
         self.model.add(Dense(len(np.unique(trainSenti))))
         self.model.add(Activation('softmax'))
+        # self.model = Sequential()
+        # self.model.add(Embedding(allPhraseSize, 128))
+        # self.model.add(Bidirectional(LSTM(128, return_sequences=True)))
+        # self.model.add(GlobalMaxPool1D())
+        # self.model.add(Dropout(0.1))
+        # self.model.add(Dense(64, activation="relu"))
+        # self.model.add(Dropout(0.1))
+        # self.model.add(Dense(len(np.unique(trainSenti))))
+        # self.model.add(Activation('softmax'))
 
         self.model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
         self.model.fit(trainingData,trainingDataLabel , epochs=10, batch_size=256, verbose=2,sample_weight=sample_weight)
@@ -170,7 +171,8 @@ class LSTMModel():
             self.preprocessData(hijackData)
             toIDMap = corpora.Dictionary(np.concatenate((self.postProcessedTrainPhrases, self.postProcessedTestPhrases), axis=0))
             self.toIDMap = toIDMap
-            allPhraseSize = len(toIDMap.keys())
+            # allPhraseSize = len(toIDMap.keys())
+            allPhraseSize = max(15000, len(toIDMap.keys()))
 
             (trainWordIDs, trainWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTrainPhrases, toIDMap)
             (testWordIDs, testWordIDLens) = self.convertPhrasesToIDs(self.postProcessedTestPhrases, toIDMap)
