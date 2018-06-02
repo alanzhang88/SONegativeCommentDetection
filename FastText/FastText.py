@@ -147,55 +147,63 @@ class FastText:
             results.append(tmp)
         print(results)
 
-    def classify(self, file):
+    def classify(self, file, isDS):
         # preprocess data
         (postProcessedTrainPhrases, postProcessedTestPhrases, trainLabels, testLabels) = self.preprocessData(file)
 
         # create training and testing file
-        self.outputPhrasesToFile("training_seconditer", postProcessedTrainPhrases, trainLabels)
-        self.outputPhrasesToFile("testing_seconditer", postProcessedTestPhrases, testLabels)
+        if (isDS):
+            trainSentencesDS, trainLabelsDS = self.downsampling(postProcessedTrainPhrases, trainLabels, 0)
+            self.outputSentencesToFile("trainingDS_seconditer", trainSentencesDS, trainLabelsDS)
+            testSentencesDS, testLabelsDS = self.downsampling(postProcessedTestPhrases, testLabels, 0)
+            self.outputSentencesToFile("testingDS_seconditer", testSentencesDS, testLabelsDS)
+        else:
+            self.outputPhrasesToFile("training_seconditer", postProcessedTrainPhrases, trainLabels)
+            self.outputPhrasesToFile("testing_seconditer", postProcessedTestPhrases, testLabels)
+            testSentences = self.extractText(postProcessedTestPhrases)
 
         # train the fasttext model
         print('Buidling the model...\n')
-        # trainSentencesDS, trainLabelsDS = self.downsampling(postProcessedTrainPhrases, trainLabels, 0)
-        # self.outputSentencesToFile("trainingDS_seconditer", trainSentencesDS, trainLabelsDS)
-        # testSentencesDS, testLabelsDS = self.downsampling(postProcessedTestPhrases, testLabels, 0)
-        # self.outputSentencesToFile("testingDS_seconditer", testSentencesDS, testLabelsDS)
-
         # sm = SMOTE(random_state=12, ratio = 1.0)
         # trainingData, trainLabels = sm.fit_sample(np.array(trainSentences).reshape(len(trainSentences), 1), trainLabels)
-
-        #   without downsampling inbalanced data
-        classifier = fasttext.supervised('training_seconditer.txt', 'model_seconditer')
-        result = classifier.test('testing_seconditer.txt')
-
-        #   downsampling inbalanced data
-        # classifier = fasttext.supervised('trainingDS_seconditer.txt', 'modelDS_seconditer')
-        # result = classifier.test('testingDS_seconditer.txt')
+        if (isDS):
+            #   downsampling inbalanced data
+            classifier = fasttext.supervised('trainingDS_seconditer.txt', 'modelDS_seconditer')
+            result = classifier.test('testingDS_seconditer.txt')
+        else:
+            #   without downsampling inbalanced data
+            classifier = fasttext.supervised('training_seconditer.txt', 'model_seconditer')
+            result = classifier.test('testing_seconditer.txt')
 
         # classify testing data
-        #   without downsampling inbalanced data
-        testSentences = self.extractText(postProcessedTestPhrases)
-        labels = classifier.predict(testSentences)
-        #   downsampling inbalanced data
-        # labels = classifier.predict(testSentencesDS)
+        if (isDS):
+            #   downsampling inbalanced data
+            labels = classifier.predict(testSentencesDS)
+        else:
+            #   without downsampling inbalanced data
+            labels = classifier.predict(testSentences)
+
         print('Negative comments found:')
         for i in range(len(labels)):
             if int(labels[i][0]) == 0:
-                # print(testSentencesDS[i])
-                print(testSentences[i])
+                if (isDS):
+                    print(testSentencesDS[i])
+                else:
+                    print(testSentences[i])
 
         # evaluate the model
         print('\nEvaluating the model...')
         count = 0
-        # for i in range(len(testSentencesDS) - 1):
-        for i in range(len(testSentences) - 1):
-            # print(testLabels[i])
-            # if testLabelsDS[i] == int(labels[i][0]):
-            if testLabels[i] == int(labels[i][0]):
-                count += 1
-        # print('Accuracy at 1: ', count/len(testSentencesDS))
-        print('Accuracy at 1: ', count / len(testSentences))
+        if (isDS):
+            for i in range(len(testSentencesDS) - 1):
+                if testLabelsDS[i] == int(labels[i][0]):
+                    count += 1
+            print('Accuracy at 1: ', count/len(testSentencesDS))
+        else:
+            for i in range(len(testSentences) - 1):
+                if testLabels[i] == int(labels[i][0]):
+                    count += 1
+            print('Accuracy at 1: ', count / len(testSentences))
         print('Precision at 1:', result.precision)
         print('Recall at 1:', result.recall)
         print('Total number of examples:', result.nexamples)
@@ -209,9 +217,8 @@ class FastText:
         print(labels)
 
 file = '../labeled_document_seconditer.json'
+isDS = False
 instance = FastText()
-instance.classify(file)
-# texts = instance.extractText(test)
-# labels = instance.predict(texts)
+instance.classify(file,isDS)
 
 
