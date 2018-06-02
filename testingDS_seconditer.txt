@@ -1,0 +1,428 @@
+__label__0  the exampl second paragraph `` gibberish '' identifi 255,7,0,0 sequenc contain item sequenc requir first paragraph
+__label__0  http //stackoverflow.com/questions/5822386/the-volatile-keyword-in-c-languag general http //en.wikipedia.org/wiki/volatile_vari
+__label__0  did tri look `` loop javascrip '' `` javascript interv '' do
+__label__0  see question previous so 1 1 http //stackoverflow.com/questions/730620/how-does-a-hash-table-work
+__label__0  useless question ... answer 6
+__label__0  this one simplest python program write pleas n't ask us
+__label__0  n't know error code look like tri possibl help
+__label__0  sorri silli mistak question down vote
+__label__0  pleas look how-to-ask http //stackoverflow.com/help/how-to-ask
+__label__0  pleas edit question post minim code reproduc problem re ask http //stackoverflow.com/help/mcv note lot us want help pleas n't consid stackoverflow free code servic do n't ask `` i want make i make '' anyway hard feel welcom stackoverflow
+__label__0  let us decid whether want read alway post full error messag
+__label__0  this question show research effort if spent `` hour '' studi least partial understand which part figur part still unsur on part unsur *think* might
+__label__0  yes possibl what tri googl friend
+__label__0  confus look 8255 doc port layout use math
+__label__0  this horribl
+__label__0  pleas read http //sscce.org/
+__label__0  stack overflow question answer site profession enthusiast programm tutori base portal you obvious take help googl know magento
+__label__0  '' ve stuck '' – tri far what problem face
+__label__0  you could also take look how use spinner http //docs.oracle.com/javase/tutorial/uiswing/components/spinner.html how use format text field http //docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html perform valid intern
+__label__0  declar variabl loop constraint `main int argc char **argv scanf `` '' argc 0 printf `` d\n '' argc -- mayb even `int main int int b doubl c work i 'm go tri i n't want comput melt
+__label__0  this question probabl `` homework '' tag
+__label__0  there liter code two thing differ one alway fail compil
+__label__0  pleas stop post answer trivial problem i sure op could answer question littl help
+__label__0  the right tool solv problem debugg you step code line-by-lin *before* ask stack overflow for help pleas read how debug small program eric lippert https //ericlippert.com/2014/03/05/how-to-debug-small-programs/ at minimum edit question includ minim complet verifi http //stackoverflow.com/help/mcv exampl reproduc problem along observ made debugg
+__label__0  love idea not work repli answer n't post one
+__label__0  pleas see https //stackoverflow.com/help/how-to-ask first
+__label__0  off-top realli question
+__label__0  is homework
+__label__0  hi stack overflow site help peopl program problem it 's code servic those exist usual cost money if would like assist code problem i 'd suggest take look ask redraft question accord
+__label__0  theoret speak i answer question two part a. i n't want discuss part b. implement suggest
+__label__0  welcom stack overflow it expect least attempt code stack overflow code write servic i would suggest **addit research** http //meta.stackoverflow.com/questions/261592/how-much-research-effort-is-expected-of-stack-overflow-us either via googl search so make attempt still troubl come back **your code** explain tri
+__label__0  it realli long you would n't care read so shorten
+__label__0  tri googl first come back stackoverflow
+__label__0  pleas look faq http //stackoverflow.com/faq ask good question also mayb read what tri http //mattgemmell.com/2008/12/08/what-have-you-tried/
+__label__0  i ca n't figur flag question stackoverflow n't place `` practic problem ''
+__label__0  this answer n't absolut reflect point question ... asker want view control
+__label__0  http //www.stroustrup.com/bs_faq2.html overload-dot
+__label__0  how i ask good question http //stackoverflow.com/help/how-to-ask
+__label__0  pleas tri harder post code question hard also give appropri titl
+__label__0  the design unit incorrect you defend ve done like n't make better here 's fundament flaw form creat initi the global variabl form1 initi outsid form 's creat project file second ... onshow not initi form that done insid oncreat onshow call everi time showmod occur your code n't call showmod it 's even call creat oncreat call self form1 refer object
+__label__0  so 's question
+__label__0  just compil know ...
+__label__0  vostanazatyan absolut compet offer ilia shakitko correct recommend first read document
+__label__0  see mani similar item relat section
+__label__0  i 'm vote close question off-top homework question show ve tri far
+__label__0  stack overflow driven develop
+__label__0  -7 what guy done communiti p
+__label__0  you learn basic java or search internet this ask answer mani time
+__label__0  's problem spam filter
+__label__0  anyon understand question may he/sh much knowledg regular express string pleas n't vote question.guy good experi string easili understand question
+__label__0  pleas reword question follow so format guidelin http //stackoverflow.com/editing-help
+__label__0  `` c++ type n't allway work *sizeof '' -- `` classic c type '' `` contigu type ''
+__label__0  fix format post stack overflow
+__label__0  munamyousuf it 's pretti obvious piec code n't realli work it track back button browser button outsid viewport henc coordin clientx clienti obtain assum work io the back button bottom ... also way written super ineffici condit everi singl event trigger ... god 's bad go give vote
+__label__0  2 word sql inject http //en.wikipedia.org/wiki/sql_inject
+__label__0  hello welcom stackoverflow pleas take time read help page especi section name `` what topic i ask `` http //stackoverflow.com/help/on-top `` what type question i avoid ask '' http //stackoverflow.com/help/dont-ask and import pleas read stack overflow question checklist http //meta.stackexchange.com/q/156810/204922 you might also want learn minim complet verifi exampl http //stackoverflow.com/help/mcv
+__label__0  there case renameto *not* work reliabl 's whole point question
+__label__0  possibl duplic pass data view control http //stackoverflow.com/questions/5210535/passing-data-between-view-control
+__label__0  http //idownvotedbecau.se/imageofcod
+__label__0  this question appear off-top too-localis
+__label__0  damn i ca n't minus answer have read document those class introduc differ size button group have tri suggest from document `instead appli button size class everi button group add .btn-group-* .btn-group.`
+__label__0  what found what c book say onlin tutori your compil anyth and relat compil construct gcc specif
+__label__0  is assign fun i ask may simpler way array
+__label__0  i 'd suggest ask teacher stuck mayb attend lectur next time i ca n't see teacher set exercis without tell code `while` loop `if` statement
+__label__0  bidhana .. see ... simpl ... when type edittext word edittext 's line end cursor move new line point i want find mani charact cursor move new line ... got
+__label__0  pleas n't vandal post
+__label__0  we ca n't help n't show ve tri far specif problem re
+__label__0  `console.printlin nice one
+__label__0  you could research possibl duplic how compar almost similar string java string distanc measur http //stackoverflow.com/questions/2084730/how-to-compare-almost-similar-strings-in-java-string-distance-measur
+__label__0  if put exact question titl googl 'd get answer first link
+__label__0  question clear all..
+__label__0  search web `` c++ comma separ valu file '' see also `` c++ tab separ valu '' also search xml ini format
+__label__0  joebarri kurzedmet comment uncal put enough effort question you research post and need show thing tri pleas check http //stackoverflow.com/questions/how-to-ask inform
+__label__0  you want open json file browser instead text editor
+__label__0  not n't show research effort question n't clear enough
+__label__0  pleas ask qualiti question you easili get answer search engin
+__label__0  marcin by strict liter yes correct answer question but detail relev 's pretti clear op want understand behav differ way modifi behaviour one it 's like answer `` i perceiv red differ blue '' `` re differ colour '' correct useless
+__label__0  peopl never get idea might use know error ...
+__label__0  stefanpochmann ah good call longest would half sequenc first exampl assum `` common '' mean `` repeat '' op pick neither longest shortest gibberish exampl 's pick longest one
+__label__0  whi i garner minus question is peopl n't know answer want take asker
+__label__0  i look `++ oper c` `c++ ++ operator` lead page first result this question low effort well i guess op bing wizard mayb ca n't googl either
+__label__0  what tri https //www.google.com/search q=c 23+convert+into+to+str
+__label__0  comment ... good choos one like better anyway question off-top so it noth program
+__label__0  what exact ask
+__label__0  could easili got answer simpl googl search check http //www.w3schools.com/sql/sql_top.asp
+__label__0  yeah n't ask non-program question stackoverflow
+__label__0  lutzhorn 's homework
+__label__0  we alway glad help support new coder ***you need help first *** after **do research** https //meta.stackoverflow.com/q/261592/1011527 problem **post ve tried** **clear explan n't working** provid minim complet verifi exampl http //stackoverflow.com/help/mcv read how ask http //stackoverflow.com/help/how-to-ask good question be sure take tour http //stackoverflow.com/tour read https //meta.stackoverflow.com/q/347937/1011527
+__label__0  anyth tri seem like want homework done
+__label__0  tri far http //mattgemmell.com/2008/12/08/what-have-you-tried/
+__label__0  error seem pretti descript sure said 's `` unknown ''
+__label__0  this n't program question you probabl talk isp
+__label__0  hello just look profil all person ask question trivial googl they ve done hundr time they clear learn ask question so instead bother even simpl web search first ve reward peopl love upvot said question
+__label__0  i ve down-vot evid ve tri anyth ask your question also unclear a code sampl would probabl help address issu
+__label__0  you test
+__label__0  pleas read ask take tour
+__label__0  unlucki guy 's answer got accept pin answer you often see sink bottom pretti quick nobodi pay attent
+__label__0  those error pretti self explanatori to elabor would take whole book https //stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list
+__label__0  we ai n't homework show us code explain problem re encount help
+__label__0  i 'm vote close question off-top error messag alreadi say exact resolv problem 's unclear issu pleas also see whi “ can someon help ” actual question http //meta.stackoverflow.com/q/284236
+__label__0  so tri
+__label__0  *not* free code write servic you expect tri **write code yourself** after research http //meta.stackoverflow.com/questions/261592 problem **post ve tried** **clear explan n't working** provid ** mcve ** i suggest read ask good question perfect question http //codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/ also sure take tour
+__label__0  also see http //meta.stackoverflow.com/questions/253787/are-there-legitimate-fix-my-code-questions/253788 253788
+__label__0  you n't ask question
+__label__0  still look possibl descript even solut caus i need clean file hierarchi *pip* *setup.py* way
+__label__0  here so need make effort first markup intend use
+__label__0  this horribl advic artifici extend mani fragment pack problem still remain googl explicit state use address memori leak
+__label__0  `` re weirdo '' `` re weirdo '' reddit way
+__label__0  well i wast 2 hour search answer so far similar question sort word use _.sort_ method so
+__label__0  did check http //api.jquery.com/jquery.ajax/
+__label__0  how tri far solv problem have check document
+__label__0  homework assign what tri solv
+__label__0  or could read inform introduct http //docs.python.org/3/tutorial/introduction.html string chapter kick tutori cover slice half-way page and presum sourc learn python short hack code n't understand ask random stranger explain thing n't seem work cover earli
+__label__0  time hire consultant/mentor
+__label__0  even tri debug
+__label__0  thomask where would constant ask trivial question differ thing differ if op want know implement free look sourc
+__label__0  help question
+__label__0  you n't need write type ca n't figur mean n't actual know program
+__label__0  `` you get section win '' pah studi classic `` the win move play `` https //en.wikipedia.org/wiki/wargam
+__label__0  i think search atleast post question basic i also suggest learn java documentation/book/anyth detail java work precis it may bit harsh tri thing 's learn
+__label__0  i apolog shout
+__label__0  this link find servic googl exist exact purpos this site program question pleas spend time take tour read help page post next question
+__label__0  it look xy problem http //meta.stackexchange.com/q/66377/340236
+__label__0  http //howtodoinjava.com/2012/11/09/how-to-find-duplicate-words-in-a-string-in-java/
+__label__0  these basic concept cover first chapter zillion tutori 2-minut search dig
+__label__0  you need choos one beginn book http //stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list good read
+__label__0  http //idownvotedbecau.se/noresearch/
+__label__0  whose code where find
+__label__0  did tri and **whi not** also even valid _syntactically_ wise _semantics_ use `int` name `π` as might heard `π` mathemath constant ...
+__label__0  it one ugliest piec code i ve seen not mention buggi
+__label__0  pleas explain answer question
+__label__0  you 126 previous question swift how claim ignor swift basic call method
+__label__0  t3chb0t good job googl friend
+__label__0  we job you write queri ll mayb tri help fix
+__label__0  did tri step code debugg
+__label__0  i 'm vote close question off-top question make sens
+__label__0  this btw horribl code horribl architectur take time use boilerpl framework etc clear split js php frontend markup you ll thank later
+__label__0  same home work problem answer https //stackoverflow.com/questions/45406235/select-date-and-time-in-sql-10pm-up-to-6am-everyday noredirect=1 comment77774538_45406235
+__label__0  possibl duplic get month name month number http //stackoverflow.com/questions/3184121/get-month-name-from-month-numb
+__label__0  it look like want us write code while mani user will produc code coder distress usual help poster alreadi tri solv problem a good way show effort includ code ve written far exampl input expect output output actual get consol output traceback etc. the detail provid answer like receiv check faq http //stackoverflow.com/tour how ask http //stackoverflow.com/help/how-to-ask
+__label__0  possibl return pointer anoth function type i mean could `` shoot foot '' c rule would ... well ... shoot foot
+__label__0  should question reword `` how mani week year ''
+__label__0  http //stackoverflow.com/questions/20435653/what-is-vanillaj
+__label__0  come man least give tri first that 's whole point homework or drop class forget career cs come back actual question attempt
+__label__0  possibl duplic how \`if\` statement work scheme http //stackoverflow.com/questions/5751052/how-does-if-statement-work-in-schem
+__label__0  wait you want help steal bunch usernam password
+__label__0  did tri googl `` python gui ''
+__label__0  '' question ask code must demonstr minim understand problem solv includ attempt solut n't work expect result ``
+__label__0  be unrepons comment help http //idownvotedbecau.se/beingunrespons
+__label__0  learn use c++ done via ask tutor so pick good book https //stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list follow
+__label__0  what part answer n't clear enough pleas elabor i ll best make clearer and n't abl creat two file tri it would take 10 second
+__label__0  did search
+__label__0  https //developer.apple.com/documentation/swift/string/1690799-data
+__label__0  you *do* know differ prefix suffix increment i.e differ e.g `++num1` `num1++`
+__label__0  you re get negat feedback someth research
+__label__0  http //www.oracle.com/technetwork/issue-archive/2013/13-mar/o23plsql-1906474.html
+__label__0  i 'm vote close question off-top author ought abl answer minimum read effort
+__label__0  use debugg
+__label__0  you re go give lot inform get help
+__label__0  if read error messag screen googl probabl could found answer
+__label__0  what xy problem https //meta.stackexchange.com/questions/66377/what-is-the-xy-problem
+__label__0  _i need create_ pleas go ahead creat
+__label__0  no *you* comput complex follow algorithm
+__label__0  have heard googl msdn http //msdn.microsoft.com/en-us/library/527aztek.aspx
+__label__0  jongwar sometim happen non-english-speak question sound unintent abrupt
+__label__0  vartec are i 'm answer question ask
+__label__0  that code seem pointless it 's go yield strang result swift longer c-style `for construct ll build loop this smell like homework assign is
+__label__0  noufalibrahim in way incorrect just pip expect setup.pi mean pip provid behaviour
+__label__0  first post tri alreadi
+__label__0  hire freelanc
+__label__0  where attempt descript work now look like want us work
+__label__0  this code valid
+__label__0  this meet guidelin post
+__label__0  oh i complet agre titl useless i found funni typo question caus typo first place
+__label__0  search googl how python
+__label__0  possibl duplic http //stackoverflow.com/questions/857670/how-to-connect-to-sql-server-database-from-javascript
+__label__0  user1889099 if abl decid inform necessari solv problem i wonder n't abl solv problem ...
+__label__0  juergend consid rep i think morn coffe yet
+__label__0  proper way ask question
+__label__0  possibl duplic sql queri datediff date time field result minut http //stackoverflow.com/questions/22164002/sql-query-datediff-date-time-fields-result-in-minut
+__label__0  did even make attempt find solut come googl million hit
+__label__0  **no** websit and i glad also control-alt-delet *meant* abl captur normal program secur featur know result prompt could window
+__label__0  real code real error messag
+__label__0  the differ express what basic c text book tell oper
+__label__0  did forget *coffee* today
+__label__0  in lexicograph `http //en.wikipedia.org/wiki/lexicographical_order`
+__label__0  sanchitbans have test code what test where perform bottleneck how determin bottleneck have look assembl languag these thing softwar engin would run straight stack overflow ask someon els provid answer futur macdonald employe would which want
+__label__0  *i want know maven // i want show me* foreign
+__label__0  welcom so pleas read how creat minim complet verifi exampl http //stackoverflow.com/help/mcv also how i ask good question http //stackoverflow.com/help/how-to-ask
+__label__0  have tri
+__label__0  hi tri so help center how ask https //stackoverflow.com/help/how-to-ask `` pretend re talk busi colleagu ''
+__label__0  it expect least attempt code stack overflow code write servic i would suggest **addit research** http //meta.stackoverflow.com/questions/261592/how-much-research-effort-is-expected-of-stack-overflow-us either via googl search so make attempt still troubl come back **your code** explain tri
+__label__0  whi even bother googl question https //www.google.com/search q=difference+between+c+and+c 2b 2b ie=utf-8 oe=utf-8 aq=t rls=org.mozilla en-us offici client=firefox-a channel=fflb hundr articl differ c c++
+__label__0  what “ work ”
+__label__0  you n't know link made question comment `` peopl suggest prototyp '' i think re troll
+__label__0  type question titl googl see come that *always* first thing check manual cours
+__label__0  did tri _reading_ error sinc typic error tell exact 's wrong
+__label__0  this question needless vagu miss context also like someon 's homework assign
+__label__0  sorri 's still entir unclear happen b expect happen also definit `myreturn` may help
+__label__0  yeah surpris mani peopl want homework never ever found someth use googl it 's like alway given big state secret investig ...
+__label__0  did read error messag
+__label__0  read basic sql tutori look inner join chapter
+__label__0  you read api document unsur
+__label__0  non sequitur thank
+__label__0  you ve post dozen line code consist `something.hid dozen comment line code ton unrel code pleas edit post remov nois junk reduc minimum need demonstr problem ask actual question
+__label__0  modifi what tri far anyth
+__label__0  -1 enough jqueri
+__label__0  do first coupl chapter offici python tutori https //docs.python.org/3/tutorial/
+__label__0  this generic descript problem actual specif question pleas see http //blog.stackoverflow.com/2010/10/asking-better-questions/ tri googl ask product question *love* answer
+__label__0  complet incorrect answer
+__label__0  time read man page sure
+__label__0  is n't task tutor teach i mean get paid exact right ... also n't take time googl someth like `` c '' spend time read ...
+__label__0  i recommend read mdn document `this` https //developer.mozilla.org/en-us/docs/web/javascript/reference/operators/thi
+__label__0  http //idownvotedbecau.se/nocode/
+__label__1  also recommend tri improv format code post code general good format includ use indent style uniform consist help other **us** better understand code import help **you** better understand code thus fix bug also show re will put extra effort make easier volunt help effort **much** appreci
+__label__1  homebrew explicit advis use sudo see https //github.com/homebrew/homebrew/blob/master/share/doc/homebrew/faq.md why-does-homebrew-say-sudo-is-bad-
+__label__1  i would start fix error 1 28
+__label__1  now chang mean question complet
+__label__1  cheersandhth.-alf cool thank
+__label__1  question unclear
+__label__1  perneel he wrote `` error '' i think mean bug right mention so instead write unconstruct comment could tri correct post edit
+__label__1  possibl duplic android how draw regular polygon via xml program https //stackoverflow.com/questions/38252747/android-how-to-draw-a-regular-polygon-via-xml-or-program
+__label__1  smell like homework
+__label__1  this number ...
+__label__1  pleas explain tri far
+__label__1  is question
+__label__1  possibl duplic how import .snk file generat sn.ex .net http //stackoverflow.com/questions/3095355/how-to-import-an-snk-file-generated-with-sn-exe-in-net
+__label__1  hello intent creat malwar bring page next browser session user ask set homepag is better way pleas let know i thank
+__label__1  this code `protect void oncreat bundl savedinstancest super.oncr savedinstancest setcontentview r.layout.guestbook_layout etnam edittext findviewbyid r.id.et_nam etciti edittext findviewbyid r.id.et_c btsend button findviewbyid r.id.sendreq string name etname.gettext .tostr string citi etcity.gettext .tostr string send btsend.gettext .tostr
+__label__1  did tri anyth far and `arraylist` 2013 use `list t instead
+__label__1  the statement refer fact java 8 *only* `final` variabl access java 8 *also* *effectively* final
+__label__1  wadewilliam mac new version dose let updat `openssl` use `homebrew` i mean instal updat use `homebrew` priorit so instead updat use `homebrew` updat use `macport priorit
+__label__1  it homework.it 's sampl question..and dont want direct answer.mi question calcul it..
+__label__1  not sure differ lookup valu red grey etc ask custom view regardless what topic i ask https //stackoverflow.com/help/on-top `ask us recommend find book tool softwar librari tutori off-sit resourc off-topic`
+__label__1  do mean function differ amount paramet
+__label__1  0n35 ah sorri sir im forgot put page call code alreadi edit post look thank
+__label__1  afaik best way implement singleton java `enum` see answer http //stackoverflow.com/a/71399/1825094
+__label__1  guvant i remov c++ tag i program c++ rough pseudocod help explain think current henc mistak
+__label__1  what dadosboleto` tmp2`
+__label__1  tabl databas need creat script updat
+__label__1  not mention never initialis `sum` call `sumnumbers` undefin behaviour
+__label__1  tri execut
+__label__1  so check true fals
+__label__1  you answer question with array index number increment insert the index therefor maintain insert order as almost said index hash tabl hash key unrel insert order perfect quick lookup
+__label__1  `dictionari byte list id think canot dictionari key null popul `new list type `use `` `` `` ``
+__label__1  amiraelsayedismail put road-block stop user thing end client realli whatev want e.g disabl javascript use user-script etc
+__label__1  write button id allow write thing html
+__label__1  raydelmiranda noth black hat attack featur text adventur game
+__label__1  i know problem certain condit `` '' statement becom true.. therefor i two condit job time ... what think
+__label__1  this reason bank secur websit never email password email link reset password- secur right even n't know password actual
+__label__1  okay thank everyon i googl understood clear it n't pop googl i thought oper
+__label__1  i googl exact question found https //www.google.com/search q=round+number+in+php ie=utf-8 oe=utf-8
+__label__1  output get error
+__label__1  you complet fail ask actual question even describ problem pleas go read ask edit question accord
+__label__1  two thing pleas ask actual qiestion consid use `std :vector` primat assum n't know `std :list`
+__label__1  also keep write code like ll friend
+__label__1  hint what 's result `y 1` when `if` satisfi
+__label__1  if `the_file` `'y'` file name exist get error
+__label__1  cant static method non static context static method belong class instanc
+__label__1  and re pretti sure 's possibl larg number thing xaml re xaml expert
+__label__1  someon down-vot answer n't explain flaw shame nedbatcheld vote pleas revers i explain question n't mention anyth actual broken answer
+__label__1  `list1` **not** list is `tuple` immut way use squar bracket list 1,2,3 then tri check document https //docs.python.org/3/library/stdtypes.html sequence-types-list-tuple-rang particular https //docs.python.org/3/library/stdtypes.html mutable-sequence-typ
+__label__1  want store youtub video..how would
+__label__1  if i pass conn paramet insert function will work
+__label__1  oli charlesworth i understand theoret concept could pleas explain c program exampl
+__label__1  and play around word boundari instead use obiv '' '' .+ '' '' to support quot string would `\b` support would happen
+__label__1  your `` mfc class '' assumpt incorrect cptrlist deriv cobject that make mfc class the answer mr.c64 good advic
+__label__1  hi-angel have look oper preceed http //en.cppreference.com/w/cpp/language/operator_preced you wrong preceed given miss whitespac around assign oper also read logic boolean oper evalu http //port70.net/~nsz/c/c11/n1570.html 6.5.13p4 basic c c++ onc one _inclusive-or-expression_ fail rest evalu anymor so `0` fail rest even evalu anymor
+__label__1  thing1+thing2 /2` `thing1` `thing2` numer type
+__label__1  there compil embed system extens `c` handl interrupt other point applic window linux
+__label__1  what question pleas explain look
+__label__1  after fix indent obvious issu
+__label__1  you make answer
+__label__1  tri `data.pop mydeletenumb
+__label__1  this sampl code
+__label__1  first noth c remov c tag second i n't understand question whi want call super is reason if n't reason tri use
+__label__1  made method like static string solver string return `` someth '' user put equat insid method return answer math equat problem make string calcul equat know
+__label__1  it 's difficult understand 's ask
+__label__1  akash yadav thank lot is freewar tool
+__label__1  a good question usual start `` whi '' `` i need ''
+__label__1  possibl duplic string pool java http //stackoverflow.com/questions/8788143/string-pool-in-java
+__label__1  pleas add code tri
+__label__1  read file i need read chang made file
+__label__1  break loop condit return true wait 1 minut use recurs exact thing
+__label__1  instead decrypt exist password better one follow thing 1 generat new password send user wha chang upon login 2 provid interfac user enter new password encrypt replac db
+__label__1  where need insert piec code jsp
+__label__1  if dont know answer dont flag question
+__label__1  thank you i ll
+__label__1  most time compil right richtextbox properti text see document https //msdn.microsoft.com/de-de/library/system.windows.controls.richtextbox v=vs.110 .aspx
+__label__1  first tri post tri peopl help this help start http //www.learn-android-easily.com/2013/06/using-textwatcher-in-android.html https //www.learn2crack.com/2014/02/android-textwatcher-example.html
+__label__1  import `openqa.selenium.keys` replac `sendkey keys.ent `sendkey openqa.selenium.keys.ent
+__label__1  guy i default variabl hold valu 100 i want check user input ok without much complex code `` java.util.scann '' exampl then depend input i want start increment particular reach 100 howev i tri loop start 53 i check equat everyth 53 anywher
+__label__1  dreamtutor way answer work two `streamwriter` categor *can* coexist though possibl re file how post code think n't work someth go use linqpad https //www.linqpad.net/ test code i post n't believ
+__label__1  what data type time data show exampl
+__label__1  what tri yet
+__label__1  no updat ui asynchron soon data
+__label__1  top file solut incomplet confus
+__label__1  for n't work i get https //msdn.microsoft.com/en-us/data/dn313107 except
+__label__1  well obvious oper `.` *not* prior `new` as matter fact `primary` equal preced evalu left right
+__label__1  it *is* possibl i ve seen firsthand i n't know done i n't particular want
+__label__1  dim i believ real answer question stay away `java.util.date` it confus ’ reason want use newer class `java.time` instead like jonskeet mention
+__label__1  where string come it could easier check charact text come rather afterword
+__label__1  ad code click undo post
+__label__1  this happen solut built file contain symbol .pdb creat this file contain inform requir debug breakpoint relat inform when chang sourc code symbol load correspond sourc code longer that error shown
+__label__1  here let tri clarifi sinc seem troubl brief explan code'char* text
+__label__1  then time zone want format
+__label__1  thank lot i n't understand `` '' creat space 's quot confus
+__label__1  `this j think
+__label__1  mau right the json well construct debugg represent
+__label__1  sorri 's clear need tri add detail
+__label__1  addit exact debug analys problem what result effort
+__label__1  robw tri anyth ... lot program much come mathemat
+__label__1  i realli realli hope absolut way microsoft built someth like .net languag you may think build virus differ describ virus semant
+__label__1  public lower case p
+__label__1  eregrith the op made mistak tag two differ languag your comment appli complet c second half wrong c++ problem op 's also i tend avoid parenthesi `sizeof` need valu need type if code i see parenthesi i remov either build chang `ptr malloc sizeof *ptr ...
+__label__1  lightnessracesinorbit fair enough good ... i would n't expect say ub case sinc fair obvious case ub i would n't expect
+__label__1  what mean _doe work_ you get except error messag can pleas specif problem
+__label__1  cl nice find
+__label__1  renévogt that 's i think
+__label__1  n't tri access undefin variabl
+__label__1  go stroustrup 's websit yesterday explan websit difficult understand if explain simpli pleas
+__label__1  zee use whatev still stop loop first space
+__label__1  if line python script script wo n't run due syntaxerror wo n't abl anyth
+__label__1  t.j.crowder ok thank but help regard program
+__label__1  use lf` print format see cplusplus.com/reference/cstdio/sprintf http //www.cplusplus.com/reference/cstdio/sprintf/
+__label__1  you n't even specifi target languag
+__label__1  are tri get byte string ascii encod
+__label__1  baladutt improv answer guy give point
+__label__1  carlosheuberg it 's java 's embed c
+__label__1  op pleas show us _real_ code the code includ syntax error and need includ verbos user instruct
+__label__1  downvot who downvot whi downvot what 's wrong question
+__label__1  i saw n't clear 's i ask also i wrote opinion..
+__label__1  hello welcom stackoverflow pleas take time read help page especi section name `` what topic i ask `` http //stackoverflow.com/help/on-top `` what type question i avoid ask '' http //stackoverflow.com/help/dont-ask and import pleas read stack overflow question checklist http //meta.stackexchange.com/q/156810/204922 you might also want learn minim complet verifi exampl http //stackoverflow.com/help/mcv
+__label__1  `` accord email sent 31 januari 2013 xna longer activ develop support new `` metro interfac '' layer window 8 window rt platform '' xna http //en.wikipedia.org/wiki/microsoft_xna
+__label__1  boooo ... ... ... ..
+__label__1  are sure listen receiv anyth or sit wait `packet listener.rec ref groupep
+__label__1  pleas creat reason title/subject
+__label__1  accord sourc web get consider better `-layer optimize` option still behav far sub-optim `convert` sometim *increases* file size
+__label__1  final `` i tri longest common subsequ '' … whi tri get longest common subsequ obvious n't go right thing want shortest common subsequ if explain thought process made think lcs would help might help us understand problem for comparison imagin want find `min` knew find `max` you might tri negat number find `max` negat get stuck somewher way did think track similar solut get scs lcs
+__label__1  newbiehask by look start c++ book tutori
+__label__1  this english-speak site you might interest http //ru.stackoverflow.com/
+__label__1  davidfarrugia actual scratch valid occur within do-wil loop if fail make re-ent pass
+__label__1  what kind databas `var data name `` dave '' could consid databas
+__label__1  thank guy flew head
+__label__1  post code
+__label__1  what mean `` work '' what test run what 's output
+__label__1  post crash log
+__label__1  line line 97
+__label__1  it integ uhmmm mayb string
+__label__1  you basic sql tutori help lot ask
+__label__1  `using` serv indic someth go clean save rememb explicit call `dispose` grace handl except that 's big benefit write everi time
+__label__1  what intend line
+__label__1  pleas read under circumst may i add “ urgent ” similar phrase question order obtain faster answer //meta.stackoverflow.com/q/326569 summari ideal way address volunt probabl counterproduct obtain answer pleas refrain ad question like one reason got mani downvot
+__label__1  as relentless said make substr what problem
+__label__1  you call php 's `mail` function end complet circumv phpmailer ... mail- send need call go read basic use phpmailer https //github.com/phpmailer/phpmailer/wiki/tutori
+__label__1  pleas provid valid json/object data one well structur
+__label__1  i find hard believ refer regard modul oper `` block ''
+__label__1  i remov +91 0 present begin string contain multipl data
+__label__1  show us code
+__label__1  work http //jsfiddle.net/ejjyn9fm/1/
+__label__1  yet said _did_ debug found answer contradict detect
+__label__1  import java.io.serializ public class employe implement serializ privat static final long serialversionuid 1l privat int id privat string name
+__label__1  would multipl '' savecontactmethod '' '' foo '' even valid json want
+__label__1  your class nest this strang a nest class access non-stat field surround class
+__label__1  whi n't use `pdb` add `print` statement watch thing chang this basic recurs probabl need read recurs general
+__label__1  mr.c64 we viewpoint i respect to `i get confus `` ld c '' sound like `i n't know meant `` ld c '' rather `i 'm confus see space separ two format specifi desir behaviour
+__label__1  what specif hurdl convert c
+__label__1  and part three `input_reservation` line `sport_typ index input_typ sport_typ index count `input_type` return correct valu current code blow return ideolog function one thing input take input hand input someon know best store the simpler function easier debug so `char input_typ char sport_typ int index probabl `char input_typ read user input temporari valu test valu return valu 's good
+__label__1  danpuzey ok..so..but answer given dampsquid hold attention..i hav n't tri caus 'm window machin
+__label__1  sorri yell lol
+__label__1  want know solut java next time
+__label__1  `` i need email function test stuff ''
+__label__1  i 'd thought what tri exact problem
+__label__1  suppos creat video softwar it use download video well view convert time to implement java thread requir
+__label__1  you get coupl good book read https //stackoverflow.com/a/388282/440558 and learn pointer they n't `` magic '' point somewher valid *make* point somewher
+__label__1  the c++ calc wrong
+__label__1  share code pars json
+__label__1  it 's open invit young dev wrong payoff provid n't justifi a case
+__label__1  anonym loke c++ solut n't remov c++ tag but state this pseudo code i c++
+__label__1  firedfrommicrosoft ugh ... please..do n't say they ___are___ two differ languag better treat way just type _syntax_ ___doe not___ make two languag _at-par_
+__label__1  pawelgradecki depend whether possibl reach instant pure if class would `getdata return instant dirti screen resolut i would say either instant special sort instant defin class design i open definit drift
+__label__1  i 'm run local machin 's mistak big gap second link..i edit
+__label__1  trugam equalsignorecas
+__label__1  skip 101 102 104
+__label__1  there possibl way alert `` 13 ''
+__label__1  cristik i want know use databas connect javascript java import packag like java.sql
+__label__1  there n't colon public
+__label__1  the first part print `true`
+__label__1  no i still anoth question regard class i use class via anoth class call getmail method but mayb better ask question anoth thread
+__label__1  not nothin n't `` take string name input paramet ''
+__label__1  sscce.org pleas
+__label__1  the line indic line 67 wo n't generat error messag are look right file
+__label__1  ani error n't appear
+__label__1  possibl duplic question java 's string pool http //stackoverflow.com/questions/1881922/questions-about-javas-string-pool
+__label__1  you could disabl button submit form form field empti and yes pleas submit code
+__label__1  pointer arithmet http //stackoverflow.com/a/394774/620908 googl search https //www.google.com/search q=c 2b 2b+pointer+arithmet
+__label__1  ironi return new int 2 3 5 7 2 3 5 7 2 3 5 7 /ironi
+__label__1  the argument may _be_ filenam 's pass 's still argument print like variabl you n't need `` find filenam '' variabl see 's
+__label__1  `` increment pointer array implicit depend '' mean array 10 `` a+2 '' depend size oper
+__label__1  '' \\\\ezreuapp01.eu.abc.com\\ezr_data\\alstom gis '' even present input list string how come output
+__label__1  what 's code suppos whi first correct second wrong you ca n't show code pictur without tell us 's *supposed* work
+__label__1  i tri numpy.isin work check element first array
+__label__1  error line 13 rtwm.input input.java:13 error line 37 rtwm.input.main input.java:37
+__label__1  this most math problem after first 100 gram need charg everi addit 50 gram increment how would determin mani 50 gram interv
+__label__1  prompt get string compar number string 's condit becam fals == check valu variabl equal === check valu type equal
+__label__1  this n't display mobil browser applic applic matter fact http //cydia.saurik.com
+__label__1  duplic how i round number php http //stackoverflow.com/questions/257032/how-do-i-round-a-number-up-in-php
+__label__1  dim if `date` construct say year month day month hrs min guess time zone use construct way fulfil requir print part `date`
+__label__1  i 'm sure would work reason bernhardrusch 's would n't work the .str function return copi clear copi would n't anyth
+__label__1  kevinl i n't think loop actual defin term although certain could
+__label__1  marcin almost code question could answer read enough sourc ask give use inform quick re differ thing see red/blu exampl
+__label__1  possibl duplic is api forc facebook scrape page https //stackoverflow.com/questions/12100574/is-there-an-api-to-force-facebook-to-scrape-a-page-again
+__label__1  pleas clarifi problem tri edit titl make shorter meaning
+__label__1  it mean someth person wrote it.ther univers definit
+__label__1  pleas check link -http //ivomynttinen.com/blog/going-crazy-with-css3-issue-1-creating-buttons-with-linear-background-bord
+__label__1  sql inject recommend describ https //stackoverflow.com/questions/13484118/sql-injection-prevention-in-net
+__label__1  then might consid delet question
+__label__1  alitlekbay redirect command found unix shell https //en.wikipedia.org/wiki/redirection_ comput pleas rephras question clarifi want problem exact provid code first attempt never hurt
+__label__1  my html code like span data-ng-if= '' error.messag '' error.messag /span
+__label__1  could figur consid accept answer help solv question
+__label__1  rafe re confus trim strip requir oper
+__label__1  's alreadi tell error
+__label__1  i would assum `jsfiddle` 'd are think line may name yet want popul `person` function want return noth name set
+__label__1  the compil tell file line column error locat someth miss `monthcounter` 2
+__label__1  you find xpath express direct target row need better option it cut amount loop iter ll need
+__label__1  yes scoopscache.html file name give yes download file name
+__label__1  unkulunkulu comma
+__label__1  the question titl differ question bodi post pleas clarifi
