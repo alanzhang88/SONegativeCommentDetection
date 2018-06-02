@@ -1,5 +1,4 @@
 import fasttext
-import numpy as np
 import string
 import json
 import random
@@ -25,13 +24,14 @@ class FastText:
     def __init__(self):
         print("init")
 
-    def preprocessData(self):
+    def preprocessData(self, file):
         postProcessedTrainPhrases = []
         postProcessedTestPhrases = []
         trainSentences = []
         print("Loading and preprocessing data...\n")
         # load training and testing data
-        with open('labeled_document2.json') as json_data:
+        # with open('labeled_document2.json') as json_data:
+        with open(file) as json_data:
             allTrainData = json.load(json_data)
 
         trainPhrases, testPhrases, trainLabel, testLabel = train_test_split(allTrainData['Comment'],
@@ -111,7 +111,7 @@ class FastText:
 
 
     def downsampling(self, phrases, labels, minority):
-        sentences = extractText(phrases)
+        sentences = self.extractText(phrases)
         majority = []
         sentencesDS = []  # downsampleing (sentences with label 1 : 0 = 1 : 1)
         labelsDS = []
@@ -129,11 +129,11 @@ class FastText:
         return sentencesDS, labelsDS
 
     def load_model(self):
-        model = fasttext.load_model('model.bin')
+        model = fasttext.load_model('model_seconditer.bin')
         return model
 
     def predict(self, texts):
-        model = fasttext.load_model('model.bin')
+        model = fasttext.load_model('model_seconditer.bin')
         labels = model.predict_proba(texts)
         results = []
         for label in labels:
@@ -147,9 +147,9 @@ class FastText:
             results.append(tmp)
         print(results)
 
-    def classify(self):
+    def classify(self, file):
         # preprocess data
-        (trainLabels, testLabels) = preprocessData()
+        (postProcessedTrainPhrases, postProcessedTestPhrases, trainLabels, testLabels) = self.preprocessData(file)
 
         # create training and testing file
         # outputPhrasesToFile("training", postProcessedTrainPhrases, trainLabels)
@@ -157,10 +157,10 @@ class FastText:
 
         # train the fasttext model
         print('Buidling the model...\n')
-        trainSentencesDS, trainLabelsDS = downsampling(postProcessedTrainPhrases, trainLabels, 0)
-        outputSentencesToFile("trainingDS", trainSentencesDS, trainLabelsDS)
-        testSentencesDS, testLabelsDS = downsampling(postProcessedTestPhrases, testLabels, 0)
-        outputSentencesToFile("testingDS", testSentencesDS, testLabelsDS)
+        trainSentencesDS, trainLabelsDS = self.downsampling(postProcessedTrainPhrases, trainLabels, 0)
+        self.outputSentencesToFile("trainingDS_seconditer", trainSentencesDS, trainLabelsDS)
+        testSentencesDS, testLabelsDS = self.downsampling(postProcessedTestPhrases, testLabels, 0)
+        self.outputSentencesToFile("testingDS_seconditer", testSentencesDS, testLabelsDS)
         # sm = SMOTE(random_state=12, ratio = 1.0)
         # trainingData, trainLabels = sm.fit_sample(np.array(trainSentences).reshape(len(trainSentences), 1), trainLabels)
 
@@ -168,8 +168,8 @@ class FastText:
         # classifier = fasttext.supervised('training.txt', 'model')
         # result = classifier.test('testing.txt')
         #   downsampling inbalanced data
-        classifier = fasttext.supervised('trainingDS.txt', 'modelDS')
-        result = classifier.test('testingDS.txt')
+        classifier = fasttext.supervised('trainingDS_seconditer.txt', 'modelDS_seconditer')
+        result = classifier.test('testingDS_seconditer.txt')
 
         # classify testing data
         #   without downsampling inbalanced data
@@ -202,4 +202,11 @@ class FastText:
         labels = classifier.predict(texts)
         print(texts)
         print(labels)
+
+file = 'labeled_seconditer.json'
+instance = FastText()
+instance.classify(file)
+# texts = instance.extractText(test)
+# labels = instance.predict(texts)
+
 
