@@ -199,73 +199,73 @@ batch_size = [256]
 count = 1
 total_result = {}
 testingDataLabel = np_utils.to_categorical(testSenti, len(np.unique(testSenti)))
-
+HIDDEN_SIZE = 128
 # with open("parameters_temp.json", mode='w', encoding='utf-8') as f:
 for epoch_choice in epochs:
     for batch_choice in batch_size:
         for activation_choice in activation:
             for dropoutrate in dropout_rate:
                 for optimizer_choice in optimizer:  
-                    for HIDDEN_SIZE in hidden_size:          
-                        model = Sequential()
-                        model.add(Embedding(allPhraseSize, embedding_size))
-                        model.add(SpatialDropout1D(dropoutrate))
-                        model.add(Bidirectional(LSTM(HIDDEN_SIZE, return_sequences=True)))
-                        model.add(Bidirectional(LSTM(HIDDEN_SIZE, return_sequences=True)))
-                        model.add(Bidirectional(LSTM(HIDDEN_SIZE)))
-                        #model.add(Bidirectional(LSTM(128)))
-                        #model.add(Flatten())
-                        model.add(Dense(len(np.unique(trainSenti))))
-                        model.add(Activation(activation_choice))
-                        # model.add(CRF(2, sparse_target=True))
+                    # for HIDDEN_SIZE in hidden_size:          
+                    model = Sequential()
+                    model.add(Embedding(allPhraseSize, embedding_size))
+                    model.add(SpatialDropout1D(dropoutrate))
+                    model.add(Bidirectional(LSTM(HIDDEN_SIZE, return_sequences=True)))
+                    model.add(Bidirectional(LSTM(HIDDEN_SIZE, return_sequences=True)))
+                    model.add(Bidirectional(LSTM(HIDDEN_SIZE)))
+                    #model.add(Bidirectional(LSTM(128)))
+                    #model.add(Flatten())
+                    model.add(Dense(len(np.unique(trainSenti))))
+                    model.add(Activation(activation_choice))
+                    # model.add(CRF(2, sparse_target=True))
 
-                        model.compile(loss='categorical_crossentropy', optimizer=optimizer_choice, metrics=['accuracy'])
+                    model.compile(loss='categorical_crossentropy', optimizer=optimizer_choice, metrics=['accuracy'])
 
-                        model.fit(trainingData,trainingDataLabel , epochs=epoch_choice, batch_size=batch_choice, verbose=1)
+                    model.fit(trainingData,trainingDataLabel , epochs=epoch_choice, batch_size=batch_choice, verbose=1)
 
-                        res = model.predict(testingData)
-                        res = [(np.array(l)/sum(l)).tolist() for l in res]
-                        # print(predicted)
-                        predicted = []
-                        # negcount = 0
-                        # poscount = 0
-                        for i in res:
-                            if i[0] > i[1]:
-                                # negcount +=1
-                                predicted.append(0)
-                            else:
-                                # poscount +=1
-                                predicted.append(1)
-                        # print(predicted)
-                        total_result[count] = {}
+                    res = model.predict(testingData)
+                    res = [(np.array(l)/sum(l)).tolist() for l in res]
+                    # print(predicted)
+                    predicted = []
+                    # negcount = 0
+                    # poscount = 0
+                    for i in res:
+                        if i[0] > i[1]:
+                            # negcount +=1
+                            predicted.append(0)
+                        else:
+                            # poscount +=1
+                            predicted.append(1)
+                    # print(predicted)
+                    total_result[count] = {}
 
-                        tn, fp, fn, tp = confusion_matrix(testSenti, predicted).ravel()
-                        print(tn, fp, fn, tp)
-                        total_result[count]['confusion_matrix'] = []
-                        total_result[count]['confusion_matrix'].append(int(tn))
-                        total_result[count]['confusion_matrix'].append(int(fp))
-                        total_result[count]['confusion_matrix'].append(int(fn))
-                        total_result[count]['confusion_matrix'].append(int(tp))
-                        print(total_result[count]['confusion_matrix'])
-                        report = precision_recall_fscore_support(testSenti, predicted)
-                        total_result[count]['precision'] = report[0][0]
-                        total_result[count]['recall'] = report[1][0]
-                        total_result[count]['fbeta_score'] = report[2][0]
-                        print(report)
-                        # print(report.fbeta_score)
-                        scores = model.evaluate(testingData, testingDataLabel, verbose=0)
-                        total_result[count]['accuracy'] = scores[1] * 100
-                        total_result[count]["ep"] = epoch_choice
-                        total_result[count]["batch"] = batch_choice
-                        total_result[count]["act"] = activation_choice
-                        total_result[count]["drop"] = dropoutrate
-                        total_result[count]["op"] = optimizer_choice
-                        total_result[count]["hid"] = HIDDEN_SIZE
-                        # total_result[count]['model'] = [epoch_choice, batch_choice,activation_choice,dropoutrate, optimizer_choice,HIDDEN_SIZE]
-                        f = open("parameters_temp_stack3.json", 'w')
-                        f.write(json.dumps(total_result, indent=4, sort_keys=True))
-                        f.close()
-                        count += 1
+                    tn, fp, fn, tp = confusion_matrix(testSenti, predicted).ravel()
+                    print(tn, fp, fn, tp)
+                    total_result[count]['confusion_matrix'] = []
+                    total_result[count]['confusion_matrix'].append(int(tn))
+                    total_result[count]['confusion_matrix'].append(int(fp))
+                    total_result[count]['confusion_matrix'].append(int(fn))
+                    total_result[count]['confusion_matrix'].append(int(tp))
+                    print(total_result[count]['confusion_matrix'])
+                    report = precision_recall_fscore_support(testSenti, predicted)
+                    total_result[count]['precision'] = report[0][0]
+                    total_result[count]['recall'] = report[1][0]
+                    total_result[count]['fbeta_score'] = report[2][0]
+                    print(report)
+                    # print(report.fbeta_score)
+                    scores = model.evaluate(testingData, testingDataLabel, verbose=0)
+                    total_result[count]['accuracy'] = scores[1] * 100
+                    total_result[count]["ep"] = epoch_choice
+                    total_result[count]["batch"] = batch_choice
+                    total_result[count]["act"] = activation_choice
+                    total_result[count]["drop"] = dropoutrate
+                    total_result[count]["op"] = optimizer_choice
+                    # total_result[count]["hid"] = HIDDEN_SIZE
+                    # total_result[count]['model'] = [epoch_choice, batch_choice,activation_choice,dropoutrate, optimizer_choice,HIDDEN_SIZE]
+                    f = open("parameters_temp_stack3.json", 'w')
+                    f.write(json.dumps(total_result, indent=4, sort_keys=True))
+                    f.close()
+                    count += 1
 
 f = open("parameters_all_stack3.json", 'w+')
 f.write(json.dumps(total_result, indent=4, sort_keys=True))
