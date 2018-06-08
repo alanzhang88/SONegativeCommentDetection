@@ -1,0 +1,19 @@
+<!-- <p>
+  comment-list works!
+</p> -->
+
+<div class="row mb-5" *ngFor="let c of commentList" >
+  <div class="col-md-10">
+    <div [innerHTML]="c.comment"></div>
+  </div>
+  <div class="col-md-2 align-self-center">
+    <div class="progress">
+      <div [ngClass]="'progress-bar bg-danger w-' + getValue(c[modelSelection])" 
+           role="progressbar" 
+           attr.aria-valuenow="{{getValue(c[modelSelection])}}"
+           aria-valuemin="0"
+           aria-valuemax="100"
+      >{{getValue(c[modelSelection]) +'%'}}</div>
+    </div>
+  </div>
+</div>

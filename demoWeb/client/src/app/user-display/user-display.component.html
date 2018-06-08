@@ -1,0 +1,20 @@
+<!-- <p>
+  user-display works!
+</p> -->
+
+<div class="row mt-5">
+    <div class="col-md-12">
+      <nav class="nav nav-pills flex-column flex-sm-row">
+        <a [ngClass]="changeActive('lstm_labels')" style="cursor: pointer;" (click)="changeModel('lstm_labels')">LSTM</a>
+        <a [ngClass]="changeActive('cnn_labels')" style="cursor: pointer;" (click)="changeModel('cnn_labels')">CNN</a>
+        <a [ngClass]="changeActive('fasttext_labels')" style="cursor: pointer;" (click)="changeModel('fasttext_labels')">FastText</a>
+        <span class="nav-link flex-sm-fill text-sm-right">Negativity</span>
+      </nav>
+    </div>
+  </div>
+  <hr />
+  <div class="row mt-2">
+    <div class="col-md-12">
+      <app-comment-list [commentList]="commentList" [modelSelection]="modelSelection"></app-comment-list>
+    </div>    
+  </div>

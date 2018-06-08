@@ -13,3 +13,4 @@ CNN/**/word2vec_model
 CNN/**/word2vec_vec
 
 tfidf_termfrequency.ipynb
+demoWeb/server/public
