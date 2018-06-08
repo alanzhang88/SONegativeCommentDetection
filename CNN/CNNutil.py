@@ -23,7 +23,7 @@ EMBEDDING_CONFIGS = config.embedding_configs
 
 class CNNModel:
 
-    def __init__(self, num_filters=32, filter_sizes=[4,5,6,7], drop_prob=0.2, lr=0.001, batch_size=128, epochs=20, max_length=50, num_classes=2, embed_size=100,save_model=True,random_state=None):
+    def __init__(self, num_filters=32, filter_sizes=[4,5,6,7], drop_prob=0.2, lr=0.001, batch_size=128, epochs=3, max_length=50, num_classes=2, embed_size=100,save_model=True,random_state=None):
         self.num_filters = num_filters
         self.filter_sizes = filter_sizes
         self.drop_prob = drop_prob
@@ -61,7 +61,7 @@ class CNNModel:
         z = Dropout(rate=self.drop_prob)(z)
         outp = Dense(self.num_classes,kernel_initializer='random_normal',activation='sigmoid')(z)
         self.model = Model(inputs=inp,outputs=outp)
-        self.model.compile(optimizer=Adam(lr=self.lr),loss=categorical_crossentropy,metrics=['accuracy',self.fpp])
+        self.model.compile(optimizer=Adam(lr=self.lr),loss=categorical_crossentropy,metrics=['accuracy',self.TNR])
         X_test, y_test = self.data.get_test_data()
         X_train, y_train = self.data.get_train_data()
         savemodel = SaveModel(validation_data=(X_test,y_test),target_name='acc',target_val=0.65)
@@ -69,9 +69,19 @@ class CNNModel:
         self.model.fit(x=X_train,y=y_train,batch_size=self.batch_size,epochs=self.epochs,verbose=2,validation_data=(X_test,y_test),callbacks=callbacks)
 
 
-    def fpp(self,y_true,y_pred):
+    
+
+    # def fpp(self,y_true,y_pred):
+    #     mat = tf.confusion_matrix(labels=tf.argmax(y_true,1),predictions=tf.argmax(y_pred,1),num_classes=self.num_classes)
+    #     return mat[0][1] / (mat[0][1] + mat[1][1])
+        
+    
+    def TNR(self, y_true, y_pred):
         mat = tf.confusion_matrix(labels=tf.argmax(y_true,1),predictions=tf.argmax(y_pred,1),num_classes=self.num_classes)
-        return mat[0][1] / (mat[0][1] + mat[1][1])
+        return mat[0][0] / (mat[0][0] + mat[0][1])
+        
+
+
 
 
     def load_model(self, filePath):
@@ -84,6 +94,11 @@ class CNNModel:
         comments = self.data.process_new_data(commentList)
         res = self.model.predict(comments)
         return [(np.array(l)/sum(l)).tolist() for l in res]
+    
+
+    
+
+
 
 
 if __name__ == "__main__":
@@ -91,3 +106,5 @@ if __name__ == "__main__":
     # CNN_model.load_model("./CNNmodel.h5")
     CNN_model.build_model()
     # print (CNN_model.predict(["You're clearly converting the result of the `Math.Sqrt()` to an `Int32` - an integer, i.e. no decimals."]))
+
+   
