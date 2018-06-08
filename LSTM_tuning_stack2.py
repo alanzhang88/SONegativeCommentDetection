@@ -176,7 +176,7 @@ from sklearn.metrics import precision_recall_fscore_support
 embedding_size = 128
 # parameters = {'optimizer':('sgd', 'RMSprop', 'adam'), 'activation':[1, 10]}
 activation =  ['sigmoid', 'hard_sigmoid','softmax'] # softmax, softplus, softsign 
-hidden_size = [ 128, 256]
+# hidden_size = [ 128, 256]
 # momentum = [0.0, 0.2, 0.4, 0.6, 0.8, 0.9]
 # learn_rate = [0.001, 0.01, 0.1, 0.2]
 dropout_rate = [0.1,  0.5]
@@ -186,6 +186,7 @@ dropout_rate = [0.1,  0.5]
 optimizer = [ 'SGD', 'RMSprop', 'Adam']
 epochs = [10, 100] 
 batch_size = [256]
+HIDDEN_SIZE = 128
 # param_grid = dict(epochs=epochs, batch_size=batch_size, activation = activation, dropout_rate = dropout_rate, optimizer = optimizer, hidden_size = hidden_size)
 
 # grid = GridSearchCV(estimator=model, param_grid=param_grid, n_jobs=-1)
@@ -206,65 +207,65 @@ for epoch_choice in epochs:
         for activation_choice in activation:
             for dropoutrate in dropout_rate:
                 for optimizer_choice in optimizer:  
-                    for HIDDEN_SIZE in hidden_size:          
-                        model = Sequential()
-                        model.add(Embedding(allPhraseSize, embedding_size))
-                        model.add(SpatialDropout1D(dropoutrate))
-                        model.add(Bidirectional(LSTM(HIDDEN_SIZE, return_sequences=True)))
-                        model.add(Bidirectional(LSTM(HIDDEN_SIZE)))
-                        #model.add(Bidirectional(LSTM(128)))
-                        #model.add(Flatten())
-                        model.add(Dense(len(np.unique(trainSenti))))
-                        model.add(Activation(activation_choice))
-                        # model.add(CRF(2, sparse_target=True))
+                    # for HIDDEN_SIZE in hidden_size:          
+                    model = Sequential()
+                    model.add(Embedding(allPhraseSize, embedding_size))
+                    model.add(SpatialDropout1D(dropoutrate))
+                    model.add(Bidirectional(LSTM(HIDDEN_SIZE, return_sequences=True)))
+                    model.add(Bidirectional(LSTM(HIDDEN_SIZE)))
+                    #model.add(Bidirectional(LSTM(128)))
+                    #model.add(Flatten())
+                    model.add(Dense(len(np.unique(trainSenti))))
+                    model.add(Activation(activation_choice))
+                    # model.add(CRF(2, sparse_target=True))
 
-                        model.compile(loss='categorical_crossentropy', optimizer=optimizer_choice, metrics=['accuracy'])
+                    model.compile(loss='categorical_crossentropy', optimizer=optimizer_choice, metrics=['accuracy'])
 
-                        model.fit(trainingData,trainingDataLabel , epochs=epoch_choice, batch_size=batch_choice, verbose=1)
+                    model.fit(trainingData,trainingDataLabel , epochs=epoch_choice, batch_size=batch_choice, verbose=1)
 
-                        res = model.predict(testingData)
-                        res = [(np.array(l)/sum(l)).tolist() for l in res]
-                        # print(predicted)
-                        predicted = []
-                        # negcount = 0
-                        # poscount = 0
-                        for i in res:
-                            if i[0] > i[1]:
-                                # negcount +=1
-                                predicted.append(0)
-                            else:
-                                # poscount +=1
-                                predicted.append(1)
-                        # print(predicted)
-                        total_result[count] = {}
+                    res = model.predict(testingData)
+                    res = [(np.array(l)/sum(l)).tolist() for l in res]
+                    # print(predicted)
+                    predicted = []
+                    # negcount = 0
+                    # poscount = 0
+                    for i in res:
+                        if i[0] > i[1]:
+                            # negcount +=1
+                            predicted.append(0)
+                        else:
+                            # poscount +=1
+                            predicted.append(1)
+                    # print(predicted)
+                    total_result[count] = {}
 
-                        tn, fp, fn, tp = confusion_matrix(testSenti, predicted).ravel()
-                        print(tn, fp, fn, tp)
-                        total_result[count]['confusion_matrix'] = []
-                        total_result[count]['confusion_matrix'].append(int(tn))
-                        total_result[count]['confusion_matrix'].append(int(fp))
-                        total_result[count]['confusion_matrix'].append(int(fn))
-                        total_result[count]['confusion_matrix'].append(int(tp))
-                        print(total_result[count]['confusion_matrix'])
-                        report = precision_recall_fscore_support(testSenti, predicted)
-                        total_result[count]['precision'] = report[0][0]
-                        total_result[count]['recall'] = report[1][0]
-                        total_result[count]['fbeta_score'] = report[2][0]
-                        print(report)
-                        # print(report.fbeta_score)
-                        scores = model.evaluate(testingData, testingDataLabel, verbose=0)
-                        total_result[count]['accuracy'] = scores[1] * 100
-                        total_result[count]["ep"] = epoch_choice
-                        total_result[count]["batch"] = batch_choice
-                        total_result[count]["act"] = activation_choice
-                        total_result[count]["drop"] = dropoutrate
-                        total_result[count]["op"] = optimizer_choice
-                        total_result[count]["hid"] = HIDDEN_SIZE
-                        # total_result[count]['model'] = [epoch_choice, batch_choice,activation_choice,dropoutrate, optimizer_choice,HIDDEN_SIZE]
-                        f = open("parameters_temp_stack2.json", 'w')
-                        f.write(json.dumps(total_result, indent=4, sort_keys=True))
-                        f.close()
-                        count += 1
+                    tn, fp, fn, tp = confusion_matrix(testSenti, predicted).ravel()
+                    print(tn, fp, fn, tp)
+                    total_result[count]['confusion_matrix'] = []
+                    total_result[count]['confusion_matrix'].append(int(tn))
+                    total_result[count]['confusion_matrix'].append(int(fp))
+                    total_result[count]['confusion_matrix'].append(int(fn))
+                    total_result[count]['confusion_matrix'].append(int(tp))
+                    print(total_result[count]['confusion_matrix'])
+                    report = precision_recall_fscore_support(testSenti, predicted)
+                    total_result[count]['precision'] = report[0][0]
+                    total_result[count]['recall'] = report[1][0]
+                    total_result[count]['fbeta_score'] = report[2][0]
+                    print(report)
+                    # print(report.fbeta_score)
+                    scores = model.evaluate(testingData, testingDataLabel, verbose=0)
+                    total_result[count]['accuracy'] = scores[1] * 100
+                    total_result[count]["ep"] = epoch_choice
+                    total_result[count]["batch"] = batch_choice
+                    total_result[count]["act"] = activation_choice
+                    total_result[count]["drop"] = dropoutrate
+                    total_result[count]["op"] = optimizer_choice
+                    # total_result[count]["hid"] = HIDDEN_SIZE
+                    # total_result[count]['model'] = [epoch_choice, batch_choice,activation_choice,dropoutrate, optimizer_choice,HIDDEN_SIZE]
+                    f = open("parameters_temp_stack2.json", 'w')
+                    f.write(json.dumps(total_result, indent=4, sort_keys=True))
+                    f.close()
+                    count += 1
 
 f = open("parameters_all_stack2.json", 'w+')
 f.write(json.dumps(total_result, indent=4, sort_keys=True))
