@@ -18,3 +18,6 @@ def classify(request):
 	print(comments)
 	lstm_labels, cnn_labels, fasttext_labels= Classify.predict(comments)
 	return JsonResponse({'lstm_labels': lstm_labels, 'cnn_labels': cnn_labels, 'fasttext_labels': fasttext_labels})
+
+def helloworld(request):
+	return HttpResponse('Hello World')

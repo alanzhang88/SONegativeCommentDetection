@@ -172,7 +172,7 @@ class FastText:
             result = classifier.test('testingDS_seconditer.txt')
         else:
             #   without downsampling inbalanced data
-            classifier = fasttext.supervised('training_seconditer.txt', 'model_seconditer')
+            classifier = fasttext.supervised('training_seconditer.txt', 'model_seconditer',lr=0.5)
             result = classifier.test('testing_seconditer.txt')
 
         # classify testing data

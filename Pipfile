@@ -1,0 +1,25 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+
+[packages]
+Cython = "*"
+django = "*"
+gunicorn = "*"
+django-heroku = "*"
+requests = "*"
+pymongo = "*"
+tensorflow = "*"
+keras = "*"
+nltk = "*"
+gensim = "*"
+numpy = "*"
+pandas = "*"
+scikit-learn = "*"
+fasttext = "*"
+
+[requires]
+
+python_version = "3"
