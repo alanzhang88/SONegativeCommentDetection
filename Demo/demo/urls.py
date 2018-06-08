@@ -9,6 +9,7 @@ import demo.views
 # url(r'^blog/', include('blog.urls')),
 
 urlpatterns = [
-    url(r'^$', demo.views.classify, name='demo'),
+    url(r'^$', demo.views.helloworld, name='helloworld'),
+    url(r'^classify', demo.views.classify, name='classify'),
     path('admin/', admin.site.urls),
 ]
