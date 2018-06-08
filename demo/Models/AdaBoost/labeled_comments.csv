@@ -1,0 +1,1513 @@
+There could be many reason. Without providing specific input can't help you out. You should post your question with some details. How can we understand what your psd is and what you have converted?,1
+"The only ways `strcmp()` can fail are if you pass one or two null pointers, or if the 'strings' are not properly null terminated (but they need to be similar chunks of data because `strcmp()` stops as soon as there's a difference).   However, that invokes undefined behaviour so anything can happen and it is valid.",1
+"Yeah, you are right. But we get user_id which is used for get name",1
+Please read [mcve] ... then **edit your question:** https://stackoverflow.com/posts/48864931/edit,1
+"Will you need to input a series of dance steps?  That is, will there ever be multiple lines giving d1 through dN?",1
+"What is your expected output, and what is your actual output? Welcome to SO, please be sure to read about [how to ask good questions](http://stackoverflow.com/help/how-to-ask).",1
+but there is no simple api in agular... how .. how to do it?,1
+This question is [being discussed on meta](http://meta.stackoverflow.com/q/318249/119775).,1
+"Additionally, ""having some problem"" doesn't describe the problem clearly. Please give a complete description of the error, within the question.",1
+"If you need more info, just ask for what you need.",1
+"No, this is technically impossible given current smartphone technology. Maybe in iOS 10 and Android 6...",1
+What is the value of `$x`?,1
+@Olaf Avoiding Structs solely for learning purposes.  :),1
+Take a look at the momentjs library or the livestampjs library - I think you'll find what you need there.,1
+"""Don't worry about the code, either you can explain this or you can't."" Did it occur to you that maybe if you posted the code people might be able to spot a flaw in it, or reproduce it and investigate it for themselves? If you've read anything about threading in Swing you should understand why you shouldn't `sleep` in a GUI thread though...",1
+Do not vandalise your post. This may result in a question ban. see [question bans](http://stackoverflow.com/help/question-bans),1
+Apart from what other already told you: 1. `isInTimeSlot` should not be a promise; 2. you'd better user libs like `moment.js` instead of dealing w/ timestamps on your own.,1
+"@ThomasK Not really. `pip` probably also uses `list`, but it doesn't follow that they are connected. The question does not ask ""how can I re-implement `pip` myself"".",1
+"It'd be nice to indicate in the source, which is the line mentioned in the exception.",1
+"@Prune I've referenced the book so people who already read and understood that part of the book could help explaining how to apply the method onto a simple set of python examples (the book uses a different agnostic language). I don't understand why you're saying the question is not appropiate for StackExchange. IMHO, this question is like trying to solve some doubts after reading some mathematical method and then making some references to such theorem (ie: Cooley–Tukey FFT algorithm linking one of the many papers/books talking about) wouldn't be in that case appropriate neither?",1
+Please share the solution here!,1
+What is inside `dbc.php`?,1
+Can't you do this with just `printf` by itself?,1
+The code you provided won't compile. You need commas in your array.,1
+"@RaphaelB. Wait, isn't that list for JScript (even though it probably mostly applies to C++, too)? The one for C++ is here: http://msdn.microsoft.com/en-us/library/126fe14k(v=vs.100).aspx",1
+"@user1320881 - it seems applicable in this scenario, but it is just a small example, and is not applicable in the scenario I intend to use it.",1
+have you tried to start structuring the html?,1
+http://mywiki.wooledge.org/XyProblem,1
+"@Moho, Maybe it is, but I don't get the same results.",1
+http://pastebin.com/jsUK7rk3,1
+"I want the user not able to resize the window, I have set the size of it to 300*300 and don't want the user to be able to change it is size by maximize button or by dragging borders",1
+"_And when it does go into insert mode, the cursor moves to the left instead of the right, so I always have to readjust it._ Are you using ""a""?",1
+i will help you,1
+"They're going to be nearly, if not completely, identical. But if you were curious, why not just run a test and find out for yourself?",1
+"Not sure how this is different than a lookup for your values [Red, Grey, etc.] or if you asking for a Custom View. Regardless from [What topic can I ask?](https://stackoverflow.com/help/on-topic) `asking us to recommend or find a book, tool, software library, tutorial or other off-site resource are off-topic`",1
+you can use view stub for dynamically change content  with condition of user type.,1
+"bugs in compilers are very, very, very rare.",1
+Remove `weight = global weight`. `weight` is _already_ a global variable.,1
+Will do. Thanks for the advice,1
+Implement your own `compare` function that will return `True` or `False` and use the `unittest` built-in `assertTrue` (given that the built-in `assertAlmostEqual` won't be of help in this case).,1
+I'd bet good money you really only need to match numbers plus the letters A-F. G-Z will not be valid.,1
+wait i will post the code,1
+And could you give an example of the output you're looking for?,1
+May be they know.....,1
+"The problem is with 99.999% certainty that somewhere in your “big code” you’re *replacing* the list with a string, not appending to it.",1
+What does this even mean? And why in the world do you care? If you are using newsequentialid the actual value should not matter at all.,1
+"oh no, not again :)",1
+"My question was just towards 2-d arrays and using them with a double values like I was asked. I know how to code a method, I just didn't know where to start which was my question. I don't want anyone to code it for me. You guys don't need to downvote to oblivion. The goal of this website is for people to learn not to be spoon fed and you guys steer newbies away from learning. ( most of you)",1
+"@tobi303 _""which would be implemented as ...""_ You missed to change the return type to `int`.",1
+This wouldn't even work in Python. WaiHaLees suggestion is a good way to obfuscate the code. Just don't do it.,1
+Thank you very much.,1
+Please provide some sample data. I'm not exactly sure what you are asking.,1
+"Use infile if you want to read and write at the same time, or `r+` mode.",1
+what you not understand?,1
+"what do you mean by ""portable""? I know that gcc has a feature for goto across functions, but won't work on other compilers.",1
+Why did you declare prototype inside `main`  ?,1
+please take care of indentation. Provide one tab space for every encapsulation,1
+"I'm a student now not DEVELOPER,I hope I'm a developer in future :)",1
+"What do you mean by ""not working?"" What tests did you run? What's the output?",1
+@leppie volatile instructs the compiler to make no assumptions on the content of the variable as it might be changed by another thread at anytime (thus disabling some optimizations on it).,1
+"There's nary a `char` in the code you show. I, for one, have no idea what you are talking about. Why again is it surprising that a function with return type of `int` can return a value of type `int`?",1
+What did you attempt and what were your results?,1
+Ofcourse I tried to figure it out by myself but it didn't work.,1
+"Your ""Update 4"" only proves that `getHours()` reflects the local time zone, which you are changing.  If one repeatedly evaluates `a+b`, and gets different sums when changing `b`, that doesn't mean that `a` is also changing.",1
+Hard to tell. Please post the code.,1
+"I don’t get it, in your [previous question](http://stackoverflow.com/q/31185187/2711488) you have been told that the code does *not* work this way. Why are you bringing it up again? There are no fields named `class` in your class.",1
+if i use like this mean where i want to specifies the read mode for logo.png file,1
+"The OP asked for `button`, not `radio`.  See my answer for how to do it with actual `buttons`",1
+seem you need some basic sql tutorials..,1
+"http://php.net/manual/en/zlib.configuration.php, http://php.net/manual/en/function.ob-gzhandler.php might be of interest",1
+Add a space in the macro. Eg: `#define operator-10` --> `#define operator -10` and do the same for the other macros,1
+More context should have been provided including possible options... i.e. rectify the flow setup or disable if not needed.,1
+@diego.martinez he has the right to answer his own question without accepting/voting any other answer.,1
+"oh, ok, -- in that sense..",1
+It is a FAQ. [Undefined behavior](http://en.wikipedia.org/wiki/Undefined_behavior) probably.,1
+`.value` means get the string assigned to the `value` attribute on the element `#numb`.,1
+This is also wrong. The status bar is 40 pts during a phone call.,1
+"Why do you think there is some error, looks good to me!",1
+"@maSTArHiAn - indeed. Except with no content inside the `<a>` , he's generating an empty tag, which won't actually appear on the screen",1
+"Haha! Interesting question. The < operator hasn't been overloaded for `String`s, so this wouldn't work in Java at all.",1
+Can you please clarify how your code snippet solves the problem? A brief explanation in your answer would make it much more useful.,1
+"my bad I didn't mention my solutions, here are the solutions which i tried elem.bind(""keydown"", function ($event) {
+    if ($event.which == 37) {
+ var target = $event.target.parentNode.previousElementSibling;     
+ $(target).trigger('focus');
+    }
+    if ($event.which == 39) {
+     console.log(""right key pressed"");
+  var target = $event.target.parentNode.nextElementSibling;
+     $(target).trigger('focus');
+    }
+   });",1
+I know how to use TimeSpan to get the difference but how to set the limit using seconds and switch to mintues. This is where i need help,1
+"As the compiler is trying to tell you, your code makes no sense.  What do you think you're returning?",1
+"I doubt anyone will be using json in the year 10000, or even that by that time the year 10000 will still be year 10000.
+But if both of those things are still true by then, the format can simply be expanded to contain a 3 digit century component.
+So I'd say people can safely stick with RFC 3339, at least until the year 9900",1
+`was trying to separate admin and fronted` What does it mean ?,1
+Where exactly do you think this would happen? Why?,1
+Tons of tutorials out there. http://www.regular-expressions.info/quickstart.html,1
+Does the original c# code work as expected? Because otherwise it would not be a conversion problem at all.,1
+"@SouravGhosh about the URGENT i apologize, i appreciate the help, its the first time im asking a question here, i edited",1
+"@ThomasK Leave the votes of others out of it - you are still arguing that I should make up a new question. If you want this to be a different question, go ahead and edit it.",1
+Your post is a little better already. Still it is unclear what `var1` has to do with it.,1
+"I have considered Singletons, however, I've read that DI is the way forward.",1
+"Also, do you control the SMTP server(s)?",1
+"how about running it and see? if you wanted, you could even ptrint out the result of 1 + fun(string + 1);",1
+"No, a zero-length array is still an array.",1
+"@Marcin: The votes of others became relevant when the discussion moved to what SO is about. In as much as SO is a community, what it is about is determined by the opinions of its members.",1
+"MatthewD, I have tried selection.sheets(), but I can't think of any other way to point at the selection.",1
+"There, your question now has a question. You're welcome.",1
+@argamanza give it a try...,1
+http://stackoverflow.com/questions/19360281/code-for-finding-largest-prime-factor-why-doesnt-this-work-for-600851475143 or try search `[c] 600851475143` in this site.,1
+https://stackoverflow.com/questions/41210871/pass-json-data-using-gson-and-display-recyclerview-but-still-display-only-last-r/41221548#41221548,1
+"The random numbers are irrelevant, you'd have the same problem with `echo ""foo"";`",1
+"`std::string` is a class, just like your ""struct"".",1
+And the problem is...?,1
+"Its just print(""%s"", s + 1); in disguise ;)",1
+"also, maybe you come from a `c++` background where you can initialize variables on the stack `my::player tom;`. In `Java` all objects are stored in the `heap` and require an explicit initialization prior to any method call: `Player tom = new Player();`",1
+"`server.sin_addr.s_addr = inet_addr(""127.0.0.1""); --> server.sin_addr.s_addr = inet_addr(""0.0.0.0"");` this makes it bind on all interfaces.",1
+That's a native dropdown using a `<select>` element.,1
+"okay, maybe its really not the best way...changed decision",1
+Check error? Hmm... no error. I've change to mysqli_error($conn); then just refreshed the index.php reset the text box,1
+I may get fired but at least I have a Metagross level 100,1
+"`int main() { return ""Hello world!""; }`",1
+Share your tries or the question will closed for no efforts soon,1
+We need code please.,1
+"I think it returns the expected result, but maybe not the desired result. :) So I assume your problem is the comments outside the html elements.",1
+"What is happening is that you are using `__getitem__` (namely, `[]`) with an empty series.  Pandas is interpreting that as a slice of the columns.  By using `astype(bool)` you are forcing Pandas to interpreting it as a row boolean slice.",1
+@JasonBaker i want to print again the same output but with space..like one triangle from the left with this numbers and one from the right just like the output,1
+"@Rafe, you're confusing it with trim. Strip does the required operations.",1
+please mention your table name or tried code,1
+"and do remove the first `mysqli_select_db($con,""cityscape_content_management"");` no need to execute the same line of code twice..",1
+"@Max yes, you are correct",1
+What are you trying to do with this `Console.WriteLine(nbOccurences);`?,1
+"Your text editor has nothing to do with your issues. For starters, probably not wise to use spaces in filenames. You probably don't want to use ""local"" paths. Finally, I understand you are a beginner but I think you may need to do a few more tutorials for both HTML and JS. You have some malformed HTML and your JS has a LOT of issues. Check your browser console (F12) and look into those errors.",1
+@GillBates *in this case. Might as well be `void`.,1
+"@FelixPalmen No, but the OP has a misconception that their code is allocating 2D arrays.",1
+What would be the benefit?,1
+@Daniel Kleinstein  At least I do not see any substantial answer.,1
+Check [ES6 Specifications](http://www.ecma-international.org/ecma-262/6.0/#sec-strict-equality-comparison),1
+Did you try Googling _anything_ about the `split()` method?,1
+"As others pointed out, there is no standard for dates in JSON. There is only RFC 3339, which is actually a timestamp format, not a date format. In particular it doesn't cover time zones, but that's important for future dates. Time zones change more often than you might think.",1
+as in maximum temperature,1
+Are you sure `sf` is not null?,1
+Also. Does it matter that your `<a>` tag has no content? And that your `<table>` is missing the closing `</tr>` tags?,1
+I don't know how PHP handles these on execution though - I'm not familiar enough with internals to know if it actually executes them needlessly or throws them away in optimization before exection. I tagged it `php-internals` in case someone who follows that tag can shed light.,1
+"With `%d` you should use the variable itself, not the pointer.. In this way you're printing `sum`'s address",1
+"Your code doesn't compile at all. `formatString` is being called incorrectly. What output are you expecting? -1 until this information is provided. SO shouldn't be expected to get your code to compile, by the way.",1
+"According to other sources on the web it gets considerably better with the `-layers optimize` option, but it still behaves far sub-optimal as `convert` sometimes *increases* the file size.",1
+"Hey guys, can you all undownvote my question? I can't post any new questions anymore. This question was a huge misunderstanding and was exaggerated out of proportion, thanks.",1
+Highest down-vote of the day ? :(,1
+@TilakRaj You should ask one question per post. If you have another question post it as a separate one,1
+"Not only is your code poorly indented, it contains `break` and `continue` outside a loop.",1
+"You're adding a white border, not margin.",1
+"I know but how could i be while there are these kind of people who did not reading question and wrote comments...I am sorry but people should be more careful while they are reading the question, the should read well",1
+"I need to show text with hyperlinks hover on Image, I have tried with text in same div where image is there. But it doesn't wotk and i think the text is displaying behind the image.",1
+"Then `Date` isn't what you want, as that represents an *instant* in time, which only has a local year/month/day/hour/minute/second when you apply a time zone. The same instant has different values in different time zones, and they don't make sense without a time zone. It's like asking for the binary encoding of a string without specifying an encoding...",1
+"Well, ""i"" starts the insertion before the cursor, and ""a"" starts the insertion after the cursor. [This cheat sheet](https://vim.rtorr.com/) might be handy!",1
+[http://www.helpingwithmath.com](http://www.helpingwithmath.com/by_subject/percentages/per_calculating.htm),1
+"my input is initialized in char input[], assume it as encypted text, and my result should be ""3 hello world """,1
+"Is Node.js, not PHP ;(",1
+Ok! I edited it!,1
+What have your tried?,1
+"@Yuck ok, I will edit my question, thanks",1
+Actually this is super innefficient...,1
+@apc I think the -4 score on his question answers yours...,1
+You can assign it to a variable `var variable=sno` then pass `variable` to other function,1
+please post `opts.Parse`.,1
+what else ?? @SergeyA,1
+Guys? Why so many negative votes? It was a genuine question - the guy wanted to hide the activity name.,1
+you're missing `return` in front of your recursion steps.,1
+"I've tried searching on google and I've tried many different methods but they do not seem to work for me as I'm using an array variable. I've also used $_POST[$row['myfield']]; 
+$_POST[""{$row['myfield']}""]; 
+$_POST[""$row[myfield]""];",1
+"And I would really appreciate if you could provide me some code, what have you tried? or do you expect me to do it for you..",1
+@KonstantinosMoulakis there is this link there: http://cpp.sh/46j35,1
+This function doesn't clean anything an has nothing to do with mysqli prepared statements,1
+What have you tried so far that hasn't worked for you?,1
+*I am able to build a solution using **MSBuild.exe***,1
+Coz m specifying 10 100 1000 explicitly how can v do without specifying these values,1
+"`if(s[i] == 'W')` s is an array of strings not just an array of characters so the first element is a string: `if(s[i] == ""W"")`",1
+I am looking for something like `document.innerHTML` cause `document.documentElement.outerHTML`does not return the expected result,1
+"Did you look at a [reference](http://en.cppreference.com/w/cpp/container/priority_queue)? The first is the element type, the second is the underlying container, the third is the function type used to compare elements' priorities.",1
+You're missing a `)` in your if,1
+"In addition to the above comment: The argument to your function gives the number of rows. If it's 5, you're going to get a pyramid of 5 layers.",1
+Please have a look here. It works fine with replaceAll. http://ideone.com/TxUELn,1
+This question has been incorrectly flagged as a duplicate. This question is about suppressing errors in console output when a test passes. The linked question is about unexpected test results when an exception handler is not correctly configured.,1
+"2 years ago, and I do still think the same way, after having done a few angular applications without any problem. And I usually change my mind, in this case, I didn't, I still believe that in some cases, showing, even the plain, useless <html> code of your interface, is a risk. And you clearly don't work in security.",1
+@user2310289  also wanted to know if it is bad practice,1
+prompt will get a string and you are comparing number with a string. that's why your condition became false.  == checks if the value of the variable is equal. === checks if the value and type are equal.,1
+The line before the for loop is unnecessary. `userinput` must have been `53` or `'5'`. Show how useriput is assigned.,1
+And one on http://stackoverflow.com/help/how-to-ask,1
+"You should read through [this](http://stackoverflow.com/help/how-to-ask). Tell us, what you want to achieve.",1
+"Num1++ is post increment. In next line after printf if num1 is used, it's value will be 2.",1
+"Can you write your specifications. If you can use builtin sort algorithms, you can use them. Or you can write your sorting algorithm. But we need to know what are the constraints to solve this problem.",1
+@M.M: The close reason contains other criteia which are missing in the question.,1
+You also need to wrap that in a window.onload=function(){...},1
+"Now I get it, @JoeFrambach is right, Ling's Cars (who use outrageous sales techniques) would like the site.  It was an educational work and with the mouse over events currently turned on it is amusing but busy and annoying.  Despite appearances, nothing is for sale on the site (except maybe a used car.)",1
+Are you using Toolbar?,1
+"Normally I would do what you suggest. But apparently the asker had trouble defining what he meant. By trying to describe it precisely I thought I'd help him rephrase the question if my editing wasn't exactly what he wanted. In the help I read the following phrase: Be sure that you've read the close notice and any comments on the question so you can address any concerns raised there. Addressing the concerns often means editing the post, >>> which any user may do. <<<<",1
+"The output is a little confusing. The input numbers are not distinct, but you're asked to print at least one of them? How will you know which one the output refers to?",1
+"Generally speaking, aren't A-Z characters?",1
+`myFunction` should return an int.,1
+"@threeve Another thing. While I would have not implemented the ""don't run as root restriction"" at all, there must be a reason why PHP developers decided so. I would simply leave it up to the user to do that or not, or better saying shoot in his own feet or not. (I mean you *can* run apache as root if you want, for example).. However, I can't say why they then added the `-R` option.. That makes no sense imo!! I only say, don't run a web server as root.",1
+Because usually it is not critical to be as fast as possible when doing nothing.,1
+What is the question?,1
+"`_.countBy` returns an object, not an array.",1
+"What was the error? Did you try printing the string to make sure it represented a number? Why `split("""")`?",1
+Unclear what you're asking. I also feel wrong with assigning a pointer to array.,1
+because of so many tables. i have a another  field TableName that is input parameter,1
+"@Dev Okay, so `explode` the string on `,`, `array_walk` the array to add the quotes, then `implode` the array back to string.",1
+"I think a high-level language can operate on me, therefore I am.",1
+"@Marcin: In the context of installing a package, pip and setup.py are clearly connected.",1
+"Given that PHP native sessions are stored on disk, the point of Security is no longer valid.",1
+"IMHO Thats strange to have operator+, which returns list&. Semantically its like operator+=, which should modify its lhs. It's better to change the name, or to have list operator+, which constructs new object.",1
+what error you getting?,1
+Possible duplicate of [How do I get a Date without time in Java?](https://stackoverflow.com/questions/5050170/how-do-i-get-a-date-without-time-in-java),1
+this is not array this is object,1
+What did you try?,1
+The Objective-C code isn't valid Objective-C code and it's not complete enough to help with a translation to Swift.,1
+"@sclv Yes, and that is characteristic of object oriented languages. Only a minority associate operations with instances at all; in even fewer can that be described as the normal operation of the OO system.",1
+This is my [https://jsfiddle.net/renzf/ywzgpfbg/],1
+"""Simply recompiling previously working, secure code with a newer version of the compiler can introduce security vulnerabilities"" - **that always happens**. Unless you want to mandate that one version of one compiler is the only compiler that will be allowed for the rest of eternity.   Do you remember back when the linux kernel could only be compiled with exactly gcc 2.7.2.1 ? The gcc project even got forked because people were fed up with bullcrap . It took a long time to get past that.",1
+"@abc123: `$(window).resize(...)` uses jQuery, as does part of `Resize`. It's pretty inconsistent, though.",1
+"The output should be `""bbas""`, not `""bhas""`",1
+"`getElementById(""my_act"");` likely doesn't exist.",1
+"Please add your HTML markup, we need to see what your standard `<select>` element looks like",1
+PHP sessions are not stored in RAM but as files on the disk. And who told you they are lost when the webserver is restarted?,1
+"go with /^[0-9]+([,][0-9]+)?$/",1
+I dont think there is a right answer for that...,1
+"Actually, you may need bypass validation during development, when you have self-signed certificate, for example.",1
+"Yes, I shall tell the out-of-business vendor of my 8 year old heating-controller that they should get back in business and renew their certificate. I understand the reasoning behind your post, but it doesn't answer OPs question and it doesn't reflect how the world actually functions.",1
+Did you try anything so far?,1
+"public int getCanCount() {
+        return canCount;
+    }
+
+    public int getTokenCount() {
+        return tokenCount;
+    }
+
+}",1
+"Yes, if `a === b` then `typeof a === typeof b` and `a == b`. How else would they be fully equal?",1
+"@ColonelPanic yes, but that's not what was asked here.",1
+"$file = fopen('logo.png', 'r'); $img = stream_get_contents($file); header(""content-type: image/png""); $objDrawing = new PHPExcel_Worksheet_MemoryDrawing(); $objDrawing->setName('logo'); $objDrawing->setCoordinates('A1'); $objDrawing->setImageResource($img); $objDrawing->setRenderingFunction(PHPExcel_Worksheet_MemoryDrawing::RENDERING_PN‌​G); $objDrawing->setMimeType(PHPExcel_Worksheet_MemoryDrawing::MIMETYPE_DEFAULT);$ob‌​jDrawing->setHeight(36); $objDrawing->setWorksheet($objPHPExcel->getActiveSheet());",1
+how about `S.objects.filter(R__p=given_P)` ?,1
+"Why are you using `typeid(...).name()`, what exactly is it you want to achieve?",1
+I think he will still be able to open it with notepad .. only he needs to choose the program to open with manually,1
+"At the right-top corner of the page, you will find `Since: API Level 11`.",1
+Try CountedOutputStream from `Apache Commons`,1
+"Please add some description in question, what error you are facing?",1
+People always seem to forget that JavaScript !== the DOM...,1
+`a` is not a digit for decimal so you get a NumberFormatException.  Note: if it was Hexidecimal you were parsing it would be `10`,1
+so basically return false will not work in this case ?,1
+"@hek2mgl what a senseless discussion, just because you can't imagine a scenario where something is valid doesn't mean there is none - even if the only valid scenario would be someone being in the lab doing an experiment for a white paper (and there most certainly always are more valid scenarios). I would consider deleting this ""non-"" answer. Stuff like this makes stackoverflow really troublesome to read.",1
+"You form the command just fine, but never execute it.",1
+"Hi @lordmegamax I do agree with you, thanks for the link. Actually I use Robospice+Retrofit in most of my projects to avoid this side effect and take advantages of RoboSpice features. But in most common cases, I've found RoboSpice or other similar approach too difficult and complex to use, and configChanges=""orientation"" is really useful and more easy for small projects.",1
+Are you using the jQuery Ajax function to get your XML?,1
+Your conditions are not sufficient,1
+"@H.M I am sorry, but we will not write your full code here, that would be off-topic for Stack Overflow. You can get help, but you must show what you have tried and where you ran into problems so that we can help with a specific programming problem. Please see [How do I ask and answer homework questions?](http://meta.stackoverflow.com/q/334822/1288408)",1
+"You're clearly converting the result of the `Math.Sqrt()` to an `Int32` - an integer, i.e. no decimals.",1
+@PhilipJF My answer in no way relies on OO being able to do everything that Haskell type classes can do. It relies on the Haskell type class system being able to do everything that OO can.,1
+"@georg, I hadn't meant to be rude, I just wanted to tell OP that I hadn't really understood what he asked and that he should improve his english. I'm sorry if I said something wrong.",1
+"*The output here will be 3 because there will always be people in spaces 1, 2, and 3.* No, because with your current example, the result is 3 after the first time the sequence is executed, but becomes 2 after the second time the sequence is executed. After that, it stays constant at 2.",1
+You should probably read the [help](http://stackoverflow.com/help) if you want to stick around. Asking a lot of questions that get downvoted will eventually get you auto-banned from asking.,1
+Why this access sequence? Please elaborate.,1
+@Evert This is exactly my consideration. \s means whitespace? so why using \s,1
+"var cls = document.getElementById('showhide').className; // Wrong use of statement
+.Use var cls = document.getElementById('showhide');",1
+"http://stackoverflow.com/questions/3126255/how-to-output-md5-hashed-password-in-plain-text
+
+Related question...",1
+Does this post actually have 45 downvotes or am I sign-blind?,1
+"No, it's not possible to do that in PHP",1
+https://stackoverflow.com/help/how-to-ask,1
+maybe you are giving wrong button id. Post your xml file first.,1
+"Yes, One person give the correct information so go with @jmattheis.",1
+Did you try anything so far? And `ArrayList` in 2013? Use `List<T>` instead.,1
+"This is not homework, I forgot to add the code, sorry guys. I am just learning to program in C. I know how to find the biggest number but I dont know how to do it if you add a name in it.",1
+This solution does NOT work for Microsoft Visual C++.,1
+"@anaximander - They're trying to help, therefore this is an answer, even if it's a poor one. Downvote it if you don't like it, but don't flag it. See Your Answer is in Another Castle, When an Answer is not an Answer: http://meta.stackexchange.com/questions/225370/your-answer-is-in-another-castle-when-is-an-answer-not-an-answer",1
+"`^` is binary XOR in ruby, so `2^3 != 2**3` but `2^3 == 1`",1
+"Regardless of if you can, you shouldn't. New-line characters are free, feel free to use them liberally!",1
+"bump, please share the solution",1
+"@DmitryBychenko in my case, its impossible",1
+"It starts at zero at a full boot, not at a restore from sleep or hibernation.  Not caring about this is important, not in the least because this behavior isn't promised anywhere.",1
+move the power function before the main function then you don't have to predeclare it.,1
+write a test in [jspref](http://jsperf.com/) and profile it,1
+Your array are ever null?,1
+They're only real if they support floating-point.,1
+Is `my_act` element is rendered/available in DOM?,1
+Did you try anything?,1
+How do you save and read bitmap to/from the DB?,1
+"@Luminous_Dev - Yeah, I need a better solution for this. Anyone please assist me.",1
+jQuery should never be used for this situation. Research CSS sprites or even SVG,1
+Hint: try `zip()` and then iterate and print to file,1
+"Guys, take it easy on the down votes.  Everyone started somewhere.",1
+"In my opinion, the lack of approval and lack of response are because this is not yet a self-contained question.  For comparison, we can easily find references on line for Ackermann's function, the binomial function, and the others referenced.  What we cannot find easily is section 4.3.  Right now, your audience is limited to people who have read and understood chapter 4, and are willing to give you a tutorial on it.  Tutorials are *generally* beyond the scope of SO.",1
+"Maybe this is the correct answer, but for some other question.",1
+`x1` would be `6`,1
+try it and see!,1
+"Yes, September is early this year.",1
+"What output are you *expecting*, what output are you *getting*, and what is the definition of `MAN`?  Unless you provide that information, you're not going to get very helpful answers.",1
+"`void main` isn't even valid C++, so maybe start there.",1
+"@LưuVĩnhPhúc What do you mean by that? `a` _can be used_ as a variable. But by default, `a` is not defined.",1
+@ricky no it doesn't. `&` has a different meaning in a type than it does as an operator.,1
+@Sadurnias I don't use breaks either! Do you use rects instead of sprites?,1
+"this is not the Yii way, he was using the correct way to do it",1
+Mayne you need [Heron's formula](https://en.m.wikipedia.org/wiki/Heron%27s_formula),1
+"Nobody mentioned that `s+s[1]-s[3]` can lead to undefined behaviour depending on which subexpression is evaluated first. If it is addition, the resulting pointer is out of bounds and UB ensues. (EDIT: [CashCow](http://stackoverflow.com/a/25870312/947836) did, actualy.)",1
+Just saw your edited post. Thank you so much. You have been extremely helpful to me.,1
+The reason why this one will not work is that `isInstanceOf` does a runtime check based on the type information available to the JVM. And that runtime information will not contain the type argument to `List` (because of type erasure).,1
+"No, C definitely won't always compile as C++. The first example I can think of is `int *foo = malloc(sizeof(int));`",1
+It is not an integer?uhmmm maybe a string,1
+well you have a syntax error on the `data.pop` line.,1
+Simply [A-z]{3}$,1
+how to merge many csv file and get the output which is like 3.csv. Thanks so much.,1
+"I have tried numpy.isin, but it is not working because it checks all the elements of the first array.",1
+But what should I do to be able to compile it and execute it.,1
+"@Marcin: I have not gone back to downvote your other answers, and I do not intend to.",1
+"Ehh, this is completly diffrent question now :/",1
+"""This would be a useful feature"" -- can you give an example?",1
+"@juanchopanza: while true, by pointing that out to a novice programmer, you are encouraging sloppy programming!  If the desire is for a value to be returned, it should be explicitly done, and not rely on implicit behavior.  Implicit behavior can come later when the program actually works.",1
+I'm going to guess in your `main` method you created a `VendingMachine` with 20 cans (or 10 cans and `add(10)` cans) then `insertToken()`x2. There's your output.,1
+@ChetanRanpariya seems like the method SearchSkies isn't called at any time when i debug it,1
+"@FredK: Me too:-) But as given, it can be any, so OP should clarify once he actually knows what he is asking. But that seems to be another fire-and-forget question.",1
+what are you looking for in the nested structure? please add what you have tried.,1
+"@B.Balamanigandan So, it's not valid JSON then.",1
+"The author of the question asked for zf2 implementation, not zf1",1
+It is compiling. It's failing at runtime.,1
+Please post the code here,1
+Are you not using generics ? Why are you having multiple data types within the same arrayList ?,1
+How do you decide which groups of three to put together?  Will your total number always be divisible by three?,1
+"@SimoneNigro No he can't. Please check again, its '"".$_POST['no_hp'].""',
+      ' ')",1
+in the university didnt learn us how to use the debugger and i can understand just by youtube videos,1
+"have a look into this
+http://stackoverflow.com/questions/21872141/failed-to-convert-parameter-value-from-a-sqlparameter-to-a-string",1
+error: cannot bind 'std::istream {aka std::basic_istream<char>}' lvalue to 'std::basic_istream<char>&&'|,1
+"Go with `printf(""num1=%d"", ++num1);`",1
+that is a dirty way to solve the problem...,1
+"I think you need to delete this question and ask a new one, probably with a ""windows-explorer"" tag.  If you create a file whose name ends in `.txt`, it will have a `.txt` extension.  If you want a file with a `.txt` extension but you don't want to see the `.txt` in a list of files, then it's a Windows Explorer question.  It has nothing to do with your program or with any programming language.",1
+"It could be Php, but i'm not pretty sure. I would also want to know what language he is using. If you find please update me too. Thanks",1
+"Coult also be that this is ""C"", I went to a workshop and tried a code(this code) out at home.",1
+It will fail if the strings aren't null terminated?,1
+"Try to write javascript first, and let us know about experience(s)... :)",1
+@user4581301 Alright well thanks for your help,1
+@Lightness Races in Orbit: Sorry..........,1
+ok. Where is your try?,1
+"Yes, technically that is valid JSON, however, it's *meaning* according to the spec is that preceding duplicate keys are ignored. Hence the warnings in your online tools. The JSON is invalid if you care about the integrity of your data. Since you do care about the integrity, you can no longer call it JSON. It's now your own custom format that happens to resemble JSON",1
+"If you are going to say ""This is not a duplicate"" then say **which** questions it is not a duplicate of and **why**. From http://stackoverflow.com/help/how-to-ask ""**including links to related questions that haven't helped can help others in understanding how your question is different from the rest.**",1
+See also [tag:xor].,1
+"In fact, this should be retitled to ""not equals vs assigned not value""...",1
+What `typeid(a).name()` returns is not defined by `C++` it is down to the compiler writers. It can be different for every compiler.,1
+And you could provide some constructive criticism i would gladly adjust my answer to meet Stackoverflow standarts,1
+DUDE there is not a single error there is no errors i used the debugger and the compiler and there is no error,1
+"Your method is static, your lists are also static. Your constructor hasn't been called.",1
+yes it has but MS Visual Studio 2010 is saying that .text type of property doesnot exist.,1
+Whats this answer? hahaha,1
+Read up on `zip` and `for` loops.,1
+"I suppose `'y'` is the name of the file, the error itself tells what's wrong. `""There is no 'y'""`",1
+Lovely. Thanks for that.,1
+"i just write two class ,inside the first class i declare a variable getdata = xxx. but i need this get data value to another class . what to do.",1
+Do you have [`short_open_tag`](http://www.php.net/manual/en/ini.core.php#ini.short-open-tag) set to 1?  Try replacing `<?` with `<?php`.,1
+What you asking then? Post some code so we can give you advises. Generally in Python recursions are slower than normal loops because of the cPython implementation of frame objects.,1
+"Don't cast so much; use generics on that HashMap!  Also, use a foreach, not a while to iterate that, the code will look way more readable!",1
+"Try Googling ""How do I get the average of two numbers"". Hint: It doesn't involve taking their minimum.",1
+You need to show more examples.,1
+A question for http://diy.stackexchange.com/ ?,1
+"Also, what does this have to do with embedded systems, smart pointers and void pointers?",1
+"these are some great responses guys thank you.  I appreciate the kind words and constructive feedback.  if ""hate"" offends you then perhaps a different word.  swing does not support sleep, nor does it allow you to parse ints in an event listener when the references come from an array.",1
+@akshayk07 It's not even C. It's Arduino's version of C++.,1
+"@BalaDutt if you improve your answer, the guys will give you points :)",1
+"please post the code what you have tried so far, it can be done with mysql_num_rows...",1
+When you reopen the app won't same code get executed again and button would be created?,1
+"If anyone can point out some reference, it is greatly appreciated!",1
+Why don't you run and try it?,1
+Does it compile?,1
+What is `val` ?,1
+Read as a `std::string` and substract `'0'` from each position to get the digit numbers.,1
+You need some introductory books on Java and Android programming.  These are very basic errors.,1
+I've been 1 year out of programming anything. I'm so sorry about it,1
+Take a good look at [How do I ask a good question?](http://stackoverflow.com/help/how-to-ask).,1
+"for example if the user will drag the item to the cart, the user can delete what they choose on the cart.",1
+@TruGamer equalsIgnoreCase :),1
+"In your function, you're not returning anything; just printing the result. Since you want to save the name of the two groups being tested and their respective X-squared value, you should pre-allocate a vector for names (`VS = character(choose(6, 2))`) and one for X-sq (`Xsq = numeric(choose(6, 2))`) and in each iteration save your ""n"" and ""k"" in the respective vector. BTW, it should be more convenient to make your function as a binary (e.g. `myfun = function(x, y) setNames(chisq.test(x, y, ...), paste(x, ""VS"", y))`) and use `combn` to apply your function to all combinations of your column.",1
+"@dtabuenc to the contrary, I made a pen a while back that shows you [every single key/value pair in your localStorage](http://codepen.io/hellol11/pen/jqLVjd), without any hacks.",1
+"@Brad So syntatically am I looking at something along the lines of a for loop that goes **(int i = 0; i < size; i++) { if (sport_type[index] == 'insert char here') {print out message} }** with size being a counter variable that I set in main to increment each time a new reservation, and thus an indices of the array is set?",1
+@asu looking for what exactly?,1
+The Printfs are incorrect. There behaviour is undefined. There is no parameters given for the printfts %d,1
+"ErrorFound is doing nothing for you, and you shouldn't label things 'binary' when they are string representations of decimal values.  There are multiple functional issues with this code.",1
+"Rafe, you might want to double-check: `s.strip()` produces precisely the same result as your regex.",1
+"What the hell is `volatile` doing there? Like Eric Lippert said, if you are using `volatile`, you are probably using it wrong.",1
+"""zero or more non-whitespace characters, shortest match""",1
+yes but why can't language support it if we can write as in for loop,1
+What did you expect? You're printing it inside `StatsList::Mean` and returning uselsess `0`.,1
+This is an English-speaking site. You might be interested in http://ru.stackoverflow.com/,1
+What have your attempts at creating such an algorithm been?,1
+"@JonSkeet see my very simple example code, showing, that `Date` is not instant.",1
+"@hvd, I understand that the user can ""specify options needed to make it work"", and for an automated build system, you can set these options as a global default. I get it. My point is that by default **there is no reason for them to believe that there is any need for them to do it**. There are no new warnings produced, it just compiles. How can they know that actually there is a breaking change there? They don't read the compiler release notes, **they assume the compiler writer is on their side**. Unfortunately it seems **he is not**. Breaking changes need to be opt-in not opt-out.",1
+"One is comparison, the other is assignment.",1
+"""print each name with a number"" -- `enumerate`?",1
+"Your while loop isn't doing anything because n is not 0 but 10. Try with `n != 0` -> As long as n is not 0, loop",1
+"Also: `[MethodImpl(MethodImplOptions.NoInlining)]` is not valid on fields, so I doubt that is your real code",1
+remember SOHCAHTOA,1
+Take a look at http://stackoverflow.com/questions/4689918/move-image-from-left-to-right-in-android,1
+Well I don't think its possible. Adding button from xml is probably the best idea.,1
+Parameterized queries minimizes SQL injection when `cmd.ExecuteNonQuery()` executes - the injection often occurs when using concatenated values in a query string. What exactly you've tried to do?,1
+"`(312000 / 12) / 4 = 6500` ...? And converting to hourly, divide weekly by the number of hours worked in a week (typically 37.5 or 40). *See answer below, noting there are not 4 weeks per month, so divide yearly by 52 rather than 48.",1
+@Ben you can turn on that behavior using a switch and I would not condemn you for doing that. I find the idea of safer versions of C and C++ very useful. But it costs your performance in certain loops. C generally is a language that is supposed to be so close to the metal that there is not enough room below C and above assembler for another language.,1
+Me too. See above ^^^,1
+"Yes, I can't think of a solution for this. It was asked in an online round. Can anyone help me with the algorithm?",1
+*There is no member named “class”*.,1
+"Sorry most people on here seem rude, but I agree.  Seems most tutorials should cover how to load in the library and where to write code.",1
+You should have just tested.,1
+"Also, ""abcdef"" will be candidate for garbage-collection, because you're not assigning the result of concat() to any variable. concat() doesn't modify the string. It creates a new one.",1
+Maybe this is better suited to the http://programmers.stackexchange.com/,1
+This will only affect the text content in the li element. Not the list style.,1
+`=` is an assignment operator and `===` is a comparison operator. Now look forward for these both you will find tons of articles.,1
+Show your code.,1
+You're code is only going to run one time ... what are you intending to do?,1
+"@JonSkeet no, it's like asking a distance without specifying an origin. We have `double` type which holds this. Nobody requires to provide units of measurement and origin for doubles. The same should be for date-time.",1
+Possible duplicate of [Android Shared preferences example](https://stackoverflow.com/questions/23024831/android-shared-preferences-example),1
+"Also, to begin with this code is incorrect for updating raw memory locations, since you don't use the `volatile` qualifier.",1
+"This is an unorthodoxed version of an assignment operator.  An assignment operator should do one thing and one thing only, and that is to create a copy of the passed in object to an existing object.  It shouldn't be performing ""business logic"" such as `simplify`.",1
+Think I've completely messed up the test class I just made!,1
+"easy: with `(function(){var Speaker = ""password""; /*do stuff with Speaker*/ }());` you cannot view Speaker's contents in the console. (though you can still set breakpoints)",1
+"$collection = $db->shops; 
+   
+   $cursor = $collection->find(array('category'=> ""{$filter}"" ));
+
+   foreach ($cursor as $document) {
+    $valu=MongoDB\BSON\toJSON ($document."""");
+    
+    echo json_encode( $valu);
+    
+   }",1
+sorry changed it,1
+"It seems like you are missing bootstrap.js ? So it works on only layout (e.g active class with ""display:block"" but ""display:none"" for others without active)",1
+That implies the OP is solely using `mail()`. Not considering any flexible alternatives that directly communicate via SMTP.,1
+Try clearing all of your cookies and test again.  The problem doesn't show itself if your browser already has cookies for your iframed site.,1
+the input is numbers so 12345678 but an account number,1
+Possible duplicate of [Difference between == and === in JavaScript](https://stackoverflow.com/questions/523643/difference-between-and-in-javascript),1
+Which book can help me building logic,1
+you can take that account number as a string and you can use String.Replace method...,1
+"I never add such requests in my questions. This question is special. I read over 20 similar questions. I did not want people to assume it's one of them. Few people just copy code, and some downvote  - preventing future readers from taking it seriously. I was not complaining - I was just afraid of not getting a solution to my query because people did not even read my question.",1
+"@NoelSegura I have scatteredinterpolant which generated a matrix like this.
+f = 
+
+  scatteredInterpolant with properties:
+
+                 Points: [40000x2 double]
+                 Values: [40000x1 double]
+                 Method: 'linear'
+    ExtrapolationMethod: 'linear'
+
+Now how to use this matrix in matlab",1
+@roryap Did u ever asked yourself why?,1
+sorry but even after i fixed that it still doesnt work,1
+"just so this doesn't happen to you again, when you google something that starts with a `-` character you should put it in quotes like `gcc ""-O3""` because otherwise you tell google ""search for gcc BUT NOT O3"" instead. Also, try to differentiate between `0` and `O`",1
+"Please reformat your post.  Additionally, it might be useful to post your view as well.",1
+Why don't you measure it?,1
+"Why so much downvotes i this is funny, rght ?",1
+"Dont use fixed path for SD-card directory, instead you should use **`Environment.getExternalStorageDirectory().getPath();`**",1
+You should look into [proper C formatting](//prohackr112.tk/r/proper-c-formatting). Although I think you'd rather learn to [thoroughly obfuscate your code](//prohackr112.tk/r/proper-c-obfuscation).,1
+[pointer arithmetic](http://stackoverflow.com/a/394774/620908) - [google search](https://www.google.com/search?q=c%2B%2B+pointer+arithmetic),1
+Not until you tell us what `MAN` is.,1
+Have you tried stepping through the code using a debugger?,1
+@MauriceReeves There is no de-reference operator in OP's code. I worry you might be confusing them more than they already are :-),1
+"@smallB: Signals and slots are QT specific constructs, what vBx gives you here is the standard C++ solution.",1
+"If you can't find any difference, try replacing one with the other without changing anything else, and see if your program still compiles :-)",1
+"Post your question regarding the reading of data sets in C# as a separate question.  Or, more appropriately, search for the numerous existing answers and websites that cover that already.",1
+"So your question seems to be: how do I read from standard input in Swift? If this is somehow hard question, you should explain with links how you couldn't find the info, because this *sounds* like *so* basic a question this will be down-voted to oblivion....",1
+"I have a string '### to ###, My address ###', and 3 values in a separate table, I need to replace these value by key, my first value is 10 so the first key get replaced with 10, 10 to ###, My address ### and such",1
+Q: What have you tried?,1
+i want to define 'jayesh' as variable,1
+How do you get the list of directories? Please [edit] the question to show what you currently have.,1
+"PLease include your code in the question. Fiddles should be supplementary, not necessary to understand the question.",1
+You don't even need Regex for this.,1
+"I think sarnold was asking for a reasonable clarification; not least because a reboot does power-cycle the machine, making it unclear what you might have expected the difference to be.",1
+@abiessu I couldn't find one that didn't move.,1
+"*"" ... I want to do this prank on them ... ""* - Don't do that.  It is dangerous, most certainly an IT policy violation, and possibly ILLEGAL.",1
+"I am trying to get the HTTP request response and put it in a div , is that possible ?",1
+"Given the information you've provided, simple assignment would be sufficient: `s = ""heLLo"";`",1
+"Wow you are right, thanks for pointing that out. I'd like to delete this answer if possible (is grayed out so maybe already done?)",1
+@Luminous_Dev - But it won't give the expected JSON.,1
+@molbdnilo thank you :),1
+"If you still want an answer, you'll need to find out what Strings are failing to parse and post them here. Print them to the console with characters surrounding them like `System.out.println("">"" + x + ""<"");` in case there is trailing whitespace. Also do not swallow that exception in NextActionPerformed. At least print its stack trace so you find out if an exception is being thrown.",1
+"Unlike Java's `DateTime todayDateTime = new Date()` which creates current datetime, C# returns ""zero"" datetime; use `DateTime todayDateTime = DateTime.Now;` in C# instead",1
+"You can't specify a variable name at run-time; variable names exist only at compile time. Perhaps you could describe why you want to give it a run-time name, so we could suggest an alternative solution?",1
+"Need more information, technologies, environment, hosting, system resources, processes being run, purpose of site. Even then it will probably still be a far too broad question.",1
+"*how to recognise capital letters and not just lower case* - If you recognize lowercase, what's the problem of recognizing capital letters?",1
+Is there anyway to copy folder from host to container?,1
+"@Marcin: Obviously they're not the same program: they have different names. But your answer fails to highlight the connection (one calls the other), or explain how to get `setup.py` to do what the OP wants. So it's technically correct, but not useful. @vartec has provided what the OP was almost certainly looking for.",1
+Not working Mavericks,1
+"what do you mean ""seen"" as already clicked? visually/style? programatically (an attribute)?",1
+"You don't have x,y,z. You have latitude and longitude, a coordinate system where one of the coordinates is not parallel, on a spherical surphace to boot. Neither of your formulas works.",1
+What is the trailing `and` for? Where do you use `@SearchString`?,1
+"You want to remove two *bytes*, not *bits*.",1
+"Er, `editRecord(sno)`?",1
+did you mean the ascii code may be  of the string,1
+Please see: [Why is “Can someone help me?” not an actual question?](http://meta.stackoverflow.com/q/284236),1
+What does this have to do with programming?,1
+"then it should allow me to iterate viaindex. But it complains.
+I even tried _UNIQUEARRAY[3412124577]. Still it complains",1
+"If you want to have problems later on, just use stage-0! Some or all of stage-0 features might not make it into the ES-spec at all. So beware of using stage-0 features.",1
+"I can understand 2 dislikes, 3 dislikes, even 4... but 19? Come'n guys!",1
+Are there any libs?,1
+"@BURNEDWATER -- You mean there are no *compilation* errors, not runtime or logic errors.  Just because your program compiles without any syntax errors doesn't mean your program is free of bugs.  Also some advice -- instead of 24 number, try instead something much smaller, like 5 numbers.  That way it will be much easier for you to see where your program goes wrong.",1
+I've tried to select where record shows pass and group by exam type. That counts if either part is passed but not if both are.,1
+Why tag it Python when it is Javascript?,1
+"Your tests don't show what you seem to think it shows. You're parsing it in the system default time zone, and constructing 1970-01-01T00:00:01 *in the system default time zone*. However, I'm done here. You're ignoring both what the documentation says and what someone with considerably experience in date/time work says. You're welcome to do that of course, but you're not going to make any progress. You should follow SLaks advice and use `LocalTime`, as that's what the value you're receiving represents. It doesn't represent an unambiguous instant in time.",1
+what else do you expect other than css and js ?,1
+"Well I could post Parse() and all methods that go with it, but that would be rather voluminous and it is not the problem. Parse() works fine, the values a read fine, the debugger sees the good values... It's just that although after parsing opts.Silent is true(confirmed by debugger and watch) the code behave as if it is still false, and the same goes for the other variables. Well, this is no longer the behavior since I mark them as volatile, but it is when I remove it. Everything would be fine if it would also be allowed on doubles...",1
+"yeah, you missed the part where your statment (question), exlusivly refered to a `singleton`.",1
+You can't do it because the language doesn't support it. Or am I missing something?,1
+You should look into the `cut` function,1
+should be `int c[4][3] = {0}`,1
+thank you for answering. yes the problem is that i cant drag the image on top of my grid layout,1
+"@BURNEDWATER -- *dont know how on visual studio* -- So you didn't see ""Debug"" in the main window of Visual Studio and wondered what it does?  Or hit `F10` on a successful build of your program?",1
+`SearchSkies` action method should be HttpPost. And you need to make request accordingly from AJAX. http://www.codingfusion.com/Post/Jquery-AutoComplete-TextBox-with-database-In-Asp-Net-MVC,1
+"If you have any problem, please post your code or what you tried so far.",1
+Show us some XAML & Code please.,1
+"the comment from David Pasztor pointed me to the issue causing the no member index error, and i simply got rid of the call to super.init() to clear up the last error - posted below the code I'm left with, which seems to be working as i want without errors, so happy days. Thanks ....",1
+"This is **not** a 2d array. And the logic is flawed, first `free()` individual arrays that are no longer needed (if any), then resize your array of pointers, then allocate newly needed individual arrays and resize those that were there before. And of course, check for errors on **each** `malloc()` / `realloc()` call. Finally, modifying a local variable modifies a **copy**, you have to e.g. return `img` when you're done.",1
+"Also, `java.util.Scanner` doesn't have a `scannextLine()` method.",1
+Please show what your input looks like and what your expected output should be,1
+any attempts from you? Did you try anything?,1
+"he wants to do it programmatically, not through config",1
+"@PriteshJadhav You should notice, this isn't the way [how to ask good questions](http://stackoverflow.com/help/how-to-ask) here.",1
+@WernerHenze Thanks for the remind. I have edited.,1
+"Please choose a language, and remove all the chatter from the question.",1
+I fixed it: New Code,1
+for (var x = 10; x >= 1; x--),1
+"simply `var book  = new Book { Title = ""One World""};` no library needed.",1
+1000000% sure...............that it won't work,1
+"A billion `longjmp`  will generally use a constant memory space of a hundred bytes. They won't even spend a single megabyte, and the billion calls to `longjmp` will require a few seconds in total, each of them lasting a few dozens of nanoseconds...",1
+http://stackoverflow.com/questions/23353173/unfortunately-myapp-has-stopped-how-can-i-solve-this,1
+@OrDuan As I've mentioned I'm trying to understand the method mentioned in that book to convert recursive into iterative. I'll add some examples showing where I've got stuck,1
+Duplicate http://stackoverflow.com/questions/11689427/resizing-a-button,1
+Ok. Can you please see update I made in question?,1
+@BasileStarynkevitch Added the code.,1
+You just clobbered the value of `days` with a **return code** from `scanf` function.,1
+I compiled this code before posting . But that not works .,1
+First learn to *check* your input (I.e. the stuff you've read from the file). Then talk about compiler bugs.,1
+"@πάντα-ῥεῖ, this question use method so this is c++.",1
+It reckon the successive `'u'` from the beginning.,1
+That isn't infinity.  You're seeing integer overflow.,1
+"Given the size of the values and the precision of floating point representation, the results look pretty good to me.  Have a look at an [online logarithm calculator](http://www.rapidtables.com/calc/math/Log_Calculator.htm) and compare.",1
+"And part three, in `input_reservation` the line `sport_type[index] = input_type(sport_type, index);` counts on `input_type` returning the correct value, so currently the code blows itself up by not returning. Ideologically, a function should do only one thing, so input should just take input and hand that input off to someone who knows how best to store it. The simpler a function is, the easier it is to debug. So `char input_type(char sport_type[], int index)` should probably be `char input_type()`, read the user input into a temporary value, test the value and return the value when it's good.",1
+i have posted a new code with detailed explanations. Please tell me the difference between the two. Thank You everyone. I hope this code will help you guys to understand what i am actually asking for.,1
+"What you're talking about here is two-way binding. Angular 1 had this, and needed a cyclical digest. Basically, it rerendered the DOM over and over until all the data had finished propagating. This is one of the main reasons why Angular 1 was so slow.",1
+Why are people minusing this? I don't understand. :(,1
+"@ahmd0, it's important here not to be rude to people you're asking for free help. :) Asking for more information or clarification isn't ""not wanting to answer"". Please try and be polite. (And there is absolutely no difference between a shutdown and a reboot; a reboot is a shutdown with a restart to the OS. The difference is only meaningful to the BIOS and hardware.)",1
+"The argument is cast to a double, and with floating point math being what it is, I think all those values are close enough to approximate an answer as ""38""",1
+"my usage case was very narrow and useless indeed: create a branch; add folder filled with files for branch only; switch to master; merge; ops, added wrong folder to master, add it to gitignore; files would not be removed from commit -- granted, a better solution would be just using `rm` straight away but I first thought switching branches wouldn't kill the _ignored_ folder. **but**... I do use github ""gui based"" tool that's good enough for me and do support some index management except it doesn't support this. so what, should I use 2 gui's for narrow usage? still can't agree with answer.",1
+"@Prune I've asked the author if it was alright to post this type of question here and she didn't mind to post it. Now, I have been posting stuff in SO for few weeks already and I still don't understand why the question i've formulated in this post, which is very interesting and relevant has got negative votes and no answers at all and other trivial questions out there become really popular among people very fast.",1
+http://bootboxjs.com/#,1
+"Also - not clear what you want - always remove these specific bytes, or remove the leftmost non-zero bytes",1
+"@leaf of course it's a valid Python express, just like it's a valid C expression, because it's a *valid identifier*. But it's not a valid character string. How do you `print a` and expecting it to print the letter a to console (without setting `a = 'a'` first)?",1
+Start by learning to use `vim` without your mouse.,1
+"Since Matias solution is not recommended, i turned out doing more research and found an easy to understand solution here: http://net-informations.com/q/faq/passvalues.html .  I find both links posted as the solution as hard to understand for my current C# level.",1
+`indexOf(Object)`,1
+@deviantfan the problem is that it returns 0 instead of returning the biggest number,1
+I am using carthage....,1
+@BenBolker Could u help me solve the new problem?thx,1
+What **is** `sf`? I don't even see it.,1
+"what if I call it as `fn(new char);`? Isn't that undefined behavior? This is the worst kind of suggestion. Something that leads to the expected behavior, and, for the untrained eye provides a solution. Dangerous.",1
+Questions about cleaning up working code should be asked on [Code Review](https://codereview.stackexchange.com/).,1
+"Would this even compile, after being fixed? I was under the impression it was impossible to declare variables inside a switch case.",1
+"@Prune That's alright, Dr.Liu already explained to me this is definitely a non-trivial subject and lots of experts in the field with years of experience struggle quite a lot. Hopefully I'll be editing the main post to make it more visible to the SO's experts.",1
+"Why would you want to do this without CSS, thats exactly what is for...",1
+"@BPL, only a college professor would write a paper on optimization, and choose LISP as the language to use in examples.  There are a couple of flaws in that paper, too.  For one, her first method of insertion sort--which she admits is complexity O(n2)--is NOT how insertion sort is normally done.  She derives the normal method of insertion sort, which she calls the optimized version.  I do not have the book but the method of the paper's CACHET system is to pull an initial recursion into its individual g(x), g1(x) steps and then try to find an h(x) that jumps to the result directly.",1
+Are you asking how to get `index (position) of` that `element` in your list?,1
+errors are clearly shown in the error stack !,1
+"@EOF: I'm surprised this got so heavily downvoted.  Even though the OP's conclusions and methodology are completely bogus, there's an actual question here with an interesting answer: dynamic linking, and what the CRT boilerplate code is for.",1
+I don't find anything wrong with your logic.  Kindly recheck once again,1
+its not performing the required function. 0 error messages on the console.,1
+Your previous title started with selection sort.,1
+"The correct answer for op's question is:
+
+```jarsigner -tsa http://timestamp.digicert.com -keystore my keystore myjar.jar myalias```",1
+"that is a good point.  I find that thinking about typeclasses as objects plus a Prolog like theorem prover (where every rule begins with a cute) makes it easier to reason about something rather complicated, and gives me access to a body of literatures and design principles that apply to my problem.  Thinking about C++ templates as a functional language sort of like Haskell makes them easier to reason about also.  I generally try to understand the weird edges of mathematical systems by describing them in terms of axioms I already know.  You dont need ring theory to explain integers.",1
+It'll be better question if you explain more about what you've tried and why you think like that.,1
+The compiler gives you the line no: with error description(quite sufficient to understand),1
+"I get the same error when I remove double quotes as shown below:    CSRPGPrimary=primaryP + primaryG  + primaryAin  + primaryAout  + primaryDin  + primaryDout
+('primaryG=', 'NSUP')
+TypeError: cannot concatenate 'str' and 'list' objects
+('primaryAin=', ['A'])
+('primaryAout=', ['B'])
+('primaryDin=', ['SEL'])
+('primaryDout=', [])",1
+This might help understand: http://stackoverflow.com/q/2528318/1147772,1
+thats my code using python 3.6 edited by idle,1
+"@PhilipJF the ""evidence type"" for membership in Ord (dictionary, I suppose you mean) isn't a subtype of the evidence type for membership in Eq. It's just that Ord membership implies Eq membership. An ord instance can't ""override"" Eq methods. I have no idea what you're getting at with the monad example -- yes if you encode monads with objects, then the encoding is object-y, but that's because you chose an object-y encoding to begin with! Anyway, this ""evidence type"" doesn't always exist. Other implementations of Haskell, such as JHC, show you can go very far without a dictionary encoding.",1
+ok. I would do that before ask question.,1
+It will have it if you make it.,1
+"@ChrisForrence I disagree that vim is primarily a programming tool. I think it's primarily a text editor (which can be programmed and used for writing programs, but neither are the focus of this question).",1
+no.. when reopen the app I want to see the  button created last time..,1
+I'm voting to close this question as off-topic because it's not directly about programming or coding.,1
+"I'm don't see the part of the 1.2 release notes that mentions support for ""squash"".",1
+"#vBx you don't use any signals/slots connection, am I missing something?",1
+Thanks for the response and your valuable time. I went through that examples also but I was facing difficulty with typescript and especially angular 4/5.,1
+"Thank you so much ....e.g. Word ""cat"" ,shuffle like ""cta"",""atc"" and so on ... second input string suppose ""tac"" in case if matches with any of the random shuffle string return in boolean.",1
+Do you understand the difference between a keyword and a function call?,1
+"Also, C# has properties, so you can have `public Balance { get { return balance; } }` instead of get and set functions.",1
+"@IVlad I don't have the exact question, I wrote the question as much as I remembered. Could you help me getting the minimum of such bombs? Leave printing the index.",1
+Why do you need to change it? What could you possibly gain from that?,1
+Not deprecated and this is a horrible idea.,1
+"`commandInput == ""invReport""` this is not how you compare two strings.",1
+"""the hash should be 1->2->3->4->6"". What does that even mean?",1
+"@FirstStep Depends a bit on `AVector`'s type, if it's a `std::vector<int>` the substraction should be done as mentioned in my comment.",1
+"No indeed, there is none.",1
+"What is the code supposed to do? Please write the text in english. But i guess the program should run until you type in the value stored in again. Thus you should never change szam, only tart",1
+"Humor aside, I give you a +1 for... er, personal guilt for making fun of you.  If you really want to get to the essence of what computers are all about, it may pay off to work with simple things for a bit.  Maybe play a bit of [Core War](https://en.wikipedia.org/wiki/Core_War) or other things that can help you see the world from a ""computer's eye view"".  Then you might understand that much of what we use is just a way of simplifying and abstracting our interface to that.  Don't be discouraged, sit down with the basics and enjoy the wonder while you can...",1
+"It is a reasonable thing to argue that the standard is broken regarding this being allowed to be null for non-vcalls (I don't necessarily agree but that's a fine opinion to hold). For other optimizations (e.g. the ""Felix-gcc"" one) it is very hard to teach a compiler what is OK to optimize and what a human intended. That is architecturally very unclean and might be practically impossible. Linus Torvalds has made the same error once about an optimized out NULL check.",1
+"It almost good, but after the animation my ImageView return back to the origin position, and I don't understand why. I tried to override the onAnimationEnd method to set the image to the end position, but the image blink at once.
+
+Maybe it isn't the best way to make a simple card game.
+
+I don't understand how works android, this is my first days to change develop from flash to android.",1
+you should have to show us what you have tried?,1
+Do note that `void main()` is an error.  `main` **must** return a `int`.,1
+"Your structure is indeed the most important thing, as it focuses on the content. If you ever redesign your site, you only need to change CSS and JS and not the whole thing, so... HTML first. Then CSS, as some people use your site with Javascript disabled. Then javascript - javascript should be icing on the cake, not the main focus.",1
+@AtifAbbAsi Check my solution below...And let me know in case of concern,1
+@Corak your answer really works,1
+it could be useful for you http://www.jobinandjismi.com/how-to-change-uibarbuttonitem-image-programmatically-in-swift/,1
+@Enigmativity I have edited my answer with relevant code,1
+"it's incredibly easy to make your own swap function, I'd suggest doing that and editing out c++ from your question",1
+Why the downvote?,1
+You do not have a `return 0;` statement at the end of `main`.  How is main going to return anything without a return statement?,1
+`this[j]` does not do what you think it does.,1
+"In Python 3, the default `str` supports unicode, which makes it quite different from `std::string`.",1
+"print(""primaryP="", primaryP)
+    print(""primaryG="", primaryG)
+    print(""primaryAin="", primaryAin)
+    print(""primaryAout="", primaryAout)
+    print(""primaryDin="", primaryDin)
+    print(""primaryDout="", primaryDout)",1
+"Please provide a valid json/object data, this one is not well structured.",1
+Discussed [on Meta](http://meta.stackoverflow.com/questions/340839/user-answers-a-question-of-another-user-and-asks-the-same-question-again-already?cb=1). I think we can stop downvoting.,1
+i have login table and registration table. there is user id is linked for both. i need the store the record at same time. sorry i couldnt able to paste here the schema.,1
+Thank you Edwin!,1
+"I believe you got all ""sintactical"" possibilities. The only option I would add is to ""embed"" the `if` and the method call into a single method, such as `ensureTiresAreOk()` or similar.",1
+"Please explain what this predicate is supposed to do in general, not just a specific example with no context.",1
+"There' s NO ""smooth"" or ""fixed"" movement, just use smallers values",1
+"Hi, you've edited your question quite a bit and changed the tags, and have now added a bounty. Would you kindly respond to the comments and let us know why current suggestions aren't meeting your needs?",1
+Does the problem disappear if you make `d1` and `d2` larger?,1
+This fairly explains nothing at all... @Moho solutions seems way better...,1
+related: http://stackoverflow.com/questions/40069722/method-overloading-with-floating-types/40069743,1
+Use `Form.FormClosing` - http://msdn.microsoft.com/en-us/library/system.windows.forms.form.formclosing(v=vs.110).aspx,1
+Seems you are here just to troll instead of helping. @Blam,1
+"This looks like a perfectly good question, although a duplicate  of https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c?noredirect=1&lq=1",1
+"@JBNizet  String s1 = new String(""abc""); now do s1.concat(""def""); , there is a change in object. so SOP(s1) should be ""abcdef"" not ""abc"". Please check first and then do reply.",1
+"`session_start();if ($_SESSION['developing'] == 1) {
+    // only use 1 when developing
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+}` this much you want",1
+Have a look at: http://en.cppreference.com/w/c/string/byte/strtok,1
+https://www.tutorialspoint.com/java/java_object_classes.htm,1
+"@ScaryWombat Perhaps, but I'd still prefer the collection best for the problem at hand. A [`Deque`](http://docs.oracle.com/javase/7/docs/api/java/util/Deque.html) might be a good choice too.",1
+its invalid json format,1
+Please consider adding proper error messages for more helpful responses.,1
+"Changing the compile version and the target is not a solution, just a workaround that will prevent you from using new APIs.",1
+"You need to provide two arguments, not only one",1
+"Would multiple `""SaveContactMethod"":""Foo""` be even valid JSON, if that is what you want?",1
+"What means ""doesn´t work""? Please be more specific on what you´ve tried and what you expect to get and what you get instead.",1
+"@TimothyGroote: I updated my question with code showing,please have a look.",1
+"the header file: 'conio.h' is not portable, suggest removing that line. replacing 'clrscr();' with 'system(""cls"");' replacing 'getch()' with 'getchar()'",1
+Did you run it and find out? Did you run it i a debugger? What confuses you?,1
+Show us your attempt. What is `c` supposed to be for? Just a count?,1
+possible duplicate of [How to import an .snk file generated with sn.exe in .NET?](http://stackoverflow.com/questions/3095355/how-to-import-an-snk-file-generated-with-sn-exe-in-net),1
+`#define PinOut1 ` ??? can you provide the line of the error at least?,1
+"@jarlh As [it turns out](http://stackoverflow.com/documentation/review/changes/103112), this is not a homework question …   ☹",1
+Duplicate of [*Java replaceAll() regex does not work*](http://stackoverflow.com/questions/21436517/java-replaceall-regex-does-not-work).,1
+"id='Readtok' , $(""#ReadTok""). Notice the T",1
+"What do you mean by ""returns 3221225477""? The program prints that? That's the exit code? (I notice 3221225477 is 0xc0000005 - that might mean something.)",1
+Possible duplicate of [Python group by](https://stackoverflow.com/questions/3749512/python-group-by),1
+What is the question? Do you have any special problem? Errors? And how does the method where this code comes from look like?,1
+How did you get 10?,1
+Show some code atleast.,1
+"Andre, maybe it's time to delete this answer.",1
+"@LukasWöhrl, that depends on relative to what. If relative to a time zone, Jon Skeet’s suggestion is better. If relative between two points in time, you are entirely correct.",1
+"You should get [a couple of good books to read](https://stackoverflow.com/a/388282/440558). And learn about pointers. They don't just ""magically"" point somewhere valid, you have to *make* them point somewhere.",1
+"I am getting [1, 1, 1, 1] -> [1, 1, 2, 0]. Each person is mapped to the corresponding index in [3, 2, 1, 3], which means that the first index in [1, 1, 1, 1] goes to index 3. The second one goes to index 2, and the third one goes to index 1. The last one also goes to index 3. Since there is no ""4"" in the dancing moves array, nothing is mapped to the last index in the array, which means that it is at zero.",1
+"This is a bit of an anti-pattern. Use `Observable.toList()` instead, and make sure that the `Observable` is not infinite or you will have problems.",1
+@SLaks I have no timezone. I have `HH:MM:SS` from third party source. It's timezone if unknown and may mean different instant than one I get if parse this string.,1
+"@AdrianSalazar  . its not working.. here is code i tried as you commented .google_translate_element{
+ width:10px;
+ overflow: hidden;
+}
+  or .google_translate_element{
+ width:50%;
+ overflow: hidden;
+}",1
+@user6222166 i'm confused.. the swap function in your program doesn't depend on c++.. it's valid c code,1
+Probably calling freopen on stdin and stdout.  I'll try to make an example tonight.,1
+[Sample code](http://sscce.org/) should be complete and concise–enough to recreate the issue but no more. The posted sample has too much extraneous code.,1
+possible duplicate of [How do I compare strings in Java?](http://stackoverflow.com/questions/513832/how-do-i-compare-strings-in-java),1
+"This code is wrong in so many ways! 1) Lots of Winforms code not related to the question. 2) Wired way of showing message boxes using (I guess an WebBrowser control). 3) using a WebBrowser control to show a text that is shown in label already. 4) Using the OperatorOverload Subtract() (default for ""-"" operations) which is used for anyway if you do a ""MyDateA - MyDateB"". 5) No explanation tho this pile of code.",1
+"this is not a solution at all,you are just avoiding the problem at hand",1
+**What** error?.,1
+"@DyZ Wait, does `weight = global weight` not give you a syntax error? It does for me, both in Py 2 and in Py 3. So I don't think that's their real code.",1
+The link doesn't even go to a specific piece of code. It goes to 360 lines of code across two files.,1
+"I want to send the list<int> through TCP, and I've already get the server and client connected. Now, I need send the list<int> data from client to server. I know the method send() is based on char* or char[]. I don't know how to deal with list<int>. Thank you very much",1
+Have you tried it?,1
+"As error says so Any of your select query return more than one value, thats why you got error? debug that using Print after each select query so that you can find where exactly error is  or create sqlfiddle.",1
+"@CD001 that's known problem with this site. Most answers just triggered by the keywords in the question (or even just question title). People seldom trying to get the meaning of the question but rather tend to directly answer to some keywords. It is ""fastest gun in the west"" problem partially to blame for this. And whole Stackoverflow paradigm, which encourage votes, not real help.",1
+I see title and content questions different. Can you explain better what you want?,1
+"Hmmmm, that changes things. Wouldn't the solution then just always be `Arrays.stream(moves).distinct().count()`?",1
+"@DHorse: I have no idea why you have this requirement. There is no distinction between objects initialised with object literal notation and objects built up in some other fashion, beyond syntax at the point of initialisation. Absolutely none at all. It's like asking how to convert a ""car"" to a ""proper car"" where ""proper car"" means the car was built in Japan rather than Korea. It's meaningless.",1
+Does not work for me either.,1
+@BasileStarynkevitch - somehow and amazingly so you are STILL missing the point that it is about error handling and achieving in practice stack unwingding. So those billion jumps will require a billion buffers. In fact the buffers will end up being there even if no jumps are made. So to my question about zero cost error handling you are answering with a solution with an impossible cost.,1
+i am not a coder. I need help. Got it. If you know how to do this then you can,1
+"Sadly I can't.  It's confidential work for my independent study (I'm an Undergrad).  But I can say that the original code can run 10,000 main loops with an initial ""energy"" of 100 or 100,000 and will take 5 minutes and 24 hours respectively, so I've been trying to optimize it as best as I can.
+
+Edit - Original code was written >10 years ago too",1
+"@RaviRupareliya he has attached image of code and now it is removed, check it https://i.stack.imgur.com/fv1Ia.png",1
+"What is the purpose of the macro `_`, which you're not even using??",1
+"I've been using nativescript 2yrs + now can you please share ""I've heard bad reviews so far""",1
+need a lend of some brackets lol?,1
+"yes, I understand, what i wanna know is how compiler handles int, char etc ?",1
+I have been on here for 4 hours and I already have neg 9! Off to a good start!,1
+What are you trying to achieve?,1
+@MikeW: why????,1
+https://docs.python.org/3/library/datetime.html,1
+"What do you mean by ""the extension name appears in the file name""?  Where does it appear?  If you were creating a file `example.txt` but the `.txt` is showing up in a Windows Explorer window and you weren't expecting it to, the problem is with your Windows settings, not with the Java program.",1
+You have a syntax problem in the last line. `<span>` tag is malformed.,1
+"i have tried this solution. got the error ""At least one argument has to implement IComparable interface""",1
+If these get function are from the same database I would suggest doing the joining using Linq2SQL or entity framework rather than in memory.,1
+What's the reason to post Images and not text?,1
+http://php.net/manual/en/security.globals.php,1
+"Is there a point where I should split the tables, e.g. how many rows, with a primary key, is it a good idea to have?",1
+`rtrim(': ]') . ']'`,1
+"Welcome to Stack Overflow. ""Questions seeking debugging help (""why isn't this code working?"") must include the desired behavior, a specific problem or error and the shortest code necessary to reproduce it in the question itself. Questions without a clear problem statement are not useful to other readers. See: [How to create a Minimal, Complete, and Verifiable example](http://stackoverflow.com/help/mcve).""",1
+what is has_vip?,1
+"Sorry guys, i am trying to store data posted via instant notification",1
+"This is not really a question, please provide text.",1
+please post ur xml code also full activity class,1
+and should be :Consumed item: 1 Consumed item: 2 Consumed item: 3 Consumed item: 4 Consumed item: 5 Consumed item: 6,1
+"@Dims OK. Assume you have a `Date` object created by expression `new Date(70, 0, 1, 0, 1, 0)`. What is the expected String you want to generate from this?",1
+You need to define the `enum` first and then use them in the function declaration. You have reversed the order.,1
+They are *in the computer*.  [Just like files.](https://www.youtube.com/watch?v=TV3Oncvz_cU),1
+[Double-precision floating-point format](https://en.wikipedia.org/wiki/Double-precision_floating-point_format),1
+"@user181891 Exactly. It seems you have colons in other `id`'s also, you've to remove all of them to get the page work.",1
+This isn't angular,1
+See this: http://stackoverflow.com/questions/3669970/compare-two-listt-objects-for-equality-ignoring-order and some other posts...,1
+"If you're really asking for [tag:c++] as you tagged, use `std::ostringstream`. If you want [tag:c] as your question sounds, use `sprintf()`.",1
+it works like a charm... thank you so much...,1
+Looks like this question got dogpiled...,1
+@cl:Nice finding,1
+Yes I will give dynamically. Have you any idea for solving ?,1
+"@KevinL Equivalent, yes, but is a for actually defined as a while?",1
+Is this `JavaScript`?,1
+"Please come up with some solution yourself. If you are still having problems with some specific topic, ask a specific question.",1
+"It is not acccessible to ""any webpage"". It is only accessible to pages in the current domain.",1
+"Yes, sorry. I just realized this, and I have edited the question. You are correct that for the example input, the answer should have been 2 (now updated to match analysis).",1
+"""Yes number u have mentioned are valid"" I also mentioned `1,2345.00` which has four digits after `,`. So can we assume that `,` can have any number of digits after it like `1,2,3,4,5,6.00`? Would such number be valid or there is some *rule* which invalidates it? If so what rule is it?",1
+Not in Sql Server.,1
+Neither. Timezone is unknown.,1
+"@Peter Mortensen I haven't received any answer but it's really appreciated you've helped to edit the question, is it possible to give you the bounties to you even if you didn't answer? I wouldn't want them to be wasted",1
+"@user611710: And there is your mistake. I bet you only have a single thread running, making this assumption pointless :) (Unless for some absurd reason you have `Parse` running as a thread).",1
+"*""now do s1.concat(""def""); , there is a change in object.""* So you're telling us that `#concat` changes the _immutable_ String `s1`? Even the [JavaDoc](http://docs.oracle.com/javase/7/docs/api/java/lang/String.html#concat%28java.lang.String%29) proves you wrong.",1
+"Style the google_translate_element so it has a fixed width, and set the overflow to hidden... You will only see the drop down",1
+instead of list try dictionary,1
+"I dont understand, im doing it for my own practice, no one is chacking on me and I want to expand my knowledge.",1
+"Don't know about you, but I'd prefer using more than these colors: http://www.w3.org/TR/css3-color/#svg-color",1
+isn't `a` also a variable in python?,1
+Edit your question instead of posting this code as a comment.,1
+"you should check if there is another element in the collection before trying to do `in.nextInt()` (usually you would use a `while(in.hasNextInt())` as your iterator instead of a `for loop`). `java.util.NoSuchElementException` is thrown at runtime, that's why your code compiles.",1
+Warning itself says that you need `onClick` instead of `onclick`.,1
+"@ergonaut : if u are referring to those two commented lines, then I am not sure how to use them or what they do. If not, then honestly I do not know what to do from here on. I just can't really think about how I would structure the code as to do what I want it to do.",1
+"Are you sure this (still) works with the latest version of Safari?
+We've had P3P headers for years, for IE, but Safari's still broken.",1
+Make sure that you have created object for sf,1
+It yells at me.,1
+So basically you're just asking us to do your homework for you. I will have to pass.,0
+what have you tried so far in your implementation of the classes? this is a pretty straight forward problem and smells of homework help,0
+Have you tried anything?,0
+help you with what? what is your question about this?,0
+Q: `Can we store android design layouts` A: **YES** Q: `How?` A: It's your homework to **search** how.,0
+Did you try to read the error message? It is very clear and informative,0
+"Please get a good book first. This question is more than basic, something that every good book covers.",0
+I'm voting to close this question as off-topic because a basic book would cover this.,0
+"https://stackoverflow.com/help/how-to-ask, http://meta.stackoverflow.com/questions/334822/how-do-i-ask-and-answer-homework-questions",0
+"You should have typed that into Google. Better results, and faster, and no negative scores.",0
+Do you have a question?,0
+**You** have to remove some substring. **You** also should try and show that you tried before asking others to do the job for you.,0
+I have an error trying to load your image for some reason. This is a viscious circle indeed.,0
+Where are you attempts and a description of what did not work. Now it just looks like you want us to do your work.,0
+"You haven't asked us a question, you haven't said which element (""*the element*"") you're trying to find, you haven't shown any attempts at solving your own problem. We're here to help you solve your problem, we're *not* here to do your work for you, for free. Please read the ""*[ask]*"" and ""*[mcve]*"" guidelines.",0
+http://idownvotedbecau.se/noresearch/,0
+"If you mouse over the downvote button, it says ""This question does not show any research effort...."", It doesn't matter whether you are asking google or yahoo or the chineese Baidu",0
+Not being abled to think of type check error examples implies a somewhat limited knowledge of what type checking is and how it works.,0
+Also weird that it is your code and you don't understand it...,0
+"Your ask very basic questions. I think you should read the language documentation. 
+Read about datatypes, loops and array would help you.",0
+"@LoisKlose Edit your question, how are we supposed to read that?",0
+show some code. we cannot guess your code,0
+"You just want to open your json file in browser, instead a text editor?",0
+we are not here to do what you want ! be serious and try to show  some efforts,0
+Have you made any attempt on your own? We're not going to write your code for you.,0
+http://stackoverflow.com/help/mcve,0
+i need more downvotes guys.,0
+Have you tried anything?,0
+"[so] is *not* a free code writing service. You are expected to try to **write the code yourself**. After [doing more research](http://meta.stackoverflow.com/questions/261592) if you have a problem you can **post what you've tried** with a **clear explanation of what isn't working** and providing a **[mcve]**. I suggest reading [ask] a good question and [the perfect question](http://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/). Also, be sure to take the [tour].",0
+Try to use programming to do it,0
+[What is the XY problem?](https://meta.stackexchange.com/questions/66377/what-is-the-xy-problem),0
+Bad way to solution,0
+"It is expected that you at least attempt to code this for yourself. Stack Overflow is not a code writing service. I would suggest that you do some [**additional research**](http://meta.stackoverflow.com/questions/261592/how-much-research-effort-is-expected-of-stack-overflow-users), either via Google or by searching SO, make an attempt and. if you still have trouble, come back with **your code** and explain what you have tried.",0
+Why is this question tagged with sql injection?,0
+"Your question is missing some information that'll allow us to help you. [Stack Overflow](https://stackoverflow.com/) is not a free code writing service. You are expected to try to **write the code yourself**. After [doing more research](https://meta.stackoverflow.com/questions/261592) if you have a problem you can **post what you've tried** with a **clear explanation of what isn't working** and providing a [**Minimal, Complete, and Verifiable example**](https://stackoverflow.com/help/mcve).",0
+See how many similar items are in Related section,0
+"Please read [ask]. You are supposed to show compilable code, or if you have a syntactic question show the problematic line and the compilation error message. But one error per line is really too much...",0
+"""Preferably trying to avoid Structs and do it without them"" - So you refuse using the language feature meant for this for some arcane reason? Sorry, but stack overflow is dedicated to **enhance** code quality, not degrade it.",0
+"C and C++ are different languages. Unless you're specifically asking about differences between them, don't tag both.",0
+"I think that you should search more (if you atleast did) before posting questions about basics. I also suggest that you learn java with some documentation/book/anything that details how java works precisely. It may be a bit more harsh than just trying things, but that's how you can learn.",0
+"It looks like you want us to write some code for you. While many users are willing to produce code for a coder in distress, they usually only help when the poster has already tried to solve the problem on their own. A good way to demonstrate this effort is to include the code you've written so far, example input (if there is any), the expected output, and the output you actually get (console output, tracebacks, etc.). The more detail you provide, the more answers you are likely to receive. Check the [FAQ] and [ask].",0
+https://meta.stackoverflow.com/questions/334822/how-do-i-ask-and-answer-homework-questions,0
+I have no idea what you're asking.,0
+"By reading some basic book or tutorial?! You are expected to do research prior posting here. And hint: that ""computer science"" tag made absolutely no sense.",0
+"It looks like you want us to write some code for you. While many users are willing to produce code for a coder in distress, they usually only help when the poster has already tried to solve the problem on his own. A good way to show this effort is to include the code you've written so far, example input (if there is any), the expected output, and the output you actually get (console output, tracebacks, etc.). The more detail you provide, the more answers you are likely to receive. Check the [FAQ](http://stackoverflow.com/tour) and [How to Ask](http://stackoverflow.com/help/how-to-ask).",0
+"Read a tutorial, *any* tutorial?",0
+Fix your formatting before posting on stack overflow.,0
+are you sure that Datos constructor has been called? try to copy/paste the code here not just a screenshot of the code. and read the Documentation,0
+Did you read the error message?,0
+"And in a few days, we'll see a question from another developer from this company: *""How do I parse JSON with duplicate keys? I need all the values, but my library only returns the last one.""* Oh, well...",0
+@python_starter What makes you think a character is being returned?! It seems you should read a C++ tutorial or book.,0
+"@python_starter `a` here is a *variable*, declared to hold a value of type `int`. You *really* need to find a source for learning C++, as this would be covered in the first chapter, if not the first *paragraph*.",0
+Your code is not relevant to your question. Where are you trying to do the copy ?,0
+"This is a question and answer site, not a free code writing service. What is the question? See [ask]",0
+Did you try to debug your code?,0
+Please read [Something on my web site doesn't work. Can I just paste a link to it?](http://meta.stackoverflow.com/questions/125997/something-on-my-web-site-doesnt-work-can-i-just-paste-a-link-to-it). Questions that depend on external resources to be understood become useless when the external resource goes away or is fixed. Create a [MCVE] and put it in **the question itself** instead.,0
+"The ""Set up"" guide in the documentation is literally two steps for a basic setup. I'm not sure how anyone could possibly make it simpler to understand.",0
+"Please see [**How do I ask a good question**](https://stackoverflow.com/help/how-to-ask) and [**How to create a Minimal, Complete, and Verifiable example**](https://stackoverflow.com/help/mcve)",0
+Your jsFiddle is useless since you haven't included `jQuery`. You are aware that your source code requires the **`jQuery library`** right? If not then I suggest you read things before grabbing free source code and trying to paste it into your own stuff.,0
+"Why are you exposing both `getters` and `setters`? It's just strange and unnecessary, especially after saying ""in the university didnt learn us how to use the debugger"".",0
+"It seems you're pretty new to jquery, so let's make things simpler. Go back and learn some basics before posting simple questions please.",0
+Perhaps you pressed the button *too* gently?,0
+http://idownvotedbecau.se/imageofanexception,0
+@StefanOctavian: you should read [the rules](https://stackoverflow.com/help/be-nice) before posting comments.,0
+I'm voting to close this question as off-topic because StackOverflow is not a survey site.,0
+http://idownvotedbecau.se/noresearch/,0
+"So, what has your research revealed so far?  Why doesn't it help to answer your question?",0
+Even though this is blatantly a homework/assignment question. A for loop that starts at digit index until index 0 is a good start. I.e `for(int i=digits; i>=0; i--)`,0
+"Sorry, but the harsh truth is: you have **no** idea what you are doing. You have no idea about **super basic java stuff**, but still you want to engage in Android coding. Sorry again, but that will **not** work. You will run from one frustrating problem into the next one. The **only** thing that makes sense: step back and learn about Java **first**. Then in a few weeks, come back and look into Android.",0
+"@Pshemo plus one for you, as you were 3 seconds quicker than me closing out the question. Its almost horrible to watch how 4, 5, 6 answers for such an obvious DUP show up in a few seconds.",0
+"well, you can´t return from a `void` method...",0
+"You mean ""lena"" the playboy cover girl? Why dont you google the image and use that........?",0
+"Welcome to Stack Overflow! Please take the [tour], have a look around, and read through the [help], in particular [*How do I ask a good question?*](/help/how-to-ask)",0
+"What have you tried? I don't see any effort here. SO is not a code writing service. Besides, this type of functionality has been covered millions of times before.",0
+Did you read the PHP reference manual?  There's well documented methods for both dealing with comma separated strings and with type conversion.,0
+"Is this for an assignment, or for fun?  I ask because there may be simpler ways to do this than an array.",0
+"Welcome to Stack Overflow.  Please read the [About] and [Ask] pages soon.  Also read about how to create an MCVE ([How to create a Minimal, Complete, Verifiable Example?](http://stackoverflow.com/help/mcve)), aka an SSCCE ([Short, Self-Contained, Correct Example](http://sscce.org/)).  There seems to be a lot of code in the question.",0
+have you tried anything before posting it here ?,0
+You still refuse to add comments or otherwise improve your coding style? Or even just explain the purpose of your code?,0
+"^--- It won't even help you because the post is still publicly visible in the edit history. Also, mods will stop you eventually.",0
+"There must be dozens of posts on here telling you how to do this, did you even try to search?",0
+http://idownvotedbecau.se/nocode/,0
+"Welcome! Stack Overflow is *not* a code writing service. 
+We are always glad to help and support new coders but you need to help yourself first. 
+You are expected to try to write the code yourself.
+Please read [How to create a Minimal, Complete, and Verifiable example](https://stackoverflow.com/help/mcve).",0
+"""They"" as in JavaScript coders? Why would they know anything about Java?",0
+What about it is “not working”?,0
+"@CBroe, thanks for your help but you didn't really know what you say.",0
+and explain why this arbritary excluding of enumerate and index? Homework?,0
+...Why is this tagged `subprocess` and `python-requests`?,0
+"Well then GO - do _your_ work. SO is no code writing nor homework providing service. You have `for` , `range(...)` and list slicing - you can use itertools (takewhile) (its not `enumerate()` if you want to split hairs) and you could also split your split hairs and use `iter()`",0
+"We won't do your homework for you. We'll _help_ you get it done, sure, but you need to show some effort first. Make an attempt to solve the assignment and we'll help you fix your code.",0
+Have you just selected a random collection of tags? What does this have to do with Java or angular?,0
+_I need to create_ Please go ahead and create :),0
+Post your attempt.,0
+what you have done? nobody gonna write code for you.,0
+"This is not valid C++, that's why.",0
+"This question is in the __""What NOT to ask""__  section: http://stackoverflow.com/tags/c%2b%2b/info",0
+"Welcome to Stack Overflow! Sorry to say, but your urgency has nothing to do with people investing their time. Please show your research/debugging effort so far. Please read [Ask] page first.",0
+"For example, I know how to do that.",0
+http://idownvotedbecau.se/noattempt/,0
+"it's one of the fundamental principles of Java. If you don't know how to pass instances, go learn Java",0
+"Please read [ask]. Key phrases: ""Search, and research"" and ""Explain ... any difficulties that have prevented you from solving it yourself"".",0
+"@hello Just look at the profile.  All this person does is ask questions trivially googled.  They've done so hundreds of times.  They clearly learned to ask questions on SO instead of bothering to even do a simple web search first, and they've been rewarded for doing so because people love to upvote said questions.",0
+You should test it.,0
+"google about instances, settters and getters....",0
+You can do that by learning the basics of Java. Or by searching on the Internet or here. This has been asked and answered many times.,0
+"Should this question be reworded to ""How many weeks are there in a year?""",0
+Is there a strong smell of an XY-problem in the air?,0
+Do you know the difference between == and === ?,0
+"Welcome to StackOverflow.  Please read and follow the posting guidelines in the help documentation.  [on topic](http://stackoverflow.com/help/on-topic) and [how to ask](http://stackoverflow.com/help/how-to-ask) apply here.
+StackOverflow is not a design, coding, research, or tutorial service.",0
+Not that much difference. Show what you've tried or what you've looked at with as much detail as possible. Right now it just sounds like you want someone to do the work for you.,0
+"How about you figure out the **minimal** amount of code that will demonstrate your issue, and post that? See [How to create a Minimal, Complete, and Verifiable example](https://stackoverflow.com/help/mcve).",0
+"Deleting lines arbitrarily to make your code shorter is not the way to create a [mcve]. Asking a question properly takes a reasonable amount of effort, not a quick fix.",0
+"Yeah, don't ask non-programming questions on StackOverflow.",0
+I smell a [XY problem](http://xyproblem.info). What's your actual issue?,0
+Did you even make an attempt to find a solution before coming here? Google has over a million hits on how to do this.,0
+"Flagged for too broad, there are too many factors, also this type of question does not belong on SO.",0
+"Welcome to StackOverflow! 
+Have you tried anything so far? 
+StackOverflow isn't a free code-writing service, and expects you to 
+[try to solve your own problem first](http://meta.stackoverflow.com/questions/261592). 
+Please update your question to show what you have already tried, showing the specific problem you are facing in a 
+[minimal, complete, and verifiable example](http://stackoverflow.com/help/mcve). 
+For further information, please see 
+[how to ask a good question](http://stackoverflow.com/help/how-to-ask), 
+and take the 
+[tour of the site](http://stackoverflow.com/tour)",0
+Theres this wonderful thing called google that will find many results or tutorials that will give you an idea about how to do this.,0
+"What kind of code it is with <br> inside js code, could you please fix the script",0
+"Hi and welcome to the StackOverflow! 
+Have you tried *anything*? Any examples? Or do you simply want someone to make it for you? :-)",0
+"there is no `break` in your loop, so how do expect it to break? telepathy?",0
+please have a look at [how-to-ask](http://stackoverflow.com/help/how-to-ask),0
+Whose code is this? Where did you find it?,0
+I suggest you read 5 minutes about Bootstrap and you'll easily answer it..,0
+"Here at SO you need to make an effort of your own first, with the markup you intend to use",0
+"If you read the error message on the screen and google it, you probably could have found the answer yourself.",0
+You didn't ask a question.,0
+"SO isn't a code-writing service; where's your implementation, and what's the problem with it?",0
+That's just your requirement again. We are not here to do your (home)work for you.,0
+"I can give you an idea: If you want something solved quickly - you have to pay for it. Hire a developer to solve your problems. If you don't want - improve your question, so it is easyer to understand what is wrong, and be patient.",0
+"Did you try stepping through your code, with a debugger?",0
+Some questions are so hilariously poorly written it'd be a shame to edit them.,0
+What part of my answer wasn't clear enough? Please do elaborate and I'll do my best to make it clearer. And aren't you able to create two files and try it out by yourself? It would take about 10 seconds.,0
+Stack Overflow is not a code writing service. You can write the test yourself. Thank **you**!,0
+"@MartinBarker, it's not even the first time he asks the same thing: http://stackoverflow.com/questions/41144882/does-it-throw-fatal-error-if-included-file-contains-fatal-error-in-php  I'm afraid you may be feeding a troll.",0
+"This is just a lazy post. Little to no research done. That you ever coded before? C, C+? How does the op not know that RAISERROR enables the user to mimic the PRINT command in C++ or the COUT command in C#? Do research instead of wasting our time and yours.",0
+"@JeffreyDilley you explicitly said that you looked into overloading operators, now you tell us it's not allowed. Voting to close this question because we can't wait and give answers just for you to successively reveal game-changing info. Ask a complete question.",0
+"@JeffreyDilley so if this is a central restraint, why isn't it in there anymore? And even so, if you mustn't implement something, why do you still use it?! Totally zero-value question.",0
+http://meta.softwareengineering.stackexchange.com/questions/6166/open-letter-to-students-with-homework-problems,0
+I'm voting to close this question as off-topic because homework questions have to show what you've tried so far.,0
+What makes you sure it isn't possible?,0
+"Time to read the man page, surely?",0
+You're lucky tic-tac-toe only has 9 positions.  Learn to use arrays.,0
+"""You get to this section by winning."" Pah. Study the classics. [""The only winning move is not to play.""](https://en.wikipedia.org/wiki/WarGames)",0
+You're getting negative feedback because this is something you can research yourself.,0
+Useless question .... but the answer is 6.,0
+"People, quit burning your rep to down vote this question.",0
+"That code seems pointless.
+
+It's going to yield strange results.
+
+Swift no longer has the C-style `for (;;)` construct, so you'll have to build that with a while loop.
+This smells like a homework assignment to me. Is it?",0
+This question does not show any research effort.,0
+Try something yourself and ask question if your program doesn't work. Don't just simply ask entire program,0
+https://stackoverflow.com/help/how-to-ask,0
+Replace works. There are dozens of duplicate questions already. Another one was asked today,0
+"*""it did not work""* - extremely poor problem description. Please read [how to ask questions](https://stackoverflow.com/help/how-to-ask)",0
+@PanagiotisKanavos there are so many duplicates I cannot even decide which one to mark,0
+There is literally no code where those two things have no difference. One will always fail to compile,0
+"Try Google first, then come back to StackOverflow.",0
+before google i think you need a good android book,0
+Learn this document https://laravel.com/docs/5.4/blade,0
+Use a debugger.,0
+"What is the exact question you are asking, besides: please help with my homework?",0
+No error?  What about 'while (s <= 24)' and then 'if (temp[s] < max)' ?  The last valid index of temp is 23 !  Debugger!!!,0
+"_""i've been stuck on this""_ – what have you tried so far? What problem(s) are you facing?",0
+What do you mean by stuck? Do you understand your code at all? Take a [tour](https://stackoverflow.com/help) for more information on how to ask a question.,0
+"""Any help would be appreciated."" – Help with *what*? What is the code you are having trouble with? What trouble do you have with your code? Do you get an error message? What is the error message? Is the result you are getting not the result you are expecting? What result do you expect and why, what is the result you are getting and how do the two differ? Is the behavior you are observing not the desired behavior? What is the desired behavior and why, what is the observed behavior, and in what way do they differ? Please, provide a [mcve]. [so] is not a ""write-my-code-for-me-service""!",0
+People don't want you tracking their IP. Let me know your company name so I can avoid you and your shady practices.,0
+"""Is there a better approach?"" questions are not a good fit for Stack Overflow. You're better off writing some code yourself and posting it to [Code Review](http://codereview.stackexchange.com).",0
+Is that a joke? I already did that .. Using sub query now i want it to be solved through single or nested query   read it carefully.... So max over partition by i hv done that  logic...,0
+Let's make that -5.,0
+".Java != Javascript. They're two entirely different languages. They're not the same just because they start with the same letters, any more than a *car* and a *carrot* are the same because they both start with *car*. Add just the tag for the language you're actually using. If you don't know which of the two you're using, stop trying to write code until you figure it out.",0
+"An assignment would only be a problem if the code was part of a function, but the OP claims this is his original code (which I can't believe),",0
+"Hello and welcome to StackOverflow. Please take some time to read the help page, especially the sections named [""What topics can I ask about here?""](http://stackoverflow.com/help/on-topic) and [""What types of questions should I avoid asking?""](http://stackoverflow.com/help/dont-ask). And more importantly, please read [the Stack Overflow question checklist](http://meta.stackexchange.com/q/156810/204922). You might also want to learn about [Minimal, Complete, and Verifiable Examples](http://stackoverflow.com/help/mcve).",0
+"So, you copied some code for your homework, botched it, and now you want someone to debug it for you (without actually describing a problem)?",0
+[I downvoted because there was no effort to debug the code](http://idownvotedbecau.se/nodebugging/).,0
+[Being unreponsive to comments is not helpful](http://idownvotedbecau.se/beingunresponsive).,0
+You *do* know the difference between prefix and suffix incrementing? I.e. the difference between e.g. `++num1` and `num1++`?,0
+"I was looking for `++ operator C`. `C++ ++ operator` leads to the same page as the first result. This question is low effort. Well, I guess OP is a Bing wizard, so maybe he can't google either.",0
+Have you looked up the documention for it?,0
+You read the api documentation on what it does and were unsure what it does?,0
+Look at his score: Dude is trolling.,0
+"Then go read a tutorial, then come back here when you have a _specific_ question.",0
+"-1 if you are new to SharePoint, try using the out of the box features first. You ""want"" to use JavaScript, but do you actually need to?",0
+This question is far too vague.  You need to show some work.  What code have you tried?  What research have you done.  It will be closed otherwise.,0
+try doing some googling and trying please,0
+Please ask some quality question. You can easily get answer from any search engine.,0
+"http://www.roseindia.net/techindex/Iterate-a-List-in-Java.html (""first hit"" on google; this is why you are receiving -1's)",0
+And also on [stackoverflow](http://stackoverflow.com/questions/2729752/converting-numbers-in-to-words-c-sharp) Did you google this?,0
+"""Which is better, a computer or a piece of bacon?""",0
+You asked this question before even reading the websites for the two frameworks...,0
+Did google not help?,0
+"OMG, not again, do your own homework... I'd recommend start reading a Python or CS tutorial/book...",0
+This is not homework. No need for the rude replies. I am just intrigued.,0
+"@JoeBarry while KurzedMetal comment was uncalled for, you did not put enough effort in your question. You have to do some research on your own before posting. And you need to show the things you tried. Please check http://stackoverflow.com/questions/how-to-ask for more information",0
+There are cases where renameTo() does *not* work reliably; that's the whole point of the question.,0
+I've changed the title to something more appropriate since no-one really _cares_ how urgent you think it is - urgency is reserved for _paying_ clients :-),0
+"Creating what form? where the debug fired the error? this is sooooo easy to fix, if you debug the code! too much code -1",0
+"You've posted dozens of lines of code consisting of `Something.Hide()`, and dozens of commented out lines of code, and a ton of unrelated code. Please edit your post to remove all the noise and junk, and reduce it to the minimum needed to demonstrate the problem, and then ask an actual question.",0
+You probably shouldn't post your database password to a public forum.,0
+possible duplicate of [What is a NullReferenceException and how do I fix it?](http://stackoverflow.com/questions/4660142/what-is-a-nullreferenceexception-and-how-do-i-fix-it),0
+This is just plain wrong.,0
+"Wrong, wrong, wrong.",0
+then what's the problem? Spam filter?,0
+If you have 3000+ customer - why do you need a **freeware** to send them mail?? Don't those customers **pay** you so you could sign up for a commercial service??,0
+"I don't know Java, but if there is a way (which I doubt), don't do it.",0
+@hardyz009 You seriously should revise the way you're asking questions and reflect how SO works. What did you try so far? Did you try anything at all (Google for instance)?,0
+This isn't of any help.,0
+"I wish people would read the question before answering, CHARINDEX is not implemented in SQLITE !!",0
+This is one of the simplest Python programs to write. Please don't ask us to do it for you.,0
+Is this homework?,0
+What have you tried? This is the easiest question on this site... [Google: *CSS Text underline*](https://www.google.com/search?q=css+text+underline&safe=active) and [Google: *CSS Text align center*](https://www.google.com/search?q=css+text+align+center&safe=active),0
+Why not start reading a [CSS tutorial](https://developer.mozilla.org/en/CSS/Getting_Started) ....,0
+Google Android Development should take you to the guide on how to install your development machine.,0
+"There are some questions that are simply baffling. Why for the same values of 1, 2 and 3 does `1 + 2 * 3` have a different result than `(1 + 2) * 3`?",0
+-1 for this question. You will finde what your are looking for at http://msdn.microsoft.com/en-us/library/fatf1t6a%28v=VS.100%29.aspx?lc=1033,0
+"Post your html and css, how do you expect us to help you without even seeing the code?",0
+"I have already stated that I have tried creating project from scratch, hope you have properly read the question",0
+This isn't a place to ask for free work. Attempt something on your own. When you're stuck post your code and ask for help.,0
+"Please show some effort, at least in googling the question.",0
+So what's the question ?,0
+It seems that you need a [Python tutorial](http://docs.python.org/2/tutorial/).,0
+search google 'how to python'.,0
+There is nowhere near enough information for us to help you add the moment.  Please expand your question with code examples and what your current issue is.,0
+what do you mean?,0
+This answer is so bad I want to downvote it more than once.,0
+"http://stackoverflow.com/questions/5655674/opening-the-settings-app-from-another-app
+
+make search before posting questions",0
+SO is for techincal problem. Google will help you.,0
+"This solution is simple, readable and obvious.",0
+Try to do some research before posting. This is really a basic question.,0
+"This is a relatively basic question, but the reason I'm downvoting it is because you have not provided enough information for anyone to give you an answer.
+
+To make the question appropriate, you should, at the least, describe or provide the structure of the table(s) you want to query.  In addition, you may want to specify if you are querying using SQL, LINQ, or some other accessor.",0
+Same home work problem here with a few answers: https://stackoverflow.com/questions/45406235/select-date-and-time-in-sql-10pm-up-to-6am-everyday?noredirect=1#comment77774538_45406235,0
+This question appears to be off-topic because it is about a typo.,0
+"Downvoting because this answer is misleading. Described features of ArrayList are found in the List, too.",0
+"hahah . I have problem, what is answer?",0
+"Please consider searching the stackoverflow threads and other mediums before posting a question. Additionally make sure you post a question, showing what you have tried.",0
+You mean like google?,0
+What do you want to know? You have a method signature and an example call. There is nothing more to be said about the code you posted.,0
+Why am I garnering minuses on my question? Is it because people don't know the answer and want to take it out on the asker?,0
+"CodeInChaos: How would you use this? How is it useful? How is it a method signature? I'm used to seeing like: public int test(int a, string b){}. If it were like that it would make more sense.",0
+"@Phil and BoltClock, yes, it is C#. If I put it into a solution it doesn't yell at me and even provides intellisense for the test method (if indeed that is what it is.) As for compiling it, nothing seems to happen. It doesn't yell at me, at the very least.",0
+"That doesn't look like real sourcecode. I can't think of a context where these two lines would compile. If you claim that it compiles, please post a compilable sample. It's just the method signature with an omitted body, since documentation usually doesn't contain the method body.",0
+Is this the full code sample?,0
+Please post the link to the original doxygen example.,0
+Not even the version you posted now compiles. You can't have a method with no body inside a class.,0
+"I ran it in VS2010. Runs and compiles, but does nothing.",0
+@JMD: Doesn't compile for me.,0
+"Is this homework? If not, this is a remarkably bad method to do this operation.",0
+"Also, if ""working fine"" means that the binary equivalent of `0xFF` is `1515`, something's wrong with my math skills.",0
+you should look in the forums first before posting questions that have been already answered,0
+@vBx son where did I cry? I've just tried to explained to you that you didn't understand what I'm asking about.,0
+"@NicolBolas 9 out of ten persons (who know C++ and Qt), if you tell them words signal/slot will immediately associate this with typical Qt pattern. One will not. I feel sorry for you.",0
+"@NicolBolas also there are persons who by reading tags (c++, qt) would immediately associate this question as a qt specific. As I've said, I feel sorry for you.",0
+"How are you applying the expression? Please post your code. Also please clarify what you mean with *but none of them seemed to work*. What exactly does not work? What is the result you get? `\d` only matches a single digit, `^.*[0-9]+.*$` matches the whole string if it contains at least on digit. It appears you want `\d+`.",0
+Well...stay cool @T.J.Crowder Sorry if I'm not as good as you! I failed ... ok? Can I?,0
+"This question should probably have the ""homework"" tag.",0
+"@AresAvatar and all that vote down thank you for your down votes now i can't ask more questions...i don't understand why you think this question will not help future visitors! I tryed to find the answer to my problem and couldn't find any, so here it is. If someone have the same problem in the future, here is the answer. The knowledge is so vast that no one knows everything and sometimes it's the little things we do not know, that make all the difference.",0
+"Formatting your code and data sure makes a difference. We put effort into our answers for you, please put some effort into your questions for us.",0
+"Please have a look at the [FAQ](http://stackoverflow.com/faq) on how to ask a good question, and also maybe read this: [What have you tried?](http://mattgemmell.com/2008/12/08/what-have-you-tried/)",0
+"Yes, there is a way. But you'll need to show your actual html and javascript that you're trying to do this with. We're not going to write it for you.",0
+can you show us how did you assign the id to your tag?,0
+this question shows a huge lack of effort both in researching and phrasing without actual code,0
+You have to be more specific. How do you want to send it? Do you have an established connection with the server? What protocol? Can it be socet or has to webservice.,0
+I hope you aren't making something sneaky.  Like a virus.,0
+-1 since no efforts made to search answer,0
+What fiddle? Where exactly is the problem?,0
+still looking for possible description or even solution to this cause I do need that clean file hierarchy by *pip* but with *setup.py* way.,0
+@NoufalIbrahim In what way is this incorrect? Just because pip expects a setup.py it does not mean that pip does not provide any other behaviour.,0
+"dude, you answer is just plain wrong. And downvoting my answer won't change that.",0
+"@vartec How is my answer wrong? The reason OP does not get exactly the same behaviour from setup.py as from pip is because they are not the same programme, nor are they supposed to be. Whether or not he could use some combination of switches to achieve that is irrelevant.",0
+@Marcin: are you trolling?,0
+@vartec Are you? I'm answering the question that was asked.,0
+"@ThomasK That still does not make my answer ""misleading"" as you so charmingly put it.",0
+"@Marcin: By strict literalism, yes, you have correctly answered the question. But the details are relevant: it's pretty clear that the OP wants some understanding of why they behave differently, or a way to modify the behaviour of one. It's like answering ""why do I perceive red differently from blue"" with ""because they're different colours"". Correct, but useless.",0
+"@ThomasK Where would we be if we constantly asked trivial questions? Different things are different. If OP wants to know about the implementation, he is free to look at the source.",0
+"@Marcin: You're trolling, aren't you?",0
+"@ThomasK Certainly not. Are you trolling? You are the one who is defending a question that amounts to ""why are two distinct things not the same?""",0
+"@ThomasK In neither case does the mechanism answer the ""why"" question: it amounts to a restatement of the fact that the programme/eye works in a particular way. You are essentially complaining that I didn't make up a question that like more, and choose to answer that.",0
+@ThomasK the very fact that you identify three possible topics shows that all that can be provided is general information of some kind. SO is not about making up your own better question and answering it.,0
+"@Marcin: SO is not about providing unhelpful overly-literal answers. To provide useful information, we often have to infer a 'better question'. The vote counts on these answers suggest other users think that providing some useful information is better than a literal but unhelpful answer.",0
+"@Marcin: *bzzzt*, that's an ad hominem. Thanks for playing.",0
+"@Marcin: I don't have to. There are plenty of comments already. FYI I've also flagged that for moderator attention as *""not an answer""*. You keep using SO answers to boost your ego w/o any benefit to the community. You **will** get downvoted.",0
+"It's subtraction, multiplication, addition, and square root, Kap. Which part of ""that"" do you need to know how to do?",0
+@Spidey: you'll never convince those flat-earthers.,0
+@juanchopanza - really? I don't quite understand what you mean by neither of the formulas works,0
+Google for 'Great circle route',0
+What have you tried? Are you getting errors? Do you have some code you can show? Please give examples of your array of words and your input string (how it starts) and what it should look like at the end.,0
+How big is your dataset that you need *the fastest way* to do it?,0
+We can't help you if you don't show what you've tried so far and what specific problems you're having.,0
+"Yes, it is possible. What have you tried? Google is your friend.",0
+"People will only put effort into responses if you put effort into your question. Requests to write code your code will probably be ignored, requests for help in a specific area or a specific sample would have a better chance of response.",0
+"@juergend, considering his rep, I think he just has not had his morning coffee yet.",0
+"@MarkTomlin oh. don't judge people by their rep. Considering the *code*, he have not a slightest idea what does his code do.",0
+This question isn't particularly well phrased - it took the comments on the answers to actually work out what's _really_ being asked.,0
+I strongly suspect you've misdiagnosed the issue. Please show a short but *complete* program demonstrating the problem.,0
+Your code (the one you haven’t posted!) is almost comically wrong. This is why it’s important that you post *all* the relevant code. Questions like this just waste everybody’s time.,0
+"@KonradRudolph I wonder how you can judge that is comical if you haven't seen it. If you don't know the answer to the question ""How to prevent optimization on a class field in C#"", please feel free to not waste your time with it.",0
+[what have you tried so far?](http://mattgemmell.com/2008/12/08/what-have-you-tried/),0
+*facepalm* Its help with the CODE im asking for... I have not written any code yet with this. OMG!,0
+Very basic stuff.. 1 second google: http://php.net/manual/en/reserved.variables.post.php,0
+What exactly are you asking?,0
+"@user1781384, Then next time, don't tag `java`!!!!!!!",0
+Did you just list every language you know?,0
+If you want a generic solution there's an `Language Agnostic` tag you should be using.,0
+Not just code explain what you're trying to do in code next the problem,0
+"I don't know what you are doing with your edits here; you have added a huge block of code and other information twice; once before it got reopened, and then you removed it and added it back recently.",0
+@AndrewBarber - See the discussion here: http://meta.stackexchange.com/questions/189591/is-sos-programmers-site-a-better-place-for-advanced-questions/189595#189595,0
+What doesn't work? #What error do you get? What have you done to troubleshoot this?,0
+this makes no sense(returns a constant if you initialize the variables) and doesn't even compile because you use uninitialized variables.,0
+"*if the guy types in ""haha lol XD""*  ....then you should probably beat the crap out of him.",0
+This question appears to be off-topic because it is too-localised.,0
+"Did you try looking for ""loop javascrip"" or ""javascript interval"" ? Do it.",0
+"Come one, what's the code you've attempted?",0
+Good luck getting one.  I would expect these to be totally identical.,0
+"A logical explanation of what, exactly? *Why* they're nearly identical? Because they're essentially the same comparison.",0
+This is horrible advice - and only artificially extends how many more fragments you can pack in - this problem still remains. Google explicitly states not to use this to address memory leaks.,0
+completely incorrect answer,0
+"Yeah, this doesn't work. Produces an exact duplicate of the gif.",0
+"I've never seen a -23 answer before. Err, sorry -24.",0
+Unlucky the guy's answer got accepted because that pins the answer up. You often only see a few because they sink to the bottom pretty quickly so nobody pays attention to it. :),0
+"whenever you learn a new language, the first thing you should read are the operators. read the reference before posting",0
+Very basic question that smells like homework.,0
+@Jack - You need to understand how to accomplish it.. someone else doing it won't help. I really suggest P&P - paper pencil,0
+Did you forget to have *coffee* today?,0
+Please provide what you have tried so far.,0
+"`!` is an unary operator, so-called **not**. Do googling about C operators unary/bitwise ones",0
+yea: www.google.com,0
+do some research before Posting Quest. here,0
+What help do you want? And ***what have you tried***?,0
+So what have you tried?,0
+And you want we create your code?,0
+No effort shown + No database mentioned,0
+you could have easily got the answer by a simple google search - check this  http://www.w3schools.com/sql/sql_top.asp,0
+"*""Questions asking for code must demonstrate a minimal understanding of the problem being solved. Include attempted solutions, why they didn't work, and the expected results.""*",0
+Is that a question?,0
+Lucky I'm not a compiler..,0
+"You don't need to write the type down, but if you can't figure it out on your own that just means you don't actually know what your program does.",0
+This code does not do any validation,0
+"That's the answer I gave 3 hours ago, when you asked.",0
+"Still shouldn't be used at it looks horrible and devs maintaining your markup in the future will think it's okay to reuse if you've used it - and they may not style out its inherent ugliness. In practice, it's to be avoided.",0
+Personally I'd avoid the thickness as it looks chunky....,0
+"upvote means *""This question shows research effort; it is useful and clear.""* And at least 5 people on StackOverflow think this question meets that criteria.",0
+"Wait, what? You want me to help you steal a bunch of usernames and passwords!?",0
+This isn't a place to have your script written for you. Search for perl `open` on how to open and read your file. You'll probably need some regexes to figure out what's a heading and what's a variable.,0
+"Why on earth are you doing three different queries to get data from your `members` table?!  You're selecting a field you already have in the first query, some (not necessarily related) user's encrypted password in the next query, and then you're selecting *every single userid* in your members table.",0
+"@user1295995: It's not really just a PHP thing, it's a ""working with relational databases"" thing, and sort of a basic logic thing, too.  Write out what you want your code to do, verify that it makes sense and you're not adding a bunch of extra steps, THEN write the actual code.",0
+what did you try?,0
+How is this parallel at all? That's totally sequential. I don't know why OP accepted this as an answer.,0
+"I don't see any question, neither any description of what you've tried so far. Voting to close the question as not a real question.",0
+"SO is not your blog. What does it mean to ""learn jquery BEFORE javascript""? That makes no sense.",0
+Non sequitur.  Thanks.,0
+"*""I think jquery is far more than just a javascript library...""* No, it's just a library.",0
+"We ain't doing your homework for you. Show us your code, explain what problem you're encountering and then we can help you.",0
+This answer doesn't absolutely reflect the point of question... the asker wants no view controller.,0
+@Botanick I believe I already did. Globals are bad and what you have in your code are fancy globals. I suggest you watch the videos in teresko's answer.,0
+Just in case anyone reading this answer in the future thinks it is correct.. it is not. MattMcDonald's answer is *leaps and bounds* better than this. Also ***NEVER*** listen to w3schools. They do not know what they are talking about and will misguide you.,0
+There are C# to VB.NET converters on the internet that can give you a big head start on a lot of this stuff...,0
+"OK, so you've told us the query and that you need help.  Neither of those things are questions. **What's the question?** What part are you having trouble with?",0
+Welcome to SO. What have you tried? Please show you nonworking code and specify what is the current output and what is your desired output.,0
+Have you considered hiring and paying a programmer?,0
+I am speechless,0
+"@userSeven7s Google Translate formats English in Human-Readable format. The grammar spacing is generally correct, and it capitalises recognised nouns and the first word in a sentence. The OP may have used it to aid in his translations, but he certainly didn't post it's raw output.",0
+"From http://stackoverflow.com/questions/how-to-ask, 
+
+""Do your homework
+
+Have you thoroughly searched for an answer before asking your question? Sharing your research helps everyone. Tell us what you found and why it didn’t meet your needs. This demonstrates that you’ve taken the time to try to help yourself, it saves us from reiterating obvious answers, and most of all it helps you get a more specific and relevant answer!
+Be specific
+
+If you ask a vague question, you’ll get a vague answer. But if you give us details and context, we can provide a useful answer.""",0
+"Need more information, what are the values of your variables? Have you turned on error_reporting? What error if any is being displayed?? Repeating the title of the question in the actual question itself, does not help to answer ANY of these items.",0
+"We need more information. Seriously, what do you expect us to do Gaia?",0
+Why should that code even work? You never call your register function. `Sometimes it work`  Bet that ***never*** works if that is the complete code,0
+You'll learn a lot more if you do your own homework. I'd suggest starting by paying attention to formatting/indentation.,0
+Maybe contact this person http://stackoverflow.com/questions/6806568/error-celsius-cannot-be-resolved-to-a-variable?rq=1 who is doing the same homework question.,0
+Why are you using a loop inside your methods? Makes no sense. And why are you declaring scanner inside your method?,0
+It is a nonsense. Index is ever belong to order.,0
+Google is your friend...,0
+This is totally unreliable,0
+What effort have you made to research this question yourself?,0
+@DougSmith You should take a basic tutorial or text book on [tag:c++] before asking here ...,0
+I am willing to sacrifice my 300 points just to downvote you even more.,0
+Did you do any research before posting? Does as.numeric() not work?,0
+"This is Homework used in coursera course ""programming in R"". It should be deleted from the page.",0
+We are not going to debug your 1000 line code dump,0
+"@Measuring Screenscraping is generally frowned upon, so is making bots, combine the two and you have a recipe for downvotes. Sans an explanation one has to conclude you're making a bot to game the game.",0
+"@Measuring Then too, he's basically asking for someone else to write code for him.",0
+If you have questions like this then start reading a quickstarter C/C++ tutorial before trying to solve any kind of problems.,0
+hope the 2 upvotes are for the sake of the joke,0
+Please read a better `C++` tutorial. You seem to be missing the absolute basics of this language.,0
+I love his thinking :). Made my day.,0
+I just threw up a little in my mouth...,0
+Sorry but `-1` for zero effort.,0
+This is not a freelancers portal but Q&A site so read how to ask question etc [here](https://stackoverflow.com/tour),0
+"I want a spaceship! But seriously, this question is lacking effort and understanding. Where is your code, what have you tried?",0
+"No detail on what you want to achieve, no clear direction, you havent even tried to ask the right question.",0
+"Probably because your question is short, shows no demonstration of effort, and seems to purposely discount the usual solutions that might be the best or only possibilities...",0
+Probably because your question is way too broad and you have not posted the code you currently have. SO is not a 'do my homework' site,0
+"In all seriousness, just google search for `css starfield` and see what you get...",0
+Did you study about Time Complexity Calculation before asking the question?,0
+Please perform rudimentary research on questions before posting to StackOverflow. This question could be answered immediately using Google.,0
+"Possible starting-point: Any C tutorial, book, standard or the like.",0
+Just try something on your own before asking from another..... This is a lazy post,0
+@ThisaruGuruge: lazy like short-circuit evaluation?,0
+"Everything on the computer in any form is indeed ""real"" and stores somewhere. This is more of a hard-ware question if you want those details, not programming, so I wouldn't ask on StackOverflow",0
+Dollar off! ...,0
+This question appears to be off-topic because it is about philosophy.,0
+"I'm guessing part of the reason people downvoted is because of the phrase `If you have a 64-bit program installed on a 32-bit computer/laptop`, which of course is so obviously impossible that it's nonsensical.",0
+That's ridiculous.,0
+-1 for not doing your assignment and get some other people do it for you.,0
+"Atleast provide some basics done by you, and a hint that this is an assignment",0
+HAHA! This made my day :o),0
+Hahahahhahaha this made me laugh for the first time today! :D,0
+"@orange Regardless of whether the code is there or not, the question is one of the countless debug-this-code-for-me questions posted every day, with little or any additional information such as results of debugging attempts etc. Really not the kind of thing many people, myself included, think SO should be encouraging.",0
+"""the code seems perfectly fine, I'm sure these compiler errors mean nothing"".",0
+"_""the code seems perfectly fine to me""_ - General rule of thumb, every time you think the compiler is wrong you are.",0
+Go Downvotes! you can reach -10 !! :),0
+"""wow"" genious program, that corrects misspelled ""exerise"" into correct ""exercise""",0
+"@PeterMiehle I hate to scold, but [""As long as the question is in salvageable English and makes some modicum of sense, it should be edited and improved like any other post.""](http://blog.stackoverflow.com/2009/07/non-english-question-policy/)",0
+"@Nick you put much too much afford into a ""make my homework for me""-question!",0
+please try not to post duplicate answers. especially not when the answer your copying has been posted years before and your answer adds no more value than the original,0
+I do love doing other peoples homework. Do you?,0
+"This question appears to be off-topic because googling ""python int"" is not too difficult.",0
+"@MattDMo That's not a reason to close the question, just to downvote.",0
+"This seems fairly straight-forward to Google, or just try with an interpreter. Was there something you thought it did or should do that you found counter-intuitive? Sometimes it helps to let folks know that you thought about something a bit and just where your confusion lies.",0
+You can start by [Googling](https://www.google.com?q=pure+css+slideshow&gws_rd=cr&ei=Ghi5VJXfIIrgywOttIG4Dw#q=pure+css+slideshow).,0
+"If this is indeed a homework question, I suggest you find another college where they ask meaningful questions.",0
+"Let me guess. You copied the above code from some site but it doesn't do exactly what you need, so you want someone to fix it for you.",0
+"While the question is more or less straightforward, and the answer provided so far is correct, this indeed looks like a copypasta for a homework assignment left to the last minute. I find it hard to believe one could have written the code provided and not know how to fix the above problem.",0
+@interjay ya ma niggah. Finding easy way out niggah,0
+"@TilakRaj this isn't a discussion forum, it's a Q&A site. Ask an [on-topic question](http://stackoverflow.com/help/on-topic).",0
+"@TilakRaj 1. That's not a question (both because it's a comment, and doesn't actually contain a specific question). 2. We [don't do *""urgent""*](http://meta.stackexchange.com/q/6506). 3. We [don't do *""explanation""*](http://meta.stackoverflow.com/q/253894/3001761). Learn how this site works, or leave.",0
+"And ""how to load jquery"" in Google didn't help?",0
+"There's a new start-up company called Google that can actually search the interwebs for you and give you an answer to this...it isn't a very big or well known company but, give them a shot?",0
+"Have you not attended a single class yet? Isn't this something that's covered, you know, in the class materials?",0
+I'm pretty sure that is covered by the MSDN documentation.,0
+I smell homework.....,0
+"Don't feel this question is too broad as it is asking what is generics in c++. A simple googling like ""angle brackets in c++"" could have lead @YumYumYum to a yummy answer. like in this link https://msdn.microsoft.com/en-us/library/sbh15dya.aspx",0
+You should read a beginners programming book first. It seems like you do not understand the very basics of object oriented programming (or any programming) for that matter.,0
+SO is not a code writing service. At the very least show us your HTML and what JQuery you have tried so far.,0
+This post shows no effort whatsoever in finding solution to your problem.,0
+This question appears to be off-topic because it is about a typo and it serves no use beyond this single situation.,0
+"The question is not clear, the value of X is unknown, No information about the error is given. How do you expect us to help you?",0
+"No I mean, your question is irrelevant :) Your problem is wrong filename or wrong filename visible in Windows? What is your problem? Is filename ok?",0
+You meant to post this on your blog. Stack Overflow is for **questions**.,0
+This question appears to be off-topic because it is insane.,0
+"@user3054967: please use google for that: ""mysql table limit rows""",0
+@user3054967: there is a point for that - google something about partitioning and sharding. But **it is** a rocket science,0
+You're asking about general database scaling. Your questions range from entry-level to senior-dba level which is causing a lot of frustrating here. You're not going to learn 5+ years of experience in one question/answer environment. You've pointed out a lot of information that you've pieced together from the internet but it's clear you don't understand all the implications. Start slow and work your way from there.. don't ask ridiculous questions and learn when you're out of your league. That's the best thing you can take away from this question.,0
+Google is your friend -> `How to open a url in a new window`,0
+Why don't you come back when you've done some research and can show us some code?,0
+-1 there are solutions all over google and there's a duplicate right here: http://stackoverflow.com/questions/726761/javascript-open-in-a-new-window-not-tab?rq=1,0
+possible duplicate of [open a new window inside same page in a small size](http://stackoverflow.com/questions/9498621/open-a-new-window-inside-same-page-in-a-small-size),0
+"`""swing does not support sleep,...""` -- but it does allow for Swing Timers which is just as good if not better. `""... nor does it allow you to parse ints in an event listener when the references come from an array.""` -- sorry but this is hogwash. You've got a bug in your code. If you need our help, post the code, and let's help you find your bug. Or you can rant. Your choice.",0
+"I've tried to clean up the formatting. Now what the OP must do is to debug the parse errors -- to look and see ***exactly*** what each array item holds, if it has an trailing or leading spaces, punctuation or anything else that needs to be trimmed. @FredCarston: you definitely have a bug in **your** code, the parsing issue has ***nothing*** to do with Swing, and your posted code ***is*** helpful. Next time, please follow our advice. You've wasted at lot of time and our patience. Remember please that we are all volunteers.",0
+Please tell me those are dummy names...,0
+RIP naming conventions.,0
+SO isn't a code-writing service... Could you demonstrate that you've at least tried _something_?,0
+Try writing it yourself and folks here will be glad to help if you get stuck.,0
+@PeterMiehle What's the point of giving an answer two an unclear question and then complaining about _comments_ making exactly the assumptions you made for your “answer”.,0
+we still do not know the definition of MAN()!,0
+You were HIRED as a web programmer at a company and you can't create a simple form with server-side code to send an email to a pre-defined address?????,0
+I highly doubt your question is a good fit for this website. Please consult: http://stackoverflow.com/help/how-to-ask. Being polite also helps.,0
+"What have you researched yourself, what exactly don't you understand? As this is a fairly beginner-level question, I assume you're learning from a [good book](http://stackoverflow.com/q/388242/1782465) or tutorial. How was it explained there and what parts of that explanation are unclear?",0
+"By searching. And remember, the JVM doesn't know what ""vowel"" means, you'll have to write the algorithm yourself.",0
+"at least try, I can think of a million ways to do this",0
+I'm voting to close this question as off-topic because the question is overly broad and shows no evidence of prior effort.,0
+I like this kind of questions `ASAP`. What you are willing to pay us?,0
+"what have you tried so far? stackoverflow is not for finding people to do your work, but to help if you're stuck...",0
+It was a trivial question. Perhaps you can all go down-vote this one too (which has far less effort shown): http://stackoverflow.com/questions/1948152/select-last-5-elements-with-jquery :),0
+Why would you post a response when you're not familiar with the topic?,0
+@jpcamara Why would you post a comment that isn't helpful at all to the question 1.5 years later?,0
+"you are paroniac dude, so far i have never downvoted anybody, not just for this question",0
+There are umptillion tutorials on the web that explain how CSS selectors work. -1,0
+Like others would say: RTFM . At least bother to lecture the basics before asking on SO.,0
+"@temp table returns more than 200 rows, debugging for values for each row is almost impossible",0
+Debug 200 rows is almost impossible.  Almost as hard as formatting a question.,0
+"you are totally wrong, sorry",0
+"Honestly, the OP does not demonstrate any effort to solve the questions on his own. Usually it is expected to introduce the problem in a clear and concise manner (check), and highlight the difficulties that have prevented from solving the problem himself (not check).",0
+No body will answer this nor will I...You should start reading...for your reference... http://ideone.com/Q7Zsme,0
+"Please don't be so ridiculous with your edits. It seems this question was mostly downvoted because of an unnecessary edit chain; just leave it now, will you?",0
+"Help with what? You've only introduced your problem. It's like saying: ""I'm Maroun, please help""",0
+google it.. you can find alot in stack overflow,0
+This question appears to be off-topic because it is about violating the TOS of a third party site.,0
+I'm voting to close this question as off-topic because this question is about violating the TOS of a third party site.,0
+"I am dead serious.  You are saying that the code doesn't look right - so I'm asking what causes your suspicions.  The code is syntactically correct, although totally useless.",0
+"This question is not what stackoverflow is for. You should ask something that would help you, not something about simple syntax. How could anyone except php creator answer that? If it's correct - it's correct.",0
+"You have totally useless stuff with a right syntax, the point that it does not make sense to you is right, but you did not write a code to make sense for the computers / compiler; I bet if they had an option to compile you , they would have thrown a null pointer exception on your brain.",0
+Does Swift have no documentation?,0
+"Alright, easy now everybody. I think -13 is more than sufficient.",0
+"@hek2mgl I certainly wouldn't do it in production!  For a dev box, what does it matter? It's the easiest path to a ""reasonable facsimile of production"".",0
+I'm voting to close this question as off-topic because a simple attempt to run the code would have yielded the result.,0
+"But you can try it for yourself, observe the result, and ask a question *if* the result is different - at which point your question can include the actual result, alongside the reasoning for your expectation. Hint: try reading the documentation for `Integer.parseInt(String)` first.",0
+"@JigarPatel a word of warning.  If you intend to become a professional programmer, you are going to have to learn to look up documentation. And to run programs if you want to know what happens when you run them. Your mother is not always going to be on hand to spoon-feed you your breakfast.",0
+no minimal research is done here,0
+Assuming this is homework (namespace \_1.\_1.\_28?) please show real effort and don't simply post the assignment. I can't imagine what else the point of this assignment would be except to answer the question you're asking us.,0
+I'm voting to close this question as off-topic because it does not appear to be asking about programming as defined by the [help center](http://stackoverflow.com/help).,0
+this is a bad bad answer :/,0
+"That first link is really a terrible, terrible introduction to ""how to generate a normal distribution"". Just awful and wrong. Please don't give it additional traffic by linking it...",0
+"NO!  Gaussian != RandomNumber * sigma + median.  This is COMPLETELY WRONG.  (Unless ""RandomNumber"" is gaussian/normal to start with.)",0
+"@kodvin, please remove that Gaussian=RandomNumber*sigma+median equation. It is hurting my eyes.",0
+Why is this the accepted answer? It's factually wrong!,0
+"This really stinks for @kodvin.  A few downvotes is not a big deal, but because his incorrect answer was selected as the ""right"" answer, his rep is taking a huge beating.",0
+"And the documentation was no help here? I rarely berate people for not Googling, but this would have been solved in 2 seconds by typing your title into a search engine.",0
+"@Martijn Pieters: Removed comment. 
+My point was ""google it before you post here"". It takes me a great deal of effort and research before I post a question, and I'd hope that others at least try, to some extent.",0
+"@InterruptedException: absolutely, and thats why this question is getting downvoted this much. A quick Google for 'perl time' gave me the same info that ysth posted. The OP may need to pick up some more research skills first.",0
+"Oh, man, this is ""cleaner"" than anything I can think of :) Just hope some random copy-paster from the interwebz doesn't shoot this directly into their console without looking at it :)",0
+"Study your math first, then Java.",0
+This is more a HTML question. And a very silly mistake.,0
+"Did you read the code, *at all*?",0
+It's 2014. We can do better than this. :-),0
+I would delete this answer to avoid the shame haha,0
+Error messages exist for a reason.,0
+"@AnkitAbhinav ""give me the reason and the solution to solve this problem"" I'll give you a downvote instead",0
+@AnkitAbhinav So you're trying to learn c++ on the fly at a _coding event_? o_O,0
+@AS Yo welcome!! and never ask such type of silly questions. It's only making a __JUNK__ in SO.,0
+why don't you test yourself?,0
+Try 10 as answer,0
+This is not a site where we do your homework.,0
+Consider taking a look at http://stackoverflow.com/tour to learn how SO works.,0
+What's wrong with that code you have there?  It's correct.  That error you have provided is nonsense.,0
+"@mungaihpk I rolled back you last change: It invalidated the answer and your new question was only visible in the comment of the edit. Please accept the answer you received as it solved the problem you asked about. If you have a new question, ask a new question - not edit this one. And maybe also learn how to ask *good* questions by reducing your code to an [MCVE](http://stackoverflow.com/help/mcve).",0
+Easy ton find on google ...,0
+You should really learn googleing and reading APIs....,0
+We don't like screenshots. Without seeing how you created `tempList` and `On` it's hard to say what's wrong.,0
+"""I don't use classes or sprites."" Or line breaks...",0
+@MonikaKrail `what exactly not working`  post only the relevant part !!!!,0
+this hurts my eyes,0
+Too much code. Break it down.,0
+So many magic numbers.,0
+Why even use Java? Go straight to machine code.,0
+And the precision problems mentioned means that you can't use them as indexes. The reasons really are endless. You should dig into some computer history.,0
+Really??? I mean by the time you wrote the question you could have done the calculation using your fingers..,0
+It's funny how much attention this question is attracting.,0
+"There are so many possibilties, why not just use google (or bing or whatever) at first ?",0
+"Questions asking us to recommend or find a book, tool, software library, tutorial or other off-site resource are **off-topic** for Stack Overflow.",0
+have you tried anything yet,0
+"Don't bother, it will be 76!!",0
+this is not Java,0
+I hope you didn't write `is less than`.,0
+Really? None? Other than the ability to handle Unicode in any encoding other than UTF-8 (with all the performance issues with certain string operations that UTF-8 has). Or the fact that any desyncronisation between your string and your helper variable can lead to security issues.,0
+"This answer is so wrong it makes me angry. Buffer overflows and encrypted data, if nothing else.",0
+"Yes, it's a pithy and flippant answer that someone with nearly 60k reputation should know is unhelpful.",0
+"The errors are quite self-explanatory. Also, please learn how to indent the code. It will help a lot in the future.",0
+One think I am clear that your name is Amol and no you haven't spent two days for this problem,0
+"@SamikshaRani You should try to find the solution yourself first. This specific error is not rare (especially when generated by the problem you have) and if you rely on other people to tell you ***every time*** what to do, it's gonna be a long ride.",0
+"@AlexG No, this question is different. It is still a bad question, but different.",0
+"In addition, you might want to take a look at [Should hi, thanks, taglines, and salutations be removed from posts?](http://meta.stackexchange.com/questions/2950/should-hi-thanks-taglines-and-salutations-be-removed-from-posts)",0
+What? just execute your code in the else block.,0
+"First of all, fix your horrible formatting.",0
+"Sounds like a good question for your classmates or instructor. Your class is also a resource, don't ignore it.",0
+This question has been asked many times before and you can find qhat you are looking for here. There is no need to ask this question again.,0
+"Your code is unreadable, bro.",0
+Where did you get this code? Seems very strange code.,0
+"from where you bring ""this"" code :)",0
+[SO] is not a code writing service. Please show what you have tried and explain in what ways it does not work.,0
+this should be better,0
+"Welcome to Stack Overflow! You seem to be asking for someone to write some code for you. Stack Overflow is a question and answer site, not a code-writing service. Please [see here](http://stackoverflow.com/help/how-to-ask) to learn how to write effective questions.",0
+@ZainFarooq dafuq really? That doesnt make sense ^^,0
+This is an incredibly bad researched question! Did you check the [reference documentation](http://en.cppreference.com/w/cpp/io/c/fprintf) already? What didn't you get from there?,0
+Wouldn't a simple google search reveal this? Downvoting. You can refer how to ask a question by checking http://stackoverflow.com/help/how-to-ask and how to create an example by reading this : http://stackoverflow.com/help/mcve,0
+"@ASH: if you have not found on google that you can not create constructors outside a class, you either didn't google at all, or should really update both your knowledge of Java, and of ""how-to-Google""",0
+"@DylanGattey This is not wrong , please read the question first , there is no reference to phone call.",0
+"These are very basic R-skills. You will benefit a lot if you do some basic tutorials (also taking some of your other questions into account, in which you also have difficulties in very basic R operations).",0
+I'm voting to close this question as off-topic because it appears to be too simple.,0
+Did you thought through the code and algorithm?,0
+"SO is not a site for crowdsourcing your homework, and ""I would like help"" is not a programming question.",0
+it this THAT homework again...,0
+"Go back and look at your notes, read through your textbook, and start working on it. Later, if you have a specific question about something, come back and ask and people will be a lot more willing to help you. We're not gonna do your homework for you.",0
+"Hi! I'd strongly suggest that you had a look at [the tour](http://stackoverflow.com/tour) to get a better idea of how SO works, SO is not a teaching portal.",0
+This can easily be researched online. Question is far too broad as it stands for SO,0
+This is so well documented... Why are you fishing for reputation when you have so much already?,0
+"Come on, you only need to try and compile that to know it's not going to work!",0
+can't close this question as duplicate that is really **POOR**,0
+"This is why I love stackoverflow, my wife sometimes look at me awkwardly when I laugh while looking at code.",0
+What kind of sorcery is this? Please read [how to ask](http://stackoverflow.com/help/how-to-ask) page before asking any question(s) in the future. Please.,0
+who? please don't come with question like that which will not serve to future user or current community.,0
+completely wrong.,0
+this is nonsense.,0
+"""Does not work"" is not a technical term. If you want to be a developer, explain the problem in detail.",0
+"Next time, post the real method instead of making it up from memory.",0
+"Pure code-writing requests are off-topic on Stack Overflow -- we expect questions here to relate to *specific* programming problems -- but we will happily help you write it yourself! Tell us [what you've tried](http://whathaveyoutried.com), and where you are stuck. This will also help us answer your question better.",0
+@GeorgeStocker How about closing it as a dupe? [Find all occurrences of a substring in Python](http://stackoverflow.com/q/4664850). I will wait to hammer till I get your approval.,0
+"You could have at least bothered to `enter image description here`, as suggested...",0
+It's something that you will find explained in every good C++ book.,0
+"The question wasn't related in any way to this response, this is a problem with kotlin as a language, not kotlin on android and I think this is just sarcasm IMHO",0
+"@Omar: Nevertheless, posting his own answer after first trying to delete the question after taking advantange of Diego's time makes him (in4001) a bad actor.",0
+"Downvote reason: SO is not a ""write my code for me"" kind of website. you should show your efforts.",0
+"""abcdefghijklmnopqrstuvwxyz""
+
+Lol, seriously?",0
+"@blahfunk This is a Q&A site, not a Q|A site, [besides](http://blog.stackoverflow.com/2011/07/its-ok-to-ask-and-answer-your-own-questions/).",0
+"@blahfunk There's nothing forbidden about answering your own questions, although it's not like this question has a lot of value. It's basic Java syntax, and people should have learned this during the first week of programming. However it seems that a lot of the people don't bother reading the basic tutorials, resulting in ridiculous questions.",0
+"plus 1 for honesty,straight as an arrow  ""haven't tried anything""",0
+So it's the second character now? You could have mentioned that.,0
+@azurefrog so whats the solution for that then,0
+"No, it won't work.",0
+"Doesn't seem related to the question, though.",0
+This has to be the weirdest answer I have ever seen.,0
+This is so basic I have to assume you did no research and made no effort to solve this yourself,0
+"@PurvenderHooda you seem be convinced that you know better than everyone out here. Then why are you asking? No, the result of s1.concat(""def"") won't go into the string pool. And I can't understand what you're asking me.",0
+"You did not receive attention because, this question is totally opinion based. As always, every dev will call out for his/her favorite framework and you would have no more information at the end. They can all do it, but all requires a different level of expertise. My suggestion would be : if you have expertise in any of those already, go for it or try to get some expertise in the other and make the choice yourself based on what you can get from the different framework.",0
+This does not make any sense. Why would you want to convert an integer into a class? They are two completely different types. I propose you read about OO first.,0
+@ScottKnox You should consider changing your internship workplace.,0
+google for file I/O using C.,0
+I suggest studying C++ and then asking here. This is way too basic and can be covered by any decent C++ book for beginners.,0
+Your program won't even print *anything* until it has finished - almost forever. And since you didn't initialise `mpf` it could print junk.,0
+"Rather that complaining about being required to write some text, why not put some effort into writing a good question? For example, tell us what is ""Project euler prob 3""?",0
+"`:` is usually called a colon, not a ""double comma"". (I've never heard it called anything but a colon, but I don't know whether there are any regional differences. )",0
+"Theoretically It could be just as fast. File a bug report to your C/C++ compiler vendor. (Please don't, I'm being sarcastic).",0
+"The question is a bit like asking why it takes longer to get your car out of the garage and drive to the corner shop, than it does to walk.",0
+"So how do you compile this nonsense? C or C++? Please first read about proper benchmarking, there is more to doing it correctly than taking the time to load/execute/terminate it.",0
+"@PeterCordes: I find this question quite terrible, and the fact that you can write a nice bit of text doesn't redeem the question. If you set me off on the right topic I might not need much prodding to rave on about it, but that doesn't make the question any less lazy and misguided.",0
+"@EOF: I guess I don't see it as much worse than some of the other dumb questions that get upvotes, and involve serious misconceptions.  I wish this had never been asked at all, instead of being asked and then getting a not-very-accurate answer that misses the main reason for the observed behaviour.  (Although the accepted answer does at least correct the misunderstanding that C is 2x slower than asm).  Inaccurate answers make me crazy.",0
+"What else would you expect to happen? If you do something twice, it gets done twice.",0
+"""this function did exactly what I told it to do. why did it do that?"" basically...",0
+"@PriteshJadhav As it looks right now, any book would do well.",0
+Outch. A needless `switch` statement only to have it.,0
+Probably trying to cheat his way through an interview test.,0
+"Using uppercase is considered SCREAMING; thus rude and impolite. You are disrespecting this community. You see, this is not a place where you drop your requirements and other people do the thinking for your.",0
+delete this ans,0
+This really looks like some last-minute panic on your homework.,0
+"You say you can't use `GROUP BY` because your instructor said so, but that you're doing this exercise for your own practice? How does that work?",0
+"What are you trying to do and why would you want to do it this way.  This is not cleaver coding, clever coding is doing the minimum possible to achieve the result, in this case cout << "" 2 + 4 = "" << (2+4); would  work.  Maybe you could look at templates, they might suit your needs better?",0
+I did get a good chuckle out of this answer.,0
+well... it is correct in the wrong way...,0
+Damn! Don't work as admin if you don't need to!,0
+WTF is this? how do you end up in your system32 folder?,0
+This one's by far the most downvoted answer I have seen .... LOLLOL!!!,0
+This is a god like answer.  He is far further along than any of us in terms of programming.  None of us can understand.,0
+"Because it doesn't support it. It's like asking why an automobile can't fly. Also, your example usage is nonsense.",0
+Looks like you are trying to hack something.,0
+"Before adding a bounty to your question, at least go through the motion of making it a real question. No one has any real idea as to what you're actually after. (My intuition is that this is an [X-Y problem](http://meta.stackexchange.com/questions/66377/what-is-the-xy-problem)). Please clean up your question. See to the [help center](http://stackoverflow.com/help) for further reference.",0
+This definitely smacks of an XY question. Could the poster provide any type of background about why the artificial constraints he's imposed are practical in some way?,0
+"Why does the output include Apple and not include Mango?  Why does the output not include the new first column?  Where did the `0` in the example output come from?  Why is a row with 456 chosen when neither such row contains 'purchased'?  In other words, your desired output doesn't bear any obvious relation to the conditions specified in the question or the sample input data.",0
+"@JonathanLeffler-Sorry, the Desired output was correct but i was wrong with the Run command which i have changed now. The nulls are replaced as Zero. Let me know if you can help me now ?",0
+"""...within a selection"" - what selection? A range in a worksheet that has the worksheet names? the selected worksheets? What do you mean by that? Also, what have you tried?  SO is not a code writing service. Let us know what you've tried, what failed, any error messages, etc. and we can help you. We don't (tend to) write from scratch.",0
+"@hitchslap many have come here to help, we cannot do such with the information given, there are too many possible answers.  BruceWayne and MatthewD are two of the best at doing this.  When they asked question to clarify your question you assumed you knew more.  Your assumptions about us are such a generalization that it begs the question why we would ever help.  Many of us work in the IT and many others do not.  We are a large community that I am sure include CEOs to street sweepers.  We do this, not for the glory but to help.  Your attitude is uncalled for.",0
+"Here's how you select a worksheet: `Worksheets(""sheetName"").Select`. If it's in a range, `for each cel in rng: worksheets(cel.value).Select: next cel`. ...except I have a feeling that's not what you want. If you can't be helpful for us, we can't help you. You say you've looked thoroughly - where have you looked? This kind of thing is something that is used all the time, and you should be able to find ample resources.  Can you *please* post (in your OP) what you've tried, how it worked differently from what you expect, and please expand on what you mean by selecting a worksheet in a range?",0
+"Learning C++ from videos seems to be error prone. Well I never tried so, being educating myself old school ways from books and practising. But your track seems to be a weak one!",0
+There is no way that you couldn't find the answer to this by Google searching...,0
+people think you didnt google hard enough,0
+"The downvotes are mainly because you didn't read, google, or even bother to provide in the question **the error message**.",0
+"You've got 72 rep points -- and so surely you know how to post well formatted code by now, right? You also know that if code is well formatted, it is more easily understood, right?",0
+"The scope of any exam is to test your knowledge of the topic. Asking an ""urgent"" or ""last-minute"" question on SO defiles that scope. Plus your question isn't fit for SO anyway, for many reasons. See [here](http://stackoverflow.com/help).",0
+this is going to be a gone case...,0
+I would like an advancement payable to me asap if I answer this simple question for you.. what have you actually done and or tried.. also please read the following [How To Ask a Question](http://stackoverflow.com/questions/ask),0
+This does not make any sense. What are you  trying to achieve,0
+@IvanB - Apparently it does not make any sense to a few other people as well,0
+"Nay, alas, you have to solve your homework on your own. We all had to go through that. :)",0
+Share your code and we can help you with some guidelines. Nobody here will do the homework for you.,0
+"It's sort of an ""if you have to ask, you're not yet ready to know"" question, but Basile's answer has some splendid arrows in the right direction. To me, the real question is not so much why you thought basic types and keywords were defined anywhere, but specifically why you in `stdio.h`!",0
+"Does that question (indeed, poorly asked), deserve so many downvotes?",0
+"Hint: if you *tell* people not to downvote the question, lots of them will do exactly that. ""Plz do not downvote"" is a cue that the question probably needs to be downvoted. Either way, that is just noise that does not belong in a question. I have edited it out here and otherwise improved the clarity of your question. Please do not add it back in. There is nothing you can do about how people decide to vote. If the question is useful and clear, you will generally get more upvotes than downvotes, which makes up for it in the end. Complaining about it in the comments is also discouraged.",0
+"""Questions asking us to **recommend or find a book, tool, software library, tutorial or other off-site resource** are off-topic for Stack Overflow as they tend to attract opinionated answers and spam. Instead, describe the problem and what has been done so far to solve it.""",0
+Please take the [tour] and visit [ask] as well as the [checklist](http://meta.stackoverflow.com/questions/260648/stack-overflow-question-checklist). Your question isn't particular well asked and deserves a better title. After that I guess it is also a duplicate.,0
+"You should go back some lessons and learn the meaning of main() and executables. Your code contains nothing but implementations of _how_ to do something, but actually _does_ nothing.",0
+@user6222166 see all the functions you wrote? none of them are ever being executed because you're not calling them. anywhere.,0
+Yeah.. there is something 'off' about this question.,0
+"I did go and read the whole thing like you said, and indeed I wept, but mainly at the stupidity of Felix which I don't think was what you were trying to get across...",0
+You seem very resolute on your stance concerning the standard being *broken*. May I ask if you have a defect report on the way?,0
+"@boot4life, it's integer overflow. It happens. Obviously it is wrong for the compiler to assume that it doesn't. It's that assumption which is wrong, not the fact that the call removed was an assert. It should not be UB at all, it should be defined to either wrap 2s-compliment or trap, and those are the only sensible things for a compiler to do. Assuming it can't happen in 2015 when all know it is a major source of security bugs is not innocent, nor even stupid, it's malice.",0
+Anybody who is pitying safety versus performance should just switch to Java.,0
+"Downvoted for the useless rant. ""They are ... introducing bugs on purpose. Perhaps for a foreign government."" Really? This isn't /r/conspiracy.",0
+"@isanae, You have to stop thinking these things are accidents. Haven't you been paying attention? Two - that's two - unknown parties subverted JuniperOS. We kind of assume one was the NSA, but who was the other?",0
+"Decent programmers over and over again repeat the mantra _do not invoke undefined behaviour_, yet these nonks have gone ahead and done it anyway. And look what happened. I have no sympathy whatsoever. This is the developers' fault, simple as that. They need to take responsibility. Remember that? Personal responsibility? People relying on your mantra ""but what about _in practice_!"" is precisely how this situation arose in the first place. Avoiding nonsense like this is precisely why standards exist in the first place. Code to standards, and you won't have a problem. Period.",0
+"_""They don't read the compiler release notes, they assume the compiler writer is on their side""_ And if they work for me, they are subsequently fired for gross incompetence. Seriously, who calls themselves a programmer yet doesn't bother to read release notes when they upgrade their entire toolchain to a new major revision? Defending that behaviour with the ridiculous ""the standard is wrong"" is just absurd. Is the C++ standard perfect? Absofrickinglutely not. But it's right in this case and, even if it weren't, your rationale is mortifyingly flawed.",0
+@MikeVine: I'm amazed nobody stepped in to tell Felix to calm down. What a douche! Nine years on I wonder where he is now...,0
+"It goes against the C++ group-think, but this is the *only* correct answer to this question.  They *just don't care* about whether they break existing, widely-used, previously-working code, and the C++ community is too broken to recognize that.",0
+"With all due respect, I would put money on the bug being with your code and NOT the compiler.",0
+Your program seems to have a split personality disorder. It can't decide whether it's C or C++.,0
+"@xaxxon be as harsh as you want, but my point still stands - it's *much* more likely for a problem to be with your own code than with the compiler, and it's a mark of inexperience to assume the opposite.",0
+"@AntonyBazir _""Don't ge me wrong I am definitely not saying the problem is from the compiler.""_ Then you should change your question title to something more meaningful. Also provide a [MCVE], including a detailed description of the problem and what you did observe when stepping through your program code with the debugger. After you did all that, you probably solved your problem without asking here at all.",0
+"Asked thousand times, google your title which you should have done before you've asked this.",0
+Then you need to work on your googling skills.  I feel like I see this question asked (and closed as a dupe) every other day.,0
+"@Cris -- yes, and the answer is there are too many people who don't know how to research.  Once a question as simple to find as this has been asked once, it should not be asked again.",0
+Frustating is to see people who don't care to invest a minimum effort on research,0
+Googled first buddy.,0
+"In general, we want you to post a self-contained question.  Giving us the link to buy the book on Amazon really doesn't cover the required background.  I expect that you're not allowed to post the applicable material from the book; as a result, this question won't be appropriate for StackExchange.",0
+Probably `this` is referring to a different context than the one you think it refers to. **WTF Alex!**,0
+this site is not for interview us,0
+I guess I'm committing some capital sin here. Can anyone please explain which?,0
+"Your question is so vague and open ended that you'd have attracted close votes, but a question with a bounty can't be closed, so you get downvotes instead.",0
+"You're essentially asking StackOverflow users to write code for your specific use case on their own time. If you can't figure out those academic papers, hire someone who can.",0
+"You don't provide much enough information in my opinion. My first thought was convolution, but if it doesn't need to be that precise, then just a simple high pass filter to find the words and gaps may be adequate. The negativity may be that it isn't a programming question co much as a signal analysis question and by making it a programming question it comes across as ""write my code"".",0
+"Also, SO is **not** a forum",0
+"hey girl with pearl earring ... you could *possibly* ask a question like this on the gamedev.com site, where, ""general techniques"" can be discussed.  Quite simply, this site is for asking about specific bugs in code. This site has nothing to do with ""general technique discussion"".  So, find the better site to ask your question on.",0
+this is insane.,0
+"Somebody had a bad day :) It's true, there are many situations where bypassing certificate validation is useful.",0
+wrt `If I ever notice that that question has been reopened then I will delete this copy and reproduce my answer there`: What are you going to do if the answer you [should] end up accepting isn't yours?,0
+@EdMorton: I don't see a problem. What are you imagining?,0
+"@Borodin Someone posts a bright, shining solution to this question, the old question gets reopened so you copy your solution into the old question and delete this question and said bright, shining solution to the original question is gone from posterity. I didn't downvote this btw.",0
+"@EdMorton: I don't follow. Is this a complaint about me chasing points? I have updated the original question to improve the English, but I still can't post a solution there. That doesn't seem to be how SO wants to work. There is also a command-line solution as well as my own. Win all round?",0
+"@Borodin it's not a complaint about anything, I was simply asking what you're going to do with answers this question receives (other than your own) if/when the old question is reopened and you delete this question after duplicating your own answer under the old question - are you going to contact the other posters of answers to move their answers from here to the old question and wait for that to happen before you close this question or are you going to copy their answers into yours in the old question with some accreditation comment or do nothing or something else?",0
+Please learn how to ask questions on SO,0
+You do not seem familiar with the C# language at all. I would suggest you at least get the basics before trying to implement anything -- you will save time.,0
+"""a few syntax error""? First I see: `while(kvp.Key = kvp.Key +10 || kvp.Key + 20)` should be `while(kvp.Key == kvp.Key +10 || kvp.Key == kvp.Key + 20)`. This would be syntactically correct, but semantically non-sense, a value can´t be equal its value +10.",0
+_This is my code but **I get an error**_ - Do we have to beg for you to tell us what the error is?,0
+I'm voting to close this question as off-topic because SO is no homework service.,0
+SO Is not a personal service for your homework,0
+"And people in hell want ice water. What's your point? ""Questions"" should be posed in the form of a question.",0
+Before raising an question try to search in Google you can get a lot of Stuff..,0
+"Did you Google it? You will get lot of results, also did you try to read official docs? And why JDK 5 now? it's old",0
+His teacher may not have told him about .contains yet.,0
+"For the sake of your next issues on PHP, try to type your intent on Google followed by the word ""php"" and I swear you won't be regret, there's plenty of material starting with it's official documentation that covers every single bundled function for array purposes. If you can't find your answers at all, then you can consider asking here at SO since a research effort has been made before it.",0
+Not a good option as this is not a standard interchange format.,0
+Too poor answer. I think this is a bad option because don't use or implement a standar,0
+"May I just say: You are tenacious! Keeping an answer posted with a (current) score of -15, that has collected 23 downvotes!  (I didn't downvote, BTW)",0
+Because your question deserves them. You have Int32 c = Convert.ToInt32(Math.Sqrt(c2)); and asking what happened to my decimal fraction needs down votes.,0
+"The whole point of the teacher assigning this exercise is for you to figure it out on your own, by studying the rules of operator order and precedence. Getting us to explain it to you defeats the purpose.",0
+Homework/assignment trash.,0
+"This should be asked to ISO, not to SO",0
