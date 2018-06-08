@@ -10,10 +10,6 @@ import json
 import argparse
 
 
-
-
-
-
 def preprocess(commentList):
     translator = str.maketrans('', '', string.punctuation)
     with open('processed.csv', 'w') as csvfile:
@@ -22,9 +18,6 @@ def preprocess(commentList):
         for item in commentList:
             comment = remove_handles(item["comment"]).translate(translator)
             csvwriter.writerow({'comments': comment, 'labels': item["label"]})
-
-
-
 
 
 def load_csvfile(filename):
@@ -39,36 +32,26 @@ def load_csvfile(filename):
     preprocess(commentsList)
 
 
-def load_json(filename):
-    with open(filename) as json_data:
-        data = json.load(json_data)
-    commentList = []
-    count=0
-    for comments in data['Comment']:
-        items = {}
-        items['comment'] = comments.lower()
-        items['label']  = data['CommentLabel'][count]
-        count += 1
-        commentList.append(items)
-    preprocess(commentList)
+# def load_json(filename):
+#     with open(filename) as json_data:
+#         data = json.load(json_data)
+#     commentList = []
+#     count=0
+#     for comments in data['Comment']:
+#         items = {}
+#         items['comment'] = comments.lower()
+#         items['label']  = data['CommentLabel'][count]
+#         count += 1
+#         commentList.append(items)
+#     preprocess(commentList)
         
-
-
-
-
-
-
-
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-csv',dest='csvfilename',type=str,required=False)
-    parser.add_argument('-json',dest="jsonfilename", type=str, required=False)
     args = parser.parse_args()
 
     if args.csvfilename is not None:
         load_csvfile(args.csvfilename)
     
-    if args.jsonfilename is not None:
-        load_json(args.jsonfilename)
+   
