@@ -13,6 +13,7 @@ from keras.models import load_model
 from saveModel import SaveModel
 import numpy as np
 
+# from sklearn.metrics import precision_recall_fscore_support
 
 #For predict purposes
 from keras.preprocessing.text import Tokenizer
@@ -61,7 +62,7 @@ class CNNModel:
         z = Dropout(rate=self.drop_prob)(z)
         outp = Dense(self.num_classes,kernel_initializer='random_normal',activation='sigmoid')(z)
         self.model = Model(inputs=inp,outputs=outp)
-        self.model.compile(optimizer=Adam(lr=self.lr),loss=categorical_crossentropy,metrics=['accuracy',self.TNR])
+        self.model.compile(optimizer=Adam(lr=self.lr),loss=categorical_crossentropy,metrics=['accuracy',self.TNR, self.precision])
         X_test, y_test = self.data.get_test_data()
         X_train, y_train = self.data.get_train_data()
         savemodel = SaveModel(validation_data=(X_test,y_test),target_name='acc',target_val=0.65)
@@ -77,15 +78,24 @@ class CNNModel:
         
     
     def TNR(self, y_true, y_pred):
-        mat = tf.confusion_matrix(labels=tf.argmax(y_true,1),predictions=tf.argmax(y_pred,1),num_classes=self.num_classes)
+        mat = tf.confusion_matrix(labels=tf.argmax(y_true, 1),predictions=tf.argmax(y_pred, 1),num_classes=self.num_classes)
+        # return mat[0][0] / (mat[0][0] + mat[0][1])
         return mat[0][0] / (mat[0][0] + mat[0][1])
+    
+    def precision (self, y_true, y_pred):
+        mat = tf.confusion_matrix(labels=tf.argmax(y_true, 1),predictions=tf.argmax(y_pred, 1),num_classes=self.num_classes)
+        return mat[0][0] / (mat[0][0] + mat[1][0])
+
+    def f1_score(self, y_true, y_pred):
+        recall = self.TNR(y_true, y_pred)
+        precision = self.precision(y_true, y_pred)
+        f1_score = (2 * recall * precision) /(precision + recall)
+        return f1_score    
+
         
 
-
-
-
     def load_model(self, filePath):
-        self.model = load_model(filePath, custom_objects={"fpp":self.fpp})
+        self.model = load_model(filePath, custom_objects={"TNR":self.TNR})
 
     #input: list of string
     def predict(self, commentList):
@@ -95,11 +105,6 @@ class CNNModel:
         res = self.model.predict(comments)
         return [(np.array(l)/sum(l)).tolist() for l in res]
     
-
-    
-
-
-
 
 if __name__ == "__main__":
     CNN_model = CNNModel()
