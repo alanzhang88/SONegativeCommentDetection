@@ -296,7 +296,7 @@ plt.xlabel('Parameters combination', fontsize=12)
 plt.title("Single Stack LSTM", fontsize=15)
 plt.xticks(rotation='vertical')
 plt.show()
-plt.savefig("LSTM1.png")
+plt.savefig("LSTM3.png")
 
 # from sklearn.metrics import precision_recall_fscore_support
 # res = model.predict(testingData)
