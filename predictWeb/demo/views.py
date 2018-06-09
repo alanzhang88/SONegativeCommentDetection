@@ -20,4 +20,4 @@ def classify(request):
 	return JsonResponse({'lstm_labels': lstm_labels, 'cnn_labels': cnn_labels, 'fasttext_labels': fasttext_labels})
 
 def helloworld(request):
-    return HttpResponse('Hello world')
+	return HttpResponse('Hello World')
