@@ -1,0 +1,30 @@
+<!-- <p>
+  comments-display works!
+</p> -->
+
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="form-group mt-5">
+        <label for="comment">Enter Comment for classification:</label>
+        <textarea class="form-control" id="comment" rows="5" style="resize: none;" name="comment" [(ngModel)]="comment" ></textarea>
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-primary mt-1" type="submit" [disabled]="!comment">Add</button>
+        </div>        
+      </div>
+</form>
+
+<div class="row">
+  <div class="col-md-12">
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a [ngClass]="changeActive('lstm_labels')" style="cursor: pointer;" (click)="changeModel('lstm_labels')">LSTM</a>
+      <a [ngClass]="changeActive('cnn_labels')" style="cursor: pointer;" (click)="changeModel('cnn_labels')">CNN</a>
+      <a [ngClass]="changeActive('fasttext_labels')" style="cursor: pointer;" (click)="changeModel('fasttext_labels')">FastText</a>
+      <span class="nav-link flex-sm-fill text-sm-right">Negativity</span>
+    </nav>
+  </div>
+</div>
+<hr />
+<div class="row mt-2">
+  <div class="col-md-12">
+    <app-comment-list [commentList]="commentList" [modelSelection]="modelSelection"></app-comment-list>
+  </div>    
+</div>
