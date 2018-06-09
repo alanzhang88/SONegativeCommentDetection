@@ -35,8 +35,12 @@ class LSTMModel():
         # load training and testing data
         with open(os.path.dirname(__file__)+'/labeled_document2.json') as json_data:
             allTrainData = json.load(json_data)
-        trainPhrases, testPhrases, trainLabel,testLabel = train_test_split(allTrainData['Comment'], allTrainData['CommentLabel'], test_size=0.2, random_state=42)
-
+        
+        with open(os.path.dirname(__file__)+'/labeled_document3.json') as json_data:
+            allTrainData2 = json.load(json_data)
+       
+        trainPhrases, testPhrases, trainLabel,testLabel = train_test_split(allTrainData['Comment'] + allTrainData2['Comment'], allTrainData['CommentLabel']+allTrainData2['CommentLabel'], test_size=0.2, random_state=42)
+        
         if hijackData is not None:
             trainPhrases = hijackData['X_train']
             testPhrases = hijackData['X_test']
@@ -117,9 +121,10 @@ class LSTMModel():
         self.model = Sequential()
         self.model.add(Embedding(allPhraseSize, 128))
         self.model.add(SpatialDropout1D(0.1))
+        self.model.add(Bidirectional(LSTM(128, return_sequences=True)))
         self.model.add(Bidirectional(LSTM(128)))
         self.model.add(Dense(len(np.unique(trainSenti))))
-        self.model.add(Activation('softmax'))
+        self.model.add(Activation('sigmoid'))
         # self.model = Sequential()
         # self.model.add(Embedding(allPhraseSize, 128))
         # self.model.add(Bidirectional(LSTM(128, return_sequences=True)))

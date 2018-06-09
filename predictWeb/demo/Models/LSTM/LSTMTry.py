@@ -25,8 +25,13 @@ from gensim import corpora
 from imblearn.over_sampling import SMOTE
 
 with open('labeled_document2.json') as json_data:
-	allTrainData = json.load(json_data)
-trainPhrases, testPhrases, trainLabel,testLabel = train_test_split(allTrainData['Comment'], allTrainData['Score'], test_size=0.1, random_state=42)
+        allTrainData = json.load(json_data)
+    
+with open('labeled_document3.json') as json_data:
+        allTrainData2 = json.load(json_data)
+
+    
+trainPhrases, testPhrases, trainLabel,testLabel = train_test_split(allTrainData['Comment'] + allTrainData2['Comment'], allTrainData['CommentLabel']+allTrainData2['CommentLabel'], test_size=0.2, random_state=42)
 
 postProcessedTrainPhrases = []
 postProcessedTestPhrases = []
