@@ -1,7 +1,7 @@
 import argparse
 from CNNutil import CNNModel
 
-
+#Test the impact of single parameter change
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-f',dest='fieldName',help='the name of the hyperparameter used to test, need to exactly match the field name of the object',type=str,required=True)
