@@ -62,7 +62,7 @@ class CNNModel:
         z = Dropout(rate=self.drop_prob)(z)
         outp = Dense(self.num_classes,kernel_initializer='random_normal',activation='sigmoid')(z)
         self.model = Model(inputs=inp,outputs=outp)
-        self.model.compile(optimizer=Adam(lr=self.lr),loss=categorical_crossentropy,metrics=['accuracy',self.TNR, self.precision])
+        self.model.compile(optimizer=Adam(lr=self.lr),loss=categorical_crossentropy,metrics=['accuracy',self.TNR, self.precision, self.f1_score])
         X_test, y_test = self.data.get_test_data()
         X_train, y_train = self.data.get_train_data()
         savemodel = SaveModel(validation_data=(X_test,y_test),target_name='acc',target_val=0.65)
@@ -79,7 +79,6 @@ class CNNModel:
     
     def TNR(self, y_true, y_pred):
         mat = tf.confusion_matrix(labels=tf.argmax(y_true, 1),predictions=tf.argmax(y_pred, 1),num_classes=self.num_classes)
-        # return mat[0][0] / (mat[0][0] + mat[0][1])
         return mat[0][0] / (mat[0][0] + mat[0][1])
     
     def precision (self, y_true, y_pred):
