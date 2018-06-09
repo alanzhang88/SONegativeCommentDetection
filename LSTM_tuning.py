@@ -175,15 +175,15 @@ from sklearn.metrics import precision_recall_fscore_support
 # dropoutrate = [0.0, 0.05, 0.1, 0.25, 0.5]
 embedding_size = 128
 # parameters = {'optimizer':('sgd', 'RMSprop', 'adam'), 'activation':[1, 10]}
-activation =  ['sigmoid', 'hard_sigmoid', 'linear','softmax'] # softmax, softplus, softsign 
-hidden_size = [64, 128, 256]
+activation =  ['sigmoid', 'hard_sigmoid','softmax'] # softmax, softplus, softsign 
+hidden_size = [128, 256]
 # momentum = [0.0, 0.2, 0.4, 0.6, 0.8, 0.9]
 # learn_rate = [0.001, 0.01, 0.1, 0.2]
 dropout_rate = [0.0, 0.1, 0.25, 0.5]
 # weight_constraint=[1, 2, 3, 4, 5]
 # neurons = [1, 5, 10, 15, 20, 25, 30]
 # init = ['uniform', 'lecun_uniform', 'normal', 'zero', 'glorot_normal', 'glorot_uniform', 'he_normal', 'he_uniform']
-optimizer = [ 'SGD', 'RMSprop', 'Adam', 'Adamax', 'Nadam']
+optimizer = [ 'SGD', 'RMSprop', 'Adam', 'Adamax']
 epochs = [10, 100] 
 batch_size = [256, 512]
 # param_grid = dict(epochs=epochs, batch_size=batch_size, activation = activation, dropout_rate = dropout_rate, optimizer = optimizer, hidden_size = hidden_size)
