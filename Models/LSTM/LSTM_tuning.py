@@ -176,16 +176,16 @@ from sklearn.metrics import precision_recall_fscore_support
 embedding_size = 128
 # parameters = {'optimizer':('sgd', 'RMSprop', 'adam'), 'activation':[1, 10]}
 activation =  ['sigmoid', 'hard_sigmoid','softmax'] # softmax, softplus, softsign 
-hidden_size = [128, 256]
+hidden_size = [128]
 # momentum = [0.0, 0.2, 0.4, 0.6, 0.8, 0.9]
 # learn_rate = [0.001, 0.01, 0.1, 0.2]
-dropout_rate = [0.0, 0.1, 0.25, 0.5]
+dropout_rate = [0.1, 0.25, 0.5]
 # weight_constraint=[1, 2, 3, 4, 5]
 # neurons = [1, 5, 10, 15, 20, 25, 30]
 # init = ['uniform', 'lecun_uniform', 'normal', 'zero', 'glorot_normal', 'glorot_uniform', 'he_normal', 'he_uniform']
-optimizer = [ 'SGD', 'RMSprop', 'Adam', 'Adamax']
-epochs = [10, 100] 
-batch_size = [256, 512]
+optimizer = [ 'RMSprop', 'Adam', 'Adamax']
+epochs = [ 100] 
+batch_size = [256]
 # param_grid = dict(epochs=epochs, batch_size=batch_size, activation = activation, dropout_rate = dropout_rate, optimizer = optimizer, hidden_size = hidden_size)
 
 # grid = GridSearchCV(estimator=model, param_grid=param_grid, n_jobs=-1)
@@ -270,32 +270,32 @@ f = open("parameters_all.json", 'w+')
 f.write(json.dumps(total_result, indent=4, sort_keys=True))
 f.close()
 # In[83]:
-import matplotlib.pyplot as plt
-import seaborn as sns
-color = sns.color_palette()
-y1 = []
-y2 = []
-y3 = []
-y4 = []
-x = range(1,count)
-for i in x:
-    y1.append(total_result[i]['precision'])
-    y2.append(total_result[i]['recall'])
-    y3.append(total_result[i]['fbeta_score'])
-    y4.append(total_result[i]['accuracy'])
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+# color = sns.color_palette()
+# y1 = []
+# y2 = []
+# y3 = []
+# y4 = []
+# x = range(1,count)
+# for i in x:
+#     y1.append(total_result[i]['precision'])
+#     y2.append(total_result[i]['recall'])
+#     y3.append(total_result[i]['fbeta_score'])
+#     y4.append(total_result[i]['accuracy'])
 
-plt.figure(figsize=(20,12))
-sns.pointplot(x, y1, alpha=0.8, color=color[1])
-sns.pointplot(x, y2, alpha=0.8, color=color[2])
-sns.pointplot(x, y3, alpha=0.8, color=color[3])
-sns.pointplot(x, y4, alpha=0.8, color=color[4])
+# plt.figure(figsize=(20,12))
+# sns.pointplot(x, y1, alpha=0.8, color=color[1])
+# sns.pointplot(x, y2, alpha=0.8, color=color[2])
+# sns.pointplot(x, y3, alpha=0.8, color=color[3])
+# sns.pointplot(x, y4, alpha=0.8, color=color[4])
 
-plt.ylabel('Evaluation', fontsize=12)
-plt.xlabel('Parameters combination', fontsize=12)
-plt.title("Single Stack LSTM", fontsize=15)
-plt.xticks(rotation='vertical')
-plt.show()
-plt.savefig("LSTM1.png")
+# plt.ylabel('Evaluation', fontsize=12)
+# plt.xlabel('Parameters combination', fontsize=12)
+# plt.title("Single Stack LSTM", fontsize=15)
+# plt.xticks(rotation='vertical')
+# plt.show()
+# plt.savefig("LSTM1.png")
 
 # from sklearn.metrics import precision_recall_fscore_support
 # res = model.predict(testingData)
