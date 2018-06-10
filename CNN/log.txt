@@ -1,0 +1,88 @@
+Test Condition num_filters=32
+Test Condition filter_sizes=[1, 2, 3]
+Test Condition epochs=3
+Train on 3818 samples, validate on 425 samples
+Epoch 1/3
+ - 3s - loss: 0.4951 - acc: 0.8256 - fpp: 0.1638 - val_loss: 0.4589 - val_acc: 0.8306 - val_fpp: 0.1694
+Epoch 2/3
+ - 2s - loss: 0.4492 - acc: 0.8355 - fpp: 0.1645 - val_loss: 0.4552 - val_acc: 0.8306 - val_fpp: 0.1694
+Epoch 3/3
+ - 2s - loss: 0.4445 - acc: 0.8355 - fpp: 0.1645 - val_loss: 0.4563 - val_acc: 0.8306 - val_fpp: 0.1694
+Test Condition num_filters=32
+Test Condition filter_sizes=[1, 2, 3]
+Test Condition epochs=4
+Train on 3818 samples, validate on 425 samples
+Epoch 1/4
+ - 2s - loss: 0.4824 - acc: 0.8271 - fpp: 0.1645 - val_loss: 0.4439 - val_acc: 0.8424 - val_fpp: 0.1576
+Epoch 2/4
+ - 2s - loss: 0.4492 - acc: 0.8342 - fpp: 0.1658 - val_loss: 0.4404 - val_acc: 0.8424 - val_fpp: 0.1576
+Epoch 3/4
+ - 2s - loss: 0.4426 - acc: 0.8342 - fpp: 0.1658 - val_loss: 0.4389 - val_acc: 0.8424 - val_fpp: 0.1576
+Epoch 4/4
+ - 2s - loss: 0.4362 - acc: 0.8342 - fpp: 0.1658 - val_loss: 0.4393 - val_acc: 0.8424 - val_fpp: 0.1576
+Test Condition num_filters=32
+Test Condition filter_sizes=[1, 2, 3, 4]
+Test Condition epochs=3
+Train on 3818 samples, validate on 425 samples
+Epoch 1/3
+ - 3s - loss: 0.4815 - acc: 0.8345 - fpp: 0.1640 - val_loss: 0.4589 - val_acc: 0.8282 - val_fpp: 0.1718
+Epoch 2/3
+ - 3s - loss: 0.4472 - acc: 0.8358 - fpp: 0.1642 - val_loss: 0.4598 - val_acc: 0.8282 - val_fpp: 0.1718
+Epoch 3/3
+ - 3s - loss: 0.4416 - acc: 0.8358 - fpp: 0.1642 - val_loss: 0.4578 - val_acc: 0.8282 - val_fpp: 0.1718
+Test Condition num_filters=32
+Test Condition filter_sizes=[1, 2, 3, 4]
+Test Condition epochs=4
+Train on 3818 samples, validate on 425 samples
+Epoch 1/4
+ - 3s - loss: 0.4897 - acc: 0.8182 - fpp: 0.1655 - val_loss: 0.4517 - val_acc: 0.8353 - val_fpp: 0.1647
+Epoch 2/4
+ - 3s - loss: 0.4507 - acc: 0.8350 - fpp: 0.1650 - val_loss: 0.4488 - val_acc: 0.8353 - val_fpp: 0.1647
+Epoch 3/4
+ - 3s - loss: 0.4442 - acc: 0.8350 - fpp: 0.1650 - val_loss: 0.4462 - val_acc: 0.8353 - val_fpp: 0.1647
+Epoch 4/4
+ - 3s - loss: 0.4367 - acc: 0.8350 - fpp: 0.1650 - val_loss: 0.4456 - val_acc: 0.8353 - val_fpp: 0.1647
+Test Condition num_filters=64
+Test Condition filter_sizes=[1, 2, 3]
+Test Condition epochs=3
+Train on 3818 samples, validate on 425 samples
+Epoch 1/3
+ - 3s - loss: 0.4782 - acc: 0.8130 - fpp: 0.1629 - val_loss: 0.4814 - val_acc: 0.8141 - val_fpp: 0.1859
+Epoch 2/3
+ - 2s - loss: 0.4410 - acc: 0.8373 - fpp: 0.1627 - val_loss: 0.4826 - val_acc: 0.8141 - val_fpp: 0.1859
+Epoch 3/3
+ - 2s - loss: 0.4330 - acc: 0.8373 - fpp: 0.1627 - val_loss: 0.4820 - val_acc: 0.8141 - val_fpp: 0.1859
+Test Condition num_filters=64
+Test Condition filter_sizes=[1, 2, 3]
+Test Condition epochs=4
+Train on 3818 samples, validate on 425 samples
+Epoch 1/4
+ - 3s - loss: 0.4722 - acc: 0.8180 - fpp: 0.1627 - val_loss: 0.4825 - val_acc: 0.8118 - val_fpp: 0.1882
+Epoch 2/4
+ - 2s - loss: 0.4394 - acc: 0.8376 - fpp: 0.1624 - val_loss: 0.4828 - val_acc: 0.8118 - val_fpp: 0.1882
+Epoch 3/4
+ - 2s - loss: 0.4359 - acc: 0.8376 - fpp: 0.1624 - val_loss: 0.4834 - val_acc: 0.8118 - val_fpp: 0.1882
+Epoch 4/4
+ - 2s - loss: 0.4247 - acc: 0.8376 - fpp: 0.1624 - val_loss: 0.4844 - val_acc: 0.8118 - val_fpp: 0.1882
+Test Condition num_filters=64
+Test Condition filter_sizes=[1, 2, 3, 4]
+Test Condition epochs=3
+Train on 3818 samples, validate on 425 samples
+Epoch 1/3
+ - 4s - loss: 0.4748 - acc: 0.8133 - fpp: 0.1609 - val_loss: 0.4284 - val_acc: 0.8447 - val_fpp: 0.1553
+Epoch 2/3
+ - 3s - loss: 0.4436 - acc: 0.8339 - fpp: 0.1661 - val_loss: 0.4276 - val_acc: 0.8447 - val_fpp: 0.1553
+Epoch 3/3
+ - 3s - loss: 0.4339 - acc: 0.8339 - fpp: 0.1661 - val_loss: 0.4262 - val_acc: 0.8447 - val_fpp: 0.1553
+Test Condition num_filters=64
+Test Condition filter_sizes=[1, 2, 3, 4]
+Test Condition epochs=4
+Train on 3818 samples, validate on 425 samples
+Epoch 1/4
+ - 4s - loss: 0.4691 - acc: 0.8248 - fpp: 0.1640 - val_loss: 0.4686 - val_acc: 0.8259 - val_fpp: 0.1741
+Epoch 2/4
+ - 3s - loss: 0.4418 - acc: 0.8360 - fpp: 0.1640 - val_loss: 0.4922 - val_acc: 0.8259 - val_fpp: 0.1741
+Epoch 3/4
+ - 3s - loss: 0.4393 - acc: 0.8360 - fpp: 0.1640 - val_loss: 0.4698 - val_acc: 0.8259 - val_fpp: 0.1741
+Epoch 4/4
+ - 3s - loss: 0.4201 - acc: 0.8360 - fpp: 0.1640 - val_loss: 0.4896 - val_acc: 0.8259 - val_fpp: 0.1741

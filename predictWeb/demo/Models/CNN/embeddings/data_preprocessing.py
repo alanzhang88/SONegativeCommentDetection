@@ -5,28 +5,10 @@ from nltk.tokenize.casual import remove_handles
 import re
 import string
 import csv
+import json
 
+import argparse
 
-# def preprocess(commentList):
-#     comment = ','.join(commentList).lower()
-#     tokenizer = RegexpTokenizer(r'\w+')
-#     tokens = tokenizer.tokenize(comment)
-#     # filtered_words = filter(lambda token: token not in stopwords.words('english'), tokens)
-#     with open("preprocessed.csv", "w") as f:
-#         writer = csv.writer(f, delimiter=' ')
-#         for item in tokens:
-#             writer.writerow(item)
-
-
-
-# def load_file(filename):
-#     with open(filename, newline='') as csvfile:
-#         reader = csv.DictReader(csvfile, ["comment", "label"])
-#         comments = []
-#         for row in reader:
-#             comments.append(row["comment"])
-#     print (comments)
-#     preprocess(comments)
 
 def preprocess(commentList):
     translator = str.maketrans('', '', string.punctuation)
@@ -38,10 +20,7 @@ def preprocess(commentList):
             csvwriter.writerow({'comments': comment, 'labels': item["label"]})
 
 
-
-
-
-def load_file(filename):
+def load_csvfile(filename):
     with open(filename, newline='') as csvfile:
         reader = csv.DictReader(csvfile, ["comment", "label"])
         commentsList = []
@@ -52,5 +31,27 @@ def load_file(filename):
             commentsList.append(items)
     preprocess(commentsList)
 
-if __name__ == '__main__':
-    load_file("./labeled_comments.csv")
+
+# def load_json(filename):
+#     with open(filename) as json_data:
+#         data = json.load(json_data)
+#     commentList = []
+#     count=0
+#     for comments in data['Comment']:
+#         items = {}
+#         items['comment'] = comments.lower()
+#         items['label']  = data['CommentLabel'][count]
+#         count += 1
+#         commentList.append(items)
+#     preprocess(commentList)
+        
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-csv',dest='csvfilename',type=str,required=False)
+    args = parser.parse_args()
+
+    if args.csvfilename is not None:
+        load_csvfile(args.csvfilename)
+    
+   

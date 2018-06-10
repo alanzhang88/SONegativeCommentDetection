@@ -1,0 +1,1 @@
+ - 2s - loss: 0.6931 - acc: 0.5303 - TNR: 0.6966 - precision: 0.5209 - f1_score: 0.5931 - val_loss: 0.6931 - val_acc: 0.4619 - val_TNR: 0.9341 - val_precision: 0.4595 - val_f1_score: 0.6159
