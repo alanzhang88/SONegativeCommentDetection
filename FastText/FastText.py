@@ -30,13 +30,21 @@ class FastText:
         trainSentences = []
         print("Loading and preprocessing data...\n")
         # load training and testing data
-        # with open('labeled_document2.json') as json_data:
-        with open(file) as json_data:
+        with open('../Models/LSTM/labeled_document_firstiter.json') as json_data:
             allTrainData = json.load(json_data)
 
-        trainPhrases, testPhrases, trainLabel, testLabel = train_test_split(allTrainData['Comment'],
-                                                                            allTrainData['CommentLabel'], test_size=0.2,
-                                                                            random_state=42)
+        with open('../Models/LSTM/labeled_document_seconditer.json') as json_data:
+            allTrainData2 = json.load(json_data)
+
+        trainPhrases, testPhrases, trainLabel, testLabel = train_test_split(
+            allTrainData['Comment'] + allTrainData2['Comment'],
+            allTrainData['CommentLabel'] + allTrainData2['CommentLabel'], test_size=0.2, random_state=42)
+        # with open(file) as json_data:
+        #     allTrainData = json.load(json_data)
+        #
+        # trainPhrases, testPhrases, trainLabel, testLabel = train_test_split(allTrainData['Comment'],
+        #                                                                     allTrainData['CommentLabel'], test_size=0.2,
+        #                                                                     random_state=42)
 
         #     print(testPhrases[0:100])
         punctuation = list(string.punctuation)
@@ -129,11 +137,11 @@ class FastText:
         return sentencesDS, labelsDS
 
     def load_model(self):
-        model = fasttext.load_model('model_seconditer.bin')
+        model = fasttext.load_model('best_model.bin')
         return model
 
     def predict(self, texts):
-        model = fasttext.load_model('model_seconditer.bin')
+        model = fasttext.load_model('best_model.bin')
         labels = model.predict_proba(texts)
         results = []
         for label in labels:
@@ -154,12 +162,12 @@ class FastText:
         # create training and testing file
         if (isDS):
             trainSentencesDS, trainLabelsDS = self.downsampling(postProcessedTrainPhrases, trainLabels, 0)
-            self.outputSentencesToFile("trainingDS_seconditer", trainSentencesDS, trainLabelsDS)
+            self.outputSentencesToFile("training_all", trainSentencesDS, trainLabelsDS)
             testSentencesDS, testLabelsDS = self.downsampling(postProcessedTestPhrases, testLabels, 0)
-            self.outputSentencesToFile("testingDS_seconditer", testSentencesDS, testLabelsDS)
+            self.outputSentencesToFile("testing_all", testSentencesDS, testLabelsDS)
         else:
-            self.outputPhrasesToFile("training_seconditer", postProcessedTrainPhrases, trainLabels)
-            self.outputPhrasesToFile("testing_seconditer", postProcessedTestPhrases, testLabels)
+            self.outputPhrasesToFile("training_all", postProcessedTrainPhrases, trainLabels)
+            self.outputPhrasesToFile("testing_all", postProcessedTestPhrases, testLabels)
             testSentences = self.extractText(postProcessedTestPhrases)
 
         # train the fasttext model
@@ -168,12 +176,14 @@ class FastText:
         # trainingData, trainLabels = sm.fit_sample(np.array(trainSentences).reshape(len(trainSentences), 1), trainLabels)
         if (isDS):
             #   downsampling inbalanced data
-            classifier = fasttext.supervised('trainingDS_seconditer.txt', 'modelDS_seconditer')
-            result = classifier.test('testingDS_seconditer.txt')
+            classifier = fasttext.supervised('trainingDS_all.txt', 'best_model')
+            result = classifier.test('testingDS_all.txt')
         else:
             #   without downsampling inbalanced data
-            classifier = fasttext.supervised('training_seconditer.txt', 'model_seconditer',lr=0.5)
-            result = classifier.test('testing_seconditer.txt')
+            classifier = fasttext.supervised('training_all.txt', 'best_model',epoch=5, lr=0.1, dim=100,
+                                             word_ngrams=1,loss='hs', ws=5, min_count=5,bucket=2000000)
+            # classifier = fasttext.supervised('training_seconditer.txt', 'model_seconditer', epoch=5)
+            result = classifier.test('testing_all.txt')
 
         # classify testing data
         if (isDS):
@@ -201,7 +211,7 @@ class FastText:
             print('Accuracy at 1: ', count/len(testSentencesDS))
         else:
             for i in range(len(testSentences) - 1):
-                if testLabels[i] == int(labels[i][0]):
+                if int(labels[i][0]) == 0 and testLabels[i] == int(labels[i][0]):
                     count += 1
             print('Accuracy at 1: ', count / len(testSentences))
         print('Precision at 1:', result.precision)
@@ -216,9 +226,55 @@ class FastText:
         print(texts)
         print(labels)
 
-file = '../labeled_document_seconditer.json'
+file = '../Models/LSTM/labeled_document_seconditer.json'
 isDS = False
 instance = FastText()
 instance.classify(file,isDS)
+# import os
+# from fasttuning.genetics import *
+# HOME = os.path.expanduser("~")
+# params = dict()
+# params['epoch'] = [1, 5, 10, 15, 20, 25, 30, 35]
+# params['lr'] = [i/10 for i in range(1, 11)]
+# params['min_count'] = [1, 10, 20]
+# params['word_ngrams'] = [1, 2, 3]
+#
+# n_individuals = 5
+# n_rounds = 2
+# good_label = '0'
+# train_file = "training_seconditer.txt"
+# test_file = "testing_seconditer.txt"
+# model_name = 'model_temp'
+#
+# print('Train file : ', train_file)
+# print('Test file : ', test_file)
+#
+# experience = Experience(params,
+#                         n_individuals,
+#                         n_rounds=n_rounds,
+#                         good_label=good_label,
+#                         train_file=train_file,
+#                         test_file=test_file)
+#
+# individuals = experience.launch()
+# print(individuals)
+# idx = 1
+# for i in individuals:
+#     model = ("model_%d", idx)
+#     idx += 1
+#     i.save(model)
+#     classifier = fasttext.supervised(train_file, model)
+#     result = classifier.test(test_file)
+#     metrics = get_metrics(classifier, test_file, good_label)
+#     print(metrics['accuracy'])
+#     print(metrics['recall'])
+#     print(metrics['confusion_matrix'])
+#     print(metrics['classes'])
+#     print(metrics['examples'])
+#     print('Precision at 1:', result.precision)
+#     print('Recall at 1:', result.recall)
+#     print('Total number of examples:', result.nexamples)
 
-
+# temp_file = 'temp_model_genetics.bin'
+# if os.path.isfile(temp_file):
+#     os.remove(temp_file)
