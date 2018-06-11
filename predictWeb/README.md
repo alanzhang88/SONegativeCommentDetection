@@ -30,17 +30,16 @@ staticfiles/----collects static files from app
 Make sure you have Python [installed properly](http://install.python-guide.org). Also, install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) and [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
 
 ```sh
-$ git clone git@github.com:heroku/python-getting-started.git
-$ cd python-getting-started
-
+<!-- $ git clone git@github.com:heroku/python-getting-started.git
+$ cd python-getting-started -->
+$ cd predictWeb
 $ pipenv install
-
-$ createdb python_getting_started
-
+<!-- $ createdb python_getting_started -->
 $ python manage.py migrate
 $ python manage.py collectstatic
+$ python manage.py runserver 0.0.0.0:5000
 
-$ heroku local
+<!-- $ heroku local -->
 ```
 
 Your should now be able to run the demo on [localhost:5000](http://localhost:5000/).
