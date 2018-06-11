@@ -3,17 +3,15 @@ from keras.layers import Embedding, Input, Conv2D, MaxPooling2D, Concatenate, Dr
 from keras.optimizers import Adam
 from keras.losses import categorical_crossentropy
 from keras.callbacks import Callback
-# from data_generator import DataHandler, clean_data
-import data_generator
+import data_generator as data_generator
 import tensorflow as tf
 import warnings
 warnings.filterwarnings('ignore')
-from embedding_config import config
+from embedding_config import config as config
 from keras.models import load_model
-from saveModel import SaveModel
+from saveModel import SaveModel as SaveModel
 import numpy as np
 
-# from sklearn.metrics import precision_recall_fscore_support
 
 #For predict purposes
 from keras.preprocessing.text import Tokenizer
@@ -24,7 +22,18 @@ EMBEDDING_CONFIGS = config.embedding_configs
 
 class CNNModel:
 
-    def __init__(self, num_filters=32, filter_sizes=[4,5,6,7], drop_prob=0.2, lr=0.001, batch_size=128, epochs=3, max_length=50, num_classes=2, embed_size=100,save_model=True,random_state=None):
+    def __init__(self,
+                 num_filters=32,
+                 filter_sizes=[4,5,6,7],
+                 drop_prob=0.2,
+                 lr=0.001,
+                 batch_size=128,
+                 epochs=20,
+                 max_length=50,
+                 num_classes=2,
+                 embed_size=100,
+                 save_model=True,
+                 random_state=None):
         self.num_filters = num_filters
         self.filter_sizes = filter_sizes
         self.drop_prob = drop_prob
@@ -45,7 +54,7 @@ class CNNModel:
 
 
 
-    def build_model(self):
+    def build_model(self,sample_weight = None):
 
         embedding_matrix = self.data.get_embedding_matrix()
         inp = Input(shape=(self.max_length,))
@@ -62,39 +71,24 @@ class CNNModel:
         z = Dropout(rate=self.drop_prob)(z)
         outp = Dense(self.num_classes,kernel_initializer='random_normal',activation='sigmoid')(z)
         self.model = Model(inputs=inp,outputs=outp)
-        self.model.compile(optimizer=Adam(lr=self.lr),loss=categorical_crossentropy,metrics=['accuracy',self.TNR, self.precision, self.f1_score])
+        self.model.compile(optimizer=Adam(lr=self.lr),loss=categorical_crossentropy,metrics=['accuracy',self.fpp])
         X_test, y_test = self.data.get_test_data()
         X_train, y_train = self.data.get_train_data()
         savemodel = SaveModel(validation_data=(X_test,y_test),target_name='acc',target_val=0.65)
         callbacks = [savemodel] if self.save_model else None
-        self.model.fit(x=X_train,y=y_train,batch_size=self.batch_size,epochs=self.epochs,verbose=2,validation_data=(X_test,y_test),callbacks=callbacks)
+        self.model.fit(x=X_train,y=y_train,batch_size=self.batch_size,epochs=self.epochs,verbose=2,validation_data=(X_test,y_test),callbacks=callbacks,sample_weight=sample_weight)
 
 
-    
+    def fpp(self,y_true,y_pred):
+        mat = tf.confusion_matrix(labels=tf.argmax(y_true,1),predictions=tf.argmax(y_pred,1),num_classes=self.num_classes)
+        return mat[0][1] / (mat[0][1] + mat[1][1])
 
-    # def fpp(self,y_true,y_pred):
-    #     mat = tf.confusion_matrix(labels=tf.argmax(y_true,1),predictions=tf.argmax(y_pred,1),num_classes=self.num_classes)
-    #     return mat[0][1] / (mat[0][1] + mat[1][1])
-        
-    
-    def TNR(self, y_true, y_pred):
-        mat = tf.confusion_matrix(labels=tf.argmax(y_true, 1),predictions=tf.argmax(y_pred, 1),num_classes=self.num_classes)
-        return mat[0][0] / (mat[0][0] + mat[0][1])
-    
-    def precision (self, y_true, y_pred):
-        mat = tf.confusion_matrix(labels=tf.argmax(y_true, 1),predictions=tf.argmax(y_pred, 1),num_classes=self.num_classes)
-        return mat[0][0] / (mat[0][0] + mat[1][0])
-
-    def f1_score(self, y_true, y_pred):
-        recall = self.TNR(y_true, y_pred)
-        precision = self.precision(y_true, y_pred)
-        f1_score = (2 * recall * precision) /(precision + recall)
-        return f1_score    
-
-        
 
     def load_model(self, filePath):
-        self.model = load_model(filePath, custom_objects={"TNR":self.TNR})
+        self.model = load_model(filePath, custom_objects={"fpp":self.fpp})
+
+    def save(self, filePath):
+        self.model.save(filepath)
 
     #input: list of string
     def predict(self, commentList):
@@ -103,12 +97,11 @@ class CNNModel:
         comments = self.data.process_new_data(commentList)
         res = self.model.predict(comments)
         return [(np.array(l)/sum(l)).tolist() for l in res]
-    
+
+
 
 if __name__ == "__main__":
-    CNN_model = CNNModel()
-    # CNN_model.load_model("./CNNmodel.h5")
-    CNN_model.build_model()
-    # print (CNN_model.predict(["You're clearly converting the result of the `Math.Sqrt()` to an `Int32` - an integer, i.e. no decimals."]))
-
-   
+    CNN_model = CNNModel(save_model=False)
+    CNN_model.load_model("./CNNmodel.h5")
+    # CNN_model.build_model()
+    print (CNN_model.predict(["You're clearly converting the result of the `Math.Sqrt()` to an `Int32` - an integer, i.e. no decimals.", "Stupid"]))

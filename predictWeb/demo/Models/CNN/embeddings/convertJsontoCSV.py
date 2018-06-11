@@ -17,24 +17,18 @@ import pandas as pd
 
 
 import json
-import sys
 
-
-# import argparse
-
-# parser = argparse.ArgumentParser()
-# parser.add_argument("-fn", dest="filePath", type=str, required=True)
-# args = parser.parse_args()
 
 # In[5]:
 
 
-# filePath = '../../labeled_document2.json'
+filePath = '../../labeled_document2.json'
 
 
 # In[6]:
 
-with open(sys.argv[1]) as f:
+
+with open(filePath) as f:
     data = json.load(f)
 
 
@@ -51,9 +45,10 @@ for i in range(len(data['Comment'])):
 
 
 # In[11]:
-indexes = np.random.choice(positiveComment.shape[0],negativeComment.shape[0],replace=False)
 
+
+indexes = np.random.choice(positiveComment.shape[0],negativeComment.shape[0],replace=False)
 concatComment = np.concatenate((positiveComment[indexes],negativeComment),axis=0)
-# concatComment = np.concatenate((positiveComment,negativeComment),axis=0)
 dataframe = pd.DataFrame(concatComment)
-dataframe.to_csv('./labeled_comments_secondIter.csv',header=False,index=False)
+dataframe.to_csv('./labeled_comments.csv',header=False,index=False)
+
