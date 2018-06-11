@@ -24,45 +24,31 @@ class FastText:
     def __init__(self):
         print("init")
 
-    def preprocessData(self, file):
+    def preprocessData(self):
         postProcessedTrainPhrases = []
         postProcessedTestPhrases = []
         trainSentences = []
         print("Loading and preprocessing data...\n")
         # load training and testing data
-        # with open('labeled_document2.json') as json_data:
-        with open(file) as json_data:
+        with open('../LSTM/labeled_document_firstiter.json') as json_data:
             allTrainData = json.load(json_data)
 
-        trainPhrases, testPhrases, trainLabel, testLabel = train_test_split(allTrainData['Comment'],
-                                                                            allTrainData['CommentLabel'], test_size=0.2,
-                                                                            random_state=42)
-
+        with open('../LSTM/labeled_document_seconditer.json') as json_data:
+            allTrainData2 = json.load(json_data)
+        trainPhrases, testPhrases, trainLabel, testLabel = train_test_split(
+            allTrainData['Comment'] + allTrainData2['Comment'],
+            allTrainData['CommentLabel'] + allTrainData2['CommentLabel'], test_size=0.2, random_state=42)
+        # with open(file) as json_data:
+        #     allTrainData = json.load(json_data)
+        #
+        # trainPhrases, testPhrases, trainLabel, testLabel = train_test_split(allTrainData['Comment'],
+        #                                                                     allTrainData['CommentLabel'], test_size=0.2,
+        #                                                                     random_state=42)
         #     print(testPhrases[0:100])
         punctuation = list(string.punctuation)
         stopWords = stopwords.words('english') + punctuation
 
         engStemmer = SnowballStemmer('english')
-        # postProcessedTrainPhrases = []
-        #     for phrase in trainPhrases:
-        #         uni_doc = unicode(phrase, errors='replace')
-        #         tokens = word_tokenize(uni_doc)
-        #         filtered = [word for word in tokens if word not in stop_words]
-        #         try:
-        #             stemmed = [stemmer.stem(word) for word in filtered]
-        #         except UnicodeDecodeError:
-        #             print(word)
-        #         postProcessedTrainPhrases.append(parsedWords)
-
-        #     for phrase in testPhrases:
-        #         uni_doc = unicode(phrase, errors='replace')
-        #         tokens = word_tokenize(uni_doc)
-        #         filtered = [word for word in tokens if word not in stop_words]
-        #         try:
-        #             stemmed = [stemmer.stem(word) for word in filtered]
-        #         except UnicodeDecodeError:
-        #             print(word)
-        #         postProcessedTestPhrases.append(parsedWords)
         for phrase in trainPhrases:
             if not isinstance(phrase, str):
                 continue
@@ -129,11 +115,11 @@ class FastText:
         return sentencesDS, labelsDS
 
     def load_model(self):
-        model = fasttext.load_model('model_seconditer.bin')
+        model = fasttext.load_model('best_model.bin')
         return model
 
     def predict(self, texts):
-        model = fasttext.load_model('model_seconditer.bin')
+        model = fasttext.load_model('best_model.bin')
         labels = model.predict_proba(texts)
         results = []
         for label in labels:
@@ -147,19 +133,19 @@ class FastText:
             results.append(tmp)
         print(results)
 
-    def classify(self, file, isDS):
+    def classify(self,isDS):
         # preprocess data
-        (postProcessedTrainPhrases, postProcessedTestPhrases, trainLabels, testLabels) = self.preprocessData(file)
+        (postProcessedTrainPhrases, postProcessedTestPhrases, trainLabels, testLabels) = self.preprocessData()
 
         # create training and testing file
         if (isDS):
             trainSentencesDS, trainLabelsDS = self.downsampling(postProcessedTrainPhrases, trainLabels, 0)
-            self.outputSentencesToFile("trainingDS_seconditer", trainSentencesDS, trainLabelsDS)
+            self.outputSentencesToFile("./data/trainingDS_all", trainSentencesDS, trainLabelsDS)
             testSentencesDS, testLabelsDS = self.downsampling(postProcessedTestPhrases, testLabels, 0)
-            self.outputSentencesToFile("testingDS_seconditer", testSentencesDS, testLabelsDS)
+            self.outputSentencesToFile("./data/testingDS_all", testSentencesDS, testLabelsDS)
         else:
-            self.outputPhrasesToFile("training_seconditer", postProcessedTrainPhrases, trainLabels)
-            self.outputPhrasesToFile("testing_seconditer", postProcessedTestPhrases, testLabels)
+            self.outputPhrasesToFile("./data/training_all", postProcessedTrainPhrases, trainLabels)
+            self.outputPhrasesToFile("./data/testing_all", postProcessedTestPhrases, testLabels)
             testSentences = self.extractText(postProcessedTestPhrases)
 
         # train the fasttext model
@@ -168,12 +154,13 @@ class FastText:
         # trainingData, trainLabels = sm.fit_sample(np.array(trainSentences).reshape(len(trainSentences), 1), trainLabels)
         if (isDS):
             #   downsampling inbalanced data
-            classifier = fasttext.supervised('trainingDS_seconditer.txt', 'modelDS_seconditer')
-            result = classifier.test('testingDS_seconditer.txt')
+            classifier = fasttext.supervised('./data/trainingDS_all.txt', './model/best_model')
+            result = classifier.test('./data/testingDS_all.txt')
         else:
             #   without downsampling inbalanced data
-            classifier = fasttext.supervised('training_seconditer.txt', 'model_seconditer',lr=0.5)
-            result = classifier.test('testing_seconditer.txt')
+            classifier = fasttext.supervised('./data/training_all.txt', './model/best_model', epoch=5, lr=0.1, dim=300,
+                                             word_ngrams=1, loss='ns', ws=1, min_count=5, bucket=2000000)
+            result = classifier.test('./data/testing_all.txt')
 
         # classify testing data
         if (isDS):
@@ -211,14 +198,13 @@ class FastText:
 
         # classify sample texts
         print('Classifying sample texts...')
-        texts = ['homework google', 'try it yourself', 'you didnt show any effort']
+        texts = ['If you intend to become a professional programmer, you are going to have to learn to look up documentation. And to run programs if you want to know what happens when you run them. Your mother is not always going to be on hand to spoon-feed you your breakfast.', 'try it yourself', 'you didnt show any effort']
         labels = classifier.predict(texts)
         print(texts)
         print(labels)
 
-file = '../labeled_document_seconditer.json'
 isDS = False
 instance = FastText()
-instance.classify(file,isDS)
+instance.classify(isDS)
 
 
