@@ -37,12 +37,11 @@ postProcessedTrainPhrases = []
 postProcessedTestPhrases = []
 
 LSTM_process = LSTMUtil.return_new_lstm()
-# LSTM_process.trainAndTest()
+LSTM_process.trainAndTest()
 # LSTM_process = LSTM(postProcessedTrainPhrases, postProcessedTestPhrases)
 
 negcount = 0
 poscount = 0
-testPhrases = ["If you intend to become a professional programmer, you are going to have to learn to look up documentation. And to run programs if you want to know what happens when you run them. Your mother is not always going to be on hand to spoon-feed you your breakfast."]
 res = LSTM_process.predict(testPhrases)
 for i in res:
 	if i[0] > i[1]:

@@ -71,21 +71,55 @@ class CNNModel:
         z = Dropout(rate=self.drop_prob)(z)
         outp = Dense(self.num_classes,kernel_initializer='random_normal',activation='sigmoid')(z)
         self.model = Model(inputs=inp,outputs=outp)
-        self.model.compile(optimizer=Adam(lr=self.lr),loss=categorical_crossentropy,metrics=['accuracy',self.fpp])
+        self.model.compile(optimizer=Adam(lr=self.lr), loss=categorical_crossentropy,
+                           metrics=['accuracy', self.TNR, self.precision, self.f1_score, self.TN, self.FP, self.FN,
+                                    self.TP])
         X_test, y_test = self.data.get_test_data()
         X_train, y_train = self.data.get_train_data()
-        savemodel = SaveModel(validation_data=(X_test,y_test),target_name='acc',target_val=0.65)
+        savemodel = SaveModel(validation_data=(X_test,y_test),target_name='f1_score',target_val=0.65)
         callbacks = [savemodel] if self.save_model else None
         self.model.fit(x=X_train,y=y_train,batch_size=self.batch_size,epochs=self.epochs,verbose=2,validation_data=(X_test,y_test),callbacks=callbacks,sample_weight=sample_weight)
 
 
-    def fpp(self,y_true,y_pred):
+    def TNR(self,y_true,y_pred):
         mat = tf.confusion_matrix(labels=tf.argmax(y_true,1),predictions=tf.argmax(y_pred,1),num_classes=self.num_classes)
-        return mat[0][1] / (mat[0][1] + mat[1][1])
+        return mat[0][0] / (mat[0][0] + mat[0][1])
 
+    def precision(self, y_true, y_pred):
+        mat = tf.confusion_matrix(labels=tf.argmax(y_true, 1), predictions=tf.argmax(y_pred, 1),
+                                  num_classes=self.num_classes)
+        return mat[0][0] / (mat[0][0] + mat[1][0])
+
+    def f1_score(self, y_true, y_pred):
+        recall = self.TNR(y_true, y_pred)
+        precision = self.precision(y_true, y_pred)
+        f1_score = (2 * recall * precision) / (precision + recall)
+        return f1_score
+
+    def TN(self, y_true, y_pred):
+        mat = tf.confusion_matrix(labels=tf.argmax(y_true, 1), predictions=tf.argmax(y_pred, 1),
+                                  num_classes=self.num_classes)
+        return mat[0][0]
+
+    def FP(self, y_true, y_pred):
+        mat = tf.confusion_matrix(labels=tf.argmax(y_true, 1), predictions=tf.argmax(y_pred, 1),
+                                  num_classes=self.num_classes)
+        return mat[0][1]
+
+    def FN(self, y_true, y_pred):
+        mat = tf.confusion_matrix(labels=tf.argmax(y_true, 1), predictions=tf.argmax(y_pred, 1),
+                                  num_classes=self.num_classes)
+        return mat[1][0]
+
+    def TP(self, y_true, y_pred):
+        mat = tf.confusion_matrix(labels=tf.argmax(y_true, 1), predictions=tf.argmax(y_pred, 1),
+                                  num_classes=self.num_classes)
+        return mat[1][1]
 
     def load_model(self, filePath):
-        self.model = load_model(filePath, custom_objects={"fpp":self.fpp})
+        self.model = load_model(filePath, custom_objects={"TNR": self.TNR, "precision":self.precision,
+                                                          "f1_score": self.f1_score,'TN':self.TN,
+                                                          'FP':self.FP, 'FN':self.FN, 'TP':self.TP})
 
     def save(self, filePath):
         self.model.save(filepath)

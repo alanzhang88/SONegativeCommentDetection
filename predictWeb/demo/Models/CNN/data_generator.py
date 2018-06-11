@@ -104,7 +104,7 @@ class DataHandler:
     def get_embedding_matrix(self):
         word_index = self.tokenizer.word_index
         nb_words = len(word_index)
-        embedding_matrix = np.random.uniform(low=-1.0,high=1.0,size=(nb_words+1,self.embed_size))
+        embedding_matrix = np.random.uniform(low=-1.0,high=1.0,size=(max(nb_words+1, 15000),self.embed_size))
         embedding_index = get_embedding(self.EmbeddingFile)
 
         for word,i in word_index.items():

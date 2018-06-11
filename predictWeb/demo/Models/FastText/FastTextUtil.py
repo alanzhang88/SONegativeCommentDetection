@@ -32,38 +32,27 @@ class FastText:
        trainSentences = []
        # print("Loading and preprocessing data...\n")
        # load training and testing data
-       with open('../../labeled_document2.json') as json_data:
+       with open('../LSTM/labeled_document2.json') as json_data:
            allTrainData = json.load(json_data)
 
-       trainPhrases, testPhrases, trainLabel, testLabel = train_test_split(allTrainData['Comment'],
-                                                                           allTrainData['CommentLabel'], test_size=0.2,
-                                                                           random_state=42)
+       with open('../LSTM/labeled_document3.json') as json_data:
+           allTrainData2 = json.load(json_data)
+
+       trainPhrases, testPhrases, trainLabel, testLabel = train_test_split(
+           allTrainData['Comment'] + allTrainData2['Comment'],
+           allTrainData['CommentLabel'] + allTrainData2['CommentLabel'], test_size=0.2, random_state=42)
+       # with open('../../labeled_document2.json') as json_data:
+       #     allTrainData = json.load(json_data)
+       #
+       # trainPhrases, testPhrases, trainLabel, testLabel = train_test_split(allTrainData['Comment'],
+       #                                                                     allTrainData['CommentLabel'], test_size=0.2,
+       #                                                                     random_state=42)
 
        #     print(testPhrases[0:100])
        punctuation = list(string.punctuation)
        stopWords = stopwords.words('english') + punctuation
 
        engStemmer = SnowballStemmer('english')
-       # postProcessedTrainPhrases = []
-       #     for phrase in trainPhrases:
-       #         uni_doc = unicode(phrase, errors='replace')
-       #         tokens = word_tokenize(uni_doc)
-       #         filtered = [word for word in tokens if word not in stop_words]
-       #         try:
-       #             stemmed = [stemmer.stem(word) for word in filtered]
-       #         except UnicodeDecodeError:
-       #             print(word)
-       #         postProcessedTrainPhrases.append(parsedWords)
-
-       #     for phrase in testPhrases:
-       #         uni_doc = unicode(phrase, errors='replace')
-       #         tokens = word_tokenize(uni_doc)
-       #         filtered = [word for word in tokens if word not in stop_words]
-       #         try:
-       #             stemmed = [stemmer.stem(word) for word in filtered]
-       #         except UnicodeDecodeError:
-       #             print(word)
-       #         postProcessedTestPhrases.append(parsedWords)
        for phrase in trainPhrases:
            if not isinstance(phrase, str):
                continue
@@ -130,11 +119,11 @@ class FastText:
        return sentencesDS, labelsDS
 
    def load_model(self):
-       model = fasttext.load_model('model.bin')
+       model = fasttext.load_model('best_model.bin')
        return model
 
    def predict(self, texts):
-       model = fasttext.load_model(os.path.dirname(__file__)+'/model.bin')
+       model = fasttext.load_model(os.path.dirname(__file__)+'/best_model.bin')
        labels = model.predict_proba(texts)
        # model = fasttext.load_model('modelDS.bin')
        # labels = model.predict_proba(texts)
@@ -150,50 +139,65 @@ class FastText:
            results.append(tmp)
        return results
 
-   def classify(self):
+   def classify(self, file, isDS):
        # preprocess data
-       (trainLabels, testLabels) = preprocessData()
+       (postProcessedTrainPhrases, postProcessedTestPhrases, trainLabels, testLabels) = self.preprocessData(file)
 
        # create training and testing file
-       # outputPhrasesToFile("training", postProcessedTrainPhrases, trainLabels)
-       # outputPhrasesToFile("testing", postProcessedTestPhrases, testLabels)
+       if (isDS):
+           trainSentencesDS, trainLabelsDS = self.downsampling(postProcessedTrainPhrases, trainLabels, 0)
+           self.outputSentencesToFile("training_all", trainSentencesDS, trainLabelsDS)
+           testSentencesDS, testLabelsDS = self.downsampling(postProcessedTestPhrases, testLabels, 0)
+           self.outputSentencesToFile("testing_all", testSentencesDS, testLabelsDS)
+       else:
+           self.outputPhrasesToFile("training_all", postProcessedTrainPhrases, trainLabels)
+           self.outputPhrasesToFile("testing_all", postProcessedTestPhrases, testLabels)
+           testSentences = self.extractText(postProcessedTestPhrases)
 
        # train the fasttext model
        print('Buidling the model...\n')
-       trainSentencesDS, trainLabelsDS = downsampling(postProcessedTrainPhrases, trainLabels, 0)
-       outputSentencesToFile("trainingDS", trainSentencesDS, trainLabelsDS)
-       testSentencesDS, testLabelsDS = downsampling(postProcessedTestPhrases, testLabels, 0)
-       outputSentencesToFile("testingDS", testSentencesDS, testLabelsDS)
        # sm = SMOTE(random_state=12, ratio = 1.0)
        # trainingData, trainLabels = sm.fit_sample(np.array(trainSentences).reshape(len(trainSentences), 1), trainLabels)
-
-       #   without downsampling inbalanced data
-       # classifier = fasttext.supervised('training.txt', 'model')
-       # result = classifier.test('testing.txt')
-       #   downsampling inbalanced data
-       classifier = fasttext.supervised('trainingDS.txt', 'modelDS')
-       result = classifier.test('testingDS.txt')
+       if (isDS):
+           #   downsampling inbalanced data
+           classifier = fasttext.supervised('trainingDS_all.txt', 'best_model')
+           result = classifier.test('testingDS_all.txt')
+       else:
+           #   without downsampling inbalanced data
+           classifier = fasttext.supervised('training_all.txt', 'best_model', epoch=5, lr=0.1, dim=100,
+                                            word_ngrams=3, loss='ns', ws=5, min_count=5, bucket=2000000)
+           # classifier = fasttext.supervised('training_seconditer.txt', 'model_seconditer', epoch=5)
+           result = classifier.test('testing_all.txt')
 
        # classify testing data
-       #   without downsampling inbalanced data
-       # testSentences = extractText(postProcessedTestPhrases)
-       # labels = classifier.predict(testSentences)
-       #   downsampling inbalanced data
-       labels = classifier.predict(testSentencesDS)
+       if (isDS):
+           #   downsampling inbalanced data
+           labels = classifier.predict(testSentencesDS)
+       else:
+           #   without downsampling inbalanced data
+           labels = classifier.predict(testSentences)
+
        print('Negative comments found:')
        for i in range(len(labels)):
            if int(labels[i][0]) == 0:
-               print(testSentencesDS[i])
-               # print(testSentences[i])
+               if (isDS):
+                   print(testSentencesDS[i])
+               else:
+                   print(testSentences[i])
 
        # evaluate the model
        print('\nEvaluating the model...')
        count = 0
-       for i in range(len(testSentencesDS) - 1):
-           # print(testLabels[i])
-           if testLabelsDS[i] == int(labels[i][0]):
-               count += 1
-       print('Accuracy at 1: ', count/len(testSentencesDS))
+       if (isDS):
+           for i in range(len(testSentencesDS) - 1):
+               if testLabelsDS[i] == int(labels[i][0]):
+                   count += 1
+           print('Accuracy at 1: ', count / len(testSentencesDS))
+       else:
+           for i in range(len(testSentences) - 1):
+               if int(labels[i][0]) == 0 and testLabels[i] == int(labels[i][0]):
+                   count += 1
+           print('Accuracy at 1: ', count / len(testSentences))
        print('Precision at 1:', result.precision)
        print('Recall at 1:', result.recall)
        print('Total number of examples:', result.nexamples)
