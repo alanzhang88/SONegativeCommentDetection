@@ -4,9 +4,6 @@ __pycache__/
 .DS_Store
 DataSample/
 Data/
-handleLowScorePosts.py
-MongodbClient.py
-markComments.py
 **/node_modules/
 CNN/**/*.csv
 CNN/**/word2vec_model
