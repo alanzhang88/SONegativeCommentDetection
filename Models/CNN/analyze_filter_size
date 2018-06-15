@@ -1,0 +1,25 @@
+#! /bin/bash
+
+if [ "$1" != "" ]; then
+  fileName=$1
+  echo "Input file name is "$fileName
+else
+  fileName="output_log.txt"
+  echo "Using default file name output_log.txt"
+fi
+fields=$(grep -E 'Begin Test Condition (.*)' $fileName | awk '{print $NF}')
+accum='['
+maxaccstr='['
+for f in $fields;
+do
+  regf=$(echo $f | sed 's!\[\(.*\)\]!\\\[\1\\\]!')
+  maxacc=$(sed -n '/'$regf'/,/'$regf'/p' $fileName | grep 'val_acc' | tr '-' ' ' | awk '{print $11}' | sort -r | head -1)
+  echo 'With Condition '$f', the maximum accuaracy is '$maxacc
+  maxaccstr=$maxaccstr$maxacc','
+  val=$(echo $f | tr '=' ' ' | awk '{print $NF}')
+  fieldName=$(echo $f | tr '=' ' ' | awk '{print $1}')
+  accum=$accum$val','
+done
+accum=$(echo $accum | sed "s/\(.*\).$/\1]/")
+maxaccstr=$(echo $maxaccstr | sed "s/\(.*\).$/\1]/")
+python3 plot.py $fieldName $accum $maxaccstr
