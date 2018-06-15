@@ -85,7 +85,7 @@ class DataHandler:
         X = self.tokenizer.texts_to_sequences(X)
         X = pad_sequences(X,maxlen=self.maxlen,padding='post',truncating='post')
         y = to_categorical(y,num_classes=self.num_classes)
-        self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(X,y,train_size=0.9,random_state=self.random_state)
+        self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(X,y,train_size=0.8,random_state=self.random_state)
         self.i = 0
 
     def get_embedding_matrix(self):

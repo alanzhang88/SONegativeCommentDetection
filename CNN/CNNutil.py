@@ -14,7 +14,11 @@ from saveModel import SaveModel
 import numpy as np
 import json
 
-# from sklearn.metrics import precision_recall_fscore_support
+
+
+##### confusion matrix
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import precision_recall_fscore_support
 
 #For predict purposes
 from keras.preprocessing.text import Tokenizer
@@ -25,7 +29,7 @@ EMBEDDING_CONFIGS = config.embedding_configs
 
 class CNNModel:
 
-    def __init__(self, num_filters=256, filter_sizes=[4], drop_prob=0.2, lr=0.001, batch_size=32, epochs=10, max_length=50, num_classes=2, embed_size=100,save_model=True,random_state=None, activation="sigmoid"):
+    def __init__(self, num_filters=256, filter_sizes=[4], drop_prob=0.2, lr=0.002, batch_size=32, epochs=10, max_length=50, num_classes=2, embed_size=100,save_model=True,random_state=None, activation="sigmoid"):
         self.num_filters = num_filters
         self.filter_sizes = filter_sizes
         self.drop_prob = drop_prob
@@ -68,6 +72,7 @@ class CNNModel:
         X_test, y_test = self.data.get_test_data()
         X_train, y_train = self.data.get_train_data()
         savemodel = SaveModel(validation_data=(X_test,y_test),target_name='f1_score',target_val=0.65)
+
         callbacks = [savemodel] if self.save_model else None
         history = self.model.fit(x=X_train,y=y_train,batch_size=self.batch_size,epochs=self.epochs,verbose=2,validation_data=(X_test,y_test),callbacks=callbacks)
         return history
@@ -103,25 +108,63 @@ class CNNModel:
     def TP(self, y_true, y_pred):
         mat = tf.confusion_matrix(labels=tf.argmax(y_true, 1),predictions=tf.argmax(y_pred, 1),num_classes=self.num_classes)
         return mat[1][1]
+    
+
+   
+
 
 
     def load_model(self, filePath):
         self.model = load_model(filePath, custom_objects={"TNR":self.TNR, "precision":self.precision, "f1_score":self.f1_score, 'TN':self.TN, 'FP':self.FP, 'FN':self.FN, 'TP':self.TP})
+
 
     #input: list of string
     def predict(self, commentList):
         #preprocess data
         comments = self.data.process_new_data(commentList)
         res = self.model.predict(comments)
-        print (res)
+        # print (res)
         return [(np.array(l)/sum(l)).tolist() for l in res]
     
+
+    def predicted(self, comments):
+        res = self.model.predict(comments)
+        res = [(np.array(l)/sum(l)).tolist() for l in res]
+        predicted = []     
+        for i in res:
+            if i[0] > i[1]:
+                predicted.append(0)
+            else:
+                predicted.append(1)
+        return predicted
+
+    def confusion_Matrix(self,y_test, y_pred):
+        matrix = confusion_matrix(y_test, y_pred)
+        return matrix
 
 if __name__ == "__main__":
     CNN_model = CNNModel()
     # CNN_model.load_model("./CNNmodel.h5")
     CNN_model.build_model()
-    CNN_model.load_model("./CNNmodel.h5")
-    print (CNN_model.predict(["Google you homeword first"]))
+    # CNN_model.load_model("./CNNmodel.h5")
+    
+    # X_test, y_test = CNN_model.data.get_test_data()
+
+    # true_label = []
+    # for i in y_test:
+    #     if i[0] > i[1]:
+    #         true_label.append(0)
+    #     else:
+    #         true_label.append(1)
+
+    
+
+    # y_pred = CNN_model.predicted(X_test)
+    # report = precision_recall_fscore_support(true_label, y_pred)
+    # print (report[0][0])
+    # print (report[1][0])
+    # print (report[2][0])
+    # print (CNN_model.confusion_Matrix(true_label, y_pred))
+
    
    
