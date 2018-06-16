@@ -14,14 +14,29 @@ Demo server is deployed live on Heroku:
 https://sonegativecommentdetection.herokuapp.com/
 
 ## Code Structures:
-Models/ 
---LSTM
---CNN
---FastText
+Models/ <br />
+--LSTM <br />
+* LSTM.py: build and train LSTM model <br />
+* LSTM_tuning.py: tune hyperparameters for single stack LSTM <br />
+* LSTM_tuning_stack2.py: tune hyperparameters for 2-stack LSTM <br />
+* LSTM_tuning_stack3.py: tune hyperparameters for 3-stack LSTM <br />
 
-dataExtraction/: XML parser, extract data from SO data dump 
-demoWeb/: UI for negative comments prediction web app
-predictWeb/: RESTFul API, with models deployed on the server
+--CNN <br />
+* embeddings/: preprocess data to be used for models <br />
+* CNNutil.py: build and train CNN model <br />
+* run_experiments.sh: script for hyperparameter tuning <br />
+* plot_graph.ipynb: jupyter notebook for graph plotting <br />
+* test_Param.py: dump different parameter values from experiments to JSON file <br />
+
+--FastText <br />
+* FastText.py: build and train FastText model <br />
+* FastTextTuning.ipynb: jupyter notebook for FastText hyperparameters plotting <br />
+
+dataExtraction/: XML parser, extract data from SO data dump <br />
+demoWeb/: UI for negative comments prediction web app       <br />
+predictWeb/: RESTFul API, with models deployed on the server. Please refer to README.md inside the folder for usage. <br />
+
+
 
 
 
