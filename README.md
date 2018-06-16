@@ -14,7 +14,7 @@ Demo server is deployed live on Heroku:
 https://sonegativecommentdetection.herokuapp.com/
 
 ## Code Structures:
-Models/ <br />
+models/ <br />
 --LSTM <br />
 * LSTM.py: build and train LSTM model <br />
 * LSTM_tuning.py: tune hyperparameters for single stack LSTM <br />
