@@ -17,16 +17,16 @@ from nltk.stem import SnowballStemmer
 # print(model.words) # list of words in dictionary
 
 class FastText:
-    postProcessedTrainPhrases = []
-    postProcessedTestPhrases = []
+    trainTexts = []
+    testTexts = []
     trainSentences = []
 
     def __init__(self):
         print("init")
 
     def preprocessData(self):
-        postProcessedTrainPhrases = []
-        postProcessedTestPhrases = []
+        trainTexts = []
+        testTexts = []
         trainSentences = []
         print("Loading and preprocessing data...\n")
         # load training and testing data
@@ -57,7 +57,7 @@ class FastText:
             for t in tokens:
                 if t not in stopWords:
                     parsedWords.append(engStemmer.stem(t))
-            postProcessedTrainPhrases.append(parsedWords)
+            trainTexts.append(parsedWords)
 
         for phrase in testPhrases:
             if not isinstance(phrase, str):
@@ -68,8 +68,8 @@ class FastText:
             for t in tokens:
                 if t not in stopWords:
                     parsedWords.append(engStemmer.stem(t))
-            postProcessedTestPhrases.append(parsedWords)
-        return (postProcessedTrainPhrases, postProcessedTestPhrases, trainLabel, testLabel)
+            testTexts.append(parsedWords)
+        return (trainTexts, testTexts, trainLabel, testLabel)
 
     def outputPhrasesToFile(self, filename, phrases, labels):
         f = open(filename+".txt", "w+")
@@ -135,23 +135,18 @@ class FastText:
 
     def classify(self,isDS):
         # preprocess data
-        (postProcessedTrainPhrases, postProcessedTestPhrases, trainLabels, testLabels) = self.preprocessData()
-
+        (trainTexts, testTexts, trainLabels, testLabels) = self.preprocessData()
         # create training and testing file
         if (isDS):
-            trainSentencesDS, trainLabelsDS = self.downsampling(postProcessedTrainPhrases, trainLabels, 0)
+            trainSentencesDS, trainLabelsDS = self.downsampling(trainTexts, trainLabels, 0)
             self.outputSentencesToFile("./data/trainingDS_all", trainSentencesDS, trainLabelsDS)
-            testSentencesDS, testLabelsDS = self.downsampling(postProcessedTestPhrases, testLabels, 0)
+            testSentencesDS, testLabelsDS = self.downsampling(testTexts, testLabels, 0)
             self.outputSentencesToFile("./data/testingDS_all", testSentencesDS, testLabelsDS)
         else:
-            self.outputPhrasesToFile("./data/training_all", postProcessedTrainPhrases, trainLabels)
-            self.outputPhrasesToFile("./data/testing_all", postProcessedTestPhrases, testLabels)
-            testSentences = self.extractText(postProcessedTestPhrases)
-
+            self.outputPhrasesToFile("./data/training_all", trainTexts, trainLabels)
+            self.outputPhrasesToFile("./data/testing_all", testTexts, testLabels)
+            testSentences = self.extractText(testTexts)
         # train the fasttext model
-        print('Buidling the model...\n')
-        # sm = SMOTE(random_state=12, ratio = 1.0)
-        # trainingData, trainLabels = sm.fit_sample(np.array(trainSentences).reshape(len(trainSentences), 1), trainLabels)
         if (isDS):
             #   downsampling inbalanced data
             classifier = fasttext.supervised('./data/trainingDS_all.txt', './model/best_model')
@@ -162,6 +157,12 @@ class FastText:
                                              word_ngrams=1, loss='ns', ws=1, min_count=5, bucket=2000000)
             result = classifier.test('./data/testing_all.txt')
 
+        # (trainTexts, testTexts, trainLabels, testLabels) = self.preprocessData()
+        # self.outputPhrasesToFile("./data/training_all", trainTexts, trainLabels)
+        # self.outputPhrasesToFile("./data/testing_all", testTexts, testLabels)
+        # testSentences = self.extractText(testTexts)
+        # classifier = fasttext.supervised('./data/training_all.txt', './model/best_model', epoch=5, lr=0.1, dim=300,
+                                        # word_ngrams=1, loss='ns', ws=1, min_count=5, bucket=2000000)
         # classify testing data
         if (isDS):
             #   downsampling inbalanced data
