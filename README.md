@@ -32,6 +32,11 @@ Models/ <br />
 * FastText.py: build and train FastText model <br />
 * FastTextTuning.ipynb: jupyter notebook for FastText hyperparameters plotting <br />
 
+--DataExploration <br />
+* dataprocessing.ipynb: Cleanup, extract and merge labeled data
+* datavisulization.ipynb: Apply classification and based on word importance, visulize the top 100 words
+* prediction_evalution.ipynb: Build structure for tuning data processing and plotting
+
 dataExtraction/: XML parser, extract data from SO data dump <br />
 demoWeb/: UI for negative comments prediction web app       <br />
 predictWeb/: RESTFul API, with models deployed on the server. Please refer to README.md inside the folder for usage. <br />
