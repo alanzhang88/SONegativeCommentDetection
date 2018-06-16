@@ -26,13 +26,15 @@ A barebones Django app, which can easily be deployed to Heroku.
 
 ## Usage
 
-The homepage of API (https://predictlabel.herokuapp.com/) does not have any UI. In order to predict negativity of text, a JSON request needs to be sent to the API url path where "\classify" is appended to the end (https://predictlabel.herokuapp.com/classify). If you just visit the url without the request, there will be an error. You can use Postman to test the API. <br\>
+The homepage of API (https://predictlabel.herokuapp.com/) does not have any UI. In order to predict negativity of text, a JSON request needs to be sent to the API url path where "\classify" is appended to the end (https://predictlabel.herokuapp.com/classify). If you just visit the url without the request, there will be an error. You can use Postman to test the API. <br/>
 
-The API takes a  JSON request with the list of comments as input and returns the JSON response with positive and negative classes possibilities as output. Postman can be used to test the API. <br\>
+The API takes a  JSON request with the list of comments as input and returns the JSON response with positive and negative classes possibilities as output. Postman can be used to test the API. <br/>
 
 Sample Postman Request: 
 * type: Post method
-* path: https://predictlabel.herokuapp.com/classify
+* path: 
+  - https://predictlabel.herokuapp.com/classify (if test the remote server, this has already be deployed, you can directly test it using Postman)
+  - https://localhost:5000/classify (if test the local server, follow the Running Locally section)
 * headers:
   - key: content-type
   - vaue: application-json
@@ -52,10 +54,10 @@ Make sure you have Python [installed properly](http://install.python-guide.org).
 $ cd predictWeb
 $ pipenv install
 $ pipenv shell
+$ python manage.py migrate
 $ python manage.py runserver 0.0.0.0:5000
-
-<!-- $ heroku local -->
 ```
+If you visit http://localhost:5000 and should see hello world. Go to Postman and folow the previous session to test. The only that needs to be changed is that the path is
 
 Your should now be able to run the demo on [localhost:5000](http://localhost:5000/).
 
