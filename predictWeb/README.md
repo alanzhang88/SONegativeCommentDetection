@@ -41,6 +41,7 @@ Sample Postman Request:
 
 Sample Postman Response:
 * {"lstm_labels": [[0.001398136024363339, 0.9986018538475037], [0.9758431911468506, 0.024156853556632996]], "cnn_labels": [[0.7910102605819702, 0.20898973941802979], [0.7584044933319092, 0.24159550666809082]], "fasttext_labels": [[0.009766000000000052, 0.990234], [0.998047, 0.0019529999999999825]]}
+* the first element in the tuple is the negative label possibily, the second element is the positive label possibility 
 
 
 ## Running Locally
@@ -48,13 +49,9 @@ Sample Postman Response:
 Make sure you have Python [installed properly](http://install.python-guide.org). Also, install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) and [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
 
 ```sh
-<!-- $ git clone git@github.com:heroku/python-getting-started.git
-$ cd python-getting-started -->
 $ cd predictWeb
 $ pipenv install
-<!-- $ createdb python_getting_started -->
-$ python manage.py migrate
-$ python manage.py collectstatic
+$ pipenv shell
 $ python manage.py runserver 0.0.0.0:5000
 
 <!-- $ heroku local -->
