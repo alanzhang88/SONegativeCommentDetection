@@ -12,3 +12,19 @@ The labelled data can be found in the Data folder. We decide to release the data
 
 Demo server is deployed live on Heroku:
 https://sonegativecommentdetection.herokuapp.com/
+
+## Code Structures:
+Models/ 
+--LSTM
+--CNN
+--FastText
+
+dataExtraction/: XML parser, extract data from SO data dump 
+demoWeb/: UI for negative comments prediction web app
+predictWeb/: RESTFul API, with models deployed on the server
+
+
+
+
+
+
